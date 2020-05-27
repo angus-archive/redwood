@@ -1,0 +1,215 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@800&display=swap');
+
+:root {
+
+	--redwoodRed: #BB3C5B;
+	--redwoodGreyDark: #575757;
+	--redwoodGreyLight: #BABABA;
+
+	--headerColour: #FFFFFF;
+	--navColour: #F4F4F4;
+	--headerTextColour: #474747;
+	--backgroundColour: #FFFFFF;
+
+	--navText: var(--redwoodGreyDark);
+	--navTextHover: #3D3D3D ;
+
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+======END OF RESET=========
+ */
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	background-color: var(--backgroundColour);
+	color: slategrey;
+}
+
+/*
+------------HEADER---------
+ */
+header{
+	background-color: var(--headerColour);
+}
+
+/*
+Logo at top of page
+ */
+#logoContainer{
+	width: 60%;
+	margin: 10px auto 10px auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#logoContainer img{
+	width: 40%;
+	max-width: 150px;
+	min-width: 85px;
+	height: auto;
+}
+
+/*
+---------NAV (MOBILE)------
+ */
+nav{
+	background-color: var(--navColour);
+	font-family: "Arial", sans-serif;
+}
+
+nav ul{
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+}
+
+nav ul li{
+	padding: 9px 0 9px 0;
+	text-align: center;
+}
+
+nav ul li a{
+	font-weight: normal;
+	color: var(--navText);
+	text-decoration: none;
+}
+
+nav ul li a:hover{
+	color: var(--navTextHover);;
+}
+
+/* Hide the nav bar except first item*/
+nav ul li ~ li {
+	display: none;
+}
+
+
+
+/*
+Burger Icon
+ */
+
+nav #burgerIcon{
+	width: 20px;
+}
+
+.dropDownLink{
+	cursor: pointer;
+	padding: 3px;
+}
+
+.dropDownLink:hover{
+	background-color: #E4E3E5;
+}
+
+
+
+/*
+===========MEDIA QUERIES============
+ */
+
+
+/*
+SMALL TABLET
+ */
+@media screen and (min-width: 500px) {
+
+	header h1{
+		color: yellowgreen;
+	}
+
+
+}
+
+/*
+LARGE TABLET
+ */
+@media screen and (min-width: 750px) {
+	header h1{
+		color: deepskyblue;
+	}
+}
+
+/*
+LAPTOP
+ */
+@media screen and (min-width: 1100px) {
+	header h1{
+		color: palevioletred;
+	}
+}
+
+/*
+MONITOR
+ */
+@media screen and (min-width: 1500px) {
+	header h1{
+		color: mediumspringgreen;
+	}
+
+
+}
+
+/*
+ULTRA WIDE
+ */
+@media screen and (min-width: 2000px) {
+	header h1{
+		color: darkorange;
+	}
+
+}
+
