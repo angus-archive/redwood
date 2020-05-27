@@ -10,6 +10,7 @@ script.src = '//code.jquery.com/jquery-1.11.0.min.js';
 document.getElementsByTagName('head')[0].appendChild(script)
 
 
+//When the user clicks the "hamburger"
 function dropDownPressed(){
     var c = document.getElementById("navUL").children;
     console.log(c)
