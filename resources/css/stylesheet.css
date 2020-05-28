@@ -114,11 +114,15 @@ nav ul{
 	list-style: none;
 	display: flex;
 	flex-direction: column;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+
 }
 
 nav ul li{
 	padding: 9px 0 9px 0;
-	text-align: center;
+
 }
 
 nav ul li a{
@@ -146,14 +150,10 @@ nav #burgerIcon{
 	width: 20px;
 }
 
-.dropDownLink{
+#dropDownLink{
 	cursor: pointer;
-	padding: 3px;
 }
 
-.dropDownLink:hover{
-	background-color: #E4E3E5;
-}
 
 
 
@@ -178,8 +178,19 @@ PORTRAIT TABLET OR BIG PHONE
 LARGE / LANDSCAPE TABLET
  */
 @media screen and (min-width: 750px) {
-	header h1{
+	body{
 		color: deepskyblue;
+	}
+
+	/*Change our navigation bar to a standard one*/
+	nav ul{
+		flex-direction: row;
+	}
+
+	nav ul li{
+		padding-left: 5%;
+		padding-right: 5%;
+		margin: auto;
 	}
 }
 
@@ -187,9 +198,11 @@ LARGE / LANDSCAPE TABLET
 LAPTOPS / DESKTOPS
  */
 @media screen and (min-width: 992px) {
-	header h1{
-		color: palevioletred;
+	body{
+		color: greenyellow;
 	}
+
+
 }
 
 /*
@@ -199,16 +212,23 @@ LAPTOPS / DESKTOPS
 	header h1{
 		color: mediumspringgreen;
 	}
-	
+
+	/* Set the maximum spacing for the navigation bar*/
+	nav ul{
+		max-width: 1200px;
+	}
+
 }
 
 /*
 ULTRA WIDE
  */
 @media screen and (min-width: 2000px) {
-	header h1{
+	body{
 		color: darkorange;
 	}
+
+
 
 }
 

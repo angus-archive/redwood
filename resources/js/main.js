@@ -5,45 +5,73 @@ Angus Goody
 Main Javascript File
 */
 
-var script = document.createElement('script');
-script.src = '//code.jquery.com/jquery-1.11.0.min.js';
-document.getElementsByTagName('head')[0].appendChild(script)
+//Show or hide navigation items (t=True will show)
+function showHideNavItems(t){
+    //Get the children to hide
+    let c = document.getElementById("navUL").children;
+    //Go through each child
+    for (i=1; i < c.length; i++){
+        //Display
+        if (t){
+            c[i].style.display="block";
+            //Update Icon
+            document.getElementById("burgerIcon").src = "resources/images/closeRed.png";
+        }
+        //Hide
+        else{
+            c[i].style.display="none";
+            //Update Icon
+            document.getElementById("burgerIcon").src = "resources/images/hamRed.png";
+        }
 
+    }
+
+
+}
 
 //When the user clicks the "hamburger"
 function dropDownPressed(){
     var c = document.getElementById("navUL").children;
-    console.log(c)
-    //Check if the dropdown is currently hidden or not
-    let style = window.getComputedStyle(c[1]);
-    //SHOW the menu because it's currently hidden
-    if (style.getPropertyValue("display") !== "block"){
-        console.log("Displaying menu");
-        for (i=1; i < c.length; i++){
-            c[i].style.display="block";
-        }
-        //Update Icon
-        document.getElementById("burgerIcon").src = "resources/images/closeRed.png";
-
+    //Show the menu because it's currently hidden
+    if (window.getComputedStyle(c[1]).getPropertyValue("display") !== "block"){
+        showHideNavItems(true);
 
     }
     //HIDE all the menu items (starting from index 1)
     else{
-        console.log("Hiding menu");
-        for (i=1; i < c.length; i++){
-            c[i].style.display="none";
-        }
-        //Update Icon
-        document.getElementById("burgerIcon").src = "resources/images/hamRed.png";
+        showHideNavItems(false);
+
     }
 
 }
 
+//Called when the max/min window size is reached
+function changeNav(w){
+
+    //If it matches then we update to desktop navigation
+    if (w.matches){
+        console.log("Big window")
+        //Show all menu items
+        showHideNavItems(true);
+        //Hide the burger
+        document.getElementById("dropDownLink").style.display="none";
+
+    }
+    //Otherwise update back to mobile
+    else{
+        console.log("Mobile window")
+        //Hide all menu items
+        showHideNavItems(false);
+        //Show Burger
+        document.getElementById("dropDownLink").style.display="block";
+
+    }
+}
 //Onload functions
 window.onload = function(){
-    //Get Slider values
-    //var redSLider = document.getElementById("redSlider");
-    //---Add Listeners---
-    //Top Left
-    //redSLider.addEventListener("input", function(){sliderChange(redSLider);},false);
+    //Setup a listener for when window is changed to/from mobile
+    var desktopWidth = window.matchMedia("(min-width: 750px)");
+    changeNav(desktopWidth);
+    desktopWidth.addListener(changeNav)
+
 }
