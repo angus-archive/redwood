@@ -15,13 +15,13 @@ function showHideNavItems(t){
         if (t){
             c[i].style.display="block";
             //Update Icon
-            document.getElementById("burgerIcon").src = "resources/images/closeRed.png";
+            document.getElementById("burgerIcon").src = "resources/coreImages/closeRed.png";
         }
         //Hide
         else{
             c[i].style.display="none";
             //Update Icon
-            document.getElementById("burgerIcon").src = "resources/images/hamRed.png";
+            document.getElementById("burgerIcon").src = "resources/coreImages/hamRed.png";
         }
 
     }
