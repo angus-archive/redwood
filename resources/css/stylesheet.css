@@ -140,6 +140,9 @@ nav ul li ~ li {
 	display: none;
 }
 
+#currentNavItem{
+	font-weight: bold;
+}
 
 
 /*
@@ -147,7 +150,7 @@ Burger Icon
  */
 
 nav #burgerIcon{
-	width: 20px;
+	width: 35px;
 }
 
 #dropDownLink{

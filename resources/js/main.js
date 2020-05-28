@@ -72,6 +72,6 @@ window.onload = function(){
     //Setup a listener for when window is changed to/from mobile
     var desktopWidth = window.matchMedia("(min-width: 750px)");
     changeNav(desktopWidth);
-    desktopWidth.addListener(changeNav)
+    desktopWidth.addEventListener("change",changeNav);
 
 }
