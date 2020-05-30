@@ -5,6 +5,8 @@ Angus Goody
  */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+
 :root {
 
 	--redwoodRed: #bb3c5b;
@@ -12,9 +14,9 @@ Angus Goody
 	--redwoodGreyLight: #BABABA;
 
 	--headerColour: #FFFFFF;
-	--navColour: #F4F4F4;
+	--navColour: #ffffff;
 	--headerTextColour: #474747;
-	--backgroundColour: #FFFFFF;
+	--backgroundColour: #F6F6F6;
 
 	--navText: var(--redwoodGreyDark);
 	--navTextHover: var(--redwoodRed);
@@ -94,10 +96,22 @@ body{
 
 /*All the content in the body*/
 #content{
+	background-color: var(--backgroundColour);
 	flex: 1 0 auto;
 }
 #wrapper{
-	background-color: #FFFFFF;
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 40px;
+	background-color: greenyellow;
+}
+
+/*Allign all the content into center*/
+.alignDiv{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-left: inherit;
 }
 
 
@@ -106,6 +120,7 @@ body{
  */
 header{
 	background-color: var(--headerColour);
+	margin: 0;
 }
 
 /*
@@ -113,7 +128,8 @@ Logo at top of page
  */
 #logoContainer{
 	width: 60%;
-	margin: 10px auto 10px auto;
+	margin: 0 auto 0 auto;
+	padding: 10px 0 10px 0;
 	text-align: center;
 }
 #logoContainer img{
@@ -131,26 +147,28 @@ nav{
 	background-color: var(--navColour);
 	/*font-family: 'Open Sans', sans-serif;*/
     font-family: 'Avenir Next Medium', sans-serif;
-    
+	box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.1);
+
 }
 
 nav ul{
 	list-style: none;
 	display: flex;
 	flex-direction: column;
-	text-align: center;
+	text-align: left;
 	margin-left: auto;
 	margin-right: auto;
 
 }
 
-nav ul li{
-	padding: 9px 0 9px 0;
 
+nav ul li{
+	padding: 15px;
 }
 
 nav ul li a{
 	font-weight: normal;
+	font-size: 1.1rem;
 	color: var(--navText);
 	text-decoration: none;
 }
@@ -199,8 +217,8 @@ main{
 
 .pageHeading{
 	text-align: center;
-	font-size: 1.5rem;
-	margin: 40px 0;
+	font-size: 32px;
+	margin-bottom: 40px;
 }
 
 /*
@@ -210,6 +228,11 @@ main{
 #contactForm{
 	display: flex;
 	flex-direction: column;
+	background-color: #FFFFFF;
+	box-shadow: rgba(0, 0, 0, 0.075) 0px 2px 10px 0px;
+	margin-top: 20px;
+	padding: 30px 20px 10px 20px;
+	border-top: 2px solid var(--redwoodRed);
 }
 
 /*Change all form input styles use input[type=text] to target others*/
@@ -303,10 +326,14 @@ LARGE / LANDSCAPE TABLET
 		margin: auto;
 	}
 
-	/*Change the wrapper to not fit entire screen*/
+
+
+
+	/*Change the wrapper to not fit entire screen (Use margin-left/right to avoid overwrite)*/
 	#wrapper{
 		width: 85%;
-		margin: auto;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	/*Change form button to not fill whole screen*/
@@ -319,7 +346,7 @@ LARGE / LANDSCAPE TABLET
 
 	/*Update form so it does't oversize on big screens and stays in center*/
 	#contactForm{
-		max-width: 1000px;
+		max-width: 600px;
 		margin-left: auto;
 		margin-right: auto;
 	}
