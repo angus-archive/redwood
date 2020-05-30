@@ -14,45 +14,55 @@
 	<!--Favicons-->
 	<link rel="shortcut icon" type="image/png" href="resources/coreImages/favicon-48.png"/>
 </head>
+
 <body>
-<header>
-	<div id="logoContainer">
-		<a href="index.html"><img id="redLogo" src="resources/coreImages/LogoSmall.png" alt="Redwood Logo"></a>
+	<div id="content">
+		<header>
+			<div id="logoContainer">
+				<a href="index.html"><img id="redLogo" src="resources/coreImages/LogoSmall.png" alt="Redwood Logo"></a>
+			</div>
+
+		</header>
+		<nav>
+			<ul id="navUL">
+
+				<li id="dropDownLink">
+					<a onclick="dropDownPressed()"><img id="burgerIcon" src="resources/coreImages/hamRed.png"></a>
+				</li>
+
+				<li>
+					<a id="currentNavItem" href="index.html">Our Services</a>
+				</li>
+
+				<li>
+					<a href="">Packages</a>
+				</li>
+
+				<li>
+					<a href="">Our story</a>
+				</li>
+
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+
+			</ul>
+		</nav>
+
+		<main>
+			<div id="wrapper">
+				<h1 class="pageHeading"> Our Services </h1>
+			</div>
+
+		</main>
+
 	</div>
+	<footer>
+		<h2> &copy; Copyright 2020 Redwood.business </h2>
 
-</header>
-<nav>
-	<ul id="navUL">
+	</footer>
 
-		<li id="dropDownLink">
-			<a onclick="dropDownPressed()"><img id="burgerIcon" src="resources/coreImages/hamRed.png"></a>
-		</li>
-
-		<li>
-			<a id="currentNavItem" href="index.html">Our Services</a>
-		</li>
-
-		<li>
-			<a href="">Packages</a>
-		</li>
-
-		<li>
-			<a href="">Our story</a>
-		</li>
-
-		<li>
-			<a href="contact.html">Contact</a>
-		</li>
-
-	</ul>
-</nav>
-
-<main>
-	<div id="wrapper">
-		<h1 class="pageHeading"> Our Services </h1>
-	</div>
-
-</main>
 
 </body>
+
 </html>

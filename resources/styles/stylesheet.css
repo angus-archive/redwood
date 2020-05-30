@@ -77,11 +77,29 @@ table {
 ======END OF RESET=========
  */
 
+html, body{
+	height: 100%;
+}
 body{
 	font-family: 'Montserrat', sans-serif;
 	background-color: var(--backgroundColour);
 	color: slategrey;
+	display: flex;
+	flex-direction: column;
 }
+
+/*
+------------Wrapper / Content---------
+*/
+
+/*All the content in the body*/
+#content{
+	flex: 1 0 auto;
+}
+#wrapper{
+	background-color: #FFFFFF;
+}
+
 
 /*
 ------------HEADER---------
@@ -167,6 +185,14 @@ nav #burgerIcon{
 	cursor: pointer;
 }
 
+
+/*
+---------MAIN------
+ */
+main{
+
+}
+
 /*
 ---------PAGE HEADING------
  */
@@ -224,14 +250,22 @@ nav #burgerIcon{
 }
 
 
-/*
-------------Wrapper---------
-*/
 
-#wrapper{
-	background-color: #FFFFFF;
+
+/*
+------------FOOTER---------
+*/
+footer{
+	background-color: var(--redwoodRed);
+	flex-shrink: 0;
 }
 
+footer h2{
+	font-size: 1rem;
+	color: #FFFFFF;
+	padding: 20px 10px;
+
+}
 
 /*
 ===========MEDIA QUERIES============
@@ -274,6 +308,21 @@ LARGE / LANDSCAPE TABLET
 		width: 85%;
 		margin: auto;
 	}
+
+	/*Change form button to not fill whole screen*/
+	#contactForm #submitButton{
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 500px;
+	}
+
+	/*Update form so it does't oversize on big screens and stays in center*/
+	#contactForm{
+		max-width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 /*
@@ -285,13 +334,14 @@ LAPTOPS / DESKTOPS
 	}
 
 
-	/*Update the contact form for desktop*/
+	/*Update the contact form for desktop (Not for large iPads bc theyre IOS)*/
 	#contactForm input[type=text] , #contactForm textarea {
 		-webkit-appearance: textarea;
 	}
 
+	#contactForm textarea{
 
-
+	}
 
 
 }
