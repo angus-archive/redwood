@@ -4,11 +4,10 @@ Angus Goody
 27/05/2020
  */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 :root {
 
-	--redwoodRed: #BB3C5B;
+	--redwoodRed: #bb3c5b;
 	--redwoodGreyDark: #575757;
 	--redwoodGreyLight: #BABABA;
 
@@ -18,7 +17,10 @@ Angus Goody
 	--backgroundColour: #FFFFFF;
 
 	--navText: var(--redwoodGreyDark);
-	--navTextHover: #3D3D3D ;
+	--navTextHover: var(--redwoodRed);
+
+	--buttonHoverGreen: #5fd246;
+	--buttonGreen: #4eac3e;
 
 }
 
@@ -109,7 +111,9 @@ Logo at top of page
  */
 nav{
 	background-color: var(--navColour);
-	font-family: "Arial", sans-serif;
+	/*font-family: 'Open Sans', sans-serif;*/
+    font-family: 'Avenir Next Medium', sans-serif;
+    
 }
 
 nav ul{
@@ -143,7 +147,11 @@ nav ul li ~ li {
 }
 
 #currentNavItem{
-	font-weight: bold;
+	color: var(--redwoodRed);
+}
+/*Have the current item hover the same colour so it doesnt change*/
+#currentNavItem:hover{
+	color: var(--redwoodRed);
 }
 
 
@@ -158,6 +166,59 @@ nav #burgerIcon{
 #dropDownLink{
 	cursor: pointer;
 }
+
+/*
+---------PAGE HEADING------
+ */
+
+.pageHeading{
+	text-align: center;
+	font-size: 1.5rem;
+	margin: 40px 0;
+}
+
+/*
+---------CONTACT FORM(MOBILE)------
+ */
+
+#contactForm{
+	display: flex;
+	flex-direction: column;
+}
+
+/*Change all form input styles use input[type=text] to target others*/
+#contactForm input, #contactForm textarea {
+	margin: 10px 20px;
+	font-family: "Avenir Next Medium", sans-serif;
+	font-size: 1rem;
+	padding: 12px 20px;
+	box-sizing: border-box;
+}
+
+#contactForm textarea{
+	resize: none;
+}
+
+
+
+#contactForm #submitButton{
+	background-color: var(--buttonGreen);
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 0.4rem;
+	margin-top: 30px;
+}
+
+#contactForm #submitButton:hover{
+	background-color: var(--buttonHoverGreen);
+	cursor: pointer;
+}
+
+
 
 
 /*
