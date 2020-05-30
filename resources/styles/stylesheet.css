@@ -192,7 +192,7 @@ nav #burgerIcon{
 	font-family: "Avenir Next Medium", sans-serif;
 	font-size: 1rem;
 	padding: 12px 20px;
-	box-sizing: border-box;
+	/* Remove the styling for IOS devices*/
 	-webkit-appearance: none;
 }
 
@@ -200,9 +200,7 @@ nav #burgerIcon{
 	resize: none;
 }
 
-#contactForm input[type=text]:focus , #contactForm textarea:focus {
-	border-color: #2f6fd4;
-}
+
 
 #contactForm #submitButton{
 	-webkit-appearance: none;
@@ -224,8 +222,6 @@ nav #burgerIcon{
 	background-color: var(--buttonHoverGreen);
 	cursor: pointer;
 }
-
-
 
 
 /*
@@ -285,8 +281,17 @@ LAPTOPS / DESKTOPS
  */
 @media screen and (min-width: 992px) {
 	body{
-		color: greenyellow;
+		color: #6e0d74;
 	}
+
+
+	/*Update the contact form for desktop*/
+	#contactForm input[type=text] , #contactForm textarea {
+		-webkit-appearance: textarea;
+	}
+
+
+
 
 
 }
