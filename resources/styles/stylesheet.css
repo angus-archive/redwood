@@ -193,6 +193,7 @@ nav #burgerIcon{
 	font-size: 1rem;
 	padding: 12px 20px;
 	box-sizing: border-box;
+	-webkit-appearance: none;
 }
 
 #contactForm textarea{
@@ -204,6 +205,7 @@ nav #burgerIcon{
 }
 
 #contactForm #submitButton{
+	-webkit-appearance: none;
 	background-color: var(--buttonGreen);
 	border: none;
 	font-family: "Avenir Next Medium", sans-serif;
