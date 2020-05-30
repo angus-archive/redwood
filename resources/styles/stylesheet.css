@@ -111,7 +111,6 @@ body{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-left: inherit;
 }
 
 
@@ -216,7 +215,6 @@ main{
  */
 
 .pageHeading{
-	text-align: center;
 	font-size: 32px;
 	margin-bottom: 40px;
 }
@@ -327,8 +325,6 @@ LARGE / LANDSCAPE TABLET
 	}
 
 
-
-
 	/*Change the wrapper to not fit entire screen (Use margin-left/right to avoid overwrite)*/
 	#wrapper{
 		width: 85%;
@@ -347,8 +343,8 @@ LARGE / LANDSCAPE TABLET
 	/*Update form so it does't oversize on big screens and stays in center*/
 	#contactForm{
 		max-width: 600px;
-		margin-left: auto;
-		margin-right: auto;
+		width: 100%;
+
 	}
 }
 
