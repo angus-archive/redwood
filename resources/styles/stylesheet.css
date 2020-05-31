@@ -103,6 +103,7 @@ body{
 	width: 100%;
 	margin-top: 30px;
 	margin-bottom: 90px;
+	background-color: aquamarine;
 }
 
 /*Allign all the content into center*/
@@ -252,6 +253,8 @@ main{
 	padding: 30px 20px 10px 20px;
 	border-top: 2px solid var(--redwoodRed);
 	width: 80%;
+	max-width: 450px;
+
 }
 
 /*Change all form input styles use input[type=text] to target others*/
@@ -358,8 +361,7 @@ LARGE / LANDSCAPE TABLET
 
 	/*Update form so it does't oversize on big screens and stays in center*/
 	#contactForm{
-		max-width: 600px;
-		width: 100%;
+		max-width: 650px;
 
 	}
 }
@@ -374,9 +376,6 @@ LAPTOPS / DESKTOPS
 		-webkit-appearance: textarea;
 	}
 
-	#contactForm textarea{
-
-	}
 
 }
 
