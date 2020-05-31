@@ -73,7 +73,7 @@ window.onload = function(){
     window.desktopWidth="(min-width: 850px)";
     //When the window changes from this value called the "changeNav" function
     var desktopWidth = window.matchMedia(window.desktopWidth);
-    changeNav();
     desktopWidth.addListener(changeNav); //AddListener is used for backwards compatibility
+    changeNav(); //Make sure window loads correctly
 
 }

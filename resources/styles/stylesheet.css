@@ -24,6 +24,8 @@ Angus Goody
 	--buttonHoverGreen: #5fd246;
 	--buttonGreen: #4eac3e;
 
+	--tooltipBackground: #424242;
+
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -348,6 +350,7 @@ main{
 
 .personInfoContainer p{
 	font-size: 1rem;
+	padding: 10px 10% 20px 10%;
 }
 
 .personSkillsBar{
@@ -384,7 +387,7 @@ main{
 	visibility: hidden;
 	width: 130px;
 	font-size: 1rem;
-	background-color: #343434;
+	background-color: var(--tooltipBackground);
 	color: #fff;
 	text-align: center;
 	border-radius: 4px;
@@ -406,7 +409,7 @@ main{
 	margin-left: -5px;
 	border-width: 5px;
 	border-style: solid;
-	border-color: #555 transparent transparent transparent;
+	border-color: var(--tooltipBackground) transparent transparent transparent;
 }
 
 .tooltip:hover .tooltiptext {
