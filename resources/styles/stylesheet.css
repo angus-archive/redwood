@@ -295,6 +295,52 @@ main{
 	cursor: pointer;
 }
 
+/*
+------------OUR STORY PROFILES---------
+*/
+.personGrid{
+	display: flex;
+	width: 90%;
+	margin-top: 40px;
+	background-color: fuchsia;
+
+}
+.personContainer{
+	background-color: white;
+	border-radius: 0 0 10px 10px;
+	width: 100%;
+	max-width: 300px;
+	min-height: 450px;
+}
+
+.personImageContainer{
+	width: inherit;
+	border-radius: 10px 10px 0 0;
+	height: 50%;
+	overflow: hidden;
+}
+
+.personImageContainer img{
+	width:100%;
+	height:100%;
+	object-fit: cover;
+	overflow: hidden;
+}
+
+.personInfoContainer{
+	text-align: center;
+}
+
+.personInfoContainer h3{
+	font-size: 2rem;
+	font-weight: bold;
+	color: black
+
+}
+
+.personInfoContainer p{
+	font-size: 1rem;
+}
 
 
 
