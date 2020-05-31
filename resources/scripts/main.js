@@ -29,9 +29,9 @@ function showHideNavItems(t){
 
 //Called when the max/min window size is reached
 function changeNav(){
-
+    
     //If it matches then we update to desktop navigation
-    if (window.matchMedia("(min-width: 850px)").matches){
+    if (window.matchMedia(window.desktopWidth).matches){
         //Show all menu items
         showHideNavItems(true);
         //Hide the burger
@@ -69,8 +69,10 @@ function burgerPressed(x){
 
 //Onload functions
 window.onload = function(){
-    //Setup a listener for when window is changed to/from mobile
-    var desktopWidth = window.matchMedia("(min-width: 850px)");
+    //Setup a global desktop width
+    window.desktopWidth="(min-width: 850px)";
+    //When the window changes from this value called the "changeNav" function
+    var desktopWidth = window.matchMedia(window.desktopWidth);
     changeNav();
     desktopWidth.addListener(changeNav);
 
