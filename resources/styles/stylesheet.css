@@ -312,6 +312,7 @@ main{
 	background-color: white;
 	border-radius: 10px;
 	width: 100%;
+
 	max-width: 350px;
 	min-height: 450px;
 	margin: 20px;
@@ -324,7 +325,7 @@ main{
 .personImageContainer{
 	border-radius: 10px 10px 0 0;
 	overflow: hidden;
-	flex: 1;
+	height: 250px;
 }
 
 .personImageContainer img{
@@ -450,11 +451,12 @@ PORTRAIT TABLET OR BIG PHONE
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
+		align-items: flex-start;
 	}
 
 	.personContainer{
 		max-width: 250px;
-		height: 100px;
+
 	}
 
 
@@ -530,7 +532,6 @@ LAPTOPS / DESKTOPS
 
 	.personContainer{
 		max-width: 300px;
-		height: 100px;
 	}
 
 
@@ -544,7 +545,6 @@ ULTRA WIDE
 	/* On much larger screens increase profile sizes*/
 	.personContainer{
 		max-width: 300px;
-		height: 150px;
 	}
 
 }
