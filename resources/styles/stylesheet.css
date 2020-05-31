@@ -231,6 +231,7 @@ main{
 	margin-top: 20px;
 	padding: 30px 20px 10px 20px;
 	border-top: 2px solid var(--redwoodRed);
+	width: 80%;
 }
 
 /*Change all form input styles use input[type=text] to target others*/
