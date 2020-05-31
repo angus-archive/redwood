@@ -157,7 +157,6 @@ nav ul{
 	text-align: left;
 	margin-left: auto;
 	margin-right: auto;
-
 }
 
 
@@ -194,12 +193,34 @@ nav ul li ~ li {
 Burger Icon
  */
 
-nav #burgerIcon{
-	width: 35px;
+/* BURGER ANIMATIONS */
+.burgerContainer{
+	display: inline-block;
+	cursor: pointer;
 }
 
-#dropDownLink{
-	cursor: pointer;
+.burgerLine1, .burgerLine2, .burgerLine3{
+	width: 35px;
+	height: 5px;
+	background-color: var(--redwoodRed);
+	margin: 6px 0;
+	transition: 0.2s;
+}
+
+
+.burgerChange .burgerLine1,.burgerChange .burgerLine2,.burgerChange .burgerLine3{
+	background-color: #802929;
+}
+.burgerChange .burgerLine1{
+	-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+	transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.burgerChange .burgerLine2 {opacity: 0;}
+
+.burgerChange .burgerLine3 {
+	-webkit-transform: rotate(45deg) translate(-8px, -8px);
+	transform: rotate(45deg) translate(-8px, -8px);
 }
 
 

@@ -14,14 +14,10 @@ function showHideNavItems(t){
         //Display
         if (t){
             c[i].style.display="block";
-            //Update Icon
-            document.getElementById("burgerIcon").src = "resources/coreImages/closeRed.png";
         }
         //Hide
         else{
             c[i].style.display="none";
-            //Update Icon
-            document.getElementById("burgerIcon").src = "resources/coreImages/hamRed.png";
         }
 
     }
@@ -29,28 +25,13 @@ function showHideNavItems(t){
 
 }
 
-//When the user clicks the "hamburger"
-function dropDownPressed(){
-    var c = document.getElementById("navUL").children;
-    //Show the menu because it's currently hidden
-    if (window.getComputedStyle(c[1]).getPropertyValue("display") !== "block"){
-        showHideNavItems(true);
 
-    }
-    //HIDE all the menu items (starting from index 1)
-    else{
-        showHideNavItems(false);
-
-    }
-
-}
 
 //Called when the max/min window size is reached
 function changeNav(w){
 
     //If it matches then we update to desktop navigation
     if (w.matches){
-        console.log("Big window")
         //Show all menu items
         showHideNavItems(true);
         //Hide the burger
@@ -59,14 +40,33 @@ function changeNav(w){
     }
     //Otherwise update back to mobile
     else{
-        console.log("Mobile window")
         //Hide all menu items
         showHideNavItems(false);
         //Show Burger
         document.getElementById("dropDownLink").style.display="block";
+        //Ensure burger in correct state
+        document.getElementById("burgerNavContainer").classList.remove("burgerChange");
 
     }
 }
+
+//Called when the burger div is pressed
+function burgerPressed(x){
+    //Update CSS to animate burger
+    x.classList.toggle("burgerChange");
+    //Get children menu items
+    var c = document.getElementById("navUL").children;
+    //Show the menu because it's currently hidden
+    if (window.getComputedStyle(c[1]).getPropertyValue("display") !== "block"){
+        showHideNavItems(true);
+    }
+    //HIDE all the menu items (starting from index 1)
+    else{
+        showHideNavItems(false);
+
+    }
+}
+
 //Onload functions
 window.onload = function(){
     //Setup a listener for when window is changed to/from mobile
