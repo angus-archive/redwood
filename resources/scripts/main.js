@@ -70,7 +70,7 @@ function burgerPressed(x){
 //Onload functions
 window.onload = function(){
     //Setup a listener for when window is changed to/from mobile
-    var desktopWidth = window.matchMedia("(min-width: 750px)");
+    var desktopWidth = window.matchMedia("(min-width: 850px)");
     changeNav(desktopWidth);
     desktopWidth.addEventListener("change",changeNav);
 
