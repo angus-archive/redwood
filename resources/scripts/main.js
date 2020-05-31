@@ -29,7 +29,7 @@ function showHideNavItems(t){
 
 //Called when the max/min window size is reached
 function changeNav(){
-    
+
     //If it matches then we update to desktop navigation
     if (window.matchMedia(window.desktopWidth).matches){
         //Show all menu items
@@ -74,6 +74,6 @@ window.onload = function(){
     //When the window changes from this value called the "changeNav" function
     var desktopWidth = window.matchMedia(window.desktopWidth);
     changeNav();
-    desktopWidth.addListener(changeNav);
+    desktopWidth.addListener(changeNav); //AddListener is used for backwards compatibility
 
 }

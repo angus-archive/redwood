@@ -97,13 +97,12 @@ body{
 /*All the content in the body*/
 #content{
 	background-color: var(--backgroundColour);
-	flex: 1 0 auto;
+	flex: 1;
 }
 #wrapper{
 	width: 100%;
 	margin-top: 30px;
-	margin-bottom: 40px;
-	background-color: greenyellow;
+	margin-bottom: 90px;
 }
 
 /*Allign all the content into center*/
@@ -320,9 +319,6 @@ PORTRAIT TABLET OR BIG PHONE
  */
 @media screen and (min-width: 500px) {
 
-	header h1{
-		color: yellowgreen;
-	}
 
 
 }
@@ -331,9 +327,7 @@ PORTRAIT TABLET OR BIG PHONE
 LARGE / LANDSCAPE TABLET
  */
 @media screen and (min-width: 850px) {
-	body{
-		color: deepskyblue;
-	}
+
 
 	/*Change our navigation bar to a standard one*/
 	nav ul{
@@ -374,10 +368,6 @@ LARGE / LANDSCAPE TABLET
 LAPTOPS / DESKTOPS
  */
 @media screen and (min-width: 992px) {
-	body{
-		color: #6e0d74;
-	}
-
 
 	/*Update the contact form for desktop (Not for large iPads bc theyre IOS)*/
 	#contactForm input[type=text] , #contactForm textarea {
@@ -388,16 +378,12 @@ LAPTOPS / DESKTOPS
 
 	}
 
-
 }
 
 /*
  LARGE LAPTOPS / DESKTOPS
  */
 @media screen and (min-width: 1200px) {
-	header h1{
-		color: mediumspringgreen;
-	}
 
 	/* Set the maximum spacing for the navigation bar*/
 	nav ul{
@@ -413,8 +399,6 @@ ULTRA WIDE
 	body{
 		color: darkorange;
 	}
-
-
 
 }
 
