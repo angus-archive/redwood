@@ -21,8 +21,8 @@ Angus Goody
 	--navText: var(--redwoodGreyDark);
 	--navTextHover: var(--redwoodRed);
 
-	--buttonHoverGreen: #5fd246;
-	--buttonGreen: #4eac3e;
+	--buttonHoverGreen: #6FD766;
+	--buttonGreen: #8BC76E;
 
 	--tooltipBackground: #424242;
 
@@ -416,6 +416,37 @@ main{
 .tooltip:hover .tooltiptext {
 	visibility: visible;
 	opacity: 1;
+}
+
+/*
+------------Packages---------
+*/
+
+.packageGrid{
+	display: flex;
+}
+
+.packageContainer{
+	background-color: fuchsia;
+	display: flex;
+	flex-direction: column;
+}
+
+.packageContainer .packageTitleSection{
+	background-color: orange;
+}
+
+.packageContainer .packageFeaturesSection{
+	background-color: #6FD766;
+	flex: 1;
+}
+
+.packageContainer .packageButtonSection{
+	background-color: coral;
+}
+
+.packageContainer .packageFeature{
+	background-color: cornflowerblue;
 }
 
 
