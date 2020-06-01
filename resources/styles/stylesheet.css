@@ -26,6 +26,9 @@ Angus Goody
 
 	--tooltipBackground: #424242;
 
+	--economyColour: #52B845;
+	--deluxeColour: #4977EA;
+
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -113,6 +116,15 @@ body{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+.flexGrid{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	margin-top: 40px;
+
 }
 
 
@@ -300,14 +312,7 @@ main{
 /*
 ------------OUR STORY PROFILES---------
 */
-.personGrid{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 100%;
-	margin-top: 40px;
 
-}
 .personContainer{
 	background-color: white;
 	border-radius: 10px;
@@ -422,27 +427,16 @@ main{
 ------------PACKAGES SECTION---------
 */
 
-.packageGrid{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 100%;
-	margin-top: 40px;
-
-}
 
 .packageContainer{
 	background-color: white;
-	border-radius: 10px;
 	width: 100%;
-
-	max-width: 350px;
 	min-height: 450px;
 	margin: 20px;
 	display: flex;
 	flex-direction: column;
+	box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.23);
 
-	box-shadow: rgba(0, 0, 0, 0.075) 0px 2px 10px 0px;
 }
 
 
@@ -450,7 +444,7 @@ main{
 .packageContainer .packageTitleSection{
 	background-color: #39484C;
 	color: white;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	height: 60px;
 
 	display: flex;
@@ -462,56 +456,82 @@ main{
 
 /*FEATURES (Middle bit)*/
 .packageContainer .packageFeaturesSection{
-	background-color: #6FD766;
 	flex: 1;
 
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding: 12px; /*Keeps features from edge*/
+	padding: 0 12px 0 25px; /*Keeps features from edge*/
+
 }
 
 .packageContainer .packageFeature{
-	background-color: cornflowerblue;
 	margin-bottom: 20px;
 	display: flex;
 	flex-direction: row;
+	align-items: center;
+
+	/*Ensures bullets are in center in mobile view*/
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+
 
 }
 
-.packageFeature .bullet{
-	width: 12px;
-	height: 12px;
-	border-radius: 50%;
-	background-color: cyan;
+.packageFeature p{
+	text-align: center;
+	flex: 1;
+}
 
+.packageFeature .bullet{
+	width: 12px !important;
+	height: 12px !important;
+	border-radius: 50%;
+	background-color: #000000;
 	margin-right: 15px;
 }
 
 /*BUTTONS (bottom)*/
 
 .packageContainer .packageButtonSection{
-	background-color: coral;
-
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
 .packageButtonSection button{
-	background-color: #4CAF50; /* Green */
+	background-color: #000000;
 	border: none;
 	border-radius: 5px;
 	color: white;
-	padding: 16px 0;
+	opacity: 0.8;
+	padding: 10px 0;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
 	font-size: 16px;
-	margin: 4px 2px;
 	transition-duration: 0.4s;
 	cursor: pointer;
 	width: 60%;
+	margin-bottom: 30px;
+}
+
+.packageButtonSection button:hover{
+	opacity: 1;
+}
+
+/* Package Colours */
+.econBackground{
+	background-color: var(--economyColour)!important;
+}
+
+.redwoodBackground{
+	background-color: var(--redwoodRed)!important;
+}
+
+.deluxeBackground{
+	background-color: var(--deluxeColour)!important;
 }
 
 
@@ -545,7 +565,7 @@ PORTRAIT TABLET OR BIG PHONE
 @media screen and (min-width: 650px) {
 
 	/*Update the "Our story" to a row flexbox*/
-	.personGrid{
+	.flexGrid{
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
@@ -600,6 +620,10 @@ LARGE / LANDSCAPE TABLET
 
 	}
 
+	.packageContainer {
+		max-width: 300px;
+	}
+
 }
 
 /*
@@ -611,9 +635,6 @@ LAPTOPS / DESKTOPS
 	#contactForm input[type=text] , #contactForm textarea {
 		-webkit-appearance: textarea;
 	}
-
-
-
 
 
 }
@@ -628,9 +649,26 @@ LAPTOPS / DESKTOPS
 		max-width: 1200px;
 	}
 
+	/* PEOPLE */
 	.personContainer{
 		max-width: 300px;
 	}
+
+	/* PACKAGES */
+
+	.packageContainer {
+		max-width: 285px;
+	}
+
+	.packageContainer .packageFeature {
+		/*Ensures bullets are in center in mobile view*/
+		width: 85%;
+	}
+
+	.packageFeature p{
+		text-align: left;
+	}
+
 
 
 }
