@@ -419,35 +419,102 @@ main{
 }
 
 /*
-------------Packages---------
+------------PACKAGES SECTION---------
 */
 
 .packageGrid{
 	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	margin-top: 40px;
+
 }
 
 .packageContainer{
-	background-color: fuchsia;
+	background-color: white;
+	border-radius: 10px;
+	width: 100%;
+
+	max-width: 350px;
+	min-height: 450px;
+	margin: 20px;
 	display: flex;
 	flex-direction: column;
+
+	box-shadow: rgba(0, 0, 0, 0.075) 0px 2px 10px 0px;
 }
 
+
+/*TITLE*/
 .packageContainer .packageTitleSection{
-	background-color: orange;
+	background-color: #39484C;
+	color: white;
+	font-size: 2rem;
+	height: 60px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 }
 
+
+/*FEATURES (Middle bit)*/
 .packageContainer .packageFeaturesSection{
 	background-color: #6FD766;
 	flex: 1;
-}
 
-.packageContainer .packageButtonSection{
-	background-color: coral;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 12px; /*Keeps features from edge*/
 }
 
 .packageContainer .packageFeature{
 	background-color: cornflowerblue;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: row;
+
 }
+
+.packageFeature .bullet{
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background-color: cyan;
+
+	margin-right: 15px;
+}
+
+/*BUTTONS (bottom)*/
+
+.packageContainer .packageButtonSection{
+	background-color: coral;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.packageButtonSection button{
+	background-color: #4CAF50; /* Green */
+	border: none;
+	border-radius: 5px;
+	color: white;
+	padding: 16px 0;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	width: 60%;
+}
+
+
 
 
 
