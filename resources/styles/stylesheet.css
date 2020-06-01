@@ -430,7 +430,7 @@ main{
 
 .packageContainer{
 	background-color: white;
-	width: 100%;
+	width: 90%;
 	min-height: 450px;
 	margin: 20px;
 	display: flex;
@@ -471,8 +471,8 @@ main{
 	flex-direction: row;
 	align-items: center;
 
-	/*Ensures bullets are in center in mobile view*/
-	width: 60%;
+	/*Ensures bullets are to left in mobile, updates to center for tablet and returns to left*/
+	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
 
@@ -480,7 +480,7 @@ main{
 }
 
 .packageFeature p{
-	text-align: center;
+	text-align: left;
 	flex: 1;
 }
 
@@ -558,6 +558,19 @@ footer h2{
 ===========MEDIA QUERIES============
  */
 
+/* Wide phone */
+@media screen and (min-width: 450px) {
+
+	/* Update Packages for slightly bigger than phone */
+	.packageContainer .packageFeature {
+		/*Ensures bullets are in center in mobile view*/
+		width: 60%;
+	}
+
+	.packageFeature p{
+		text-align: center;
+	}
+}
 
 /*
 PORTRAIT TABLET OR BIG PHONE
@@ -575,6 +588,11 @@ PORTRAIT TABLET OR BIG PHONE
 	.personContainer{
 		max-width: 250px;
 
+	}
+
+	/* Update here so not too wide for tablets (reset to 100% after) */
+	.packageContainer{
+		width: 70%;
 	}
 
 
@@ -621,13 +639,14 @@ LARGE / LANDSCAPE TABLET
 	}
 
 	/*Packages update for big screens*/
-	.packageContainer {
+	.packageContainer{
+		width: 100%;
 		max-width: 300px;
 	}
 
 	.packageContainer .packageFeature {
 		/*Ensures bullets are in center in mobile view*/
-		width: 85%;
+		width: 90%;
 	}
 
 	.packageFeature p{
@@ -672,8 +691,6 @@ LAPTOPS / DESKTOPS
 
 
 
-
-
 }
 
 /*
@@ -681,10 +698,23 @@ ULTRA WIDE
  */
 @media screen and (min-width: 2000px) {
 
+	/* SET MAX SIZES */
+	.flexGrid{
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: red;
+	}
 	/* On much larger screens increase profile sizes*/
 	.personContainer{
-		max-width: 300px;
+		max-width: 350px;
 	}
+
+	.packageContainer {
+		max-width: 320px;
+	}
+
+
 
 }
 
