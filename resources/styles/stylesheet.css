@@ -28,6 +28,7 @@ Angus Goody
 
 	--economyColour: #52B845;
 	--deluxeColour: #4977EA;
+	--restartColour: #4349c4;
 
 }
 
@@ -532,6 +533,16 @@ main{
 
 .deluxeBackground{
 	background-color: var(--deluxeColour)!important;
+}
+
+.restartBackground{
+	background-color: var(--restartColour)!important;
+}
+
+#featureIcon{
+	width: 25px;
+	height: auto;
+	margin-right: 10px;
 }
 
 
