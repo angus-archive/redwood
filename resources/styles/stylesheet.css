@@ -620,8 +620,18 @@ LARGE / LANDSCAPE TABLET
 
 	}
 
+	/*Packages update for big screens*/
 	.packageContainer {
 		max-width: 300px;
+	}
+
+	.packageContainer .packageFeature {
+		/*Ensures bullets are in center in mobile view*/
+		width: 85%;
+	}
+
+	.packageFeature p{
+		text-align: left;
 	}
 
 }
@@ -660,14 +670,7 @@ LAPTOPS / DESKTOPS
 		max-width: 285px;
 	}
 
-	.packageContainer .packageFeature {
-		/*Ensures bullets are in center in mobile view*/
-		width: 85%;
-	}
 
-	.packageFeature p{
-		text-align: left;
-	}
 
 
 
