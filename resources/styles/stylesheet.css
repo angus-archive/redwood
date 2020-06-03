@@ -599,7 +599,7 @@ main #forestContainer{
 
 #packagingTable{
 	width: 85%;
-	table-layout: fixed;
+	table-layout: auto;
 	box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.1);
 	overflow-x:auto;
 }
@@ -612,6 +612,8 @@ main #forestContainer{
 	background-color: white;
 	font-size: 0.75em;
 }
+
+
 
 #packagingTable thead{
 	height: 75px;
@@ -719,12 +721,16 @@ PORTRAIT TABLET OR BIG PHONE
 
 
 	/* Update comparison table font sizes on larger screens */
+
+	#packagingTable {
+		table-layout: fixed;
+	}
 	#packagingTable thead th {
-		font-size: 1.5em;
+		font-size: 1.25em;
 	}
 
 	#packagingTable td, #packagingTable th {
-		font-size:1em;
+		font-size:0.8em;
 	}
 
 
