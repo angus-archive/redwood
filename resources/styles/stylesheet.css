@@ -10,8 +10,10 @@ Angus Goody
 :root {
 
 	--redwoodRed: #bb3c5b;
+	--redwoodDarkRed: #9C324D;
 	--redwoodGreyDark: #575757;
 	--redwoodGreyLight: #BABABA;
+	--bluesteelColour: #39484C;
 
 	--headerColour: #FFFFFF;
 	--navColour: #ffffff;
@@ -447,9 +449,9 @@ main #forestContainer{
 
 #packageDiv{
 	width: 100% !important;
-	margin-left: 0px !important;
-	margin-right: 0px !important;
-	background-color: var(--redwoodRed);
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+	background-color: var(--redwoodDarkRed);
 	padding: 20px 5px;
 
 }
@@ -475,7 +477,7 @@ main #forestContainer{
 
 /*TITLE*/
 .packageContainer .packageTitleSection{
-	background-color: #39484C;
+	background-color: var(--bluesteelColour);
 	color: white;
 	font-size: 1.5rem;
 	height: 60px;
@@ -598,13 +600,15 @@ main #forestContainer{
 	width: 85%;
 	table-layout: fixed;
 	box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.1);
+	overflow-x:auto;
 }
 
 #packagingTable td, #packagingTable th {
 	border: 1px solid #d7d7d7;
 	text-align: center;
 	vertical-align: middle;
-	padding: 8px
+	padding: 8px;
+	background-color: white;
 }
 
 #packagingTable thead{
@@ -614,9 +618,9 @@ main #forestContainer{
 #packagingTable thead th{
 	font-size: 1.5em;
 	color: white;
-	background-color: #39484C;
-	border-left: 0;
-	border-right: 0;
+	background-color: var(--bluesteelColour);
+	border: none;
+	border-top: 2px solid white;
 }
 
 #packagingTable tbody{
@@ -626,6 +630,7 @@ main #forestContainer{
 
 #packagingTable .pTableFeature{
 	text-align: left;
+	padding-left: 20px;
 }
 
 .cellHide{
@@ -641,19 +646,15 @@ main #forestContainer{
 /*Headers*/
 
 #packagingTable .econTable:hover{
-	background-color: var(--economyColour);
+	background-color: var(--economyColour) !important;
 }
 
 #packagingTable .redTable:hover{
-	background-color: var(--redwoodRed);
+	background-color: var(--redwoodRed) !important;
 }
 
 #packagingTable .delTable:hover{
-	background-color: var(--deluxeColour);
-}
-
-#econCol{
-	box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.1);
+	background-color: var(--deluxeColour) !important;
 }
 
 
@@ -714,6 +715,11 @@ PORTRAIT TABLET OR BIG PHONE
 		width: 70%;
 	}
 
+	#packageDiv{
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
 
 }
 
@@ -740,6 +746,11 @@ LARGE / LANDSCAPE TABLET
 		margin-left: auto;
 		margin-right: auto;
 		margin-bottom: 80px;
+	}
+
+	#packageDiv{
+		margin-left: 15%;
+		margin-right: 15%;
 	}
 
 	/*Change form button to not fill whole screen*/
@@ -781,6 +792,11 @@ LAPTOPS / DESKTOPS
 	/*Update the contact form for desktop (Not for large iPads bc theyre IOS)*/
 	#contactForm input[type=text] , #contactForm textarea {
 		-webkit-appearance: textarea;
+	}
+
+	#packageDiv{
+		margin-left: 20%;
+		margin-right: 20%;
 	}
 
 
