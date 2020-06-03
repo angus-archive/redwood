@@ -26,8 +26,8 @@ Angus Goody
 
 	--tooltipBackground: #424242;
 
-	--economyColour: #52B845;
-	--deluxeColour: #4977EA;
+	--economyColour: #52b845;
+	--deluxeColour: #4977ea;
 	--restartColour: #4349c4;
 
 }
@@ -124,7 +124,6 @@ body{
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
-	margin-top: 40px;
 
 }
 
@@ -146,6 +145,7 @@ Logo at top of page
 	padding: 10px 0 10px 0;
 	text-align: center;
 }
+
 #logoContainer img{
 	width: 40%;
 	max-width: 150px;
@@ -445,6 +445,15 @@ main #forestContainer{
 */
 
 
+#packageDiv{
+	width: 100% !important;
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+	background-color: var(--redwoodRed);
+	padding: 20px 5px;
+
+}
+
 .packageContainer{
 	background-color: white;
 	width: 90%;
@@ -574,6 +583,7 @@ main #forestContainer{
 	color: var(--deluxeColour)!important;
 }
 
+
 #featureIcon{
 	width: 25px;
 	height: auto;
@@ -585,19 +595,28 @@ main #forestContainer{
 */
 
 #packagingTable{
-	width: 100%;
+	width: 85%;
 	table-layout: fixed;
+	box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.1);
 }
 
 #packagingTable td, #packagingTable th {
-	border: 1px solid #ddd;
+	border: 1px solid #d7d7d7;
 	text-align: center;
 	vertical-align: middle;
 	padding: 8px
 }
 
 #packagingTable thead{
-	height: 50px;
+	height: 75px;
+}
+
+#packagingTable thead th{
+	font-size: 1.5em;
+	color: white;
+	background-color: #39484C;
+	border-left: 0;
+	border-right: 0;
 }
 
 #packagingTable tbody{
@@ -618,10 +637,23 @@ main #forestContainer{
 	font-size: 3em;
 }
 
+
 /*Headers*/
-.packageTableHeader{
-	font-size: 1.5em;
-	color: white;
+
+#packagingTable .econTable:hover{
+	background-color: var(--economyColour);
+}
+
+#packagingTable .redTable:hover{
+	background-color: var(--redwoodRed);
+}
+
+#packagingTable .delTable:hover{
+	background-color: var(--deluxeColour);
+}
+
+#econCol{
+	box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.1);
 }
 
 

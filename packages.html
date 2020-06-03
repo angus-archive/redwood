@@ -53,41 +53,10 @@
 		</nav>
 
 		<main>
-			<div id="wrapper">
-
-				<div class="alignDiv">
-					<h1 class="pageHeading"> Packages </h1>
-
-					<p style="width: 50%; text-align: center; max-width: 500px"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
-					<h1 style="margin-top: 40px" class="pageHeading"> Featured </h1>
-					<!--FEATURED PACKAGE-->
-					<div class="packageContainer">
-						<div class="packageTitleSection">
-							<h3> <img id="featureIcon" src="resources/images/feature.png"> Restart</h3>
-						</div>
-
-						<div class="packageFeaturesSection">
-							<div class="packageFeature">
-								<div class="bullet restartBackground"></div>
-								<p>Reopening event</p>
-							</div>
-							<div class="packageFeature">
-								<div class="bullet restartBackground"></div>
-								<p>Social Media Support</p>
-							</div>
-							<div class="packageFeature">
-								<div class="bullet restartBackground"></div>
-								<p>Free ad</p>
-							</div>
-						</div>
-
-						<div class="packageButtonSection">
-							<button class="restartBackground">Info</button>
-						</div>
-					</div>
-
-					<h1 style="margin-top: 40px" class="pageHeading"> Our Packages </h1>
-
+			<div class="alignDiv">
+				<div id="packageDiv">
+					<h1 style="margin-top: 40px; font-size: 1.5em; color: white; text-align: center" class="pageHeading"> Find a package that suits your business </h1>
+					<!--3 tier pricing-->
 					<div class="flexGrid">
 						<!--ECONOMY PACKAGE-->
 						<div class="packageContainer">
@@ -165,17 +134,27 @@
 							</div>
 						</div>
 					</div>
-
+				</div>
+			</div>
+			<div id="wrapper">
+				<div class="alignDiv">
 					<!--Spacer-->
 					<div class="spacer"></div>
+					<p style="font-size: 1.2rem; margin: 0 0 40px 0;"> Compare our packages</p>
 					<!--COMPARISON TABLE-->
 					<table id="packagingTable">
+						<colgroup>
+							<col>
+							<col span="1" id="econCol" style="background-color: #eef8ed">
+							<col span="1" id="redCol" style="background-color: #f9ecef">
+							<col span="1" id="delCol" style="background-color: #e8eefc">
+						</colgroup>
 						<thead>
 							<tr>
-								<th class="cellHide"></th>
-								<th class="packageTableHeader econBackground">Economy</th>
-								<th class="packageTableHeader redwoodBackground">Redwood</th>
-								<th class="packageTableHeader deluxeBackground">Deluxe</th>
+								<th></th>
+								<th class="econTable">Economy</th>
+								<th class="redTable">Redwood</th>
+								<th class="delTable">Deluxe</th>
 							</tr>
 						</thead>
 
