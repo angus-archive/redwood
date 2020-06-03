@@ -598,6 +598,7 @@ main #forestContainer{
 */
 
 #packagingTable{
+	display: none;
 	width: 85%;
 	table-layout: auto;
 	box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.1);
@@ -646,6 +647,21 @@ main #forestContainer{
 	font-size: 3em;
 }
 
+#tableErrorBox{
+	width: 50%;
+	height: 150px;
+	background-color: white;
+	color: var(--bluesteelColour);
+	font-size: 1em;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+
+
+
+
 
 /*Headers*/
 
@@ -681,6 +697,17 @@ footer h2{
 /*
 ===========MEDIA QUERIES============
  */
+
+@media screen and (min-width: 390px) {
+	#tableErrorBox{
+		display: none;
+	}
+
+	#packagingTable{
+		display: inline-table;
+	}
+}
+
 
 /* Wide phone */
 @media screen and (min-width: 450px) {
