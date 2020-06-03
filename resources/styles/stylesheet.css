@@ -242,9 +242,25 @@ Burger Icon
 /*
 ---------MAIN------
  */
-main{
+
+.spacer{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+main #forestContainer{
+	width: 100%;
+	height: 500px;
+	overflow: hidden;
+	object-fit: cover;
+	background-repeat: no-repeat;
+}
+
+#forestContainer #forestPic{
+	width: 100%;
 
 }
+
+
 
 /*
 ---------PAGE HEADING------
@@ -436,8 +452,15 @@ main{
 	margin: 20px;
 	display: flex;
 	flex-direction: column;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
 	box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.23);
 
+
+}
+
+.packageContainer:hover{
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.53);
 }
 
 
@@ -539,14 +562,67 @@ main{
 	background-color: var(--restartColour)!important;
 }
 
+.econCol{
+	color: var(--economyColour)!important;
+}
+
+.redwoodCol{
+	color: var(--redwoodRed)!important;
+}
+
+.deluxeCol{
+	color: var(--deluxeColour)!important;
+}
+
 #featureIcon{
 	width: 25px;
 	height: auto;
 	margin-right: 10px;
 }
 
+/*
+------------PACKAGES Comparison table---------
+*/
+
+#packagingTable{
+	width: 100%;
+	table-layout: fixed;
+}
+
+#packagingTable td, #packagingTable th {
+	border: 1px solid #ddd;
+	text-align: center;
+	vertical-align: middle;
+	padding: 8px
+}
+
+#packagingTable thead{
+	height: 50px;
+}
+
+#packagingTable tbody{
+	height: 500px;
+}
 
 
+#packagingTable .pTableFeature{
+	text-align: left;
+}
+
+.cellHide{
+	border: 0 !important;
+	background:none;
+}
+
+.tableBullet{
+	font-size: 3em;
+}
+
+/*Headers*/
+.packageTableHeader{
+	font-size: 1.5em;
+	color: white;
+}
 
 
 
@@ -621,7 +697,6 @@ LARGE / LANDSCAPE TABLET
 	}
 
 	nav ul li{
-
 		padding: 20px 5%;
 		margin: auto;
 	}
