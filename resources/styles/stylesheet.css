@@ -610,6 +610,7 @@ main #forestContainer{
 	vertical-align: middle;
 	padding: 8px;
 	background-color: white;
+	font-size: 0.75em;
 }
 
 #packagingTable thead{
@@ -617,7 +618,7 @@ main #forestContainer{
 }
 
 #packagingTable thead th{
-	font-size: 1.5em;
+	font-size: 1em;
 	color: white;
 	background-color: var(--bluesteelColour);
 	border: none;
@@ -714,6 +715,16 @@ PORTRAIT TABLET OR BIG PHONE
 	/* Update here so not too wide for tablets (reset to 100% after) */
 	.packageContainer{
 		width: 70%;
+	}
+
+
+	/* Update comparison table font sizes on larger screens */
+	#packagingTable thead th {
+		font-size: 1.5em;
+	}
+
+	#packagingTable td, #packagingTable th {
+		font-size:1em;
 	}
 
 
