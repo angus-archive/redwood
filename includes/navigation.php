@@ -10,19 +10,47 @@
         </li>
 
         <li>
-            <a id="<?php if ($CURRENT_PAGE == "Index") {?>currentNavItem<?php }?>" href="index.php">Our Services</a>
+			<!--HOME PAGE-->
+			<?php
+			if ($CURRENT_PAGE == "Index"){
+				echo "<a id='currentNavItem' href='#'>Our Services</a>";
+			}else{
+                echo "<a href='index.php'>Our Services</a>";
+			}
+			?>
         </li>
 
         <li>
-            <a id="<?php if ($CURRENT_PAGE == "Packages") {?>currentNavItem<?php }?>" href="packages.php">Packages</a>
+			<!--PACKAGES-->
+            <?php
+            if ($CURRENT_PAGE == "Packages"){
+                echo "<a id='currentNavItem' href='#'>Packages</a>";
+            }else{
+                echo "<a href='packages.php'>Packages</a>";
+            }
+            ?>
         </li>
 
         <li>
-            <a id="<?php if ($CURRENT_PAGE == "Our-Story") {?>currentNavItem<?php }?>" href="our-story.php">Our story</a>
+			<!--OUR STORY-->
+            <?php
+            if ($CURRENT_PAGE == "Our-Story"){
+                echo "<a id='currentNavItem' href='#'>Our Story</a>";
+            }else{
+                echo "<a href='our-story.php'>Our Story</a>";
+            }
+            ?>
         </li>
 
         <li>
-            <a id="<?php if ($CURRENT_PAGE == "Contact") {?>currentNavItem<?php }?>" href="contact.php">Contact</a>
+			<!--CONTACT-->
+            <?php
+            if ($CURRENT_PAGE == "Contact"){
+                echo "<a id='currentNavItem' href='#'>Contact</a>";
+            }else{
+                echo "<a href='contact.php'>Contact</a>";
+            }
+            ?>
         </li>
 
     </ul>

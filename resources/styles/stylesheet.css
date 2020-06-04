@@ -197,11 +197,11 @@ Logo at top of page
 }
 
 #currentNavItem{
-	color: var(--redwoodRed);
+	color: var(--redwoodRed) !important;
 }
 /*Have the current item hover the same colour so it doesnt change*/
 #currentNavItem:hover{
-	color: var(--redwoodRed);
+	color: var(--redwoodRed) !important;
 }
 
 
