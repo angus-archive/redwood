@@ -29,8 +29,9 @@ Angus Goody
 	--tooltipBackground: #424242;
 
 	--economyColour: #52b845;
-	--deluxeColour: #4977ea;
-	--restartColour: #4349c4;
+	--deluxeColour: #F5C84C;
+	/*--restartColour: #4349c4;*/
+	--restartColour: #005EB8;
 
 	--packageHover: 0px 0px 16px 0px rgba(0, 0, 0, 0.23);
 
@@ -702,6 +703,9 @@ main #forestContainer{
 	margin:0;
 }
 
+#restartInfoContainer .packageTitleSection{
+	background-color: var(--restartColour);
+}
 
 
 .packageSideInfo{
