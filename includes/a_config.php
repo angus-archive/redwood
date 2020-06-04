@@ -12,6 +12,9 @@ switch ($_SERVER["SCRIPT_NAME"]) {
         $CURRENT_PAGE = "Packages";
         $PAGE_TITLE = "Packages";
         break;
+    case "/redwoodPHP/email_sent.php":
+        $CURRENT_PAGE = "Contact";
+        $PAGE_TITLE = "Message Sent";
     default:
         $CURRENT_PAGE = "Index";
         $PAGE_TITLE = "Welcome to Redwood";

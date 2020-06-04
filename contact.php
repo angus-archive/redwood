@@ -24,7 +24,7 @@
                 <p style="width: 50%; text-align: center; max-width: 500px" class="mTextSpacerB"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
 
                 <!--Contact Form-->
-                <form id="contactForm" action="/action_page.php" method="post" name="contactForm">
+                <form id="contactForm" action="email_sent.php" method="post" name="contactForm">
                     <input type="text" id="uName" name="name" placeholder="Name" required>
                     <input type="text" id="uEmail" name="email" placeholder="Email" required>
                     <textarea id="uMessage" name="message" rows="4" cols="50" placeholder="Message" required></textarea>
