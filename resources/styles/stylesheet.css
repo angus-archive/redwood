@@ -253,6 +253,32 @@ Burger Icon
 	margin-top: 70px;
 	margin-bottom: 70px;
 }
+
+/*Spacers for text*/
+
+.sTextSpacerB{
+	margin-bottom: 20px;
+}
+
+.sTextSpacerT{
+	margin-top: 40px;
+}
+
+.mTextSpacerB{
+	margin-bottom: 40px;
+}
+
+.mTextSpacerT{
+	margin-top: 40px;
+}
+
+.bTextSpacerT{
+	margin-top: 80px;
+}
+
+.bTextSpacerB{
+	margin-bottom: 80px;
+}
 main #forestContainer{
 	width: 100%;
 	height: 500px;
@@ -273,8 +299,7 @@ main #forestContainer{
  */
 
 .pageHeading{
-	font-size: 32px;
-	margin-bottom: 40px;
+	font-size: 1.5em;
 	text-align: center;
 }
 
