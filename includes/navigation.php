@@ -10,19 +10,19 @@
         </li>
 
         <li>
-            <a class="<?php if ($CURRENT_PAGE == "Index") {?>currentNavItem<?php }?>" href="index.php">Our Services</a>
+            <a id="<?php if ($CURRENT_PAGE == "Index") {?>currentNavItem<?php }?>" href="index.php">Our Services</a>
         </li>
 
         <li>
-            <a class="<?php if ($CURRENT_PAGE == "Packages") {?>currentNavItem<?php }?>" href="packages.html">Packages</a>
+            <a id="<?php if ($CURRENT_PAGE == "Packages") {?>currentNavItem<?php }?>" href="packages.php">Packages</a>
         </li>
 
         <li>
-            <a class="<?php if ($CURRENT_PAGE == "Our-Story") {?>currentNavItem<?php }?>" href="our-story.html">Our story</a>
+            <a id="<?php if ($CURRENT_PAGE == "Our-Story") {?>currentNavItem<?php }?>" href="our-story.php">Our story</a>
         </li>
 
         <li>
-            <a class="<?php if ($CURRENT_PAGE == "Contact") {?>currentNavItem<?php }?>" href="contact.html">Contact</a>
+            <a id="<?php if ($CURRENT_PAGE == "Contact") {?>currentNavItem<?php }?>" href="contact.php">Contact</a>
         </li>
 
     </ul>
