@@ -30,7 +30,7 @@ Angus Goody
 
 	--economyColour: #52b845;
 	--deluxeColour: #F5C84C;
-	--restartColour: #00AEE0;
+	--relaunchColour: #00AEE0;
 
 	--packageHover: 0px 0px 16px 0px rgba(0, 0, 0, 0.23);
 
@@ -109,7 +109,7 @@ body{
 	background-color: var(--backgroundColour);
 	flex: 1;
 }
-#wrapper{
+.wrapper{
 	width: 100%;
 }
 
@@ -601,8 +601,8 @@ main #forestContainer{
 	background-color: var(--deluxeColour)!important;
 }
 
-.restartBackground{
-	background-color: var(--restartColour)!important;
+.relaunchBackground{
+	background-color: var(--relaunchColour)!important;
 }
 
 .econCol{
@@ -690,7 +690,7 @@ main #forestContainer{
 }
 
 /*
-------------Restart Package Section---------
+------------relaunch Package Section---------
 */
 #rocketBox{
 	display: flex;
@@ -701,7 +701,7 @@ main #forestContainer{
 	margin-right: auto;
 }
 
-#restartRocket{
+#relaunchRocket{
 	max-width: 350px;
 }
 
@@ -871,7 +871,7 @@ LARGE / LANDSCAPE TABLET
 
 
 	/*Change the wrapper to not fit entire screen (Use margin-left/right to avoid overwrite)*/
-	#wrapper{
+	.wrapper{
 		width: 85%;
 		margin-left: auto;
 		margin-right: auto;
