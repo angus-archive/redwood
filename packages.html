@@ -80,7 +80,7 @@
 								</div>
 
 								<div class="packageButtonSection">
-									<button class="econBackground">Info</button>
+									<button class="transButton econBackground sTextSpacerB">Info</button>
 								</div>
 							</div>
 							<!--REDWOOD PACKAGE-->
@@ -105,7 +105,7 @@
 								</div>
 
 								<div class="packageButtonSection">
-									<button class="redwoodBackground">Info</button>
+									<button class="transButton redwoodBackground sTextSpacerB">Info</button>
 								</div>
 							</div>
 							<!--DELUXE PACKAGE-->
@@ -130,7 +130,7 @@
 								</div>
 
 								<div class="packageButtonSection">
-									<button class="deluxeBackground">Info</button>
+									<button class="transButton deluxeBackground sTextSpacerB">Info</button>
 								</div>
 							</div>
 						</div>
@@ -235,41 +235,42 @@
 				<div class="alignDiv">
 					<h1 class="pageHeading bTextSpacerT bTextSpacerB" style="color: white"> Introducing... </h1>
 
-					<div id="restartInfoContainer">
-						<div class="packageContainer">
-							<div class="packageTitleSection">
-								<h3>Restart</h3>
+					<!--Flexbox containing rocket and info-->
+					<div id="rocketBox">
+						<!--Rocket-->
+						<img id="restartRocket" src="resources/images/rocket.svg" alt="The redwood rocket">
+						<div class="rocketSideInfo">
+							<div class="rocketTextPanel">
+								<h2> Relaunch Package</h2>
 							</div>
-
-							<div class="packageFeaturesSection">
-								<div class="packageFeature">
-									<div class="bullet restartBackground"></div>
-									<p>Monthly Meetings</p>
+							<!-- Provide padding around box -->
+							<div style="padding:20px">
+								<div class="alignDiv">
+									<br>
+									<p class="mTextSpacerB"> Here at Redwood we understand the devastating affects Coronavirus has had on businesses, that's why we're introducing our Relaunch package to help you come out of lockdown stronger than ever.  </p>
+									<div class="packageFeaturesSection mTextSpacerB"">
+										<div class="packageFeature">
+											<div class="bullet restartBackground"></div>
+											<p>Online reopening event</p>
+										</div>
+										<div class="packageFeature">
+											<div class="bullet restartBackground"></div>
+											<p>Multiple advert creation</p>
+										</div>
+										<div class="packageFeature">
+											<div class="bullet restartBackground"></div>
+											<p>Active marketing</p>
+										</div>
+									</div>
+									<button id="rocketInfoButton" class="transButton" style="background-color: #00AEE0 !important; color: white !important;">Find out more</button>
 								</div>
-								<div class="packageFeature">
-									<div class="bullet restartBackground"></div>
-									<p>Review</p>
-								</div>
-								<div class="packageFeature">
-									<div class="bullet restartBackground"></div>
-									<p>Dedicated support</p>
-								</div>
-							</div>
-
-							<div class="packageButtonSection">
-								<button class="restartBackground">Info</button>
 							</div>
 						</div>
-						<div class="packageSideInfo">
-							<h2> Restart Package</h2>
-							<br>
-							<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						</div>
+
 					</div>
 
-
-					<!-- Spacer at bottom-->
-					<div class="bigSpacer"></div>
+					<!-- Spacer at bottom (removed)-->
+					<div class="spacer"></div>
 				</div>
 			</div>
 		</main>

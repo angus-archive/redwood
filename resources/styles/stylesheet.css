@@ -30,8 +30,7 @@ Angus Goody
 
 	--economyColour: #52b845;
 	--deluxeColour: #F5C84C;
-	/*--restartColour: #4349c4;*/
-	--restartColour: #005EB8;
+	--restartColour: #00AEE0;
 
 	--packageHover: 0px 0px 16px 0px rgba(0, 0, 0, 0.23);
 
@@ -280,6 +279,26 @@ Burger Icon
 .bTextSpacerB{
 	margin-bottom: 80px;
 }
+
+.transButton{
+	background-color: #000000;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	opacity: 0.8;
+	padding: 10px 0;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	width: 60%;
+}
+
+.transButton:hover{
+	opacity: 1;
+}
 main #forestContainer{
 	width: 100%;
 	height: 500px;
@@ -483,6 +502,7 @@ main #forestContainer{
 	margin-left: 0;
 	margin-right: 0;
 	background-color: var(--redwoodDarkRed);
+	background-image: linear-gradient(var(--redwoodRed),var(--redwoodDarkRed));
 
 }
 
@@ -520,17 +540,18 @@ main #forestContainer{
 
 
 /*FEATURES (Middle bit)*/
-.packageContainer .packageFeaturesSection{
-	flex: 1;
-
+.packageFeaturesSection{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	padding: 0 12px 0 25px; /*Keeps features from edge*/
-
 }
 
-.packageContainer .packageFeature{
+.packageContainer .packageFeaturesSection{
+	flex:1
+}
+
+.packageFeaturesSection .packageFeature{
 	margin-bottom: 20px;
 	display: flex;
 	flex-direction: row;
@@ -565,26 +586,7 @@ main #forestContainer{
 	align-items: center;
 }
 
-.packageButtonSection button{
-	background-color: #000000;
-	border: none;
-	border-radius: 5px;
-	color: white;
-	opacity: 0.8;
-	padding: 10px 0;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	transition-duration: 0.4s;
-	cursor: pointer;
-	width: 60%;
-	margin-bottom: 30px;
-}
 
-.packageButtonSection button:hover{
-	opacity: 1;
-}
 
 /* Package Colours */
 .econBackground{
@@ -690,38 +692,56 @@ main #forestContainer{
 /*
 ------------Restart Package Section---------
 */
-
-#restartInfoContainer{
+#rocketBox{
 	display: flex;
 	flex-direction: column;
-	width: 85%;
 	align-items: center;
-
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-#restartInfoContainer .packageContainer{
-	margin:0;
-}
-
-#restartInfoContainer .packageTitleSection{
-	background-color: var(--restartColour);
+#restartRocket{
+	max-width: 350px;
 }
 
 
-.packageSideInfo{
-	background-color: rgba(93, 92, 183,0.1);
+.rocketSideInfo{
 	background-color: white;
 	box-shadow: var(--packageHover);
 	width: 100%;
-	padding: 20px;
-	margin-top: 50px;
+
 }
 
-.packageSideInfo h2{
-	color: var(--restartColour);
+.rocketSideInfo .packageFeaturesSection{
+	width: 100%;
+}
+
+.rocketTextPanel{
+	background-color: var(--bluesteelColour);
+	height: 60px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.rocketTextPanel h2{
+	color: #B0CAE2;
 	text-align: center;
 	font-size: 1.5em ;
 }
+
+.rocketSideInfo p{
+	text-align: center;
+	color: #B6B6B7;
+}
+
+.rocketSideInfo .packageFeaturesSection .packageFeature p{
+	color: var(--bluesteelColour) !important;
+}
+
+
 
 
 
@@ -828,6 +848,8 @@ PORTRAIT TABLET OR BIG PHONE
 
 
 
+
+
 }
 
 /*
@@ -881,25 +903,28 @@ LARGE / LANDSCAPE TABLET
 		width: 90%;
 	}
 
-	.packageFeature p{
+	/*Use .packageContainer to ensure other packageFeature uses are not affected*/
+	.packageContainer .packageFeature p{
 		text-align: left;
 	}
 
-	#restartInfoContainer{
+	#rocketBox{
 		flex-direction: row;
 		justify-content: center;
-		align-items: stretch;
-
 	}
 
-	.packageSideInfo{
-		min-width: 250px;
-		max-width: 500px !important;
-		margin-left: 40px;
-		margin-top: 0;
-
-
+	#rocketBox .rocketSideInfo{
+		border-radius: 7px;
+		max-width: 530px;
+		margin: 0 20px 0 80px;
 	}
+
+	.rocketTextPanel{
+		border-radius: 7px 7px 0 0;
+	}
+
+
+
 
 }
 
@@ -912,9 +937,6 @@ LAPTOPS / DESKTOPS
 	#contactForm input[type=text] , #contactForm textarea {
 		-webkit-appearance: textarea;
 	}
-
-
-
 
 }
 
