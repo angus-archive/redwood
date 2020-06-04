@@ -32,6 +32,8 @@ Angus Goody
 	--deluxeColour: #4977ea;
 	--restartColour: #4349c4;
 
+	--packageHover: 0px 0px 16px 0px rgba(0, 0, 0, 0.23);
+
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -273,6 +275,7 @@ main #forestContainer{
 .pageHeading{
 	font-size: 32px;
 	margin-bottom: 40px;
+	text-align: center;
 }
 
 /*
@@ -466,7 +469,7 @@ main #forestContainer{
 	flex-direction: column;
 	-webkit-transition: 0.3s;
 	transition: 0.3s;
-	box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.23);
+	box-shadow: var(--packageHover);
 
 
 }
@@ -658,6 +661,39 @@ main #forestContainer{
 	text-align: center;
 }
 
+/*
+------------Restart Package Section---------
+*/
+
+#restartInfoContainer{
+	display: flex;
+	flex-direction: column;
+	width: 85%;
+	align-items: center;
+
+}
+
+#restartInfoContainer .packageContainer{
+	margin:0;
+}
+
+
+
+.packageSideInfo{
+	background-color: rgba(93, 92, 183,0.1);
+	background-color: white;
+	box-shadow: var(--packageHover);
+	width: 100%;
+	padding: 20px;
+	margin-top: 50px;
+}
+
+.packageSideInfo h2{
+	color: var(--restartColour);
+	text-align: center;
+	font-size: 1.5em ;
+}
+
 
 
 
@@ -818,6 +854,22 @@ LARGE / LANDSCAPE TABLET
 
 	.packageFeature p{
 		text-align: left;
+	}
+
+	#restartInfoContainer{
+		flex-direction: row;
+		justify-content: center;
+		align-items: stretch;
+
+	}
+
+	.packageSideInfo{
+		min-width: 250px;
+		max-width: 500px !important;
+		margin-left: 40px;
+		margin-top: 0;
+
+
 	}
 
 }
