@@ -19,7 +19,7 @@
 			<!-- Spacer -->
 			<div class="spacer"></div>
 			<div class="alignDiv">
-				<h2 class="pageHeading sTextSpacerB" >Thank you <?php echo $_POST["name"]; ?></h2>
+				
 				<!-- Send Email -->
                 <?php
 				
@@ -42,9 +42,11 @@
                 $result = mail("Redwoodmain@gmail.com","Customer Inquiry",$message);
                 
 				if ($result){
+					echo "<h2 class='pageHeading sTextSpacerB' >Thank you <?php echo $_POST["name"]; ?></h2>";
 					echo "<h3> Message Sent Succesfully </h3>";
 				}else{
 					//TODO add button to open in mail client with existing data
+					echo "<h2> Ooops :/...</h2>"
 					echo "<h3> An Error occurred while sending your email </h3>";
 				}
                 ?>
