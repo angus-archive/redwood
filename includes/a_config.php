@@ -1,18 +1,19 @@
 <?php
-switch ($_SERVER["SCRIPT_NAME"]) {
-    case "/redwoodPHP/contact.php":
+
+switch ($_SERVER["PHP_SELF"]) {
+    case "/contact.php":
         $CURRENT_PAGE = "Contact";
         $PAGE_TITLE = "Contact";
         break;
-    case "/redwoodPHP/our-story.php":
+    case "/our-story.php":
         $CURRENT_PAGE = "Our-Story";
         $PAGE_TITLE = "Our Story";
         break;
-    case "/redwoodPHP/packages.php":
+    case "/packages.php":
         $CURRENT_PAGE = "Packages";
         $PAGE_TITLE = "Packages";
         break;
-    case "/redwoodPHP/email_sent.php":
+    case "/email_sent.php":
         $CURRENT_PAGE = "Contact";
         $PAGE_TITLE = "Message Sent";
     default:
@@ -20,3 +21,4 @@ switch ($_SERVER["SCRIPT_NAME"]) {
         $PAGE_TITLE = "Welcome to Redwood";
 }
 
+?>
