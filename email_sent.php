@@ -19,24 +19,34 @@
 			<!-- Spacer -->
 			<div class="spacer"></div>
 			<div class="alignDiv">
-				<h2 class="pageHeading sTextSpacerB" >Thank you <?php echo $_POST["name"]; ?>, your message has been sent</h2>
-				<h3> We will be in contact with you shortly</h3>
+				<h2 class="pageHeading sTextSpacerB" >Thank you <?php echo $_POST["name"]; ?></h2>
 				<!-- Send Email -->
                 <?php
+				
+				//TODO Add EMail injection validation
+				
                 //Collect Post data
                 $customer_name = $_POST["name"];
                 $customer_email = $_POST["email"];
                 $customer_message = $_POST["message"];
+				
+				//Store Info
+				$to = "Redwoodmain@gmail.com";
 
-                //Add to string
+                //Add to string (Email content)
                 $message = "Customer Name: ".$customer_name."\n";
                 $message = $message."Customer Email: ".$customer_email."\n";
                 $message = $message."Message: ".$customer_message."\n";
 
                 //Send
                 $result = mail("Redwoodmain@gmail.com","Customer Inquiry",$message);
-                $mystring = "Result from mail is: ".$result;
-                //echo $mystring;
+                
+				if ($result){
+					echo "<h3> Message Sent Succesfully </h3>";
+				}else{
+					//TODO add button to open in mail client with existing data
+					echo "<h3> An Error occurred while sending your email </h3>";
+				}
                 ?>
 
 			<!--BIG footer spacer-->
