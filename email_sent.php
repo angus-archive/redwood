@@ -46,8 +46,10 @@
 					echo "<h3> Message Sent Succesfully </h3>";
 				}else{
 					//TODO add button to open in mail client with existing data
-					echo "<h2> Ooops :/...</h2>";
-					echo "<h3> An Error occurred while sending your email </h3>";
+					echo "<h2 class='pageHeading sTextSpacerB'> Ooops :/...</h2>";
+					echo "<h3 class='mTextSpacerB'> An Error occurred while sending your email, please use the button below to send an email manually.</h3>";
+					echo "<button class='transButton'>Launch Email App</button>";
+					
 				}
                 ?>
 
