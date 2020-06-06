@@ -1,6 +1,18 @@
 <?php
 
-switch ($_SERVER["PHP_SELF"]) {
+$base = dirname($_SERVER["PHP_SELF"]);
+if ($base == "/"){
+    $base = $_SERVER["PHP_SELF"];
+}
+
+echo $base;
+
+switch ($base) {
+    
+    case "/index.php":
+        $CURRENT_PAGE = "Index";
+        $PAGE_TITLE = "Welcome to Redwood";
+	break;
     case "/contact.php":
         $CURRENT_PAGE = "Contact";
         $PAGE_TITLE = "Contact";
@@ -9,7 +21,7 @@ switch ($_SERVER["PHP_SELF"]) {
         $CURRENT_PAGE = "Our-Story";
         $PAGE_TITLE = "Our Story";
         break;
-    case "/packages.php":
+    case "/packages":
         $CURRENT_PAGE = "Packages";
         $PAGE_TITLE = "Packages";
         break;
