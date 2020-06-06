@@ -22,6 +22,6 @@ switch ($_SERVER["PHP_SELF"]) {
 }
 
 //Setup Base URL
-$REDWOOD_ROOT = (!empty($_SERVER['HTTPS']) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . '/';
+$REDWOOD_ROOT = $_SERVER['DOCUMENT_ROOT'];
 
 ?>
