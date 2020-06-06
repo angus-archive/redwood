@@ -158,87 +158,17 @@ Logo at top of page
 }
 
 /*
----------NAV (MOBILE)------
+---------Burger------
  */
-#nav{
-	background-color: var(--navColour);
-	/*font-family: 'Open Sans', sans-serif;*/
-    font-family: 'Avenir Next Medium', sans-serif;
-	box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.1);
-
-}
-
-#nav ul{
-	list-style: none;
-	display: flex;
-	flex-direction: column;
-	text-align: left;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-
-#nav ul li{
-	padding: 15px;
-}
-
-#nav ul li a{
-	font-weight: normal;
-	font-size: 1.1rem;
-	color: var(--navText);
-	text-decoration: none;
-}
-
-#nav ul li a:hover{
-	color: var(--navTextHover);;
-}
-
-/* Hide the nav bar except first item*/
-#nav ul li ~ li {
-	display: none;
-}
-
-#currentNavItem{
-	color: var(--redwoodRed) !important;
-}
-/*Have the current item hover the same colour so it doesnt change*/
-#currentNavItem:hover{
-	color: var(--redwoodRed) !important;
-}
-
 
 /*
-Burger Icon
+---------NAV (MOBILE)------
  */
-
-/* BURGER ANIMATIONS */
-.burgerContainer{
-	display: inline-block;
-	cursor: pointer;
-}
-
-.burgerLine1, .burgerLine2, .burgerLine3{
-	width: 35px;
-	height: 5px;
-	background-color: var(--redwoodRed);
-	margin: 6px 0;
-	transition: 0.2s;
-}
-
-
-.burgerChange .burgerLine1,.burgerChange .burgerLine2,.burgerChange .burgerLine3{
-	background-color: #802929;
-}
-.burgerChange .burgerLine1{
-	-webkit-transform: rotate(-45deg) translate(-9px, 6px);
-	transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-.burgerChange .burgerLine2 {opacity: 0;}
-
-.burgerChange .burgerLine3 {
-	-webkit-transform: rotate(45deg) translate(-8px, -8px);
-	transform: rotate(45deg) translate(-8px, -8px);
+#topNav{
+	background-color: darkgrey;
+    font-family: 'Avenir Next Medium', sans-serif;
+	box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
 }
 
 
@@ -896,16 +826,6 @@ LARGE / LANDSCAPE TABLET
 @media screen and (min-width: 850px) {
 
 
-	/*Change our navigation bar to a standard one*/
-	#nav ul{
-		flex-direction: row;
-	}
-
-	#nav ul li{
-		padding: 20px 5%;
-		margin: auto;
-	}
-
 
 	/*Change the wrapper to not fit entire screen (Use margin-left/right to avoid overwrite)*/
 	.wrapper{
@@ -983,10 +903,6 @@ LAPTOPS / DESKTOPS
  */
 @media screen and (min-width: 1200px) {
 
-	/* Set the maximum spacing for the navigation bar*/
-	#nav ul{
-		max-width: 1200px;
-	}
 
 	/* PEOPLE */
 	.personContainer{
