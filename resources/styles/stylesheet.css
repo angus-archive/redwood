@@ -856,7 +856,7 @@ PORTRAIT TABLET OR BIG PHONE
 		width: 85%;
 		margin-left: auto;
 		margin-right: auto;
-		max-width: 1500px;
+		max-width: 1300px;
 
 	}
 	#packagingTable {
@@ -997,7 +997,7 @@ ULTRA WIDE
 
 	/* SET MAX SIZES */
 	.flexGrid{
-		width: 60%;
+		width: 70%;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -1008,6 +1008,16 @@ ULTRA WIDE
 
 	.packageContainer {
 		max-width: 320px;
+	}
+
+
+	#packagingTable td, #packagingTable th {
+		font-size:1em;
+		padding: 12px;
+	}
+
+	#packagingTable thead th {
+		font-size: 2em;
 	}
 
 
