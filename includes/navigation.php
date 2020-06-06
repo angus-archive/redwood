@@ -1,3 +1,4 @@
+<!--Redwood Navigation Bar-->
 <div id="nav">
     <ul id="navUL">
 
@@ -11,46 +12,22 @@
 
         <li>
 			<!--HOME PAGE-->
-			<?php
-			if ($CURRENT_PAGE == "Index"){
-				echo "<a id='currentNavItem' href='#'>Our Services</a>";
-			}else{
-                echo "<a href='/index.php'>Our Services</a>";
-			}
-			?>
+            <a href="/index.php" <?php if($CURRENT_PAGE == "Index"){echo "id=currentNavItem";}?> >Our Services</a>
         </li>
 
         <li>
 			<!--PACKAGES-->
-            <?php
-            if ($CURRENT_PAGE == "Packages"){
-                echo "<a id='currentNavItem' href='#'>Packages</a>";
-            }else{
-                echo "<a href='/packages'>Packages</a>";
-            }
-            ?>
+            <a href="/packages" <?php if($CURRENT_PAGE == "Packages"){echo "id=currentNavItem";}?> >Packages</a>
         </li>
 
         <li>
 			<!--OUR STORY-->
-            <?php
-            if ($CURRENT_PAGE == "Our-Story"){
-                echo "<a id='currentNavItem' href='#'>Our Story</a>";
-            }else{
-                echo "<a href='/our-story.php'>Our Story</a>";
-            }
-            ?>
+            <a href="/our-story.php" <?php if($CURRENT_PAGE == "Our-Story"){echo "id=currentNavItem";}?> >Our Story</a>
         </li>
 
         <li>
 			<!--CONTACT-->
-            <?php
-            if ($CURRENT_PAGE == "Contact"){
-                echo "<a id='currentNavItem' href='#'>Contact</a>";
-            }else{
-                echo "<a href='/contact.php'>Contact</a>";
-            }
-            ?>
+            <a href="/contact.php" <?php if($CURRENT_PAGE == "Contact"){echo "id=currentNavItem";}?> >Contact</a>
         </li>
 
     </ul>

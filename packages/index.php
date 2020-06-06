@@ -58,8 +58,7 @@
                                 </div>
                             </div>
 
-                            <div class="packageButtonSection">
-                
+                            <div class="packageButtonSection">                
                                 <a href="economy.php" class="transButton econBackground sTextSpacerB">Info</a>
                             </div>
                         </div>

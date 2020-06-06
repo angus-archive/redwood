@@ -1,11 +1,11 @@
+<!--Redwood, created by Angus Goody 05/2020-->
 <?php
-
+//Get the root folder
 $base = dirname($_SERVER["PHP_SELF"]);
+//If this is not a folder reset to original
 if ($base == "/"){
     $base = $_SERVER["PHP_SELF"];
 }
-
-echo $base;
 
 switch ($base) {
     
