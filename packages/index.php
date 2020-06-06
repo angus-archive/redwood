@@ -1,17 +1,34 @@
-<?php include($REDWOOD_ROOT."/includes/a_config.php");?>
+<!--Include the Config File -->
+<?php 
+   $path = $_SERVER['DOCUMENT_ROOT'];
+   $path .= "/includes/a_config.php";
+   include_once($path);
+?>
 <!DOCTYPE html>
 <html>
 <head>
     <!--Import Head tags from PHP includes-->
-    <?php include($REDWOOD_ROOT."/includes/head-tags.php");?>
+    <?php 
+       $path = $_SERVER['DOCUMENT_ROOT'];
+       $path .= "/includes/head-tags.php";
+       include_once($path);
+    ?>
 </head>
 <body>
 
 <div id="content">
     <!--Import Header content-->
-    <?php include($REDWOOD_ROOT."/includes/header-content.php");?>
+    <?php 
+       $path = $_SERVER['DOCUMENT_ROOT'];
+       $path .= "/includes/header-content.php";
+       include_once($path);
+    ?>
     <!--Import Nav bar-->
-    <?php include($REDWOOD_ROOT."/includes/navigation.php");?>
+    <?php 
+       $path = $_SERVER['DOCUMENT_ROOT'];
+       $path .= "/includes/navigation.php";
+       include_once($path);
+    ?>
     <?php
     echo "REDwood root is: ".$REDWOOD_ROOT;
     ?>
