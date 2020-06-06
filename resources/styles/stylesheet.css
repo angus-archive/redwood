@@ -158,18 +158,43 @@ Logo at top of page
 }
 
 /*
----------Burger------
- */
-
-/*
 ---------NAV (MOBILE)------
  */
-#topNav{
-	background-color: darkgrey;
+#navContainer{
+	background-color: var(--navColour);
     font-family: 'Avenir Next Medium', sans-serif;
 	box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.1);
 	overflow: hidden;
 }
+
+#navContainer .navLinkList{
+	display: none;
+
+}
+
+#navContainer .navLinkList.navOpen{
+	display: flex;
+	flex-direction: column;
+}
+
+
+@media screen and (min-width: 600px) {
+
+	#navContainer .navLinkList.navOpen,#navContainer .navLinkList{
+		display: flex;
+		flex-direction: row;
+		background-color: green;
+	}
+
+	.burger{
+		display: none;
+	}
+
+}
+
+
+
+
 
 
 /*

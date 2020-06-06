@@ -5,4 +5,6 @@ Angus Goody
 Main Javascript File
 */
 
-
+function burgerClicked(){
+    document.getElementById("jsNav").classList.toggle("navOpen");
+}
