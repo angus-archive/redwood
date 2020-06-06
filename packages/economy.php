@@ -39,7 +39,11 @@
 </div>
 
 <!--Import Footer-->
-<?php include("/includes/footer.php");?>
+<?php 
+   $path = $_SERVER['DOCUMENT_ROOT'];
+   $path .= "/includes/footer.php";
+   include_once($path);
+?>
 
 </body>
 </html>
