@@ -785,6 +785,17 @@ main #forestContainer{
 }
 
 /*
+--------ERROR PAGE--------
+ */
+
+#kittyContainer{
+	width: 90%;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+}
+
+/*
 ===========MEDIA QUERIES============
  */
 

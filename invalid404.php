@@ -17,7 +17,9 @@
     <main>
         <div class="alignDiv">
 			<h1 class="mTextSpacerT pageHeading"> Error, the page you are looking for does not exist</h1>
-			<img src="/resources/images/kitty.png" style="width: 500px; height: auto" alt="Cute Kitty">
+			<div id="kittyContainer">
+				<img src="/resources/images/kitty.png" style="width: 500px; height: auto" alt="Cute Kitty">
+			</div>
         </div>
     </main>
 
