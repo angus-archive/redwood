@@ -15,7 +15,7 @@
 			if ($CURRENT_PAGE == "Index"){
 				echo "<a id='currentNavItem' href='#'>Our Services</a>";
 			}else{
-                echo "<a href='index.php'>Our Services</a>";
+                echo "<a href='$REDWOOD_ROOT./index.php'>Our Services</a>";
 			}
 			?>
         </li>
@@ -26,7 +26,7 @@
             if ($CURRENT_PAGE == "Packages"){
                 echo "<a id='currentNavItem' href='#'>Packages</a>";
             }else{
-                echo "<a href='packages.php'>Packages</a>";
+                echo "<a href='$REDWOOD_ROOT./packages'>Packages</a>";
             }
             ?>
         </li>
@@ -37,7 +37,7 @@
             if ($CURRENT_PAGE == "Our-Story"){
                 echo "<a id='currentNavItem' href='#'>Our Story</a>";
             }else{
-                echo "<a href='our-story.php'>Our Story</a>";
+                echo "<a href='$REDWOOD_ROOT./our-story.php'>Our Story</a>";
             }
             ?>
         </li>
@@ -48,7 +48,7 @@
             if ($CURRENT_PAGE == "Contact"){
                 echo "<a id='currentNavItem' href='#'>Contact</a>";
             }else{
-                echo "<a href='contact.php'>Contact</a>";
+                echo "<a href='$REDWOOD_ROOT./contact.php'>Contact</a>";
             }
             ?>
         </li>

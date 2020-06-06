@@ -1,18 +1,20 @@
-<?php include("includes/a_config.php");?>
+<?php include($REDWOOD_ROOT."/includes/a_config.php");?>
 <!DOCTYPE html>
 <html>
 <head>
     <!--Import Head tags from PHP includes-->
-    <?php include("includes/head-tags.php");?>
+    <?php include($REDWOOD_ROOT."/includes/head-tags.php");?>
 </head>
 <body>
 
 <div id="content">
     <!--Import Header content-->
-    <?php include("includes/header-content.php");?>
+    <?php include($REDWOOD_ROOT."/includes/header-content.php");?>
     <!--Import Nav bar-->
-    <?php include("includes/navigation.php");?>
-
+    <?php include($REDWOOD_ROOT."/includes/navigation.php");?>
+    <?php
+    echo "REDwood root is: ".$REDWOOD_ROOT;
+    ?>
     <!--Main Content-->
     <main>
         <div id="packageDiv">

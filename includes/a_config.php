@@ -21,4 +21,7 @@ switch ($_SERVER["PHP_SELF"]) {
         $PAGE_TITLE = "Welcome to Redwood";
 }
 
+//Setup Base URL
+$REDWOOD_ROOT = (!empty($_SERVER['HTTPS']) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . '/';
+
 ?>
