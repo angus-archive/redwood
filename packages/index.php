@@ -29,9 +29,6 @@
        $path .= "/includes/navigation.php";
        include_once($path);
     ?>
-    <?php
-    echo "REDwood root is: ".$REDWOOD_ROOT;
-    ?>
     <!--Main Content-->
     <main>
         <div id="packageDiv">
@@ -62,7 +59,8 @@
                             </div>
 
                             <div class="packageButtonSection">
-                                <button class="transButton econBackground sTextSpacerB">Info</button>
+                
+                                <a href="economy.php" class="transButton econBackground sTextSpacerB">Info</a>
                             </div>
                         </div>
                         <!--REDWOOD PACKAGE-->

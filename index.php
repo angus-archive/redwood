@@ -15,7 +15,6 @@
 
     <!--Main Content-->
     <main>
-        <?php echo "<h1>REDWOOD ROOT IS: $REDOOD_ROOT</h1>"?>
         <div id="forestContainer">
             <img id="forestPic" src="resources/images/forest.png">
         </div>
