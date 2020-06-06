@@ -31,8 +31,9 @@
     ?>
     <!--Main Content-->
     <main>
+		<div class="spacer"></div>
         <div class="alignDiv">
-            <h1> ECONOMY PACKAGE</h1>
+            <h1 class="pageHeading sTextSpacerB"> ECONOMY PACKAGE</h1>
         </div>
     </main>
 

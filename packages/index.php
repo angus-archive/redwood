@@ -210,11 +210,11 @@
 				<div style="padding-bottom: 100px !important;"></div>
 			</div>
         </div>
-        <div style="width: 100%; height:20px; background-color: white"></div>
+        <!--<div style="width: 100%; height:20px; background-color: white"></div>-->
         <!--relaunch package section-->
-        <div style="width: 100%; margin: 0; background-color: skyblue; background-image: linear-gradient(#14BEE4, #1A83C8);">
+        <div style="width: 100%; margin: 0;">
             <div class="alignDiv">
-                <h1 class="pageHeading bTextSpacerT bTextSpacerB" style="color: white"> Introducing... </h1>
+                <h1 class="pageHeading bTextSpacerT bTextSpacerB"> Introducing... </h1>
 
                 <!--Flexbox containing rocket and info-->
                 <div id="rocketBox">
@@ -254,7 +254,7 @@
                 <div class="spacer"></div>
             </div>
         </div>
-    </main>
+	</main>
 
 </div>
 
