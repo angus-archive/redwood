@@ -1,4 +1,3 @@
-<!--Redwood Navigation Bar-->
 <div id="nav">
     <ul id="navUL">
 
