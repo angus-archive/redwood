@@ -116,97 +116,99 @@
                     <!--Spacer-->
                     <div class="spacer"></div>
                     <h2 style="color: white;" class="pageHeading mTextSpacerB"> Compare our packages </h2>
-                    <!--COMPARISON TABLE-->
-                    <div id="tableErrorBox">
-                        <p> Please rotate device to view table</p>
-                    </div>
-                    <table id="packagingTable">
-                        <colgroup>
-                            <col>
-                            <col span="1" id="econCol">
-                            <col span="1" id="redCol">
-                            <col span="1" id="delCol">
-                        </colgroup>
-                        <thead>
-                        <tr>
-                            <th></th>
-                            <th class="econTable">Economy</th>
-                            <th class="redTable">Redwood</th>
-                            <th class="delTable">Deluxe</th>
-                        </tr>
-                        </thead>
-
-                        <tbody>
-                        <!--Meeting Frequency-->
-                        <tr>
-                            <td class="pTableFeature"> Meetings</td>
-                            <td> Monthly</td>
-                            <td> Fortnightly</td>
-                            <td> Weekly</td>
-                        </tr>
-
-                        <tr>
-                            <td class="pTableFeature" >Advice for better social media posts</td>
-                            <td><span class="tableBullet econCol">•</span></td>
-                            <td><span class="tableBullet redwoodCol">•</span></td>
-                            <td><span class="tableBullet deluxeCol">•</span></td>
-                        </tr>
-
-                        <tr>
-                            <td class="pTableFeature" >Market analysis</td>
-                            <td><span class="tableBullet econCol">•</span></td>
-                            <td><span class="tableBullet redwoodCol">•</span></td>
-                            <td><span class="tableBullet deluxeCol">•</span></td>
-                        </tr>
-
-                        <tr>
-                            <td class="pTableFeature">Creative content ideas</td>
-                            <td><span class="tableBullet econCol">•</span></td>
-                            <td><span class="tableBullet redwoodCol">•</span></td>
-                            <td><span class="tableBullet deluxeCol">•</span></td>
-                        </tr>
-
-                        <tr>
-                            <td class="pTableFeature">Social media management</td>
-                            <td></td>
-                            <td><span class="tableBullet redwoodCol">•</span></td>
-                            <td><span class="tableBullet deluxeCol">•</span></td>
-                        </tr>
-
-                        <tr>
-                            <td class="pTableFeature">Build Online Presence</td>
-                            <td></td>
-                            <td><span class="tableBullet redwoodCol">•</span></td>
-                            <td><span class="tableBullet deluxeCol">•</span></td>
-                        </tr>
-
-                        <tr>
-                            <td class="pTableFeature">Opportunity reach analysis</td>
-                            <td></td>
-                            <td></td>
-                            <td><span class="tableBullet deluxeCol">•</span></td>
-                        </tr>
-
-                        <tr>
-                            <td class="pTableFeature">Industry research
-                            </td>
-                            <td></td>
-                            <td></td>
-                            <td><span class="tableBullet deluxeCol">•</span></td>
-                        </tr>
-
-                        <tr>
-                            <td class="pTableFeature">Photography session</td>
-                            <td></td>
-                            <td></td>
-                            <td><span class="tableBullet deluxeCol">•</span></td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <div class="spacer"></div>
                 </div>
 
             </div>
+			<!--COMPARISON TABLE-->
+			<div id="tableErrorBox">
+				<p> Please rotate device to view table</p>
+			</div>
+			<div id="packagingTableContainer">
+				<table id="packagingTable">
+				<colgroup>
+					<col>
+					<col span="1" id="econCol">
+					<col span="1" id="redCol">
+					<col span="1" id="delCol">
+				</colgroup>
+				<thead>
+				<tr>
+					<th></th>
+					<th class="econTable">Economy</th>
+					<th class="redTable">Redwood</th>
+					<th class="delTable">Deluxe</th>
+				</tr>
+				</thead>
+
+				<tbody>
+				<!--Meeting Frequency-->
+				<tr>
+					<td class="pTableFeature"> Meetings</td>
+					<td> Monthly</td>
+					<td> Fortnightly</td>
+					<td> Weekly</td>
+				</tr>
+
+				<tr>
+					<td class="pTableFeature" >Advice for better social media posts</td>
+					<td><span class="tableBullet econCol">•</span></td>
+					<td><span class="tableBullet redwoodCol">•</span></td>
+					<td><span class="tableBullet deluxeCol">•</span></td>
+				</tr>
+
+				<tr>
+					<td class="pTableFeature" >Market analysis</td>
+					<td><span class="tableBullet econCol">•</span></td>
+					<td><span class="tableBullet redwoodCol">•</span></td>
+					<td><span class="tableBullet deluxeCol">•</span></td>
+				</tr>
+
+				<tr>
+					<td class="pTableFeature">Creative content ideas</td>
+					<td><span class="tableBullet econCol">•</span></td>
+					<td><span class="tableBullet redwoodCol">•</span></td>
+					<td><span class="tableBullet deluxeCol">•</span></td>
+				</tr>
+
+				<tr>
+					<td class="pTableFeature">Social media management</td>
+					<td></td>
+					<td><span class="tableBullet redwoodCol">•</span></td>
+					<td><span class="tableBullet deluxeCol">•</span></td>
+				</tr>
+
+				<tr>
+					<td class="pTableFeature">Build Online Presence</td>
+					<td></td>
+					<td><span class="tableBullet redwoodCol">•</span></td>
+					<td><span class="tableBullet deluxeCol">•</span></td>
+				</tr>
+
+				<tr>
+					<td class="pTableFeature">Opportunity reach analysis</td>
+					<td></td>
+					<td></td>
+					<td><span class="tableBullet deluxeCol">•</span></td>
+				</tr>
+
+				<tr>
+					<td class="pTableFeature">Industry research
+					</td>
+					<td></td>
+					<td></td>
+					<td><span class="tableBullet deluxeCol">•</span></td>
+				</tr>
+
+				<tr>
+					<td class="pTableFeature">Photography session</td>
+					<td></td>
+					<td></td>
+					<td><span class="tableBullet deluxeCol">•</span></td>
+				</tr>
+				</tbody>
+			</table>
+				<div style="padding-bottom: 100px !important;"></div>
+			</div>
         </div>
         <div style="width: 100%; height:20px; background-color: white"></div>
         <!--relaunch package section-->
