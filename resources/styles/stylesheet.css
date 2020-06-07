@@ -581,6 +581,7 @@ main #forestContainer{
 	width: 100%;
 	table-layout: fixed;
 	box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.1);
+	border-spacing: 0;
 }
 
 #packagingTable td, #packagingTable th {
