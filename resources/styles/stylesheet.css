@@ -294,8 +294,11 @@ main #forestContainer{
 	padding: 12px 20px;
 	/*Remove the styling for IOS devices*/
 	-webkit-appearance: none;
+	/*Border properties*/
 	border: 2px solid;
 	border-color: #efefef #efefef #50c150 #efefef ;
+	-webkit-transition: border-color 0.5s ease;
+	-moz-transition: border-color 0.5s ease;
 	border-radius: 3px;
 }
 

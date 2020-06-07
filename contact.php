@@ -26,7 +26,7 @@
                 <!--Contact Form-->
                 <form id="contactForm" action="email_sent.php" method="post" name="contactForm">
                     <input type="text" id="uName" name="name" placeholder="Name" required>
-                    <input type="text" id="uEmail" name="email" placeholder="Email" required>
+                    <input type="email" id="uEmail" name="email" placeholder="Email" required>
                     <textarea id="uMessage" name="message" rows="4" cols="50" placeholder="Message" required></textarea>
                     <input type="submit" value="Submit" id="submitButton">
 
