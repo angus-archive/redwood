@@ -296,7 +296,7 @@ main #forestContainer{
 	-webkit-appearance: none;
 	/*Border properties*/
 	border: 2px solid;
-	border-color: #efefef #efefef #50c150 #efefef ;
+	border-color: #efefef #efefef #88c688 #efefef ;
 	-webkit-transition: border-color 0.5s ease;
 	-moz-transition: border-color 0.5s ease;
 	border-radius: 3px;
@@ -310,7 +310,7 @@ main #forestContainer{
 
 /* Removed Red border for required stuff*/
 #contactForm input[type=text]:invalid, #contactForm input[type=email]:invalid, #contactForm textarea:invalid{
-	border-color: #efefef #efefef #d06143 #efefef ;
+	border-color: #efefef #efefef #ecb9b9 #efefef ;
 }
 
 input:required {
