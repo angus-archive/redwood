@@ -219,7 +219,7 @@
                 <!--Flexbox containing rocket and info-->
                 <div id="rocketBox">
                     <!--Rocket-->
-                    <img id="relaunchRocket" src="/resources/images/rocket.svg" alt="The redwood rocket">
+                    <img id="relaunchRocket" src="/resources/images/rocketDark.svg" alt="The redwood rocket">
                     <div class="rocketSideInfo">
                         <div class="rocketTextPanel">
                             <h2> Relaunch Package</h2>
