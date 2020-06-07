@@ -422,87 +422,6 @@ input:required {
 
 
 
-.packageContainer{
-	background-color: white;
-	width: 90%;
-	min-height: 450px;
-	margin: 20px;
-	display: flex;
-	flex-direction: column;
-	-webkit-transition: var(--defaultTransition);
-	transition: var(--defaultTransition);
-	box-shadow: var(--defaultShadow);
-
-
-}
-
-.packageContainer:hover{
-	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.53);
-}
-
-
-/*TITLE*/
-.packageContainer .packageTitleSection{
-	background-color: var(--bluesteelColour);
-	color: white;
-	font-size: 1.5rem;
-	height: 60px;
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-}
-
-
-/*FEATURES (Middle bit)*/
-.packageFeaturesSection{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	padding: 0 12px 0 25px; /*Keeps features from edge*/
-}
-
-.packageContainer .packageFeaturesSection{
-	flex:1
-}
-
-.packageFeaturesSection .packageFeature{
-	margin-bottom: 20px;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-
-	/*Ensures bullets are to left in mobile, updates to center for tablet and returns to left*/
-	width: 90%;
-	margin-left: auto;
-	margin-right: auto;
-
-
-}
-
-.packageFeature p{
-	text-align: left;
-	flex: 1;
-}
-
-.packageFeature .bullet{
-	width: 12px !important;
-	height: 12px !important;
-	border-radius: 50%;
-	background-color: #000000;
-	margin-right: 15px;
-}
-
-/*BUTTONS (bottom)*/
-
-.packageContainer .packageButtonSection{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-
 
 /* Package Colours */
 .econBackground{
@@ -515,6 +434,10 @@ input:required {
 
 .deluxeBackground{
 	background-color: var(--deluxeColour)!important;
+}
+
+.blueSteelBackground{
+	background-color: var(--bluesteelColour)!important;
 }
 
 .relaunchBackground{
@@ -541,144 +464,26 @@ input:required {
 }
 
 /*
-------------PACKAGES Comparison table---------
+------------PACKAGES---------
 */
 
-#packagingTable{
-	display: none;
-	width: 100%;
-	table-layout: fixed;
-	box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.1);
-	border-spacing: 0;
+.pack-container {
+	max-width: 960px;
 }
 
-#packagingTable td, #packagingTable th {
-	border: 1px solid #d7d7d7;
-	text-align: center;
-	vertical-align: middle;
-	padding: 8px;
-	background-color: white;
-	font-size: 0.4em;
+.pricing-header {
+	max-width: 700px;
 }
 
-
-
-#packagingTable thead{
-	height: 75px;
+.card-deck .card {
+	min-width: 220px;
 }
 
-#packagingTable thead th{
-	font-size: 0.75em;
-	color: white;
-	background-color: var(--bluesteelColour);
-	border: none;
-	border-top: 2px solid white;
-}
+.pack-border-top { border-top: 1px solid #e5e5e5; }
 
-#packagingTable tbody{
-	height: 500px;
-}
+.pack-border-bottom { border-bottom: 1px solid #e5e5e5; }
 
-
-#packagingTable .pTableFeature{
-	text-align: left;
-	padding-left: 20px;
-}
-
-.cellHide{
-	border: 0 !important;
-	background:none;
-}
-
-.tableBullet{
-	font-size: 3em;
-}
-
-#tableErrorBox{
-	width: 50%;
-	height: 150px;
-	background-color: white;
-	color: var(--bluesteelColour);
-	font-size: 1em;
-	display: flex;
-	align-items: center;
-	text-align: center;
-}
-
-/*
-------------relaunch Package Section---------
-*/
-#rocketBox{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 85%;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#relaunchRocket{
-	min-width: 200px;
-
-}
-
-
-.rocketSideInfo{
-	background-color: white;
-	box-shadow: var(--defaultShadow);
-	width: 100%;
-	margin-top: 40px;
-
-}
-
-.rocketSideInfo .packageFeaturesSection{
-	width: 100%;
-}
-
-.rocketTextPanel{
-	background-color: var(--bluesteelColour);
-	height: 60px;
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.rocketTextPanel h2{
-	color: #B0CAE2;
-	text-align: center;
-	font-size: 1.5em ;
-}
-
-.rocketSideInfo p{
-	text-align: center;
-	color: #B6B6B7;
-}
-
-.rocketSideInfo .packageFeaturesSection .packageFeature p{
-	color: var(--bluesteelColour) !important;
-}
-
-
-
-
-
-
-
-
-/*Headers*/
-
-#packagingTable .econTable:hover{
-	background-color: var(--economyColour) !important;
-}
-
-#packagingTable .redTable:hover{
-	background-color: var(--redwoodRed) !important;
-}
-
-#packagingTable .delTable:hover{
-	background-color: var(--deluxeColour) !important;
-}
+.pack-box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
 
 
 
@@ -728,28 +533,7 @@ input:required {
 /* Wide phone */
 @media screen and (min-width: 450px) {
 
-	#packagingTable thead th {
-		font-size: 1em;
-	}
 
-	#packagingTable td, #packagingTable th {
-		font-size: 0.75em;
-	}
-
-
-	/* Update Packages for slightly bigger than phone */
-	.packageContainer .packageFeature {
-		/*Ensures bullets are in center in mobile view*/
-		width: 60%;
-	}
-
-	.packageFeature p{
-		text-align: center;
-	}
-
-	#relaunchRocket{
-		width: 350px;
-	}
 }
 
 /*
@@ -770,31 +554,7 @@ PORTRAIT TABLET OR BIG PHONE
 
 	}
 
-	/* Update here so not too wide for tablets (reset to 100% after) */
-	.packageContainer{
-		width: 70%;
-	}
 
-
-	/* Update comparison table font sizes on larger screens */
-
-	#packagingTableContainer{
-		width: 85%;
-		margin-left: auto;
-		margin-right: auto;
-		max-width: 1300px;
-
-	}
-	#packagingTable {
-		table-layout: fixed;
-	}
-	#packagingTable thead th {
-		font-size: 1.25em;
-	}
-
-	#packagingTable td, #packagingTable th {
-		font-size:0.8em;
-	}
 
 
 
@@ -836,21 +596,7 @@ LARGE / LANDSCAPE TABLET
 
 	}
 
-	/*Packages update for big screens*/
-	.packageContainer{
-		width: 100%;
-		max-width: 300px;
-	}
 
-	.packageContainer .packageFeature {
-		/*Ensures bullets are in center in mobile view*/
-		width: 90%;
-	}
-
-	/*Use .packageContainer to ensure other packageFeature uses are not affected*/
-	.packageContainer .packageFeature p{
-		text-align: left;
-	}
 
 	#rocketBox{
 		flex-direction: row;
@@ -895,12 +641,12 @@ LAPTOPS / DESKTOPS
 		max-width: 300px;
 	}
 
-	/* PACKAGES */
-
-	.packageContainer {
-		max-width: 285px;
+	/*Package Container Expands*/
+	.pack-container{
+		max-width: 1200px !important;
 	}
 
+	/*Padding between nav items expands*/
 	.navbar-nav > li{
 		padding-left:50px;
 		padding-right:50px;
@@ -926,19 +672,6 @@ ULTRA WIDE
 		max-width: 350px;
 	}
 
-	.packageContainer {
-		max-width: 320px;
-	}
-
-
-	#packagingTable td, #packagingTable th {
-		font-size:1em;
-		padding: 12px;
-	}
-
-	#packagingTable thead th {
-		font-size: 2em;
-	}
 
 	.navbar-nav > li{
 		padding-left:70px;

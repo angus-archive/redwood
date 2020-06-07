@@ -13,229 +13,56 @@
     <?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/navigation.php";include_once($path); ?>
     <!--Main Content-->
     <main>
-        <div id="packageDiv">
-            <div class="wrapper">
-                <div class="alignDiv">
-                    <h1 style="color: white;" class="pageHeading mTextSpacerB bTextSpacerT"> Find a package that suits your business </h1>
-                    <!--3 tier pricing-->
-                    <div class="flexGrid">
-                        <!--ECONOMY PACKAGE-->
-                        <div class="packageContainer">
-                            <div class="packageTitleSection">
-                                <h3>Economy</h3>
-                            </div>
+		<div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+			<h1 class="display-4">Packages</h1>
+			<p class="lead">Take a look at some of the packages we offer...</p>
+		</div>
 
-                            <div class="packageFeaturesSection">
-                                <div class="packageFeature">
-                                    <div class="bullet econBackground"></div>
-                                    <p>Monthly Meetings</p>
-                                </div>
-                                <div class="packageFeature">
-                                    <div class="bullet econBackground"></div>
-                                    <p>Review</p>
-                                </div>
-                                <div class="packageFeature">
-                                    <div class="bullet econBackground"></div>
-                                    <p>Dedicated support</p>
-                                </div>
-                            </div>
-
-                            <div class="packageButtonSection">                
-                                <a href="economy.php" class="transButton econBackground sTextSpacerB">Info</a>
-                            </div>
-                        </div>
-                        <!--REDWOOD PACKAGE-->
-                        <div class="packageContainer">
-                            <div class="packageTitleSection">
-                                <h3>Redwood</h3>
-                            </div>
-
-                            <div class="packageFeaturesSection">
-                                <div class="packageFeature">
-                                    <div class="bullet redwoodBackground"></div>
-                                    <p>Monthly Meetings</p>
-                                </div>
-                                <div class="packageFeature">
-                                    <div class="bullet redwoodBackground"></div>
-                                    <p>Review</p>
-                                </div>
-                                <div class="packageFeature">
-                                    <div class="bullet redwoodBackground"></div>
-                                    <p>Dedicated support</p>
-                                </div>
-                            </div>
-
-                            <div class="packageButtonSection">
-                                <button class="transButton redwoodBackground sTextSpacerB">Info</button>
-                            </div>
-                        </div>
-                        <!--DELUXE PACKAGE-->
-                        <div class="packageContainer">
-                            <div class="packageTitleSection">
-                                <h3>Deluxe</h3>
-                            </div>
-
-                            <div class="packageFeaturesSection">
-                                <div class="packageFeature">
-                                    <div class="bullet deluxeBackground"></div>
-                                    <p>Monthly Meetings</p>
-                                </div>
-                                <div class="packageFeature">
-                                    <div class="bullet deluxeBackground"></div>
-                                    <p>Review</p>
-                                </div>
-                                <div class="packageFeature">
-                                    <div class="bullet deluxeBackground"></div>
-                                    <p>Dedicated support</p>
-                                </div>
-                            </div>
-
-                            <div class="packageButtonSection">
-                                <button class="transButton deluxeBackground sTextSpacerB">Info</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Spacer-->
-                    <div class="spacer"></div>
-                    <h2 style="color: white;" class="pageHeading mTextSpacerB"> Compare our packages </h2>
-                </div>
-
-            </div>
-			<!--COMPARISON TABLE-->
-			<div id="tableErrorBox">
-				<p> Please rotate device to view table</p>
+		<div class="container pack-container">
+			<div class="card-deck mb-3 text-center" style="height:22rem;">
+				<div class="card mb-4 pack-box-shadow">
+					<div class="card-header blueSteelBackground text-light">
+						<h4 class="my-0 font-weight-normal">Economy</h4>
+					</div>
+					<div class="card-body d-flex flex-column">
+						<ul class="text-left mt-3 mb-4">
+							<li>Monthly Meetings</li>
+							<li>Social media advice</li>
+							<li>Creative content ideas</li>
+						</ul>
+						<button type="button" class="btn btn-lg btn-block btn-primary econBackground border-0 mt-auto" onclick="location.href='/packages/economy.php';">More info</button>
+					</div>
+				</div>
+				<div class="card mb-4 pack-box-shadow">
+					<div class="card-header blueSteelBackground text-light">
+						<h4 class="my-0 font-weight-normal">Redwood</h4>
+					</div>
+					<div class="card-body d-flex flex-column">
+						<ul class="text-left mt-3 mb-4">
+							<li>Fortnightly meetings</li>
+							<li>Social media management</li>
+							<li>Build online presence</li>
+						</ul>
+						<button type="button" class="btn btn-lg btn-block btn-primary redwoodBackground border-0 mt-auto">More Info</button>
+					</div>
+				</div>
+				<div class="card mb-4 pack-box-shadow">
+					<div class="card-header blueSteelBackground text-light">
+						<h4 class="my-0 font-weight-normal">Deluxe</h4>
+					</div>
+					<div class="card-body d-flex flex-column">
+						<ul class="text-left mt-3 mb-4">
+							<li>Weekly meetings</li>
+							<li>Opportunity reach analysis</li>
+							<li>Monthly business review</li>
+							<li>Photography sessions</li>
+						</ul>
+						<button type="button" class="btn btn-lg btn-block btn-primary deluxeBackground border-0 mt-auto">More Info</button>
+					</div>
+				</div>
 			</div>
-			<div id="packagingTableContainer">
-				<table id="packagingTable">
-				<colgroup>
-					<col>
-					<col span="1" id="econCol">
-					<col span="1" id="redCol">
-					<col span="1" id="delCol">
-				</colgroup>
-				<thead>
-				<tr>
-					<th></th>
-					<th class="econTable">Economy</th>
-					<th class="redTable">Redwood</th>
-					<th class="delTable">Deluxe</th>
-				</tr>
-				</thead>
 
-				<tbody>
-				<!--Meeting Frequency-->
-				<tr>
-					<td class="pTableFeature"> Meetings</td>
-					<td> Monthly</td>
-					<td> Fortnightly</td>
-					<td> Weekly</td>
-				</tr>
-
-				<tr>
-					<td class="pTableFeature" >Advice for better social media posts</td>
-					<td><span class="tableBullet econCol">•</span></td>
-					<td><span class="tableBullet redwoodCol">•</span></td>
-					<td><span class="tableBullet deluxeCol">•</span></td>
-				</tr>
-
-				<tr>
-					<td class="pTableFeature" >Market analysis</td>
-					<td><span class="tableBullet econCol">•</span></td>
-					<td><span class="tableBullet redwoodCol">•</span></td>
-					<td><span class="tableBullet deluxeCol">•</span></td>
-				</tr>
-
-				<tr>
-					<td class="pTableFeature">Creative content ideas</td>
-					<td><span class="tableBullet econCol">•</span></td>
-					<td><span class="tableBullet redwoodCol">•</span></td>
-					<td><span class="tableBullet deluxeCol">•</span></td>
-				</tr>
-
-				<tr>
-					<td class="pTableFeature">Social media management</td>
-					<td></td>
-					<td><span class="tableBullet redwoodCol">•</span></td>
-					<td><span class="tableBullet deluxeCol">•</span></td>
-				</tr>
-
-				<tr>
-					<td class="pTableFeature">Build Online Presence</td>
-					<td></td>
-					<td><span class="tableBullet redwoodCol">•</span></td>
-					<td><span class="tableBullet deluxeCol">•</span></td>
-				</tr>
-
-				<tr>
-					<td class="pTableFeature">Opportunity reach analysis</td>
-					<td></td>
-					<td></td>
-					<td><span class="tableBullet deluxeCol">•</span></td>
-				</tr>
-
-				<tr>
-					<td class="pTableFeature">Industry research
-					</td>
-					<td></td>
-					<td></td>
-					<td><span class="tableBullet deluxeCol">•</span></td>
-				</tr>
-
-				<tr>
-					<td class="pTableFeature">Photography session</td>
-					<td></td>
-					<td></td>
-					<td><span class="tableBullet deluxeCol">•</span></td>
-				</tr>
-				</tbody>
-			</table>
-				<div style="padding-bottom: 100px !important;"></div>
-			</div>
-        </div>
-        <!--<div style="width: 100%; height:20px; background-color: white"></div>-->
-        <!--relaunch package section-->
-        <div style="width: 100%; margin: 0;">
-            <div class="alignDiv">
-                <h1 class="pageHeading bTextSpacerT bTextSpacerB"> Introducing... </h1>
-
-                <!--Flexbox containing rocket and info-->
-                <div id="rocketBox">
-                    <!--Rocket-->
-                    <img id="relaunchRocket" src="/resources/images/rocketDark.svg" alt="The redwood rocket">
-                    <div class="rocketSideInfo">
-                        <div class="rocketTextPanel">
-                            <h2> Relaunch Package</h2>
-                        </div>
-                        <!-- Provide padding around box -->
-                        <div style="padding:20px">
-                            <div class="alignDiv">
-                                <br>
-                                <p class="mTextSpacerB"> Here at Redwood we understand the devastating affects Coronavirus has had on businesses, that's why we're introducing our Relaunch package to help you come out of lockdown stronger than ever.  </p>
-                                <div class="packageFeaturesSection mTextSpacerB">
-                                    <div class="packageFeature">
-                                        <div class="bullet relaunchBackground"></div>
-                                        <p>Online reopening event</p>
-                                    </div>
-                                    <div class="packageFeature">
-                                        <div class="bullet relaunchBackground"></div>
-                                        <p>Multiple advert creation</p>
-                                    </div>
-                                    <div class="packageFeature">
-                                        <div class="bullet relaunchBackground"></div>
-                                        <p>Active marketing</p>
-                                    </div>
-                                </div>
-                                <button id="rocketInfoButton" class="transButton" style="background-color: #00AEE0 !important; color: white !important;">Find out more</button>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- Spacer at bottom (removed)-->
-                <div class="spacer"></div>
-            </div>
-        </div>
+		</div>
 	</main>
 
 </div>
