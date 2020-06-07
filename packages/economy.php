@@ -4,8 +4,7 @@
    $path .= "/includes/a_config.php";
    include_once($path);
 ?>
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <!--Import Head tags from PHP includes-->
     <?php 

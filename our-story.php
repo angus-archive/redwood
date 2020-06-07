@@ -1,6 +1,6 @@
 <?php include("includes/a_config.php");?>
-<!DOCTYPE html>
-<html>
+
+<html lang="en">
 <head>
     <!--Import Head tags from PHP includes-->
     <?php include("includes/head-tags.php");?>
