@@ -1,17 +1,16 @@
-<?php include("includes/a_config.php");?>
-
+<?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/a_config.php";include_once($path); ?>
 <html lang="en">
 <head>
-    <!--Import Head tags from PHP includes-->
-    <?php include("includes/head-tags.php");?>
+	<!--Head Tags-->
+    <?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/head-tags.php";include_once($path);?>
 </head>
 <body>
 
 <div id="content">
-    <!--Import Header content-->
-    <?php include("includes/header-content.php");?>
-    <!--Import Nav bar-->
-    <?php include("includes/navigation.php");?>
+	<!--Header-->
+    <?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/header-content.php";include_once($path);?>
+	<!--Nav-Bar-->
+    <?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/navigation.php";include_once($path); ?>
 
     <!--Main Content-->
     <main>
@@ -42,8 +41,8 @@
 
 </div>
 
-<!--Import Footer-->
-<?php include("includes/footer.php");?>
+<!--Footer-->
+<?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/footer.php";include_once($path);?>
 
 </body>
 </html>

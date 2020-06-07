@@ -7,3 +7,7 @@ This stylesheet is made specifically for IE browsers
 body{
 	color: slategray !important;
 }
+
+body img{
+	max-width: 100px;
+}
