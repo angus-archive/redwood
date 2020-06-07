@@ -1,5 +1,9 @@
 <div id="navContainer">
-	<a href="javascript:void(0);" class="burger" onclick="burgerClicked()">Menu</a>
+	<div class="burger" id="burgerContainer" onclick="burgerClicked()">
+		<div class="burgerLine1"></div>
+		<div class="burgerLine2"></div>
+		<div class="burgerLine3"></div>
+	</div>
 	<div id="jsNav" class="navLinkList">
 		<!--HOME PAGE-->
 		<a href="/index.php" <?php if($CURRENT_PAGE == "Index"){echo "id=currentNavItem";}?> >Our Services</a>

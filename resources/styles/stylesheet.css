@@ -22,6 +22,7 @@ Angus Goody
 
 	--navText: var(--redwoodGreyDark);
 	--navTextHover: var(--redwoodRed);
+	--navMobilePadding: 15px;
 
 	--buttonHoverGreen: #6FD766;
 	--buttonGreen: #8BC76E;
@@ -160,6 +161,8 @@ Logo at top of page
 /*
 ---------NAV (MOBILE)------
  */
+
+/* The container for nav links as well as burger */
 #navContainer{
 	background-color: var(--navColour);
     font-family: 'Avenir Next Medium', sans-serif;
@@ -167,29 +170,67 @@ Logo at top of page
 	overflow: hidden;
 }
 
+/* The container for nav links */
 #navContainer .navLinkList{
 	display: none;
 
 }
 
+/* The container for nav links (open) */
 #navContainer .navLinkList.navOpen{
 	display: flex;
 	flex-direction: column;
+	align-items: flex-start;
 }
 
 
-@media screen and (min-width: 600px) {
+/* The nav links */
+#navContainer a{
+	padding: var(--navMobilePadding);
+	margin: 1px;
+	text-decoration: none;
+	color: var(--navText);
+	transition: all 0.2s linear;
+}
 
-	#navContainer .navLinkList.navOpen,#navContainer .navLinkList{
-		display: flex;
-		flex-direction: row;
-		background-color: green;
-	}
+#navContainer a:hover,a:focus {
+	color: var(--navTextHover)
+}
 
-	.burger{
-		display: none;
-	}
 
+#navContainer .burger{
+	margin:var(--navMobilePadding);
+	cursor: pointer;
+}
+
+#currentNavItem{
+	color: var(--redwoodRed) !important;
+}
+
+
+/* BURGER ANIMATIONS */
+
+.burgerLine1, .burgerLine2, .burgerLine3{
+	width: 35px;
+	height: 5px;
+	background-color: var(--redwoodRed);
+	margin: 6px 0;
+	transition: 0.2s;
+}
+
+.burgerChange .burgerLine1,.burgerChange .burgerLine2,.burgerChange .burgerLine3{
+	background-color: #802929;
+}
+.burgerChange .burgerLine1{
+	-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+	transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.burgerChange .burgerLine2 {opacity: 0;}
+
+.burgerChange .burgerLine3 {
+	-webkit-transform: rotate(45deg) translate(-8px, -8px);
+	transform: rotate(45deg) translate(-8px, -8px);
 }
 
 
@@ -850,7 +891,25 @@ LARGE / LANDSCAPE TABLET
  */
 @media screen and (min-width: 850px) {
 
+	/* Update Nav bar for big screens */
+	#navContainer .navLinkList.navOpen,#navContainer .navLinkList{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		max-width: 1200px;
+		margin: auto;
+		padding: 15px 0 15px;
+	}
 
+	#navContainer .navLinkList.navOpen a,#navContainer .navLinkList a{
+		padding:8px;
+		margin: auto;
+
+	}
+
+	.burger{
+		display: none;
+	}
 
 	/*Change the wrapper to not fit entire screen (Use margin-left/right to avoid overwrite)*/
 	.wrapper{
