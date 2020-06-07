@@ -297,14 +297,17 @@ main #forestContainer{
 	/*Border properties*/
 	border: 2px solid;
 	border-color: #efefef #efefef #88c688 #efefef ;
-	-webkit-transition: border-color 0.5s ease;
-	-moz-transition: border-color 0.5s ease;
+	-webkit-transition: border-color 0.4s ease;
+	-moz-transition: border-color 0.4s ease;
 	border-radius: 3px;
 }
 
+#contactForm input[type=text]:focus ,#contactForm input[type=email]:focus, #contactForm textarea:focus{
+	border-color: #a7a7a7 !important;
+}
 
 /* Removed Red border for required stuff*/
-#contactForm input[type=text]:required ,#contactForm input[type=email], #contactForm textarea:required{
+#contactForm input[type=text]:required ,#contactForm input[type=email]:required, #contactForm textarea:required{
 	box-shadow:none;
 }
 
