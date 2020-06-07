@@ -13,7 +13,7 @@ Angus Goody
 	--redwoodDarkRed: #9C324D;
 	--redwoodGreyDark: #575757;
 	--redwoodGreyLight: #BABABA;
-	--bluesteelColour: #39484C;
+	--bluesteelColour: #39484c;
 
 	--headerColour: #FFFFFF;
 	--navColour: #ffffff;
@@ -30,8 +30,8 @@ Angus Goody
 	--tooltipBackground: #424242;
 
 	--economyColour: #52b845;
-	--deluxeColour: #F5C84C;
-	--relaunchColour: #00AEE0;
+	--deluxeColour: #f5c84c;
+	--relaunchColour: #00aee0;
 
 	--defaultShadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.23);
 	--defaultTransition: 0.3s;
@@ -425,34 +425,42 @@ input:required {
 
 /* Package Colours */
 .econBackground{
+	background-color: #52b845;
 	background-color: var(--economyColour)!important;
 }
 
 .redwoodBackground{
+	background-color: #BB3C5B;
 	background-color: var(--redwoodRed)!important;
 }
 
 .deluxeBackground{
+	background-color:#F5C84C ;
 	background-color: var(--deluxeColour)!important;
 }
 
 .blueSteelBackground{
+	background-color: #39484C;
 	background-color: var(--bluesteelColour)!important;
 }
 
 .relaunchBackground{
+	color: #00AEE0;
 	background-color: var(--relaunchColour)!important;
 }
 
 .econCol{
+	color: #52b845;
 	color: var(--economyColour)!important;
 }
 
 .redwoodCol{
+	color: #BB3C5B;
 	color: var(--redwoodRed)!important;
 }
 
 .deluxeCol{
+	color: #F5C84C;
 	color: var(--deluxeColour)!important;
 }
 
