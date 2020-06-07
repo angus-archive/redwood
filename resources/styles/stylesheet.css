@@ -287,13 +287,31 @@ main #forestContainer{
 }
 
 /*Change all form input styles use input[type=text] to target others*/
-#contactForm input[type=text] , #contactForm textarea {
+#contactForm input[type=text],#contactForm input[type=email] , #contactForm textarea {
 	margin: 10px 20px;
 	font-family: "Avenir Next Medium", sans-serif;
 	font-size: 1rem;
 	padding: 12px 20px;
-	/* Remove the styling for IOS devices*/
+	/*Remove the styling for IOS devices*/
 	-webkit-appearance: none;
+	border: 2px solid;
+	border-color: #efefef #efefef #50c150 #efefef ;
+	border-radius: 3px;
+}
+
+
+/* Removed Red border for required stuff*/
+#contactForm input[type=text]:required ,#contactForm input[type=email], #contactForm textarea:required{
+	box-shadow:none;
+}
+
+/* Removed Red border for required stuff*/
+#contactForm input[type=text]:invalid, #contactForm input[type=email]:invalid, #contactForm textarea:invalid{
+	border-color: #efefef #efefef #d06143 #efefef ;
+}
+
+input:required {
+	box-shadow:none;
 }
 
 #contactForm textarea{
@@ -581,7 +599,6 @@ main #forestContainer{
 	width: 100%;
 	table-layout: fixed;
 	box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.1);
-	border-spacing: 0;
 }
 
 #packagingTable td, #packagingTable th {
