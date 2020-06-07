@@ -296,16 +296,17 @@ main #forestContainer{
 	-webkit-appearance: none;
 	/*Border properties*/
 	border: 2px solid;
-	border-color: #efefef #efefef #efefef;
+	border-color: #dbdbdb;
 	border-right: 3px solid var(--buttonGreen);
 	-webkit-transition: border-color 0.4s ease;
 	-moz-transition: border-color 0.4s ease;
 	border-radius: 3px;
+	color: #404040 !important;
 }
 
 /* Focus */
 #contactForm input[type=text]:focus ,#contactForm input[type=email]:focus, #contactForm textarea:focus{
-	border-color: #a7a7a7 !important;
+	border-color: #909090 !important;
 	border-width: 2px !important;
 	outline:0 !important;
 }
@@ -317,7 +318,7 @@ main #forestContainer{
 
 /* Removed Red border for required stuff*/
 #contactForm input[type=text]:invalid, #contactForm input[type=email]:invalid, #contactForm textarea:invalid{
-	border-color: #efefef #ecb9b9 #efefef #efefef ;
+	border-color: #dbdbdb #ecb9b9 #dbdbdb #dbdbdb ;
 }
 
 input:required {
