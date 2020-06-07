@@ -33,7 +33,7 @@ Angus Goody
 	--deluxeColour: #F5C84C;
 	--relaunchColour: #00AEE0;
 
-	--packageHover: 0px 0px 16px 0px rgba(0, 0, 0, 0.23);
+	--defaultShadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.23);
 	--defaultTransition: 0.3s;
 
 
@@ -277,10 +277,10 @@ main #forestContainer{
 	display: flex;
 	flex-direction: column;
 	background-color: #FFFFFF;
-	box-shadow: rgba(0, 0, 0, 0.075) 0px 2px 10px 0px;
+	box-shadow: var(--defaultShadow);
 	margin-top: 20px;
 	padding: 30px 20px 10px 20px;
-	border-top: 2px solid var(--redwoodRed);
+	border-top: 2px solid var(--redwoodGreyDark);
 	width: 80%;
 	max-width: 450px;
 
@@ -491,7 +491,7 @@ input:required {
 	flex-direction: column;
 	-webkit-transition: var(--defaultTransition);
 	transition: var(--defaultTransition);
-	box-shadow: var(--packageHover);
+	box-shadow: var(--defaultShadow);
 
 
 }
@@ -685,7 +685,7 @@ input:required {
 
 .rocketSideInfo{
 	background-color: white;
-	box-shadow: var(--packageHover);
+	box-shadow: var(--defaultShadow);
 	width: 100%;
 	margin-top: 40px;
 
@@ -953,7 +953,7 @@ LAPTOPS / DESKTOPS
 @media screen and (min-width: 992px) {
 
 	/*Update the contact form for desktop (Not for large iPads bc theyre IOS)*/
-	#contactForm input[type=text] , #contactForm textarea {
+	#contactForm input[type=text] ,input[type=email], #contactForm textarea {
 		-webkit-appearance: textarea;
 	}
 
