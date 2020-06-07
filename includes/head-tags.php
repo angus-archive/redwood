@@ -14,7 +14,7 @@ if (preg_match('~MSIE|Internet Explorer~i', $ua) || (strpos($ua, 'Trident/7.0') 
     // do stuff for IE
 	echo "<link rel=\"stylesheet\" href=\"/resources/styles/ieOnly.css\">";
 }
-//Load the standard stylsheet
+//Load the standard stylesheet
 else{
 	echo "<link rel=\"stylesheet\" href=\"/resources/styles/stylesheet.css\">";
 }
