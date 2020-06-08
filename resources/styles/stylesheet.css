@@ -105,6 +105,10 @@ Logo at top of page
 }
 
 
+.navWrapper{
+	width: 100%;
+}
+
 
 /*
 ---------CONTACT FORM(MOBILE)------
@@ -330,8 +334,8 @@ ULTRA WIDE
 
 
 	.navbar-nav > li{
-		padding-left:70px;
-		padding-right:70px;
+		padding-left:100px;
+		padding-right:100px;
 	}
 
 

@@ -11,6 +11,17 @@
 
 		<!-- Header-->
 		<?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/header-content.php";include_once($path); ?>
+		<!-- Brand Banner-->
+		<div class="bg-primary py-2 mb-3">
+			<div class="container h-90">
+				<div class="row h-100 align-items-center">
+					<div class="col-lg-12">
+						<h1 class="display-4 text-white mt-5 mb-2">Welcome to Redwood</h1>
+						<p class="lead mb-5 text-white-50">We are a business management and marketing company dedicated to helping you grow your business.</p>
+					</div>
+				</div>
+			</div>
+		</div>
 		<!-- Page Content -->
 		<div class="container">
 
