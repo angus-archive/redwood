@@ -42,22 +42,38 @@ Overrides for Bootstrap
 
 }
 
+/*-----START---------*/
 
-html, body{
-	height: 100%;
+html{
+	position: relative;
+	min-height: 100%;
 }
 
 body{
 	font-family: 'Montserrat', sans-serif;
 	background-color: var(--backgroundColour);
 	color: slategrey;
-	display: flex;
-	flex-direction: column;
+	margin-bottom: 60px;
+}
+
+#page-container {
+	position: relative;
+	min-height: 100vh;
 }
 
 /*
-------------Wrapper / Content---------
+------------FOOTER---------
 */
+footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background-color: var(--redwoodRed) !important;
+	color: white !important;
+
+}
+
 
 
 /*
@@ -250,14 +266,7 @@ input:required {
 
 
 
-/*
-------------FOOTER---------
-*/
-footer{
-	background-color: var(--redwoodRed) !important;
-	color: white !important;
 
-}
 
 
 /*
