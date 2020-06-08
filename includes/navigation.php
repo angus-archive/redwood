@@ -7,11 +7,11 @@
 		<ul class="navbar-nav nav-justified">
 			<li class="nav-item">
 				<!--HOME PAGE-->
-				<a class="nav-link text-nowrap" href="/index.php" <?php if($CURRENT_PAGE == "Index"){echo "";}?> >Our Services</a>
+				<a class="nav-link text-nowrap" href="/index.php" <?php if($CURRENT_PAGE == "Index"){echo "id=currentNavItem";}?> >Our Services</a>
 			</li>
 			<li class="nav-item">
 				<!--PACKAGES-->
-				<a class="nav-link text-nowrap" href="/packages" <?php if($CURRENT_PAGE == "Packages"){echo "";}?> >Packages</a>
+				<a class="nav-link text-nowrap" href="/packages" <?php if($CURRENT_PAGE == "Packages"){echo "id=currentNavItem";}?> >Packages</a>
 			</li>
 			<li class="nav-item">
 				<!--OUR STORY-->
@@ -24,5 +24,8 @@
 		</ul>
 	</div>
 </nav>
+
+
+
 
 

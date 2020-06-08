@@ -2,6 +2,8 @@
 Redwood Main CSS File
 Angus Goody
 27/05/2020
+
+Overrides for Bootstrap
  */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
@@ -11,6 +13,7 @@ Angus Goody
 
 	--redwoodRed: #bb3c5b;
 	--redwoodDarkRed: #9C324D;
+	--redwoodGradient: linear-gradient(var(--redwoodRed),var(--redwoodDarkRed));
 	--redwoodGreyDark: #575757;
 	--redwoodGreyLight: #BABABA;
 	--bluesteelColour: #39484c;
@@ -43,6 +46,7 @@ Angus Goody
 html, body{
 	height: 100%;
 }
+
 body{
 	font-family: 'Montserrat', sans-serif;
 	background-color: var(--backgroundColour);
@@ -54,30 +58,6 @@ body{
 /*
 ------------Wrapper / Content---------
 */
-
-/*All the content in the body*/
-#content{
-	background-color: var(--backgroundColour);
-	flex: 1;
-}
-.wrapper{
-	width: 100%;
-}
-
-/*Allign all the content into center*/
-.alignDiv{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.flexGrid{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 100%;
-
-}
 
 
 /*
@@ -120,93 +100,11 @@ Logo at top of page
 	padding-right:30px;
 }
 
-
-
-
-
-
-/*
----------MAIN------
- */
-
-.spacer{
-	margin-top: 50px;
-	margin-bottom: 50px;
-}
-
-.bigSpacer{
-	margin-top: 70px;
-	margin-bottom: 70px;
-}
-
-/*Spacers for text*/
-
-.sTextSpacerB{
-	margin-bottom: 20px;
-}
-
-.sTextSpacerT{
-	margin-top: 40px;
-}
-
-.mTextSpacerB{
-	margin-bottom: 40px;
-}
-
-.mTextSpacerT{
-	margin-top: 40px;
-}
-
-.bTextSpacerT{
-	margin-top: 80px;
-}
-
-.bTextSpacerB{
-	margin-bottom: 80px;
-}
-
-.transButton{
-	background-color: #000000;
-	border: none;
-	border-radius: 5px;
-	color: white;
-	opacity: 0.8;
-	padding: 10px 0;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	transition-duration: 0.4s;
-	cursor: pointer;
-	width: 60%;
-}
-
-.transButton:hover{
-	opacity: 1;
-}
-main #forestContainer{
-	width: 100%;
-	height: 500px;
-	overflow: hidden;
-	object-fit: cover;
-	background-repeat: no-repeat;
-}
-
-#forestContainer #forestPic{
-	width: 100%;
-
+#currentNavItem{
+	color: var(--redwoodRed);
 }
 
 
-
-/*
----------PAGE HEADING------
- */
-
-.pageHeading{
-	font-size: 1.5em;
-	text-align: center;
-}
 
 /*
 ---------CONTACT FORM(MOBILE)------
@@ -292,133 +190,13 @@ input:required {
 	cursor: pointer;
 }
 
-/*
-------------OUR STORY PROFILES---------
-*/
 
-.personContainer{
-	background-color: white;
-	border-radius: 10px;
-	width: 100%;
-
-	max-width: 350px;
-	min-height: 450px;
-	margin: 20px;
-	display: flex;
-	flex-direction: column;
-
-	box-shadow: rgba(0, 0, 0, 0.075) 0px 2px 10px 0px;
-}
-
-.personImageContainer{
-	border-radius: 10px 10px 0 0;
-	overflow: hidden;
-	height: 250px;
-}
-
-.personImageContainer img{
-	width:100%;
-	height: 100%;
-	object-fit: cover;
-
-}
-
-.personInfoContainer{
-	border-radius: 0 0 10px 10px;
-	text-align: center;
-	flex: 1;
-}
-
-.personInfoContainer h3{
-	font-size: 2rem;
-	font-weight: bold;
-	color: black;
-	padding-top: 20px;
-
-}
-
-.personInfoContainer p{
-	font-size: 1rem;
-	padding: 10px 10% 20px 10%;
-}
-
-.personSkillsBar{
-	padding: 20px 0 20px 0;
-	display: flex;
-	flex-direction: row;
-}
-
-.personSkill{
-	flex: 1;
-}
-
-.personSkill .personIcon{
-	height: 20px;
-	width: 20px;
-	display: block;
-	margin: auto;
-	padding: 7px;
-	border-radius: 6px;
-	background-color: #eeeeee;
-
-}
-
-/*
-------------Tooltip---------
-*/
-
-.tooltip {
-	position: relative;
-	display: inline-block;
-}
-
-.tooltip .tooltiptext {
-	visibility: hidden;
-	width: 130px;
-	font-size: 1rem;
-	background-color: var(--tooltipBackground);
-	color: #fff;
-	text-align: center;
-	border-radius: 4px;
-	padding: 5px 0;
-	position: absolute;
-	z-index: 1;
-	bottom: 125%;
-	left: 50%;
-	margin-left: -60px;
-	opacity: 0;
-	transition: opacity 0.3s;
-}
-
-.tooltip .tooltiptext::after {
-	content: "";
-	position: absolute;
-	top: 100%;
-	left: 50%;
-	margin-left: -5px;
-	border-width: 5px;
-	border-style: solid;
-	border-color: var(--tooltipBackground) transparent transparent transparent;
-}
-
-.tooltip:hover .tooltiptext {
-	visibility: visible;
-	opacity: 1;
-}
 
 /*
 ------------PACKAGES SECTION---------
 */
 
 
-#packageDiv{
-	width: 100%;
-	margin-left: 0;
-	margin-right: 0;
-	background-color: var(--redwoodDarkRed);
-	background-image: linear-gradient(var(--redwoodRed),var(--redwoodDarkRed));
-
-}
 
 
 
@@ -465,56 +243,18 @@ input:required {
 }
 
 
-#featureIcon{
-	width: 25px;
-	height: auto;
-	margin-right: 10px;
-}
-
-/*
-------------PACKAGES---------
-*/
-
-.pack-container {
-	max-width: 960px;
-}
-
-.pricing-header {
-	max-width: 700px;
-}
-
-.card-deck .card {
-	min-width: 220px;
-}
-
-.pack-border-top { border-top: 1px solid #e5e5e5; }
-
-.pack-border-bottom { border-bottom: 1px solid #e5e5e5; }
-
-.pack-box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
 
 
 
 /*
 ------------FOOTER---------
 */
-.footer{
-	background-color: var(--redwoodRed);
-	position: fixed;
-	padding: 10px 10px 0px 10px;
-	bottom: 0;
-	width: 100%;
-	/* Height of the footer*/
-	height: 40px;
+footer{
+	background-color: var(--redwoodRed) !important;
+	color: white !important;
 
 }
 
-.footer h2{
-	font-size: 1rem;
-	color: #FFFFFF;
-	padding: 20px 10px;
-
-}
 
 /*
 --------ERROR PAGE--------
@@ -533,13 +273,7 @@ input:required {
 
 /* Minimum screen size to view Tables */
 @media screen and (min-width: 300px) {
-	#tableErrorBox{
-		display: none;
-	}
 
-	#packagingTable{
-		display: inline-table;
-	}
 
 }
 
@@ -555,79 +289,12 @@ PORTRAIT TABLET OR BIG PHONE
  */
 @media screen and (min-width: 650px) {
 
-	/*Update the "Our story" to a row flexbox*/
-	.flexGrid{
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-items: flex-start;
-	}
-
-	.personContainer{
-		max-width: 250px;
-
-	}
-
-
-
-
-
-
-
-
 }
 
 /*
 LARGE / LANDSCAPE TABLET
  */
 @media screen and (min-width: 850px) {
-
-
-	.burger{
-		display: none;
-	}
-
-	/*Change the wrapper to not fit entire screen (Use margin-left/right to avoid overwrite)*/
-	.wrapper{
-		width: 85%;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-
-
-	/*Change form button to not fill whole screen*/
-	#contactForm #submitButton{
-		width: 60%;
-		margin-left: auto;
-		margin-right: auto;
-		max-width: 500px;
-	}
-
-	/*Update form so it does't oversize on big screens and stays in center*/
-	#contactForm{
-		max-width: 650px;
-
-	}
-
-
-
-	#rocketBox{
-		flex-direction: row;
-		justify-content: center;
-	}
-
-	#rocketBox .rocketSideInfo{
-		border-radius: 7px;
-		max-width: 530px;
-		margin: 0 20px 0 80px;
-	}
-
-	.rocketTextPanel{
-		border-radius: 7px 7px 0 0;
-	}
-
-
 
 
 }
@@ -637,10 +304,6 @@ LAPTOPS / DESKTOPS
  */
 @media screen and (min-width: 992px) {
 
-	/*Update the contact form for desktop (Not for large iPads bc theyre IOS)*/
-	#contactForm input[type=text] ,input[type=email], #contactForm textarea {
-		-webkit-appearance: textarea;
-	}
 
 }
 
@@ -650,22 +313,11 @@ LAPTOPS / DESKTOPS
 @media screen and (min-width: 1200px) {
 
 
-	/* PEOPLE */
-	.personContainer{
-		max-width: 300px;
-	}
-
-	/*Package Container Expands*/
-	.pack-container{
-		max-width: 1200px !important;
-	}
-
 	/*Padding between nav items expands*/
 	.navbar-nav > li{
 		padding-left:50px;
 		padding-right:50px;
 	}
-
 
 
 }
@@ -675,16 +327,6 @@ ULTRA WIDE
  */
 @media screen and (min-width: 2000px) {
 
-	/* SET MAX SIZES */
-	.flexGrid{
-		width: 70%;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	/* On much larger screens increase profile sizes*/
-	.personContainer{
-		max-width: 350px;
-	}
 
 
 	.navbar-nav > li{
