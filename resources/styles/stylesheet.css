@@ -102,6 +102,12 @@ Logo at top of page
 
 }
 
+#pageBanner{
+	background-color: #272a47 !important;
+	/*background-color: var(--redwoodDarkRed) !important;*/
+	text-align: center;
+}
+
 /*
 ---------NAV BAR------
  */
