@@ -1,3 +1,7 @@
-<div id="footer">
-    <h2> &copy; Copyright 2020 Redwood.business </h2>
-</div>
+
+<footer class="py-5 bg-dark">
+	<div class="container">
+		<p class="m-0 text-center text-white">Copyright &copy; Redwood 2020</p>
+	</div>
+	<!-- /.container -->
+</footer>

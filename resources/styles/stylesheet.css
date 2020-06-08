@@ -83,7 +83,7 @@ body{
 /*
 ------------HEADER---------
  */
-#header{
+header{
 	background-color: var(--headerColour);
 	margin: 0;
 }
@@ -498,12 +498,18 @@ input:required {
 /*
 ------------FOOTER---------
 */
-#footer{
+.footer{
 	background-color: var(--redwoodRed);
-	flex-shrink: 0;
+	position: fixed;
+	padding: 10px 10px 0px 10px;
+	bottom: 0;
+	width: 100%;
+	/* Height of the footer*/
+	height: 40px;
+
 }
 
-#footer h2{
+.footer h2{
 	font-size: 1rem;
 	color: #FFFFFF;
 	padding: 20px 10px;
