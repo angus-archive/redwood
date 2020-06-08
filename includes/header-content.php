@@ -4,4 +4,4 @@
     </div>
 	<!--Nav-Bar-->
     <?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/navigation.php";include_once($path); ?>
-<header>
+</header>
