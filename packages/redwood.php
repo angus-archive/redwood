@@ -22,8 +22,6 @@
 				</div>
 			</div>
 		</div>
-		<!-- Package Bar-->
-        <?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/packageBar.php";include_once($path); ?>
         <!-- Container -->
         <div class="container">
 

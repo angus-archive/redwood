@@ -1,35 +1,65 @@
 <!--Redwood, created by Angus Goody 05/2020-->
 <?php
 //Get the root folder
-$base = dirname($_SERVER["PHP_SELF"]);
+$full = ($_SERVER["PHP_SELF"]);
+$dirName = dirname($full);
+$baseName = basename($full);
 //If this is not a folder reset to original
-if ($base == "/"){
-    $base = $_SERVER["PHP_SELF"];
+if ($dirName == "/"){
+    $dirName = $_SERVER["PHP_SELF"];
 }
 
-switch ($base) {
+switch ($dirName) {
     
     case "/index.php":
-        $CURRENT_PAGE = "Index";
+        $NAV_PAGE = "Index";
+        $CURRENT_PAGE = $NAV_PAGE;
         $PAGE_TITLE = "Welcome to Redwood";
 	break;
     case "/contact.php":
-        $CURRENT_PAGE = "Contact";
+        $NAV_PAGE = "Contact";
+        $CURRENT_PAGE = $NAV_PAGE;
         $PAGE_TITLE = "Contact";
         break;
     case "/our-story.php":
-        $CURRENT_PAGE = "Our-Story";
+        $NAV_PAGE = "Our-Story";
+        $CURRENT_PAGE = $NAV_PAGE;
         $PAGE_TITLE = "Our Story";
         break;
     case "/packages":
-        $CURRENT_PAGE = "Packages";
-        $PAGE_TITLE = "Packages";
+        $NAV_PAGE = "Packages";
+        //Check which subpage we're on
+        switch ($baseName) {
+            case "economy.php":
+                $CURRENT_PAGE = "Economy-P";
+                $PAGE_TITLE = "Economy Package";
+                break;
+            case "redwood.php":
+                $CURRENT_PAGE = "Redwood-P";
+                $PAGE_TITLE = "Redwood Package";
+                break;
+            case "deluxe.php":
+                $CURRENT_PAGE = "Deluxe-P";
+                $PAGE_TITLE = "Deluxe Package";
+                break;
+            case "relaunch.php":
+                $CURRENT_PAGE = "Relaunch-P";
+                $PAGE_TITLE = "Relaunch Package";
+                break;
+            default:
+            	//Values for "Index.php"
+                $CURRENT_PAGE = $NAV_PAGE;
+                $PAGE_TITLE = "Packages";
+        }
         break;
     case "/email_sent.php":
-        $CURRENT_PAGE = "Contact";
+        $NAV_PAGE = "Contact";
+        $CURRENT_PAGE = $NAV_PAGE;
         $PAGE_TITLE = "Message Sent";
+        break;
     default:
-        $CURRENT_PAGE = "Index";
+        $NAV_PAGE = "Index";
+        $CURRENT_PAGE = $NAV_PAGE;
         $PAGE_TITLE = "Welcome to Redwood";
 }
 

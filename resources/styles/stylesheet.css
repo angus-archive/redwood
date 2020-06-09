@@ -144,14 +144,29 @@ Logo at top of page
 	padding-right:30px;
 }
 
-#currentNavItem{
-	color: var(--redwoodRed);
+.currentNavItem{
+	color: var(--redwoodRed) !important;
 }
-
 
 .navWrapper{
 	width: 100%;
 }
+
+.navSub{
+	display:none;
+}
+
+.dropdown-menu > a:hover {
+	background-color: #3C434B;
+	background-image: none;
+}
+
+.dropdown-menu > .activeSub {
+	background-color: #545D68;
+
+}
+
+
 
 
 
@@ -273,7 +288,7 @@ Logo at top of page
 
 
 /* Wide phone */
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 575px) {
 	.packageLinkSides{
 		border-top: 2px solid #c6c6c6;
 		border-bottom: 2px solid #c6c6c6;
@@ -286,6 +301,8 @@ PORTRAIT TABLET OR BIG PHONE
 @media screen and (min-width: 650px) {
 
 }
+
+
 
 /*
 LARGE / LANDSCAPE TABLET
