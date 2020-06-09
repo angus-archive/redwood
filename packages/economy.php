@@ -11,8 +11,9 @@
     <div id="content-wrap">
         <!-- Header-->
         <?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/header-content.php";include_once($path); ?>
-        <!-- Page Banner-->
-        <div class="py-2 mb-4 text-center econBackground">
+
+		<!-- Page Banner-->
+        <div class="py-2 text-center econBackground">
             <div class="container h-100">
                 <div class="row h-100 align-items-center">
                     <div class="col-lg-12">
@@ -22,9 +23,13 @@
                 </div>
             </div>
         </div>
-        <!-- Container -->
-        <div class="container">
-
+		<!-- Package Bar-->
+        <?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/packageBar.php";include_once($path); ?>
+		<!-- Spacer-->
+		<div class="mSpacer-y-40"></div>
+		<!-- Container -->
+		<div class="container pt-sm-4">
+			
         </div>
     </div>
     <!-- Footer -->
