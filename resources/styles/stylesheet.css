@@ -83,7 +83,7 @@ footer{
 	margin-bottom: 80px !important;
 }
 
-.mSpacer-y-80{
+.mSpacer-y-40{
 	margin-top: 40px !important;
 	margin-bottom: 40px !important;
 }
@@ -125,10 +125,9 @@ Logo at top of page
 
 }
 
-#pageBanner{
+.pageBannerColour{
 	background-color: #272a47 !important;
-	/*background-color: var(--redwoodDarkRed) !important;*/
-	text-align: center;
+
 }
 
 /*

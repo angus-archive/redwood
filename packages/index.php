@@ -12,7 +12,7 @@
 			<!-- Header-->
 			<?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/header-content.php";include_once($path); ?>
 			<!-- Page Banner-->
-			<div id="pageBanner" class="bg-primary py-2 mb-3">
+			<div class="py-2 mb-3 pageBannerColour text-center">
 				<div class="container h-90">
 					<div class="row h-100 align-items-center">
 						<div class="col-lg-12">
@@ -22,6 +22,8 @@
 					</div>
 				</div>
 			</div>
+			<!-- Spacer-->
+			<div class="mSpacer-y-40"></div>
 			<!-- Packages Container -->
 			<div class="container pt-sm-4">
 				<!-- Packages -->
@@ -45,7 +47,7 @@
 							</ul>
 
 							<div class="card-footer">
-								<a href="#" class="btn btn-primary econBackground" style="border: 0 !important;">Find Out More!</a>
+								<a href="/packages/economy.php" class="btn btn-primary econBackground" style="border: 0 !important;">Find Out More!</a>
 							</div>
 
 						</div>
@@ -70,7 +72,7 @@
 							</ul>
 
 							<div class="card-footer">
-								<a href="#" class="btn btn-primary redwoodBackground" style="border: 0 !important;">Find Out More!</a>
+								<a href="/packages/redwood.php" class="btn btn-primary redwoodBackground" style="border: 0 !important;">Find Out More!</a>
 							</div>
 
 						</div>
@@ -95,7 +97,7 @@
 							</ul>
 
 							<div class="card-footer">
-								<a href="#" class="btn btn-primary deluxeBackground" style="border: 0 !important;">Find Out More!</a>
+								<a href="/packages/deluxe.php" class="btn btn-primary deluxeBackground" style="border: 0 !important;">Find Out More!</a>
 							</div>
 
 						</div>
@@ -103,6 +105,7 @@
 
 				</div>
 			</div>
+			<!-- Spacer -->
 			<div class="mSpacer-y-80"></div>
 			<!-- Relaunch Section -->
 			<div class="container pb-sm-4">
@@ -136,6 +139,9 @@
 					</div>
 				</div>
 			</div>
+			<!-- Spacer -->
+			<div class="mSpacer-y-80"></div>
+			<!-- Comparison Table -->
 		</div>
 		<!-- Footer -->
 		<?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/footer.php";include_once($path); ?>

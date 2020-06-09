@@ -13,7 +13,7 @@
 				<!-- Header-->
 				<?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/header-content.php";include_once($path); ?>
 				<!-- Page Banner-->
-				<div id="pageBanner" class="py-2 mb-4">
+				<div class="py-2 mb-4 pageBannerColour text-center">
 					<div class="container h-90">
 						<div class="row h-100 align-items-center">
 							<div class="col-lg-12">
