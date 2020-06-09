@@ -74,6 +74,19 @@ footer{
 
 }
 
+/*
+------------SPacer---------
+*/
+
+.mSpacer-y-80{
+	margin-top: 80px !important;
+	margin-bottom: 80px !important;
+}
+
+.pSpacer-y-40{
+	padding-top: 40px !important;
+	padding-bottom: 40px !important;
+}
 
 
 /*
@@ -188,7 +201,11 @@ Logo at top of page
 
 
 #relaunchCard{
-	max-width: 750px;
+	max-width: 800px;
+}
+
+#relaunchRocket{
+	max-width: 300px;
 }
 
 .packageShadow{

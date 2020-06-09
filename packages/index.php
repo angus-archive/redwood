@@ -103,30 +103,36 @@
 
 				</div>
 			</div>
+			<div class="mSpacer-y-80"></div>
 			<!-- Relaunch Section -->
-			<div class="container-fluid pb-sm-4 align-items-center">
+			<div class="container-fluid pb-sm-4">
 				<h1 class="display-4 mb-5 text-center">Featured</h1>
-				<!--Relaunch-->
-				<div id="relaunchCard" class="card w-75 text-center mx-auto packageShadow">
-					<div class="card-header blueSteelBackground text-light">
-						<h4 class="my-0 font-weight-normal">Relaunch</h4>
+				<div class="pSpacer-y-40"></div>
+				<div class="row justify-content-end">
+					<div class="col-md-6 align-self-center mb-5">
+						<img id="relaunchRocket" class="w-50 d-block mx-auto" src="/resources/images/rocketDark.svg" alt="Card image cap">
 					</div>
-					<div class="card-body">
-						<img class="w-25 card-img-top" src="/resources/images/rocketDark.svg" alt="Card image cap">
-					</div>
-					<div class="card-body">
-						<p class="card-text">Here at Redwood we understand the devastating affects Coronavirus has had on businesses, that's why we're introducing our Relaunch package to help you come out lockdown stronger than ever</p>
-					</div>
+					<div class="col-md-6 align-self-center mb-5">
+						<!--Relaunch-->
+						<div id="relaunchCard" class="card w-75 text-center mx-auto packageShadow">
+							<div class="card-header blueSteelBackground text-light">
+								<h4 class="my-0 font-weight-normal">Relaunch</h4>
+							</div>
+							<div class="card-body">
+								<p class="card-text">Here at Redwood we understand the devastating affects Coronavirus has had on businesses, that's why we're introducing our Relaunch package to help you come out lockdown stronger than ever</p>
+							</div>
 
-					<ul class="list-group list-group-flush">
-						<li class="list-group-item"><h5 class="card-text relaunchCol">What's included? </h5></li>
-						<li class="list-group-item">Online reopening event</li>
-						<li class="list-group-item">Multiple advert creation</li>
-						<li class="list-group-item">Active marketing</li>
-					</ul>
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item"><h5 class="card-text relaunchCol">What's included? </h5></li>
+								<li class="list-group-item">Online reopening event</li>
+								<li class="list-group-item">Multiple advert creation</li>
+								<li class="list-group-item">Active marketing</li>
+							</ul>
 
-					<div class="card-footer">
-						<a href="#" class="btn btn-primary relaunchBackground" style="border: 0 !important;">Find Out More!</a>
+							<div class="card-footer">
+								<a href="#" class="btn btn-primary relaunchBackground" style="border: 0 !important;">Find Out More!</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
