@@ -23,7 +23,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- Page Content -->
+				<!-- Container -->
 				<div class="container">
 
 					<div class="row">

@@ -22,44 +22,81 @@
 					</div>
 				</div>
 			</div>
-			<!-- Page Content -->
+			<!-- Container -->
 			<div class="container">
 				
 				<div class="row">
+					<!-- Economy -->
 					<div class="col-md-4 mb-5">
 						<div class="card h-100">
-							<img class="card-img-top" src="http://placehold.it/300x200" alt="">
+							<div class="card-header blueSteelBackground text-light">
+								<h4 class="my-0 font-weight-normal">Economy</h4>
+							</div>
 							<div class="card-body">
-								<h4 class="card-title">Card title</h4>
-								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus.</p>
+								<p class="card-text">Our Economy Package features is perfect for people looking to get started on social media</p>
+
 							</div>
+
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item"><h5 class="card-text econCol">What's included? </h5></li>
+								<li class="list-group-item">Monthly Meetings</li>
+								<li class="list-group-item">Social Media Advice</li>
+								<li class="list-group-item">Creative content ideas</li>
+							</ul>
+
 							<div class="card-footer">
-								<a href="#" class="btn btn-primary">Find Out More!</a>
+								<a href="#" class="btn btn-primary econBackground" style="border: 0 !important;">Find Out More!</a>
 							</div>
+
 						</div>
 					</div>
+					<!-- Redwood -->
 					<div class="col-md-4 mb-5">
 						<div class="card h-100">
-							<img class="card-img-top" src="http://placehold.it/300x200" alt="">
+							<div class="card-header blueSteelBackground text-light">
+								<h4 class="my-0 font-weight-normal">Redwood</h4>
+							</div>
 							<div class="card-body">
-								<h4 class="card-title">Card title</h4>
-								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus totam ut praesentium aut.</p>
+								<p class="card-text">Our Economy Package features is perfect for people looking to get started on social media</p>
+
 							</div>
+
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item"><h5 class="card-text redwoodCol">What's included? </h5></li>
+								<li class="list-group-item">Fortnightly meetings</li>
+								<li class="list-group-item">Social Media management</li>
+								<li class="list-group-item">Build online presence</li>
+							</ul>
+
 							<div class="card-footer">
-								<a href="#" class="btn btn-primary">Find Out More!</a>
+								<a href="#" class="btn btn-primary redwoodBackground" style="border: 0 !important;">Find Out More!</a>
 							</div>
+
 						</div>
 					</div>
+					<!-- Deluxe -->
 					<div class="col-md-4 mb-5">
 						<div class="card h-100">
-							<img class="card-img-top" src="http://placehold.it/300x200" alt="">
+							<div class="card-header blueSteelBackground text-light">
+								<h4 class="my-0 font-weight-normal">Deluxe</h4>
+							</div>
 							<div class="card-body">
-								<h4 class="card-title">Card title</h4>
-								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+								<p class="card-text">Our Economy Package features is perfect for people looking to get started on social media</p>
+
 							</div>
+
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item"><h5 class="card-text deluxeCol">What's included? </h5></li>
+								<li class="list-group-item">Weekly meetings</li>
+								<li class="list-group-item">Opportunity reach analysis</li>
+								<li class="list-group-item">Monthly business review</li>
+								<li class="list-group-item">Photography session</li>
+							</ul>
+
 							<div class="card-footer">
-								<a href="#" class="btn btn-primary">Find Out More!</a>
+								<a href="#" class="btn btn-primary deluxeBackground" style="border: 0 !important;">Find Out More!</a>
 							</div>
+
 						</div>
 					</div>
 				</div>
