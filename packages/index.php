@@ -17,7 +17,7 @@
 					<div class="row h-100 align-items-center">
 						<div class="col-lg-12">
 							<h1 class="display-4 text-white mt-5 mb-2">Packages</h1>
-							<p class="lead mb-5 text-white-50">Browse some of our packages...</p>
+							<p class="lead mb-5 text-white-50">We have a package that will suit your business needs...</p>
 						</div>
 					</div>
 				</div>
@@ -107,7 +107,7 @@
 			<!-- Relaunch Section -->
 			<div class="container pb-sm-4">
 				<h1 class="display-4 mb-5 text-center">Featured</h1>
-				<div class="pSpacer-y-40"></div>
+				<div class="pSpacer-y-20"></div>
 				<div class="row justify-content-end">
 					<div class="col-lg-6 align-self-center mb-5">
 						<img id="relaunchRocket" class="w-50 d-block mx-auto" src="/resources/images/rocketDark.svg" alt="Card image cap">
