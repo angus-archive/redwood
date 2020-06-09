@@ -15,12 +15,13 @@
         <!-- Spacer-->
         <div class="mSpacer-y-40"></div>
 
-        <div class="container">
+        <div class="container my-auto">
             <h2 class="text-center"> Error, the page you are looking for does not exist</h2>
+			<div class="pSpacer-y-20"></div>
             <div class="mx-auto">
                 <img class="mx-auto d-block" src="/resources/images/kitty.png" style="width: 450px; height: auto" alt="Cute Kitty">
-            </div>
-        </div>
+			</div>
+		</div>
 
 		<!-- Spacer-->
 		<div class="mSpacer-y-80"></div>
