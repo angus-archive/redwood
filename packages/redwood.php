@@ -12,16 +12,16 @@
         <!-- Header-->
         <?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/header-content.php";include_once($path); ?>
 		<!-- Page Banner-->
-        <div class="py-2 text-center redwoodBackground">
-            <div class="container h-100">
-                <div class="row h-100 align-items-center">
-                    <div class="col-lg-12">
-                        <h1 class="display-4 text-white mt-5 mb-2">The Redwood Package</h1>
-                        <p class="lead mb-5 text-white-50">This is a brief description of the redwood package, who it is for etc</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+		<div class="py-2 text-center bg-light">
+			<div class="container h-100">
+				<div class="row h-100 align-items-center">
+					<div class="col-lg-12">
+						<h1 class="display-4 mt-5 mb-2 redwoodCol font-weight-bold">Redwood Package</h1>
+						<p class="lead mb-5">This is a brief description of the economy package, who it is for etc</p>
+					</div>
+				</div>
+			</div>
+		</div>
 		<!-- Package Bar-->
         <?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/packageBar.php";include_once($path); ?>
         <!-- Container -->

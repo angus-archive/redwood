@@ -221,17 +221,23 @@ Logo at top of page
 	box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.23);
 }
 
-.package-top-link{
-	color: white;
-	width: 100%;
-	padding: 5px;
-
-}
 
 .packageLink{
-	color: white;
+	background-color: #ececec;
 	padding: 5px;
+	border-top: 2px solid #c6c6c6;
+	border-bottom: 2px solid #c6c6c6;
 }
+
+.packageLinkSides{
+	border-left: 2px solid #c6c6c6;
+	border-right: 2px solid #c6c6c6;
+	border-top: 0;
+	border-bottom: 0;
+
+}
+
+
 
 .packageLink:hover{
 	text-decoration: none !important;
@@ -267,9 +273,11 @@ Logo at top of page
 
 
 /* Wide phone */
-@media screen and (min-width: 450px) {
-
-
+@media screen and (min-width: 550px) {
+	.packageLinkSides{
+		border-top: 2px solid #c6c6c6;
+		border-bottom: 2px solid #c6c6c6;
+	}
 }
 
 /*
