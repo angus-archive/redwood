@@ -27,7 +27,7 @@
 				<!-- Packages -->
 				<div class="row">
 					<!-- Economy -->
-					<div class="col-md-4 mb-5">
+					<div class="col-lg-4 mb-5">
 						<div class="card h-100 packageShadow">
 							<div class="card-header blueSteelBackground text-light">
 								<h4 class="my-0 font-weight-normal">Economy</h4>
@@ -51,7 +51,7 @@
 						</div>
 					</div>
 					<!-- Redwood -->
-					<div class="col-md-4 mb-5">
+					<div class="col-lg-4 mb-5">
 						<div class="card h-100 packageShadow">
 							<div class="card-header blueSteelBackground text-light">
 								<h4 class="my-0 font-weight-normal">Redwood</h4>
@@ -76,7 +76,7 @@
 						</div>
 					</div>
 					<!-- Deluxe -->
-					<div class="col-md-4 mb-5">
+					<div class="col-lg-4 mb-5">
 						<div class="card h-100 packageShadow">
 							<div class="card-header blueSteelBackground text-light">
 								<h4 class="my-0 font-weight-normal">Deluxe</h4>
@@ -105,14 +105,14 @@
 			</div>
 			<div class="mSpacer-y-80"></div>
 			<!-- Relaunch Section -->
-			<div class="container-fluid pb-sm-4">
+			<div class="container pb-sm-4">
 				<h1 class="display-4 mb-5 text-center">Featured</h1>
 				<div class="pSpacer-y-40"></div>
 				<div class="row justify-content-end">
-					<div class="col-md-6 align-self-center mb-5">
+					<div class="col-lg-6 align-self-center mb-5">
 						<img id="relaunchRocket" class="w-50 d-block mx-auto" src="/resources/images/rocketDark.svg" alt="Card image cap">
 					</div>
-					<div class="col-md-6 align-self-center mb-5">
+					<div class="col-lg-6 align-self-center mb-5">
 						<!--Relaunch-->
 						<div id="relaunchCard" class="card w-75 text-center mx-auto packageShadow">
 							<div class="card-header blueSteelBackground text-light">
