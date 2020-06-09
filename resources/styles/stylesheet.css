@@ -33,7 +33,7 @@ Overrides for Bootstrap
 	--tooltipBackground: #424242;
 
 	--economyColour: #52b845;
-	--deluxeColour: #f5c84c;
+	--deluxeColour: #4859bf;
 	--relaunchColour: #00aee0;
 
 	--defaultShadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.23);
@@ -132,99 +132,12 @@ Logo at top of page
 }
 
 
-/*
----------CONTACT FORM(MOBILE)------
- */
-
-#contactForm{
-	display: flex;
-	flex-direction: column;
-	background-color: #FFFFFF;
-	box-shadow: var(--defaultShadow);
-	margin-top: 20px;
-	padding: 30px 20px 10px 20px;
-	border-top: 2px solid var(--redwoodGreyDark);
-	width: 80%;
-	max-width: 450px;
-
-}
-
-/*Change all form input styles use input[type=text] to target others*/
-#contactForm input[type=text],#contactForm input[type=email] , #contactForm textarea {
-	margin: 10px 20px;
-	font-family: "Avenir Next Medium", sans-serif;
-	font-size: 1rem;
-	padding: 12px 20px;
-	/*Remove the styling for IOS devices*/
-	-webkit-appearance: none;
-	/*Border properties*/
-	border: 2px solid;
-	border-color: #dbdbdb;
-	border-right: 3px solid var(--buttonGreen);
-	-webkit-transition: border-color 0.4s ease;
-	-moz-transition: border-color 0.4s ease;
-	border-radius: 3px;
-	color: #404040 !important;
-}
-
-/* Focus */
-#contactForm input[type=text]:focus ,#contactForm input[type=email]:focus, #contactForm textarea:focus{
-	border-color: #909090 !important;
-	border-width: 2px !important;
-	outline:0 !important;
-}
-
-/* Removed Red border for required stuff*/
-#contactForm input[type=text]:required ,#contactForm input[type=email]:required, #contactForm textarea:required{
-	box-shadow:none;
-}
-
-/* Removed Red border for required stuff*/
-#contactForm input[type=text]:invalid, #contactForm input[type=email]:invalid, #contactForm textarea:invalid{
-	border-color: #dbdbdb #ecb9b9 #dbdbdb #dbdbdb ;
-}
-
-input:required {
-	box-shadow:none;
-}
-
-#contactForm textarea{
-	resize: none;
-	height: 10em;
-}
-
-
-
-#contactForm #submitButton{
-	-webkit-appearance: none;
-	background-color: var(--buttonGreen);
-	border: none;
-	font-family: "Avenir Next Medium", sans-serif;
-	color: white;
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	border-radius: 0.4rem;
-	margin: 30px 20px;
-	font-size: 1rem;
-
-}
-
-#contactForm #submitButton:hover{
-	background-color: var(--buttonHoverGreen);
-	cursor: pointer;
-}
 
 
 
 /*
 ------------PACKAGES SECTION---------
 */
-
-
-
-
 
 
 /* Package Colours */
@@ -239,7 +152,7 @@ input:required {
 }
 
 .deluxeBackground{
-	background-color:#F5C84C ;
+	background-color:#4859BF ;
 	background-color: var(--deluxeColour)!important;
 }
 
@@ -249,7 +162,6 @@ input:required {
 }
 
 .relaunchBackground{
-	color: #00AEE0;
 	background-color: var(--relaunchColour)!important;
 }
 
@@ -268,8 +180,20 @@ input:required {
 	color: var(--deluxeColour)!important;
 }
 
+.relaunchCol{
+	color: var(--relaunchColour)
+}
 
 
+
+
+#relaunchCard{
+	max-width: 750px;
+}
+
+.packageShadow{
+	box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.23);
+}
 
 
 

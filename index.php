@@ -13,7 +13,7 @@
 				<!-- Header-->
 				<?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/header-content.php";include_once($path); ?>
 				<!-- Page Banner-->
-				<div id="pageBanner" class="py-2 mb-3">
+				<div id="pageBanner" class="py-2 mb-4">
 					<div class="container h-90">
 						<div class="row h-100 align-items-center">
 							<div class="col-lg-12">
@@ -34,25 +34,8 @@
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum.</p>
 							<a class="btn btn-primary btn-lg" href="#">Call to Action &raquo;</a>
 						</div>
-						<div class="col-md-4 mb-5">
-							<h2>Contact Us</h2>
-							<hr>
-							<address>
-								<strong>Start Bootstrap</strong>
-								<br>3481 Melrose Place
-								<br>Beverly Hills, CA 90210
-								<br>
-							</address>
-							<address>
-								<abbr title="Phone">P:</abbr>
-								(123) 456-7890
-								<br>
-								<abbr title="Email">E:</abbr>
-								<a href="mailto:#">name@example.com</a>
-							</address>
-						</div>
 					</div>
-					<!-- /.row -->
+
 
 				</div>
 			</div>
