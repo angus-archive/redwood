@@ -14,8 +14,8 @@
 
 		<!-- Page Banner-->
         <div class="py-2 text-center bg-light">
-            <div class="container h-100">
-                <div class="row h-100 align-items-center">
+            <div class="container">
+                <div class="row align-items-center">
                     <div class="col-lg-12">
                         <h1 class="display-4 mt-5 mb-2 econCol font-weight-bold">Economy Package</h1>
                         <p class="lead mb-5">This is a brief description of the economy package, who it is for etc</p>
@@ -25,12 +25,56 @@
         </div>
 		<!-- Spacer-->
 		<div class="mSpacer-y-40"></div>
+		<h3 class=" mb-2 text-center">Core features</h3>
 		<!-- Container -->
 		<div class="container pt-sm-4">
-
+			<div class="row">
+				<div class="col-lg-4 mb-5">
+					<div class="card text-center">
+						<div class="card-body">
+							<img class="mb-2" src="https://via.placeholder.com/90">
+							<h3 class="mt-sm-2">Meetings</h3>
+							<div class="featureDivider"></div>
+							<p class="p-1"> This is a brief description of the feature</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 mb-5">
+					<div class="card text-center">
+						<div class="card-body">
+							<img class="mb-2" src="https://via.placeholder.com/90">
+							<h3 class="mt-sm-2">Advice</h3>
+							<div class="featureDivider"></div>
+							<p class="p-1"> This is a brief description of the feature</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 mb-5">
+					<div class="card text-center">
+						<div class="card-body">
+							<img class="mb-2" src="https://via.placeholder.com/90">
+							<h3 class="mt-sm-2">Ideas</h3>
+							<div class="featureDivider"></div>
+							<p class="p-1"> This is a brief description of the feature</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 mb-5">
+					<div class="card text-center">
+						<div class="card-body">
+							<img class="mb-2" src="https://via.placeholder.com/90">
+							<h3 class="mt-sm-2">Calendar</h3>
+							<div class="featureDivider"></div>
+							<p class="p-1"> This is a brief description of the feature</p>
+						</div>
+					</div>
+				</div>
+			</div>
         </div>
     </div>
-    <!-- Footer -->
+	<!-- Optional Extras -->
+    <?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/optional-extras.php";include_once($path); ?>
+	<!-- Footer -->
     <?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/footer.php";include_once($path); ?>
     <!-- Footer - Tags -->
     <?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/footer-tags.php";include_once($path); ?>

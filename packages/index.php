@@ -13,8 +13,8 @@
 			<?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/header-content.php";include_once($path); ?>
 			<!-- Page Banner-->
 			<div class="py-2 mb-3 pageBannerColour text-center">
-				<div class="container h-90">
-					<div class="row h-100 align-items-center">
+				<div class="container">
+					<div class="row align-items-center">
 						<div class="col-lg-12">
 							<h1 class="display-4 text-white mt-5 mb-2">Packages</h1>
 							<p class="lead mb-5 text-white-50">We have a package that will suit your business needs...</p>
@@ -109,7 +109,7 @@
 			<div class="mSpacer-y-80"></div>
 			<!-- Relaunch Section -->
 			<div class="container pb-sm-4">
-				<h1 class="display-4 mb-5 text-center">Featured</h1>
+				<h1 class="display-5 mb-5 text-center">Featured</h1>
 				<div class="pSpacer-y-20"></div>
 				<div class="row justify-content-end">
 					<div class="col-lg-6 align-self-center mb-5">
@@ -133,7 +133,7 @@
 							</ul>
 
 							<div class="card-footer">
-								<a href="#" class="btn btn-primary relaunchBackground" style="border: 0 !important;">Find Out More!</a>
+								<a href="/packages/relaunch.php" class="btn btn-primary relaunchBackground" style="border: 0 !important;">Find Out More!</a>
 							</div>
 						</div>
 					</div>

@@ -11,19 +11,22 @@
     <div id="content-wrap">
         <!-- Header-->
         <?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/header-content.php";include_once($path); ?>
-		<!-- Page Banner-->
-		<div class="py-2 text-center bg-light">
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-lg-12">
-						<h1 class="display-4 mt-5 mb-2 redwoodCol font-weight-bold">Redwood Package</h1>
-						<p class="lead mb-5">This is a brief description of the economy package, who it is for etc</p>
-					</div>
-				</div>
-			</div>
-		</div>
+
+        <!-- Page Banner-->
+        <div class="py-2 text-center bg-light">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <h1 class="display-4 mt-5 mb-2 relaunchCol font-weight-bold">Relaunch Package</h1>
+                        <p class="lead mb-5">This is a brief description of the relaunch package, who it is for etc</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Spacer-->
+        <div class="mSpacer-y-40"></div>
         <!-- Container -->
-        <div class="container">
+        <div class="container pt-sm-4">
 
         </div>
     </div>

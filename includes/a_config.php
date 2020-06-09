@@ -65,5 +65,4 @@ switch ($dirName) {
 
 //Setup Base URL
 $REDWOOD_ROOT = $_SERVER['DOCUMENT_ROOT'];
-
 ?>

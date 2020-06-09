@@ -22,7 +22,7 @@
 					<a class="dropdown-item text-white <?php if($CURRENT_PAGE == "Redwood-P"){echo "activeSub";}?>" href="/packages/redwood.php">Redwood</a>
 					<a class="dropdown-item text-white <?php if($CURRENT_PAGE == "Deluxe-P"){echo "activeSub";}?>" href="/packages/deluxe.php">Deluxe</a>
 					<h6 class="dropdown-header">Featured Packages</h6>
-					<a class="dropdown-item text-white <?php if($CURRENT_PAGE == "Relaunch-P"){echo "activeSub";}?>" href="#">Relaunch</a>
+					<a class="dropdown-item text-white <?php if($CURRENT_PAGE == "Relaunch-P"){echo "activeSub";}?>" href="/packages/relaunch.php">Relaunch</a>
 				</div>
 			</li>
 			<li class="nav-item">
