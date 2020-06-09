@@ -161,8 +161,15 @@ Logo at top of page
 	background-image: none;
 }
 
+
+/* The currently selected item in submenu */
 .dropdown-menu > .activeSub {
 	background-color: #545D68;
+
+}
+
+.dropdown-menu > .activeSub:hover{
+	background-color: #545D68 !important;
 
 }
 
@@ -265,16 +272,6 @@ Logo at top of page
 
 
 
-/*
---------ERROR PAGE--------
- */
-
-#kittyContainer{
-	width: 90%;
-	overflow: hidden;
-	display: flex;
-	justify-content: center;
-}
 
 /*
 ===========MEDIA QUERIES============
