@@ -175,7 +175,8 @@ Logo at top of page
 }
 
 .dropdown-menu > a:hover {
-	background-color: #E1E1E2;
+	/*background-color: #E1E1E2;*/
+	background-color: rgba(87, 87, 87,0.1);
 	background-image: none;
 }
 
