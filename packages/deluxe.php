@@ -22,11 +22,45 @@
 				</div>
 			</div>
 		</div>
-        <!-- Container -->
-        <div class="container">
+		<!-- Core Features -->
+	    <?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/all-features.php";include_once($path); ?>
+		<div class="container pt-sm-4">
+			<div class="row">
+				<div class="col-lg-4 mb-5">
+				    <?php social_advice(); ?>
+				</div>
+				<div class="col-lg-4 mb-5">
+				    <?php creative_ideas(); ?>
+				</div>
+				<div class="col-lg-4 mb-5">
+				    <?php meetings(); ?>
+				</div>
+				<div class="col-lg-4 mb-5">
+				    <?php calendar(); ?>
+				</div>
+				<div class="col-lg-4 mb-5">
+				    <?php build_online_presence(); ?>
+				</div>
+				<div class="col-lg-4 mb-5">
+				    <?php account_management(); ?>
+				</div>
+				<div class="col-lg-4 mb-5">
+					<?php reach_analysis_reports(); ?>
+				</div>
+				<div class="col-lg-4 mb-5">
+					<?php photography(); ?>
+				</div>
+				<div class="col-lg-4 mb-5">
+					<?php microsoft_masterclass(); ?>
+				</div>
 
-        </div>
+			</div>
+		</div>
     </div>
+	<!-- Find-out-more -->
+	<?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/find-out-more.php";include_once($path); ?>
+	<!-- Optional Extras -->
+	<?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/optional-extras.php";include_once($path); ?>
     <!-- Footer -->
     <?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/footer.php";include_once($path); ?>
     <!-- Footer - Tags -->

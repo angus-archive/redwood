@@ -7,7 +7,7 @@
 				<div class="card-body">
 					<img class="mb-2" src="https://via.placeholder.com/90">
 					<h3 class="mt-sm-2">Microsoft Masterclass</h3>
-					<div class="featureDivider optionalExtraBorderTop"></div>
+					<div class="featureDivider defaultBorderTop"></div>
 					<p class="p-1">Learn how to use Microsoft Office</p>
 				</div>
 			</div>
@@ -17,7 +17,7 @@
 				<div class="card-body">
 					<img class="mb-2" src="https://via.placeholder.com/90">
 					<h3 class="mt-sm-2">Logo Design</h3>
-					<div class="featureDivider optionalExtraBorderTop"></div>
+					<div class="featureDivider defaultBorderTop"></div>
 					<p class="p-1">A fresh new logo for your business</p>
 				</div>
 			</div>
@@ -27,7 +27,7 @@
 				<div class="card-body">
 					<img class="mb-2" src="https://via.placeholder.com/90">
 					<h3 class="mt-sm-2">Photography Sessions</h3>
-					<div class="featureDivider optionalExtraBorderTop"></div>
+					<div class="featureDivider defaultBorderTop"></div>
 					<p class="p-1">Showcase your products or services with professional pictures</p>
 				</div>
 				<div class="card-footer redwoodBackground text-white p-1">
@@ -40,7 +40,7 @@
 				<div class="card-body">
 					<img class="mb-2" src="https://via.placeholder.com/90">
 					<h3 class="mt-sm-2">Financial Advice</h3>
-					<div class="featureDivider optionalExtraBorderTop"></div>
+					<div class="featureDivider defaultBorderTop"></div>
 					<p class="p-1">Get financial tips and advice for running your business</p>
 				</div>
 			</div>
@@ -50,7 +50,7 @@
 				<div class="card-body">
 					<img class="mb-2" src="https://via.placeholder.com/90">
 					<h3 class="mt-sm-2">Branding</h3>
-					<div class="featureDivider optionalExtraBorderTop"></div>
+					<div class="featureDivider defaultBorderTop"></div>
 					<p class="p-1">Stand out from your competition with our branding service</p>
 				</div>
 			</div>
@@ -60,7 +60,7 @@
 				<div class="card-body">
 					<img class="mb-2" src="https://via.placeholder.com/90">
 					<h3 class="mt-sm-2">Opportunity Reach Analysis</h3>
-					<div class="featureDivider optionalExtraBorderTop"></div>
+					<div class="featureDivider defaultBorderTop"></div>
 					<p class="p-1">Whatever that is, provide a description here</p>
 				</div>
 			</div>
@@ -70,7 +70,7 @@
 				<div class="card-body">
 					<img class="mb-2" src="https://via.placeholder.com/90">
 					<h3 class="mt-sm-2">Leads Investigation</h3>
-					<div class="featureDivider optionalExtraBorderTop"></div>
+					<div class="featureDivider defaultBorderTop"></div>
 					<p class="p-1">Again, whatever that is, put a description here</p>
 				</div>
 			</div>

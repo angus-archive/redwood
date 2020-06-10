@@ -267,7 +267,7 @@ Logo at top of page
 	border-top: 3px solid var(--relaunchColour);
 }
 
-.optionalExtraBorderTop{
+.defaultBorderTop{
 	border-top: 3px solid #898989;
 }
 .coreCard{
