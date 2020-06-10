@@ -26,7 +26,7 @@
 		<!-- Spacer-->
 		<div class="mSpacer-y-40"></div>
 		<h3 class=" mb-2 text-center">Core features</h3>
-		<!-- Container -->
+		<!-- Core Features -->
 		<div class="container pt-sm-4">
 			<div class="row">
 				<div class="col-lg-4 mb-5">
@@ -72,6 +72,8 @@
 			</div>
         </div>
     </div>
+	<!-- Find-out-more -->
+    <?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/find-out-more.php";include_once($path); ?>
 	<!-- Optional Extras -->
     <?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/optional-extras.php";include_once($path); ?>
 	<!-- Footer -->

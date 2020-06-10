@@ -26,7 +26,6 @@
 		<!-- Spacer-->
 		<div class="mSpacer-y-80"></div>
 
-
     </div>
     <!-- Footer -->
     <?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/footer.php";include_once($path); ?>
