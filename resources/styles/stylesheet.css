@@ -202,7 +202,8 @@ Logo at top of page
 */
 
 
-/* Package Colours */
+/* ----- Background COlOURS -------*/
+
 .econBackground{
 	background-color: #52b845;
 	background-color: var(--economyColour)!important;
@@ -227,6 +228,8 @@ Logo at top of page
 	background-color: var(--relaunchColour)!important;
 }
 
+/* ----- TEXT COlOURS -------*/
+
 .econCol{
 	color: #52b845;
 	color: var(--economyColour)!important;
@@ -243,7 +246,33 @@ Logo at top of page
 }
 
 .relaunchCol{
+	color: #00AEE0;
 	color: var(--relaunchColour)
+}
+
+/* ----- BORDER COlOURS -------*/
+.econBorderTop{
+	border-top: 3px solid var(--economyColour);
+}
+
+.redwoodBorderTop{
+	border-top: 3px solid var(--redwoodRed);
+}
+
+.deluxeBorderTop{
+	border-top: 3px solid var(--deluxeColour);
+}
+
+.relaunchBorderTop{
+	border-top: 3px solid var(--relaunchColour);
+}
+
+.optionalExtraBorderTop{
+	border-top: 3px solid #898989;
+}
+.coreCard{
+	background-color: rgba(0,0,0,0) !important;
+	border: 0!important;
 }
 
 
@@ -286,7 +315,6 @@ Logo at top of page
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 1em;
-	border-top: 3px solid deepskyblue;
 }
 
 
