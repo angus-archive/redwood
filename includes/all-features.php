@@ -16,23 +16,26 @@ function meetings() { global $CURRENT_PAGE ?>
         <div class="card-body">
             <img class="mb-2" src="https://via.placeholder.com/90" alt="This is alt text">
             <h3 class="mt-sm-2">Meetings</h3>
-			<?php
+			<div class="featureDivider <?php
 			//Change colour of divider based on which file is being used
 			switch ($CURRENT_PAGE){
 				case "Economy-P":
-					echo "<div class=\"featureDivider econBorderTop\"></div>";
+					echo "econBorderTop";
 					break;
 				case "Redwood-P":
-					echo "<div class=\"featureDivider redwoodBorderTop\"></div>";
+					echo "redwoodBorderTop";
 					break;
 				case "Deluxe-P":
-					echo "<div class=\"featureDivider deluxeBorderTop\"></div>";
+					echo "deluxeBorderTop";
+					break;
+				case "Relaunch-P":
+					echo "relaunchBorderTop";
 					break;
 				default:
-					echo "<div class=\"featureDivider defaultBorderTop\"></div>";
+					echo "defaultBorderTop";
 					break;
 			}
-			?>
+			?>"></div>
             <p class="p-1"> This is a brief description of the feature</p>
         </div>
     </div>
@@ -45,23 +48,26 @@ function calendar() { global $CURRENT_PAGE ?>
 		<div class="card-body">
 			<img class="mb-2" src="https://via.placeholder.com/90" alt="This is alt text">
 			<h3 class="mt-sm-2">Calendar</h3>
-			<?php
+			<div class="featureDivider <?php
 			//Change colour of divider based on which file is being used
 			switch ($CURRENT_PAGE){
 				case "Economy-P":
-					echo "<div class=\"featureDivider econBorderTop\"></div>";
+					echo "econBorderTop";
 					break;
 				case "Redwood-P":
-					echo "<div class=\"featureDivider redwoodBorderTop\"></div>";
+					echo "redwoodBorderTop";
 					break;
 				case "Deluxe-P":
-					echo "<div class=\"featureDivider deluxeBorderTop\"></div>";
+					echo "deluxeBorderTop";
+					break;
+				case "Relaunch-P":
+					echo "relaunchBorderTop";
 					break;
 				default:
-					echo "<div class=\"featureDivider defaultBorderTop\"></div>";
+					echo "defaultBorderTop";
 					break;
 			}
-			?>
+			?>"></div>
 			<p class="p-1"> This is a brief description of the feature</p>
 		</div>
 	</div>
@@ -74,23 +80,26 @@ function social_advice() { global $CURRENT_PAGE ?>
 		<div class="card-body">
 			<img class="mb-2" src="https://via.placeholder.com/90" alt="This is alt text">
 			<h3 class="mt-sm-2">Advice</h3>
-			<?php
+			<div class="featureDivider <?php
 			//Change colour of divider based on which file is being used
 			switch ($CURRENT_PAGE){
 				case "Economy-P":
-					echo "<div class=\"featureDivider econBorderTop\"></div>";
+					echo "econBorderTop";
 					break;
 				case "Redwood-P":
-					echo "<div class=\"featureDivider redwoodBorderTop\"></div>";
+					echo "redwoodBorderTop";
 					break;
 				case "Deluxe-P":
-					echo "<div class=\"featureDivider deluxeBorderTop\"></div>";
+					echo "deluxeBorderTop";
+					break;
+				case "Relaunch-P":
+					echo "relaunchBorderTop";
 					break;
 				default:
-					echo "<div class=\"featureDivider defaultBorderTop\"></div>";
+					echo "defaultBorderTop";
 					break;
 			}
-			?>
+			?>"></div>
 			<p class="p-1"> This is a brief description of the feature</p>
 		</div>
 	</div>
@@ -103,23 +112,26 @@ function creative_ideas() { global $CURRENT_PAGE ?>
 		<div class="card-body">
 			<img class="mb-2" src="https://via.placeholder.com/90" alt="This is alt text">
 			<h3 class="mt-sm-2">Ideas</h3>
-			<?php
+			<div class="featureDivider <?php
 			//Change colour of divider based on which file is being used
 			switch ($CURRENT_PAGE){
 				case "Economy-P":
-					echo "<div class=\"featureDivider econBorderTop\"></div>";
+					echo "econBorderTop";
 					break;
 				case "Redwood-P":
-					echo "<div class=\"featureDivider redwoodBorderTop\"></div>";
+					echo "redwoodBorderTop";
 					break;
 				case "Deluxe-P":
-					echo "<div class=\"featureDivider deluxeBorderTop\"></div>";
+					echo "deluxeBorderTop";
+					break;
+				case "Relaunch-P":
+					echo "relaunchBorderTop";
 					break;
 				default:
-					echo "<div class=\"featureDivider defaultBorderTop\"></div>";
+					echo "defaultBorderTop";
 					break;
 			}
-			?>
+			?>"></div>
 			<p class="p-1"> This is a brief description of the feature</p>
 		</div>
 	</div>
@@ -134,23 +146,26 @@ function account_management() { global $CURRENT_PAGE ?>
 		<div class="card-body">
 			<img class="mb-2" src="https://via.placeholder.com/90" alt="This is alt text">
 			<h3 class="mt-sm-2">Social Media Management</h3>
-			<?php
+			<div class="featureDivider <?php
 			//Change colour of divider based on which file is being used
 			switch ($CURRENT_PAGE){
 				case "Economy-P":
-					echo "<div class=\"featureDivider econBorderTop\"></div>";
+					echo "econBorderTop";
 					break;
 				case "Redwood-P":
-					echo "<div class=\"featureDivider redwoodBorderTop\"></div>";
+					echo "redwoodBorderTop";
 					break;
 				case "Deluxe-P":
-					echo "<div class=\"featureDivider deluxeBorderTop\"></div>";
+					echo "deluxeBorderTop";
+					break;
+				case "Relaunch-P":
+					echo "relaunchBorderTop";
 					break;
 				default:
-					echo "<div class=\"featureDivider defaultBorderTop\"></div>";
+					echo "defaultBorderTop";
 					break;
 			}
-			?>
+			?>"></div>
 			<p class="p-1"> This is a brief description of the feature</p>
 		</div>
 	</div>
@@ -163,23 +178,26 @@ function build_online_presence() { global $CURRENT_PAGE ?>
 		<div class="card-body">
 			<img class="mb-2" src="https://via.placeholder.com/90" alt="This is alt text">
 			<h3 class="mt-sm-2">Build online presence</h3>
-			<?php
+			<div class="featureDivider <?php
 			//Change colour of divider based on which file is being used
 			switch ($CURRENT_PAGE){
 				case "Economy-P":
-					echo "<div class=\"featureDivider econBorderTop\"></div>";
+					echo "econBorderTop";
 					break;
 				case "Redwood-P":
-					echo "<div class=\"featureDivider redwoodBorderTop\"></div>";
+					echo "redwoodBorderTop";
 					break;
 				case "Deluxe-P":
-					echo "<div class=\"featureDivider deluxeBorderTop\"></div>";
+					echo "deluxeBorderTop";
+					break;
+				case "Relaunch-P":
+					echo "relaunchBorderTop";
 					break;
 				default:
-					echo "<div class=\"featureDivider defaultBorderTop\"></div>";
+					echo "defaultBorderTop";
 					break;
 			}
-			?>
+			?>"></div>
 			<p class="p-1"> This is a brief description of the feature</p>
 		</div>
 	</div>
@@ -194,23 +212,26 @@ function reach_analysis_reports() { global $CURRENT_PAGE ?>
 		<div class="card-body">
 			<img class="mb-2" src="https://via.placeholder.com/90" alt="This is alt text">
 			<h3 class="mt-sm-2">Reach Analysis Report</h3>
-			<?php
+			<div class="featureDivider <?php
 			//Change colour of divider based on which file is being used
 			switch ($CURRENT_PAGE){
 				case "Economy-P":
-					echo "<div class=\"featureDivider econBorderTop\"></div>";
+					echo "econBorderTop";
 					break;
 				case "Redwood-P":
-					echo "<div class=\"featureDivider redwoodBorderTop\"></div>";
+					echo "redwoodBorderTop";
 					break;
 				case "Deluxe-P":
-					echo "<div class=\"featureDivider deluxeBorderTop\"></div>";
+					echo "deluxeBorderTop";
+					break;
+				case "Relaunch-P":
+					echo "relaunchBorderTop";
 					break;
 				default:
-					echo "<div class=\"featureDivider defaultBorderTop\"></div>";
+					echo "defaultBorderTop";
 					break;
 			}
-			?>
+			?>"></div>
 			<p class="p-1"> This is a brief description of the feature</p>
 		</div>
 	</div>
@@ -223,23 +244,26 @@ function photography() { global $CURRENT_PAGE ?>
 		<div class="card-body">
 			<img class="mb-2" src="https://via.placeholder.com/90" alt="This is alt text">
 			<h3 class="mt-sm-2">Photography Sessions</h3>
-			<?php
+			<div class="featureDivider <?php
 			//Change colour of divider based on which file is being used
 			switch ($CURRENT_PAGE){
 				case "Economy-P":
-					echo "<div class=\"featureDivider econBorderTop\"></div>";
+					echo "econBorderTop";
 					break;
 				case "Redwood-P":
-					echo "<div class=\"featureDivider redwoodBorderTop\"></div>";
+					echo "redwoodBorderTop";
 					break;
 				case "Deluxe-P":
-					echo "<div class=\"featureDivider deluxeBorderTop\"></div>";
+					echo "deluxeBorderTop";
+					break;
+				case "Relaunch-P":
+					echo "relaunchBorderTop";
 					break;
 				default:
-					echo "<div class=\"featureDivider defaultBorderTop\"></div>";
+					echo "defaultBorderTop";
 					break;
 			}
-			?>
+			?>"></div>
 			<p class="p-1"> This is a brief description of the feature</p>
 		</div>
 	</div>
@@ -252,23 +276,26 @@ function microsoft_masterclass() { global $CURRENT_PAGE ?>
 		<div class="card-body">
 			<img class="mb-2" src="https://via.placeholder.com/90" alt="This is alt text">
 			<h3 class="mt-sm-2">Microsoft Masterclass</h3>
-			<?php
+			<div class="featureDivider <?php
 			//Change colour of divider based on which file is being used
 			switch ($CURRENT_PAGE){
 				case "Economy-P":
-					echo "<div class=\"featureDivider econBorderTop\"></div>";
+					echo "econBorderTop";
 					break;
 				case "Redwood-P":
-					echo "<div class=\"featureDivider redwoodBorderTop\"></div>";
+					echo "redwoodBorderTop";
 					break;
 				case "Deluxe-P":
-					echo "<div class=\"featureDivider deluxeBorderTop\"></div>";
+					echo "deluxeBorderTop";
+					break;
+				case "Relaunch-P":
+					echo "relaunchBorderTop";
 					break;
 				default:
-					echo "<div class=\"featureDivider defaultBorderTop\"></div>";
+					echo "defaultBorderTop";
 					break;
 			}
-			?>
+			?>"></div>
 			<p class="p-1"> This is a brief description of the feature</p>
 		</div>
 	</div>

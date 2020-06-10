@@ -1,6 +1,5 @@
 
 <div class="container">
-
     <form>
         <div class="form-row">
             <!--First Name -->
@@ -24,7 +23,7 @@
         <!--Message -->
         <div class="form-group">
             <label for="userMessage">Message</label>
-            <textarea class="form-control" id="userMessage" rows="4" style="resize:none"  placeholder="Your Message..." required></textarea>
+            <textarea class="form-control" id="userMessage" rows="4" style="resize:none"  placeholder="Your Message..." required>Hi, I would like to request information about the <?php echo $PAGE_TITLE; ?></textarea>
         </div>
         <!--Submit -->
         <button class="btn btn-primary my-2" type="submit">Submit</button>
