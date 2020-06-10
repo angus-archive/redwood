@@ -10,6 +10,9 @@
 					<div class="featureDivider defaultBorderTop"></div>
 					<p class="p-1">Learn how to use Microsoft Office</p>
 				</div>
+				<div class="card-footer deluxeBackground text-white p-1">
+					<p class="m-auto small">Free with Deluxe Package</p>
+				</div>
 			</div>
 		</div>
 		<div class="col-lg-3 mb-5">
@@ -30,8 +33,8 @@
 					<div class="featureDivider defaultBorderTop"></div>
 					<p class="p-1">Showcase your products or services with professional pictures</p>
 				</div>
-				<div class="card-footer redwoodBackground text-white p-1">
-					<p class="m-auto small">Free with Redwood Package</p>
+				<div class="card-footer deluxeBackground text-white p-1">
+					<p class="m-auto small">Free with Deluxe Package</p>
 				</div>
 			</div>
 		</div>
@@ -62,6 +65,9 @@
 					<h3 class="mt-sm-2">Opportunity Reach Analysis</h3>
 					<div class="featureDivider defaultBorderTop"></div>
 					<p class="p-1">Whatever that is, provide a description here</p>
+				</div>
+				<div class="card-footer deluxeBackground text-white p-1">
+					<p class="m-auto small">Free with Deluxe Package</p>
 				</div>
 			</div>
 		</div>
