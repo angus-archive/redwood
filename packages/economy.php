@@ -74,6 +74,7 @@
     </div>
 	<!-- Find-out-more -->
     <?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/find-out-more.php";include_once($path); ?>
+
 	<!-- Optional Extras -->
     <?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/optional-extras.php";include_once($path); ?>
 	<!-- Footer -->
