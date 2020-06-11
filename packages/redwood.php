@@ -52,6 +52,7 @@
 		</div>
 		<!-- Package Details -->
 		<div class="container p-sm-4">
+			<h3 class=" pb-3 text-center">About the package</h3>
 			<p id="packageDescription" class="text-center mx-auto" style="max-width: 75%;">The Redwood Package is a great value package, ideal for businesses who are looking to utilise social media as a marketing tool. This package offers a variety of features that will help your business grow its social media presence</p>
 		</div>
 		<div class="pSpacer-y-40"></div>
