@@ -56,6 +56,11 @@
 
 			</div>
 		</div>
+		<!-- Package Details -->
+		<div class="container p-sm-4">
+			<p id="packageDescription" class="text-center mx-auto" style="max-width: 75%;">Our Deluxe Package is by far our most exciting package, offering the greatest variety of services; everything your business needs to build a prominent social media presence and expansive reach. From photography sessions to help you showcase your products/service, to a monthly opportunity reach report, this package will help you every step of the way to successfully social media marketing!</p>
+		</div>
+		<div class="pSpacer-y-40"></div>
     </div>
 	<!-- Find-out-more -->
 	<?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/find-out-more.php";include_once($path); ?>

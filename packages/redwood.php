@@ -48,6 +48,11 @@
 
 			</div>
 		</div>
+		<!-- Package Details -->
+		<div class="container p-sm-4">
+			<p id="packageDescription" class="text-center mx-auto" style="max-width: 75%;">The Redwood Package is a great value package, ideal for businesses who are looking to utilise social media as a marketing tool. This package offers a variety of features that will help your business grow its social media presence</p>
+		</div>
+		<div class="pSpacer-y-40"></div>
     </div>
 	<!-- Find-out-more -->
     <?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/find-out-more.php";include_once($path); ?>

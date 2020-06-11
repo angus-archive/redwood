@@ -44,6 +44,11 @@
 
 			</div>
 		</div>
+		<!-- Package Details -->
+		<div class="container p-sm-4">
+			<p id="packageDescription" class="text-center mx-auto" style="max-width: 75%;">Here at Redwood we understand the devastating impact the Covid-19 Pandemic has had on business. Your business helps up the backbone of our Great British economy and we want to help you get back to business as normal. To help you achieve this, we have carefully curated a thorough and affordable Relaunch package to help you and your business come back with a bang. Social media marketing and effective opportunity analysis will be crucial in helping your business bring back the customers and pull through this difficult period! The Relaunch Package includes an array of carefully selected features, with the goal of getting your business back to normal at the centre of our attention!</p>
+		</div>
+		<div class="pSpacer-y-40"></div>
     </div>
     <!-- Footer -->
     <?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/footer.php";include_once($path); ?>
