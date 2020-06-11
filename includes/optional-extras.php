@@ -5,7 +5,7 @@
 		<div class="col-lg-3 mb-5">
 			<div class="card text-center packageShadow">
 				<div class="card-body">
-					<img class="mb-2" src="https://via.placeholder.com/90">
+					<img class="optionalIcon mb-2" src="/resources/images/icons/microsoft.svg" alt="Microsoft Masterclass icon">
 					<h3 class="mt-sm-2">Microsoft Masterclass</h3>
 					<div class="featureDivider defaultBorderTop"></div>
 					<p class="p-1">Learn how to use Microsoft Office</p>
@@ -18,7 +18,7 @@
 		<div class="col-lg-3 mb-5">
 			<div class="card text-center packageShadow">
 				<div class="card-body">
-					<img class="mb-2" src="https://via.placeholder.com/90">
+					<img class="optionalIcon mb-2" src="/resources/images/icons/logo_design.svg" alt="Logo Design icon">
 					<h3 class="mt-sm-2">Logo Design</h3>
 					<div class="featureDivider defaultBorderTop"></div>
 					<p class="p-1">A fresh new logo for your business</p>
@@ -28,7 +28,7 @@
 		<div class="col-lg-3 mb-5">
 			<div class="card text-center packageShadow">
 				<div class="card-body">
-					<img class="mb-2" src="https://via.placeholder.com/90">
+					<img class="optionalIcon mb-2" src="/resources/images/icons/photography.svg" alt="Photography sessions icon">
 					<h3 class="mt-sm-2">Photography Sessions</h3>
 					<div class="featureDivider defaultBorderTop"></div>
 					<p class="p-1">Showcase your products or services with professional pictures</p>
@@ -41,7 +41,7 @@
 		<div class="col-lg-3 mb-5">
 			<div class="card text-center packageShadow">
 				<div class="card-body">
-					<img class="mb-2" src="https://via.placeholder.com/90">
+					<img class="optionalIcon mb-2" src="/resources/images/icons/finance_advice.svg" alt="Financial advice icon">
 					<h3 class="mt-sm-2">Financial Advice</h3>
 					<div class="featureDivider defaultBorderTop"></div>
 					<p class="p-1">Get financial tips and advice for running your business</p>
@@ -51,7 +51,7 @@
 		<div class="col-lg-4 mb-5">
 			<div class="card text-center packageShadow">
 				<div class="card-body">
-					<img class="mb-2" src="https://via.placeholder.com/90">
+					<img class="optionalIcon mb-2" src="/resources/images/icons/branding.svg" alt="Branding icon">
 					<h3 class="mt-sm-2">Branding</h3>
 					<div class="featureDivider defaultBorderTop"></div>
 					<p class="p-1">Stand out from your competition with our branding service</p>
@@ -61,7 +61,7 @@
 		<div class="col-lg-4 mb-5">
 			<div class="card text-center packageShadow">
 				<div class="card-body">
-					<img class="mb-2" src="https://via.placeholder.com/90">
+					<img class="optionalIcon mb-2" src="/resources/images/icons/reach_analysis.svg" alt="Oppourtunity reach analysis icon">
 					<h3 class="mt-sm-2">Opportunity Reach Analysis</h3>
 					<div class="featureDivider defaultBorderTop"></div>
 					<p class="p-1">Whatever that is, provide a description here</p>
@@ -74,7 +74,7 @@
 		<div class="col-lg-4 mb-5">
 			<div class="card text-center packageShadow">
 				<div class="card-body">
-					<img class="mb-2" src="https://via.placeholder.com/90">
+					<img class="optionalIcon mb-2" src="/resources/images/icons/leads_investigation.svg" alt="Leads investigation icon">
 					<h3 class="mt-sm-2">Leads Investigation</h3>
 					<div class="featureDivider defaultBorderTop"></div>
 					<p class="p-1">Again, whatever that is, put a description here</p>

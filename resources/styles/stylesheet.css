@@ -330,6 +330,16 @@ Logo at top of page
 	margin-bottom: 1em;
 }
 
+.featureIcon{
+	height:80px;
+	width: auto;
+}
+
+.optionalIcon{
+	height: 60px;
+	width: auto;
+}
+
 
 
 
