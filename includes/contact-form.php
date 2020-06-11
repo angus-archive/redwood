@@ -25,6 +25,8 @@
             <label for="userMessage">Message</label>
             <textarea class="form-control" id="userMessage" rows="4" style="resize:none"  placeholder="Your Message..." required>Hi, I would like to request information about the <?php echo $PAGE_TITLE; ?></textarea>
         </div>
+		<!--Privacy Policy-->
+		<p class="small py-1">Your data will be processed in accordance with our <a href="/privacy-policy.php" target="_blank"> Privacy Policy </a></p>
         <!--Submit -->
         <button class="btn btn-primary my-2" type="submit">Submit</button>
     </form>
