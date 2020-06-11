@@ -13,12 +13,12 @@
 				<!-- Header-->
 				<?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/header-content.php";include_once($path); ?>
 				<!-- Page Banner-->
-				<div class="py-2 mb-4 pageBannerColour text-center">
+				<div class="py-2 mb-4 text-center">
 					<div class="container">
 						<div class="row align-items-center">
 							<div class="col-lg-12">
-								<h1 class="display-4 text-white mt-5 mb-2">Welcome to Redwood</h1>
-								<p class="lead mb-5 text-white-50">We are a business management and marketing company dedicated to helping you grow your business.</p>
+								<h1 class="display-4 mt-5 mb-2">Welcome to Redwood</h1>
+								<p class="lead mb-5">We are a business management and marketing company dedicated to helping you grow your business.</p>
 							</div>
 						</div>
 					</div>

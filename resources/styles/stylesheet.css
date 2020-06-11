@@ -255,6 +255,14 @@ Logo at top of page
 	color: var(--relaunchColour)
 }
 
+.redwoodDarkGreyCol{
+	color: var(--redwoodGreyDark);
+}
+
+.redwoodLightGrey{
+	color: var(--redwoodGreyLight);
+}
+
 /* ----- BORDER COlOURS -------*/
 .econBorderTop{
 	border-top: 3px solid var(--economyColour);
