@@ -24,19 +24,55 @@
 					</div>
 				</div>
 				<!-- Container -->
-				<div class="container">
-
+				<div class="container-fluid">
 					<div class="row">
-						<div class="col-md-8 mb-5">
-							<h2>What We Do</h2>
-							<hr>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum.</p>
-							<a class="btn btn-primary btn-lg" href="#">Call to Action &raquo;</a>
+						<!--Left side-->
+						<div class="col-lg-3 align-self-center">
+							<div class="card coreCard mb-4">
+								<div class="card-body text-right">
+									<h4> Service </h4>
+									<p>This is a small description of one of the services we offer here at redoow</p>
+								</div>
+							</div>
+							<div class="card coreCard mb-4">
+								<div class="card-body text-right">
+									<h4> Service </h4>
+									<p>This is a small description of one of the services we offer here at redoow</p>
+								</div>
+							</div>
+							<div class="card coreCard mb-4">
+								<div class="card-body text-right">
+									<h4> Service </h4>
+									<p>This is a small description of one of the services we offer here at redoow</p>
+								</div>
+							</div>
+						</div>
+						<!--Middle-->
+						<div class="col-lg-6 bg-dark align-self-center">
+							<img class="d-block m-auto" src="https://via.placeholder.com/300">
+						</div>
+						<!--Right Side-->
+						<div class="col-lg-3 align-self-center">
+							<div class="card mb-4">
+								<div class="card-body text-left">
+									<h4> Service </h4>
+									<p>This is a small description of one of the services we offer here at redoow</p>
+								</div>
+							</div>
+							<div class="card mb-4">
+								<div class="card-body text-left">
+									<h4> Service </h4>
+									<p>This is a small description of one of the services we offer here at redoow</p>
+								</div>
+							</div>
+							<div class="card mb-4">
+								<div class="card-body text-left">
+									<h4> Service </h4>
+									<p>This is a small description of one of the services we offer here at redoow</p>
+								</div>
+							</div>
 						</div>
 					</div>
-
-
 				</div>
 			</div>
 			<!-- Footer -->
