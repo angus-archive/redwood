@@ -17,11 +17,10 @@
 				<div class="dropdown-menu bg-dark" aria-labelledby="packagesDropdown">
 					<a class="dropdown-item text-white <?php if($CURRENT_PAGE == "Packages"){echo "activeSub";}?>" href="/packages">All Packages</a>
 					<div class="dropdown-divider"></div>
-					<h6 class="dropdown-header">Standard Packages</h6>
 					<a class="dropdown-item text-white <?php if($CURRENT_PAGE == "Economy-P"){echo "activeSub";}?>" href="/packages/economy.php">Economy</a>
 					<a class="dropdown-item text-white <?php if($CURRENT_PAGE == "Redwood-P"){echo "activeSub";}?>" href="/packages/redwood.php">Redwood</a>
 					<a class="dropdown-item text-white <?php if($CURRENT_PAGE == "Deluxe-P"){echo "activeSub";}?>" href="/packages/deluxe.php">Deluxe</a>
-					<h6 class="dropdown-header">Featured Packages</h6>
+					<div class="dropdown-divider"></div>
 					<a class="dropdown-item text-white <?php if($CURRENT_PAGE == "Relaunch-P"){echo "activeSub";}?>" href="/packages/relaunch.php">Relaunch</a>
 				</div>
 			</li>
