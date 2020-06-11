@@ -237,7 +237,7 @@ function reach_analysis_reports() { global $CURRENT_PAGE ?>
 	</div>
 <?php }
 
-//Build online presence
+//Photography
 function photography() { global $CURRENT_PAGE ?>
 	<!--Photography Sessions Feature -->
 	<div class="card text-center coreCard">
@@ -269,7 +269,7 @@ function photography() { global $CURRENT_PAGE ?>
 	</div>
 <?php }
 
-//Build online precence
+//Microsoft Masterclass
 function microsoft_masterclass() { global $CURRENT_PAGE ?>
 	<!--Microsoft Masterclass Feature -->
 	<div class="card text-center coreCard">
@@ -300,6 +300,138 @@ function microsoft_masterclass() { global $CURRENT_PAGE ?>
 		</div>
 	</div>
 <?php }
+
+/* ----- Relaunch --- */
+
+
+//Online reopening event
+function online_reopening() { global $CURRENT_PAGE ?>
+	<!--Online reopening event -->
+	<div class="card text-center coreCard">
+		<div class="card-body">
+			<img class="mb-2" src="https://via.placeholder.com/90" alt="This is alt text">
+			<h3 class="mt-sm-2">Online Reopening event</h3>
+			<div class="featureDivider <?php
+			//Change colour of divider based on which file is being used
+			switch ($CURRENT_PAGE){
+				case "Economy-P":
+					echo "econBorderTop";
+					break;
+				case "Redwood-P":
+					echo "redwoodBorderTop";
+					break;
+				case "Deluxe-P":
+					echo "deluxeBorderTop";
+					break;
+				case "Relaunch-P":
+					echo "relaunchBorderTop";
+					break;
+				default:
+					echo "defaultBorderTop";
+					break;
+			}
+			?>"></div>
+			<p class="p-1"> This is a brief description of the feature</p>
+		</div>
+	</div>
+<?php }
+
+//Advert
+function advert_creation() { global $CURRENT_PAGE ?>
+	<!--Advert creation feature-->
+	<div class="card text-center coreCard">
+		<div class="card-body">
+			<img class="mb-2" src="https://via.placeholder.com/90" alt="This is alt text">
+			<h3 class="mt-sm-2">Multiple Advert Creation</h3>
+			<div class="featureDivider <?php
+			//Change colour of divider based on which file is being used
+			switch ($CURRENT_PAGE){
+				case "Economy-P":
+					echo "econBorderTop";
+					break;
+				case "Redwood-P":
+					echo "redwoodBorderTop";
+					break;
+				case "Deluxe-P":
+					echo "deluxeBorderTop";
+					break;
+				case "Relaunch-P":
+					echo "relaunchBorderTop";
+					break;
+				default:
+					echo "defaultBorderTop";
+					break;
+			}
+			?>"></div>
+			<p class="p-1"> This is a brief description of the feature</p>
+		</div>
+	</div>
+<?php }
+
+//Active Marketing
+function active_marketing() { global $CURRENT_PAGE ?>
+	<!--Active Marketing feature -->
+	<div class="card text-center coreCard">
+		<div class="card-body">
+			<img class="mb-2" src="https://via.placeholder.com/90" alt="This is alt text">
+			<h3 class="mt-sm-2">Active Marketing</h3>
+			<div class="featureDivider <?php
+			//Change colour of divider based on which file is being used
+			switch ($CURRENT_PAGE){
+				case "Economy-P":
+					echo "econBorderTop";
+					break;
+				case "Redwood-P":
+					echo "redwoodBorderTop";
+					break;
+				case "Deluxe-P":
+					echo "deluxeBorderTop";
+					break;
+				case "Relaunch-P":
+					echo "relaunchBorderTop";
+					break;
+				default:
+					echo "defaultBorderTop";
+					break;
+			}
+			?>"></div>
+			<p class="p-1"> This is a brief description of the feature</p>
+		</div>
+	</div>
+<?php }
+
+//Online reopening event
+function personalised_report() { global $CURRENT_PAGE ?>
+	<!--Get back to business report -->
+	<div class="card text-center coreCard">
+		<div class="card-body">
+			<img class="mb-2" src="https://via.placeholder.com/90" alt="This is alt text">
+			<h3 class="mt-sm-2">Personalised Report</h3>
+			<div class="featureDivider <?php
+			//Change colour of divider based on which file is being used
+			switch ($CURRENT_PAGE){
+				case "Economy-P":
+					echo "econBorderTop";
+					break;
+				case "Redwood-P":
+					echo "redwoodBorderTop";
+					break;
+				case "Deluxe-P":
+					echo "deluxeBorderTop";
+					break;
+				case "Relaunch-P":
+					echo "relaunchBorderTop";
+					break;
+				default:
+					echo "defaultBorderTop";
+					break;
+			}
+			?>"></div>
+			<p class="p-1"> This is a brief description of the feature</p>
+		</div>
+	</div>
+<?php }
+
 ?>
 
 

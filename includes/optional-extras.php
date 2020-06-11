@@ -1,4 +1,4 @@
-<h3 class=" mb-2 text-center">Optional Extras</h3>
+<h3 class=" mb-2 text-center">Other Services</h3>
 <!-- Container -->
 <div class="container pt-sm-4">
     <div class="row">

@@ -25,10 +25,25 @@
         </div>
         <!-- Spacer-->
         <div class="mSpacer-y-40"></div>
-        <!-- Container -->
-        <div class="container pt-sm-4">
+		<!-- Core Features -->
+	    <?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/all-features.php";include_once($path); ?>
+		<div class="container pt-sm-4">
+			<div class="row">
+				<div class="col-lg-4 mb-5">
+				    <?php online_reopening(); ?>
+				</div>
+				<div class="col-lg-4 mb-5">
+				    <?php advert_creation(); ?>
+				</div>
+				<div class="col-lg-4 mb-5">
+				    <?php active_marketing(); ?>
+				</div>
+				<div class="col-lg-4 mb-5">
+				    <?php personalised_report(); ?>
+				</div>
 
-        </div>
+			</div>
+		</div>
     </div>
     <!-- Footer -->
     <?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/footer.php";include_once($path); ?>
