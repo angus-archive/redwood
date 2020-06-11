@@ -23,8 +23,9 @@
                 </div>
             </div>
         </div>
-        <!-- Spacer-->
-        <div class="mSpacer-y-40"></div>
+		<div class="pSpacer-y-20">
+			<h3 class=" mb-2 text-center">Core features</h3>
+		</div>
 		<!-- Core Features -->
 	    <?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/all-features.php";include_once($path); ?>
 		<div class="container pt-sm-4">
