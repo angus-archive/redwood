@@ -1,17 +1,17 @@
 
 <div class="container">
-    <form class="redwoodDarkGreyCol">
+    <form class="redwoodDarkGreyCol" method="post" action="/email_sent.php">
         <!--Row 1-->
         <div class="form-row">
             <!--First name -->
             <div class="col-md-6 mb-3">
                 <label for="given-name">First Name</label>
-                <input type="text" class="form-control" id="given-name" placeholder="First name" required>
+                <input type="text" class="form-control" id="given-name" name="first-name" placeholder="First name" required>
             </div>
             <!--Second name -->
             <div class="col-md-6 mb-3">
                 <label for="family-name">Second Name</label>
-                <input type="text" class="form-control" id="family-name" placeholder="Second name" required>
+                <input type="text" class="form-control" id="family-name" name="second-name" placeholder="Second name" required>
             </div>
 
         </div>
@@ -20,7 +20,7 @@
             <!--Company name -->
             <div class="col-md-6 mb-3">
                 <label for="company-name">Company Name</label>
-                <input type="text" class="form-control" id="company-name" placeholder="Company name" autocomplete="company-name">
+                <input type="text" class="form-control" id="company-name" name="company-name" placeholder="Company name" autocomplete="company-name">
             </div>
             <!--Email -->
             <div class="col-md-6 mb-3">
@@ -29,14 +29,14 @@
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="inputGroupPrepend3">@</span>
                     </div>
-                    <input type="email" class="form-control" id="userEmail" placeholder="Email" required>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
                 </div>
             </div>
         </div>
         <!--Message -->
         <div class="form-group">
             <label for="userMessage">Message</label>
-            <textarea class="form-control" id="userMessage" rows="4" style="resize:none"  placeholder="Your Message..." required></textarea>
+            <textarea class="form-control" id="userMessage" name="message" rows="4" style="resize:none"  placeholder="Your Message..." required></textarea>
         </div>
 		<div class="text-center">
 		<!--Privacy Policy-->
