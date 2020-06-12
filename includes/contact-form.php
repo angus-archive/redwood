@@ -20,7 +20,7 @@
             <!--Company name -->
             <div class="col-md-6 mb-3">
                 <label for="company-name">Company Name</label>
-                <input type="text" class="form-control" id="company-name" placeholder="Company name" autocomplete="off">
+                <input type="text" class="form-control" id="company-name" placeholder="Company name" autocomplete="company-name">
             </div>
             <!--Email -->
             <div class="col-md-6 mb-3">

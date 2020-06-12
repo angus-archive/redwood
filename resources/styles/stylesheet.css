@@ -299,7 +299,13 @@ Logo at top of page
 
 .packageShadow{
 	/*box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.23);*/
-	box-shadow: rgba(46, 50, 51, 0.2) 0px 10px 20px 0px;;
+	box-shadow: rgba(46, 50, 51, 0.2) 0 10px 20px 0;
+	-webkit-transition-duration: 0.5s;
+	transition-duration:0.5s ;
+}
+
+.packageShadow:hover{
+	box-shadow: rgba(46, 50, 51, 0.4) 0 20px 35px 0;
 }
 
 
