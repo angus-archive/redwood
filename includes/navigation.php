@@ -14,7 +14,7 @@
 				<a class="nav-link dropdown-toggle <?php if($NAV_PAGE == "Packages"){echo "currentNavItem";}?>" href="/packages" id="packagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					Packages
 				</a>
-				<div class="dropdown-menu bg-dark" aria-labelledby="packagesDropdown">
+				<div class="dropdown-menu" aria-labelledby="packagesDropdown">
 					<a class="dropdown-item text-white <?php if($CURRENT_PAGE == "Packages"){echo "activeSub";}?>" href="/packages">All Packages</a>
 					<div class="dropdown-divider"></div>
 					<a class="dropdown-item text-white <?php if($CURRENT_PAGE == "Economy-P"){echo "activeSub";}?>" href="/packages/economy.php">Economy</a>

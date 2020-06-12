@@ -1,13 +1,27 @@
 
 <div class="container">
     <form>
+        <!--Row 1-->
         <div class="form-row">
-            <!--First Name -->
+            <!--First name -->
             <div class="col-md-6 mb-3">
-                <label for="userName">First name</label>
-                <input type="text" class="form-control" id="userName" placeholder="First name" required>
+                <label for="given-name">First Name</label>
+                <input type="text" class="form-control" id="given-name" placeholder="First name" required>
+            </div>
+            <!--Second name -->
+            <div class="col-md-6 mb-3">
+                <label for="family-name">Second Name</label>
+                <input type="text" class="form-control" id="family-name" placeholder="Second name" required>
             </div>
 
+        </div>
+        <!--Row 2-->
+        <div class="form-row">
+            <!--Company name -->
+            <div class="col-md-6 mb-3">
+                <label for="company-name">Company Name</label>
+                <input type="text" class="form-control" id="company-name" placeholder="Company name" autocomplete="off">
+            </div>
             <!--Email -->
             <div class="col-md-6 mb-3">
                 <label for="userEmail">Email</label>
@@ -18,7 +32,6 @@
                     <input type="email" class="form-control" id="userEmail" placeholder="Email" required>
                 </div>
             </div>
-
         </div>
         <!--Message -->
         <div class="form-group">

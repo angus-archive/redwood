@@ -1,4 +1,6 @@
 <h3 class=" mb-2 text-center">Other Services</h3>
+<p class="w-75 mx-auto text-center">Take a look at some of services we offer as "One-Offs" for clients wishing to improve their business, if you wish to purchase any of these services please <a href="/contact.php">contact</a> our team or simply use the form above.</p>
+<div class="pSpacer-y-20"></div>
 <!-- Container -->
 <div class="container pt-sm-4">
     <div class="row">
