@@ -1,6 +1,6 @@
 
 <div class="container">
-    <form>
+    <form class="redwoodDarkGreyCol">
         <!--Row 1-->
         <div class="form-row">
             <!--First name -->
@@ -36,12 +36,14 @@
         <!--Message -->
         <div class="form-group">
             <label for="userMessage">Message</label>
-            <textarea class="form-control" id="userMessage" rows="4" style="resize:none"  placeholder="Your Message..." required>Hi, I would like to request information about the <?php echo $PAGE_TITLE; ?></textarea>
+            <textarea class="form-control" id="userMessage" rows="4" style="resize:none"  placeholder="Your Message..." required></textarea>
         </div>
+		<div class="text-center">
 		<!--Privacy Policy-->
-		<p class="small py-1">Your data will be processed in accordance with our <a href="/privacy-policy.php" target="_blank"> Privacy Policy </a></p>
-        <!--Submit -->
-        <button class="btn btn-primary my-2" type="submit">Submit</button>
+			<p class="small py-1">Your data will be processed in accordance with our <a href="/privacy-policy.php" target="_blank"> Privacy Policy </a></p>
+			<!--Submit -->
+			<button class="btn btn-primary my-2" type="submit">Submit</button>
+		</div>
     </form>
 
 </div>
