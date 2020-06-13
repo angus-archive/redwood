@@ -30,22 +30,23 @@
 	    <?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/all-features.php";include_once($path); ?>
 		<div class="container pt-sm-4">
 			<div class="row">
-				<div class="col-lg-4 mb-5">
+				<div class="col-lg-4 gridBottomSpacing">
 					<?php social_advice(); ?>
 				</div>
-				<div class="col-lg-4 mb-5">
+				<div class="col-lg-4 gridBottomSpacing">
 					<?php creative_ideas(); ?>
 				</div>
-				<div class="col-lg-4 mb-5">
+				<div class="col-lg-4 gridBottomSpacing">
 					<?php meetings(); ?>
 				</div>
-				<div class="col-lg-4 mb-5">
+				<div class="col-lg-4 gridBottomSpacing">
 					<?php calendar(); ?>
 				</div>
 			</div>
         </div>
 		<!-- Package Details -->
 		<div class="container p-sm-4">
+			<hr class="w-25 mx-auto" style="height:1px;border-width:0;background-color: #9FA0A1;">
 			<h3 class=" pb-3 text-center">About the package</h3>
 			<p id="packageDescription" class="text-center mx-auto" style="max-width: 75%;">The Economy Package is our cheapest package, suitable for businesses who feel as though they would like to begin to build a social media page, in order to support their operations and inform people of what they do. This package is ideal for smaller business who are looking to build a social media presence whilst on a budget. At Redwood we know that as a small business you need to watch where you spend, so this package offers flexibility on pricing, to help you stay within your budget.</p>
 		</div>

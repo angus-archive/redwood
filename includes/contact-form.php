@@ -1,6 +1,6 @@
 
 <div class="container">
-    <form class="redwoodDarkGreyCol" method="post" action="/email_sent.php">
+    <form class="text-dark" method="post" action="/email_sent.php">
         <!--Row 1-->
         <div class="form-row">
             <!--First name -->

@@ -29,31 +29,31 @@
 	    <?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/all-features.php";include_once($path); ?>
 		<div class="container pt-sm-4">
 			<div class="row">
-				<div class="col-lg-4 mb-5">
+				<div class="col-lg-4 gridBottomSpacing">
 				    <?php social_advice(); ?>
 				</div>
-				<div class="col-lg-4 mb-5">
+				<div class="col-lg-4 gridBottomSpacing">
 				    <?php creative_ideas(); ?>
 				</div>
-				<div class="col-lg-4 mb-5">
+				<div class="col-lg-4 gridBottomSpacing">
 				    <?php meetings(); ?>
 				</div>
-				<div class="col-lg-4 mb-5">
+				<div class="col-lg-4 gridBottomSpacing">
 				    <?php calendar(); ?>
 				</div>
-				<div class="col-lg-4 mb-5">
+				<div class="col-lg-4 gridBottomSpacing">
 				    <?php build_online_presence(); ?>
 				</div>
-				<div class="col-lg-4 mb-5">
+				<div class="col-lg-4 gridBottomSpacing">
 				    <?php account_management(); ?>
 				</div>
-				<div class="col-lg-4 mb-5">
+				<div class="col-lg-4 gridBottomSpacing">
 					<?php reach_analysis_reports(); ?>
 				</div>
-				<div class="col-lg-4 mb-5">
+				<div class="col-lg-4 gridBottomSpacing">
 					<?php photography(); ?>
 				</div>
-				<div class="col-lg-4 mb-5">
+				<div class="col-lg-4 gridBottomSpacing">
 					<?php microsoft_masterclass(); ?>
 				</div>
 
@@ -61,6 +61,7 @@
 		</div>
 		<!-- Package Details -->
 		<div class="container p-sm-4">
+			<hr class="w-25 mx-auto" style="height:1px;border-width:0;background-color: #9FA0A1;">
 			<h3 class=" pb-3 text-center">About the package</h3>
 			<p id="packageDescription" class="text-center mx-auto" style="max-width: 75%;">Our Deluxe Package is by far our most exciting package, offering the greatest variety of services; everything your business needs to build a prominent social media presence and expansive reach. From photography sessions to help you showcase your products/service, to a monthly opportunity reach report, this package will help you every step of the way to successfully social media marketing!</p>
 		</div>

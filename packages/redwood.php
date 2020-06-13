@@ -29,22 +29,22 @@
         <?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/all-features.php";include_once($path); ?>
 		<div class="container pt-sm-4">
 			<div class="row">
-				<div class="col-lg-4 mb-5">
+				<div class="col-lg-4 gridBottomSpacing">
 				    <?php social_advice(); ?>
 				</div>
-				<div class="col-lg-4 mb-5">
+				<div class="col-lg-4 gridBottomSpacing">
 				    <?php creative_ideas(); ?>
 				</div>
-				<div class="col-lg-4 mb-5">
+				<div class="col-lg-4 gridBottomSpacing">
 				    <?php meetings(); ?>
 				</div>
-				<div class="col-lg-4 mb-5">
+				<div class="col-lg-4 gridBottomSpacing">
 				    <?php calendar(); ?>
 				</div>
-				<div class="col-lg-4 mb-5">
+				<div class="col-lg-4 gridBottomSpacing">
 					<?php build_online_presence(); ?>
 				</div>
-				<div class="col-lg-4 mb-5">
+				<div class="col-lg-4 gridBottomSpacing">
 					<?php account_management(); ?>
 				</div>
 
@@ -52,6 +52,7 @@
 		</div>
 		<!-- Package Details -->
 		<div class="container p-sm-4">
+			<hr class="w-25 mx-auto" style="height:1px;border-width:0;background-color: #9FA0A1;">
 			<h3 class=" pb-3 text-center">About the package</h3>
 			<p id="packageDescription" class="text-center mx-auto" style="max-width: 75%;">The Redwood Package is a great value package, ideal for businesses who are looking to utilise social media as a marketing tool. This package offers a variety of features that will help your business grow its social media presence</p>
 		</div>

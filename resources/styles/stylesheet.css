@@ -103,6 +103,11 @@ footer{
 	padding-bottom: 20px !important;
 }
 
+/* Dynamic grid bottom padding */
+.gridBottomSpacing{
+	margin-bottom: 5px;
+}
+
 
 /*
 ------------HEADER---------
@@ -467,6 +472,12 @@ Logo at top of page
 LAPTOPS / DESKTOPS ( BS-LARGE)
  */
 @media screen and (min-width: 992px) {
+
+
+	/* Spacer */
+	.gridBottomSpacing{
+		margin-bottom: 10px;
+	}
 
 	/* Home screen picture thing */
 	.homeLeftPane{
