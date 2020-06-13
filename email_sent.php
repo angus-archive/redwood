@@ -17,15 +17,6 @@
 		<!-- Form Data-->
 		<?php
 
-		//Setup some variables to use
-		$first_name="";
-		$second_name="";
-		$email="";
-		$company_name="";
-		$message="";
-
-
-
 		//Form validation function (removes any SQL injections etc)
 		function wash_data($data) {
 			$data = trim($data);
@@ -59,8 +50,10 @@
 
 		}
 
-		require 'PHPMailerAutoload.php';
+		//Require PHPMailer auto loader
+		require '/PHPMailer/vendor/PHPMailerAutoload.php';
 
+		//Send our email
 		function smtpmailer($to, $from, $from_name, $subject, $body){
 			$mail = new PHPMailer();
 			$mail->IsSMTP();
@@ -95,8 +88,15 @@
 
 
 
-		//Wash our data
+		//Validation
 		if ($_SERVER["REQUEST_METHOD"] == "POST") {
+			//Setup some variables to use
+			$first_name="";
+			$second_name="";
+			$email="";
+			$company_name="";
+			$message="";
+			//Wash data
 			$first_name=wash_data($_POST["first-name"]);
 			$second_name=wash_data($_POST["second-name"]);
 			$email=wash_data($_POST["email"]);
@@ -113,7 +113,7 @@
 			$msg = $html_data;
 
 			$error=smtpmailer($to,$from, $name ,$subj, $msg);
-			echo "<h3 class='text-center'>".$error."</h3>";
+			echo "<h4 class='text-center py-2'>".$error."</h4>";
 		}
 
 

@@ -64,9 +64,9 @@
 			<div class="card text-center packageShadow">
 				<div class="card-body">
 					<img class="optionalIcon mb-2" src="/resources/images/icons/reach_analysis.svg" alt="Oppourtunity reach analysis icon">
-					<h3 class="mt-sm-2">Opportunity Reach Analysis</h3>
+					<h3 class="mt-sm-2">Reach Analysis</h3>
 					<div class="featureDivider defaultBorderTop"></div>
-					<p class="p-1">Whatever that is, provide a description here</p>
+					<p class="p-1">Could your business be better utilising it's social media platform and general business opportunities? We conduct analysis and compile into a report</p>
 				</div>
 				<div class="card-footer deluxeBackground text-white p-1">
 					<p class="m-auto small">Free with Deluxe Package</p>
@@ -79,7 +79,7 @@
 					<img class="optionalIcon mb-2" src="/resources/images/icons/leads_investigation.svg" alt="Leads investigation icon">
 					<h3 class="mt-sm-2">Leads Investigation</h3>
 					<div class="featureDivider defaultBorderTop"></div>
-					<p class="p-1">Again, whatever that is, put a description here</p>
+					<p class="p-1">We actively search for new customers and opportunities for your business </p>
 				</div>
 			</div>
 		</div>

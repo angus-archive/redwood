@@ -25,8 +25,10 @@
 		</div>
 		<!-- Container -->
 		<div class="container">
-
-
+			<!--Contact form-->
+			<?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/contact-form.php";include_once($path); ?>
+			<!--Spacer-->
+			<div class="pSpacer-y-20"></div>
 		</div>
 	</div>
 	<!-- Footer -->

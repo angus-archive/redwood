@@ -31,7 +31,7 @@
 							<div class="card coreCard mb-4">
 								<div class="card-body text-right">
 									<h4 style="color: #77B813"> Market Analysis </h4>
-									<p>This is a small description of one of the services we offer here at redoow</p>
+									<p>An in-depth report report analysing your market segmentation, the key opportunities you can't afford to miss out on and how to get ahead of the competition</p>
 								</div>
 							</div>
 							<div class="card coreCard mb-4">
