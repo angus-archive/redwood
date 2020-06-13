@@ -23,8 +23,9 @@
 						</div>
 					</div>
 				</div>
-				<!-- Container -->
+				<!-- Container Fluid -->
 				<div class="container-fluid">
+					<!--Summary -->
 					<div class="row">
 						<!--Left side-->
 						<div class="col-lg-3 align-self-center homeLeftPane">
@@ -70,6 +71,16 @@
 									<h4 style="color: #00AFF6"> Graphic Design </h4>
 									<p>This is a small description of one of the services we offer here at redoow</p>
 								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Other featured -->
+				<div class="container-fluid" style="background-color: #E5E4E6">
+					<div class="container">
+						<div class="row">
+							<div class="col-4">
+								Feature 1
 							</div>
 						</div>
 					</div>

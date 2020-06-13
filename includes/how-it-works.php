@@ -21,11 +21,11 @@
 
 <!--How it works -->
 <div class="container-fluid">
-	<h3 class="mb-2 text-center py-sm-3">How it works</h3>
+	<h3 class="mb-2 text-center py-sm-3 text-dark">How it works</h3>
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-4 mb-5">
-				<div class="card text-center packageShadow <?php echo $class_col?> text-white" style="border-radius: 20%">
+				<div class="card text-center packageShadow <?php echo $class_col?> text-white" style="border-radius: 10%">
 					<div class="card-body">
 						<h1 class="mb-2 display-1">1</h1>
 						<h4 class="mt-sm-2">Select a package</h4>
@@ -34,7 +34,7 @@
 				</div>
 			</div>
 			<div class="col-lg-4 mb-5">
-				<div class="card text-center packageShadow <?php echo $class_col?> text-white" style="border-radius: 20%">
+				<div class="card text-center packageShadow <?php echo $class_col?> text-white" style="border-radius: 10%">
 					<div class="card-body">
 						<h1 class="mb-2 display-1">2</h1>
 						<h4 class="mt-sm-2">Send us an email</h4>
@@ -43,7 +43,7 @@
 				</div>
 			</div>
 			<div class="col-lg-4 mb-5">
-				<div class="card text-center packageShadow <?php echo $class_col?> text-white" style="border-radius: 20%">
+				<div class="card text-center packageShadow <?php echo $class_col?> text-white" style="border-radius: 10%">
 					<div class="card-body">
 						<h1 class="mb-2 display-1">3</h1>
 						<h4 class="mt-sm-2">We'll get in touch</h4>
