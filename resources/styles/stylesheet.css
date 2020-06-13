@@ -293,7 +293,7 @@ Logo at top of page
 }
 
 .deluxeCol{
-	color: #F5C84C;
+	color: #4859BF;
 	color: var(--deluxeColour)!important;
 }
 
@@ -309,6 +309,28 @@ Logo at top of page
 .redwoodLightGreyCol{
 	color: var(--redwoodGreyLight);
 }
+
+/* ----- HOVER COlOURS -------*/
+
+.econHover:hover{
+	background-color: #419737 !important;
+}
+
+.redwoodHover:hover{
+	background-color: #87243c !important;
+}
+
+.deluxeHover:hover{
+	background-color: #303c87 !important;
+}
+
+
+.relaunchHover:hover{
+	background-color: #097c9e !important;
+}
+
+
+
 
 /* ----- BORDER COlOURS -------*/
 .econBorderTop{
