@@ -144,7 +144,8 @@
 			<!-- Comparison Table -->
 			<div class="container">
 				<h1 class="display-5 mb-5 text-center">Compare our packages</h1>
-				<table class="table table-bordered" id="compareTable">
+				<div class="table-responsive">
+					<table class="table table-bordered" id="compareTable">
 					<thead class="thead-dark">
 					<tr>
 						<th></th>
@@ -210,6 +211,7 @@
 					</tr>
 					</tbody>
 				</table>
+				</div>
 			</div>
 			<div class="pSpacer-y-20"></div>
 		</div>

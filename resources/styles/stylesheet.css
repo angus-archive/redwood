@@ -205,7 +205,7 @@ Logo at top of page
 
 /*--Comparison table--*/
 #compareTable{
-	table-layout: fixed;
+	background-color: white !important;
 }
 
 #compareTable thead th,#compareTable tbody td{
@@ -219,6 +219,14 @@ Logo at top of page
 #compareTable .bullet{
 	font-size: 2rem;
 }
+
+#compareTable tbody th{
+	color: var(--redwoodGreyDark);
+	font-weight: normal;
+	font-size: 0.9rem;
+	vertical-align: middle !important;
+}
+
 
 /* ----- Background COlOURS -------*/
 
