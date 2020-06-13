@@ -198,15 +198,19 @@ Logo at top of page
 
 
 
-
-
-
-
 /*
 ------------PACKAGES SECTION---------
 */
 
 
+/*--Comparison table--*/
+#compareTable{
+	table-layout: fixed;
+}
+
+#compareTable thead th,#compareTable tbody td{
+	text-align: center;
+}
 /* ----- Background COlOURS -------*/
 
 .econBackground{

@@ -144,36 +144,80 @@
 			<!-- Comparison Table -->
 			<div class="container">
 				<h1 class="display-5 mb-5 text-center">Compare our packages</h1>
-				<table class="table table-bordered table-dark">
-				<thead>
-				<tr>
-					<th scope="col">#</th>
-					<th scope="col">First</th>
-					<th scope="col">Last</th>
-					<th scope="col">Handle</th>
-				</tr>
-				</thead>
-				<tbody>
-				<tr>
-					<th scope="row">1</th>
-					<td>Mark</td>
-					<td>Otto</td>
-					<td>@mdo</td>
-				</tr>
-				<tr>
-					<th scope="row">2</th>
-					<td>Jacob</td>
-					<td>Thornton</td>
-					<td>@fat</td>
-				</tr>
-				<tr>
-					<th scope="row">3</th>
-					<td colspan="2">Larry the Bird</td>
-					<td>@twitter</td>
-				</tr>
-				</tbody>
-			</table>
+				<table class="table table-bordered" id="compareTable">
+					<colgroup>
+						<col>
+						<col span="1" id="econCol">
+						<col span="1" id="redCol">
+						<col span="1" id="delCol">
+					</colgroup>
+					<thead>
+					<tr>
+						<th></th>
+						<th scope="col">Economy</th>
+						<th scope="col">Redwood</th>
+						<th scope="col">Deluxe</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<th scope="row"> Meetings</th>
+						<td> Monthly</td>
+						<td> Fortnightly</td>
+						<td> Weekly</td>
+					</tr>
+					<tr>
+						<th scope="row">Social Media Advice</th>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<th scope="row">Creative content ideas</th>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<th scope="row">Creative content ideas</th>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<th scope="row">Social Media Management</th>
+						<td></td>
+						<td>0</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<th scope="row">Build Online Presence</th>
+						<td></td>
+						<td>0</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<th scope="row">Opportunity reach analysis</th>
+						<td></td>
+						<td></td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<th scope="row">Photography Sessions</th>
+						<td></td>
+						<td></td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<th scope="row">Microsoft Masterclass</th>
+						<td></td>
+						<td></td>
+						<td>0</td>
+					</tr>
+					</tbody>
+				</table>
 			</div>
+			<div class="pSpacer-y-20"></div>
 		</div>
 		<!-- Footer -->
 		<?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/footer.php";include_once($path); ?>
