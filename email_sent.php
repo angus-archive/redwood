@@ -36,13 +36,25 @@
 
 		//Turn user data into a nice message
 		function create_html($fname,$sname,$em,$comp,$mssg){
-			$html_message= "<h1> New message from online form </h1><br>";
-			$html_message.=("<h3>First Name: ".$fname."</h3><br>");
-			$html_message.=("<h3>Second Name: ".$sname."</h3><br>");
-			$html_message.=("<h3>Company Name: ".$comp."</h3><br>");
-			$html_message.=("<h3>Email: ".$em."</h3><br>");
-			$html_message.=("<p>Message: ".$mssg."</p><br>");
-
+			//Setup document
+			$html_message="<!DOCTYPE html> <html><head><title>Customer Message</title><style>";
+			//Add table styles
+			$html_message.="table {font-family: arial, sans-serif;border-collapse: collapse;width: 100%;table-layout: fixed;}";
+			$html_message.="td, th {border: 1px solid #dddddd;text-align: left;padding: 8px;}";
+			$html_message.="</style></head><body>";
+			//Add content before table
+			$html_message.="<h2 style='text-align: center'>New Enquiry</h2>";
+			//Add table & headers
+			$html_message.= "<table><tr><th>First Name</th><th>Second Name</th><th>Email</th><th>Company name</th><th>Message</th></tr>";
+			//Add data
+			$html_message.="<tr><td>$fname</td><td>$sname</td><td>$em</td><td>$comp</td><td>$mssg</td></tr>";
+			//End Table
+			$html_message.="</table>";
+			//Add content after table
+			$html_message.="<p style='margin-top: 50px'> Someone has filled out our online form with the above details, ensure you follow the rules below when replying...</p>";
+			$html_message.="<ul><li>Use either the support@redwood.business or sales@redwood.business email to reply depending on the nature of the message</li><li>Spell check your reply</li></ul>";
+			//End Document
+			$html_message.="</body></html>";
 			return $html_message;
 
 		}
