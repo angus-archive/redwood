@@ -142,78 +142,78 @@
 			<!-- Spacer -->
 			<div class="mSpacer-y-80"></div>
 			<!-- Comparison Table -->
-			<div class="container">
-				<h1 class="display-5 mb-5 text-center">Compare our packages</h1>
-				<div class="table-responsive">
+			<div class="container-fluid">
+				<div id="tableContainer">
+					<h1 class="display-5 mb-5 text-center">Compare our packages</h1>
 					<table class="table table-bordered" id="compareTable">
-					<thead class="thead-dark">
-					<tr>
-						<th></th>
-						<th scope="col">Economy</th>
-						<th scope="col">Redwood</th>
-						<th scope="col">Deluxe</th>
-					</tr>
-					</thead>
-					<tbody>
-					<tr>
-						<th scope="row"> Meetings</th>
-						<td> Monthly</td>
-						<td> Fortnightly</td>
-						<td> Weekly</td>
-					</tr>
-					<tr>
-						<th scope="row">Social Media Advice</th>
-						<td><span class="bullet econCol">•</span></td>
-						<td><span class="bullet redwoodCol">•</span></td>
-						<td><span class="bullet deluxeCol">•</span></td>
-					</tr>
-					<tr>
-						<th scope="row">Creative content ideas</th>
-						<td><span class="bullet econCol">•</span></td>
-						<td><span class="bullet redwoodCol">•</span></td>
-						<td><span class="bullet deluxeCol">•</span></td>
-					</tr>
-					<tr>
-						<th scope="row">Creative content ideas</th>
-						<td><span class="bullet econCol">•</span></td>
-						<td><span class="bullet redwoodCol">•</span></td>
-						<td><span class="bullet deluxeCol">•</span></td>
-					</tr>
-					<tr>
-						<th scope="row">Social Media Management</th>
-						<td></td>
-						<td><span class="bullet redwoodCol">•</span></td>
-						<td><span class="bullet deluxeCol">•</span></td>
-					</tr>
-					<tr>
-						<th scope="row">Build Online Presence</th>
-						<td></td>
-						<td><span class="bullet redwoodCol">•</span></td>
-						<td><span class="bullet deluxeCol">•</span></td>
-					</tr>
-					<tr>
-						<th scope="row">Opportunity reach analysis</th>
-						<td></td>
-						<td></td>
-						<td><span class="bullet deluxeCol">•</span></td>
-					</tr>
-					<tr>
-						<th scope="row">Photography Sessions</th>
-						<td></td>
-						<td></td>
-						<td><span class="bullet deluxeCol">•</span></td>
-					</tr>
-					<tr>
-						<th scope="row">Microsoft Masterclass</th>
-						<td></td>
-						<td></td>
-						<td><span class="bullet deluxeCol">•</span></td>
-					</tr>
-					</tbody>
-				</table>
+						<thead class="thead-dark">
+						<tr>
+							<th></th>
+							<th scope="col">Economy</th>
+							<th scope="col">Redwood</th>
+							<th scope="col">Deluxe</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<th scope="row"> Meetings</th>
+							<td> Monthly</td>
+							<td> Fortnightly</td>
+							<td> Weekly</td>
+						</tr>
+						<tr>
+							<th scope="row">Social Media Advice</th>
+							<td><span class="bullet econCol">•</span></td>
+							<td><span class="bullet redwoodCol">•</span></td>
+							<td><span class="bullet deluxeCol">•</span></td>
+						</tr>
+						<tr>
+							<th scope="row">Creative content ideas</th>
+							<td><span class="bullet econCol">•</span></td>
+							<td><span class="bullet redwoodCol">•</span></td>
+							<td><span class="bullet deluxeCol">•</span></td>
+						</tr>
+						<tr>
+							<th scope="row">Creative content ideas</th>
+							<td><span class="bullet econCol">•</span></td>
+							<td><span class="bullet redwoodCol">•</span></td>
+							<td><span class="bullet deluxeCol">•</span></td>
+						</tr>
+						<tr>
+							<th scope="row">Social Media Management</th>
+							<td></td>
+							<td><span class="bullet redwoodCol">•</span></td>
+							<td><span class="bullet deluxeCol">•</span></td>
+						</tr>
+						<tr>
+							<th scope="row">Build Online Presence</th>
+							<td></td>
+							<td><span class="bullet redwoodCol">•</span></td>
+							<td><span class="bullet deluxeCol">•</span></td>
+						</tr>
+						<tr>
+							<th scope="row">Opportunity reach analysis</th>
+							<td></td>
+							<td></td>
+							<td><span class="bullet deluxeCol">•</span></td>
+						</tr>
+						<tr>
+							<th scope="row">Photography Sessions</th>
+							<td></td>
+							<td></td>
+							<td><span class="bullet deluxeCol">•</span></td>
+						</tr>
+						<tr>
+							<th scope="row">Microsoft Masterclass</th>
+							<td></td>
+							<td></td>
+							<td><span class="bullet deluxeCol">•</span></td>
+						</tr>
+						</tbody>
+					</table>
 				</div>
+				<div class="pSpacer-y-20"></div>
 			</div>
-			<div class="pSpacer-y-20"></div>
 		</div>
 		<!-- Footer -->
 		<?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/footer.php";include_once($path); ?>

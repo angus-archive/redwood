@@ -204,8 +204,17 @@ Logo at top of page
 
 
 /*--Comparison table--*/
+
+#tableContainer{
+	width: 100% !important;
+	background-color: #BB3C5B;
+}
 #compareTable{
 	background-color: white !important;
+	box-shadow: 0px 0px 27px -4px rgba(0,0,0,0.5);
+	table-layout: fixed;
+
+
 }
 
 #compareTable thead th,#compareTable tbody td{
