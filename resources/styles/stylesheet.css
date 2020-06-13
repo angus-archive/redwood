@@ -197,6 +197,15 @@ Logo at top of page
 }
 
 
+/*Home page*/
+.homeLeftPane{
+	text-align: center;
+}
+
+.homeRightPane{
+	text-align: center;
+}
+
 
 /*
 ------------PACKAGES SECTION---------
@@ -207,13 +216,12 @@ Logo at top of page
 
 #tableContainer{
 	width: 100% !important;
-	background-color: #BB3C5B;
 }
 #compareTable{
 	background-color: white !important;
 	box-shadow: 0px 0px 27px -4px rgba(0,0,0,0.5);
 	table-layout: fixed;
-
+	max-width: 1200px !important;
 
 }
 
@@ -221,19 +229,28 @@ Logo at top of page
 	text-align: center;
 }
 
-#compareTable thead th{
-	font-size: 1.5rem;
-}
-
 #compareTable .bullet{
 	font-size: 2rem;
 }
 
+/*Headings*/
+#compareTable thead th{
+	font-size: 0.7rem;
+}
+
+
+
+/*Side Headings*/
 #compareTable tbody th{
 	color: var(--redwoodGreyDark);
 	font-weight: normal;
-	font-size: 0.9rem;
+	font-size: 0.5rem;
 	vertical-align: middle !important;
+}
+
+/*Normal Text*/
+#compareTable tbody td{
+	font-size: 0.5rem;
 }
 
 
@@ -394,41 +411,74 @@ Logo at top of page
 }
 
 
-/* Wide phone */
-@media screen and (min-width: 575px) {
+/* Small devices (landscape phones, 576px and up) ( BS-SMALL) */
+@media screen and (min-width: 576px) {
 	.packageLinkSides{
 		border-top: 2px solid #c6c6c6;
 		border-bottom: 2px solid #c6c6c6;
 	}
 }
 
-/*
-BOOTSRAP COLLAPSES NAV BAR
- */
-@media screen and (min-width: 767px) {
+/* Medium devices (tablets, 768px and up) ( BS-MEDIUM) */
+@media (min-width: 768px) {
 
+	/* -----Comparison Table ------*/
+
+	/*Headings*/
+	#compareTable thead th{
+		font-size: 0.9rem;
+	}
+
+	/*Side Headings*/
+	#compareTable tbody th{
+		font-size: 0.7rem;
+
+	}
+
+	/*Normal Text*/
+	#compareTable tbody td{
+		font-size: 0.6rem;
+	}
 }
 
-
-
 /*
-LARGE / LANDSCAPE TABLET
- */
-@media screen and (min-width: 850px) {
-
-
-}
-
-/*
-LAPTOPS / DESKTOPS
+LAPTOPS / DESKTOPS ( BS-LARGE)
  */
 @media screen and (min-width: 992px) {
 
+	/* Home screen picture thing */
+	.homeLeftPane{
+		text-align: right;
+	}
+	.homeRightPane{
+		text-align: left;
+	}
 
+	/*-----Comparison table ------*/
+	#tableContainer{
+		width: 85% !important;
+	}
+
+
+	/*Headings*/
+	#compareTable thead th{
+		font-size: 1.5rem;
+	}
+
+	/*Side Headings*/
+	#compareTable tbody th{
+		font-size: 1rem;
+
+	}
+
+	/*Normal Text*/
+	#compareTable tbody td{
+		font-size: 0.9rem;
+	}
 }
 
 /*
- LARGE LAPTOPS / DESKTOPS
+ LARGE LAPTOPS / DESKTOPS ( BS-XL)
  */
 @media screen and (min-width: 1200px) {
 

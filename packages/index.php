@@ -117,7 +117,7 @@
 					</div>
 					<div class="col-lg-6 align-self-center mb-5">
 						<!--Relaunch-->
-						<div id="relaunchCard" class="card w-75 text-center mx-auto packageShadow">
+						<div id="relaunchCard" class="card text-center mx-auto packageShadow">
 							<div class="card-header blueSteelBackground text-light">
 								<h4 class="my-0 font-weight-normal">Relaunch</h4>
 							</div>
@@ -143,7 +143,7 @@
 			<div class="mSpacer-y-80"></div>
 			<!-- Comparison Table -->
 			<div class="container-fluid">
-				<div id="tableContainer">
+				<div id="tableContainer" class="mx-auto">
 					<h1 class="display-5 mb-5 text-center">Compare our packages</h1>
 					<table class="table table-bordered" id="compareTable">
 						<thead class="thead-dark">

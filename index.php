@@ -27,21 +27,21 @@
 				<div class="container-fluid">
 					<div class="row">
 						<!--Left side-->
-						<div class="col-lg-3 align-self-center">
+						<div class="col-lg-3 align-self-center homeLeftPane">
 							<div class="card coreCard mb-4">
-								<div class="card-body text-right">
+								<div class="card-body">
 									<h4 style="color: #77B813"> Market Analysis </h4>
 									<p>An in-depth report report analysing your market segmentation, the key opportunities you can't afford to miss out on and how to get ahead of the competition</p>
 								</div>
 							</div>
 							<div class="card coreCard mb-4">
-								<div class="card-body text-right">
+								<div class="card-body">
 									<h4 style="color: #19B082"> Relaunch Events </h4>
 									<p>This is a small description of one of the services we offer here at redoow</p>
 								</div>
 							</div>
 							<div class="card coreCard mb-4">
-								<div class="card-body text-right">
+								<div class="card-body">
 									<h4 style="color: #963AE4"> Financial Advice </h4>
 									<p>This is a small description of one of the services we offer here at redoow</p>
 								</div>
@@ -52,21 +52,21 @@
 							<img class="d-block m-auto" src="/resources/images/homepage.svg">
 						</div>
 						<!--Right Side-->
-						<div class="col-lg-3 align-self-center">
+						<div class="col-lg-3 align-self-center homeRightPane">
 							<div class="card coreCard mb-4">
-								<div class="card-body text-left">
+								<div class="card-body">
 									<h4 style="color: #D5396B"> Social Media Marketing </h4>
 									<p>This is a small description of one of the services we offer here at redoow</p>
 								</div>
 							</div>
 							<div class="card coreCard mb-4">
-								<div class="card-body text-left">
+								<div class="card-body">
 									<h4 style="color: #EBA800"> Creative Content Ideas </h4>
 									<p>This is a small description of one of the services we offer here at redoow</p>
 								</div>
 							</div>
 							<div class="card coreCard mb-4">
-								<div class="card-body text-left">
+								<div class="card-body">
 									<h4 style="color: #00AFF6"> Graphic Design </h4>
 									<p>This is a small description of one of the services we offer here at redoow</p>
 								</div>
