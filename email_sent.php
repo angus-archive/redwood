@@ -59,12 +59,7 @@
 
 		}
 
-		//Uses
-		use PHPMailer\PHPMailer\PHPMailer;
-
-		require "PHPMailer/src/PHPMailer.php";
-		require "PHPMailer/src/Exception.php";
-		require "PHPMailer/src/SMTP.php";
+		require 'PHPMailerAutoload.php';
 
 		function smtpmailer($to, $from, $from_name, $subject, $body){
 			$mail = new PHPMailer();
