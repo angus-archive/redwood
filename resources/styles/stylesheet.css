@@ -211,6 +211,15 @@ Logo at top of page
 #compareTable thead th,#compareTable tbody td{
 	text-align: center;
 }
+
+#compareTable thead th{
+	font-size: 1.5rem;
+}
+
+#compareTable .bullet{
+	font-size: 2rem;
+}
+
 /* ----- Background COlOURS -------*/
 
 .econBackground{

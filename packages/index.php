@@ -145,13 +145,7 @@
 			<div class="container">
 				<h1 class="display-5 mb-5 text-center">Compare our packages</h1>
 				<table class="table table-bordered" id="compareTable">
-					<colgroup>
-						<col>
-						<col span="1" id="econCol">
-						<col span="1" id="redCol">
-						<col span="1" id="delCol">
-					</colgroup>
-					<thead>
+					<thead class="thead-dark">
 					<tr>
 						<th></th>
 						<th scope="col">Economy</th>
@@ -168,51 +162,51 @@
 					</tr>
 					<tr>
 						<th scope="row">Social Media Advice</th>
-						<td>0</td>
-						<td>0</td>
-						<td>0</td>
+						<td><span class="bullet econCol">•</span></td>
+						<td><span class="bullet redwoodCol">•</span></td>
+						<td><span class="bullet deluxeCol">•</span></td>
 					</tr>
 					<tr>
 						<th scope="row">Creative content ideas</th>
-						<td>0</td>
-						<td>0</td>
-						<td>0</td>
+						<td><span class="bullet econCol">•</span></td>
+						<td><span class="bullet redwoodCol">•</span></td>
+						<td><span class="bullet deluxeCol">•</span></td>
 					</tr>
 					<tr>
 						<th scope="row">Creative content ideas</th>
-						<td>0</td>
-						<td>0</td>
-						<td>0</td>
+						<td><span class="bullet econCol">•</span></td>
+						<td><span class="bullet redwoodCol">•</span></td>
+						<td><span class="bullet deluxeCol">•</span></td>
 					</tr>
 					<tr>
 						<th scope="row">Social Media Management</th>
 						<td></td>
-						<td>0</td>
-						<td>0</td>
+						<td><span class="bullet redwoodCol">•</span></td>
+						<td><span class="bullet deluxeCol">•</span></td>
 					</tr>
 					<tr>
 						<th scope="row">Build Online Presence</th>
 						<td></td>
-						<td>0</td>
-						<td>0</td>
+						<td><span class="bullet redwoodCol">•</span></td>
+						<td><span class="bullet deluxeCol">•</span></td>
 					</tr>
 					<tr>
 						<th scope="row">Opportunity reach analysis</th>
 						<td></td>
 						<td></td>
-						<td>0</td>
+						<td><span class="bullet deluxeCol">•</span></td>
 					</tr>
 					<tr>
 						<th scope="row">Photography Sessions</th>
 						<td></td>
 						<td></td>
-						<td>0</td>
+						<td><span class="bullet deluxeCol">•</span></td>
 					</tr>
 					<tr>
 						<th scope="row">Microsoft Masterclass</th>
 						<td></td>
 						<td></td>
-						<td>0</td>
+						<td><span class="bullet deluxeCol">•</span></td>
 					</tr>
 					</tbody>
 				</table>
