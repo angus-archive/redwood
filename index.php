@@ -77,10 +77,28 @@
 				</div>
 				<!-- Other featured -->
 				<div class="container-fluid" style="background-color: #E5E4E6">
-					<div class="container">
+					<div class="container pSpacer-y-40">
 						<div class="row">
 							<div class="col-4">
-								Feature 1
+								<div class="card">
+									<div class="card-header text-center">
+										Uk Based
+									</div>
+								</div>
+							</div>
+							<div class="col-4">
+								<div class="card">
+									<div class="card-header text-center">
+										Dunno
+									</div>
+								</div>
+							</div>
+							<div class="col-4">
+								<div class="card">
+									<div class="card-header text-center">
+										Something
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>

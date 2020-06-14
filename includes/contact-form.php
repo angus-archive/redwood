@@ -1,6 +1,6 @@
 
 <div class="container">
-    <form class="text-dark" method="post" action="/email_sent.php">
+    <form method="post" action="/email_sent.php">
         <!--Row 1-->
         <div class="form-row">
             <!--First name -->
@@ -36,7 +36,7 @@
         <!--Message -->
         <div class="form-group">
             <label for="userMessage">Message</label>
-            <textarea class="form-control" id="userMessage" name="message" rows="4" style="resize:none"  placeholder="Your Message..." required></textarea>
+            <textarea class="form-control" id="userMessage" name="message" rows="4" style="resize:none"  placeholder="Your Message..." required maxlength="5000"></textarea>
         </div>
 		<div class="text-center">
 		<!--Privacy Policy-->

@@ -113,7 +113,7 @@
 				<div class="pSpacer-y-20"></div>
 				<div class="row justify-content-end">
 					<div class="col-lg-6 align-self-center mb-5">
-						<img id="relaunchRocket" class="w-50 d-block mx-auto" src="/resources/images/rocketDark.svg" alt="Card image cap">
+						<img id="relaunchRocket" class="w-50 d-block mx-auto" src="/resources/images/rocketDark2.svg" alt="Card image cap">
 					</div>
 					<div class="col-lg-6 align-self-center mb-5">
 						<!--Relaunch-->

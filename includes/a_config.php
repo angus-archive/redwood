@@ -57,6 +57,12 @@ switch ($dirName) {
         $CURRENT_PAGE = $NAV_PAGE;
         $PAGE_TITLE = "Message Sent";
         break;
+
+	case "/privacy-policy.php":
+		$NAV_PAGE = "Our-Story";
+		$CURRENT_PAGE = $NAV_PAGE;
+		$PAGE_TITLE = "Privacy Policy";
+		break;
     default:
         $NAV_PAGE = "Index";
         $CURRENT_PAGE = $NAV_PAGE;
