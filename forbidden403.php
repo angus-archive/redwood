@@ -19,7 +19,7 @@
 			<h2 class="text-center"> Forbidden, The page you are trying to access is forbidden</h2>
 			<div class="pSpacer-y-20"></div>
 			<div class="mx-auto">
-				<img class="mx-auto d-block" src="/resources/images/banned.png" style="width: 300px; height: auto" alt="Forbidden Sign">
+				<img class="mx-auto d-block" src="/resources/images/banned.svg" style="width: 300px; height: auto" alt="Forbidden Sign">
 			</div>
 		</div>
 
