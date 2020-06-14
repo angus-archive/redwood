@@ -119,7 +119,7 @@
 			$error=smtpmailer($to,$from, $name ,$subj, $msg);
 			echo "<h4 class='text-center py-2'>".$error."</h4>";
 		}
-		
+
 		?>
 
 	</div>

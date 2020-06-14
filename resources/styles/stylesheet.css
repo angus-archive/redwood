@@ -12,7 +12,7 @@ Overrides for Bootstrap
 :root {
 
 	--redwoodRed: #bb3c5b;
-	--redwoodDarkRed: #9C324D;
+	--redwoodDarkRed: #9c324d;
 	--redwoodGradient: linear-gradient(var(--redwoodRed),var(--redwoodDarkRed));
 	--redwoodGreyDark: #575757;
 	--redwoodGreyLight: #BABABA;
@@ -69,6 +69,7 @@ footer{
 	bottom: 0;
 	width: 100%;
 	height: 60px;
+	background-color: #BB3C5B;
 	background-color: var(--redwoodRed) !important;
 	color: white !important;
 
@@ -155,6 +156,7 @@ Logo at top of page
 }
 
 .currentNavItem{
+	color: #BB3C5B;
 	color: var(--redwoodRed) !important;
 }
 
@@ -192,11 +194,13 @@ Logo at top of page
 
 /* The currently selected item in submenu */
 .dropdown-menu > .activeSub {
+	background-color: #9C324D;
 	background-color: var(--redwoodDarkRed);
 	color: white !important;
 
 }
 .dropdown-menu > .activeSub:hover{
+	background-color: #9C324D;
 	background-color: var(--redwoodDarkRed) !important;
 
 }
@@ -342,18 +346,22 @@ Logo at top of page
 
 /* ----- BORDER COlOURS -------*/
 .econBorderTop{
+	border-top: 3px solid #52B845;
 	border-top: 3px solid var(--economyColour);
 }
 
 .redwoodBorderTop{
+	border-top: 3px solid #BB3C5B;
 	border-top: 3px solid var(--redwoodRed);
 }
 
 .deluxeBorderTop{
+	border-top: 3px solid #4859BF;
 	border-top: 3px solid var(--deluxeColour);
 }
 
 .relaunchBorderTop{
+	border-top: 3px solid #00AEE0;
 	border-top: 3px solid var(--relaunchColour);
 }
 

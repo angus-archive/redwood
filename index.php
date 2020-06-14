@@ -79,7 +79,7 @@
 				<div class="container-fluid" style="background-color: #E5E4E6">
 					<div class="container pSpacer-y-40">
 						<div class="row">
-							<div class="col-4">
+							<div class="col-lg-4">
 								<div class="card text-center coreCard">
 									<div class="card-body">
 										<img class="featureIcon mb-2" src="/resources/images/icons/location_blue.svg" alt="Active marketing icon">
@@ -88,7 +88,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-4">
+							<div class="col-lg-4">
 								<div class="card text-center coreCard">
 									<div class="card-body">
 										<img class="featureIcon mb-2" src="/resources/images/icons/support_green.svg" alt="Active marketing icon">
@@ -97,7 +97,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-4">
+							<div class="col-lg-4">
 								<div class="card text-center coreCard">
 									<div class="card-body">
 										<img class="featureIcon mb-2" src="/resources/images/icons/awards_red.svg" alt="Active marketing icon">
