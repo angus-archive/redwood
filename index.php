@@ -13,18 +13,22 @@
 				<!-- Header-->
 				<?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/header-content.php";include_once($path); ?>
 				<!-- Page Banner-->
-				<div class="py-2 mb-4 text-center">
+				<div class="py-2 mb-4 text-center offWhiteBackground">
 					<div class="container">
 						<div class="row align-items-center">
 							<div class="col-lg-12">
-								<h1 class="display-4 mt-5 mb-2">Welcome to Redwood</h1>
+								<h1 class="display-4 mt-5 mb-2 font-weight-bold">Welcome to Redwood</h1>
 								<p class="lead mb-5">We are a business management and marketing company dedicated to helping you grow your business.</p>
 							</div>
 						</div>
 					</div>
 				</div>
+				<div class="container-fluid p-3">
+					<h5 class="text-center mb-4 my-auto">What we offer</h5>
+				</div>
 				<!-- First Picture Section -->
 				<div class="container-fluid">
+
 					<!--Summary -->
 					<div class="row">
 						<!--Left side-->
@@ -76,7 +80,7 @@
 					</div>
 				</div>
 				<!-- Features -->
-				<div class="container-fluid" style="background-color: #E5E4E6">
+				<div class="container-fluid offWhiteBackground">
 					<div class="container pSpacer-y-40">
 						<div class="row">
 							<div class="col-lg-4">

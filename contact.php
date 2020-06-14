@@ -13,16 +13,18 @@
 		<!-- Header-->
 		<?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/header-content.php";include_once($path); ?>
 		<!-- Page Banner-->
-		<div class="py-2 mb-4 pageBannerColour text-center">
+		<div class="py-2 mb-4 offWhiteBackground text-center">
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-lg-12">
-						<h1 class="display-4 text-white mt-5 mb-2">Contact Us</h1>
-						<p class="lead mb-5 text-white-50">Feel free to contact us with any questions you have or if you would like to purchase one of our packages or services.</p>
+						<h1 class="display-4 mt-5 mb-2 font-weight-bold">Contact Us</h1>
+						<p class="lead mb-5">Feel free to contact us with any questions you have or if you would like to purchase one of our packages or services.</p>
 					</div>
 				</div>
 			</div>
 		</div>
+		<!-- Spacer -->
+		<div class="pSpacer-y-20"></div>
 		<!-- Container -->
 		<div class="container">
 			<!--Contact form-->

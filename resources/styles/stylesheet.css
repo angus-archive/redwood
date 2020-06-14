@@ -18,7 +18,7 @@ Overrides for Bootstrap
 	--redwoodGreyLight: #BABABA;
 	--bluesteelColour: #39484c;
 
-	--headerColour: #FFFFFF;
+	--headerColour: #ffffff;
 	--navColour: #ffffff;
 	--headerTextColour: #474747;
 	--backgroundColour: #F6F6F6;
@@ -75,9 +75,7 @@ footer{
 
 }
 
-/*
-------------SPacer---------
-*/
+/*============= SPACERS===========*/
 
 .mSpacer-y-80{
 	margin-top: 80px !important;
@@ -110,10 +108,10 @@ footer{
 }
 
 
-/*
-------------HEADER---------
- */
+/*============= HEADER ===========*/
+
 header{
+	background-color: white;
 	background-color: var(--headerColour);
 	margin: 0;
 }
@@ -136,14 +134,10 @@ Logo at top of page
 
 }
 
-.pageBannerColour{
-	background-color: #272a47 !important;
 
-}
 
-/*
----------NAV BAR------
- */
+/*============= NAVIGATION ===========*/
+
 
 .navbar{
 	background-color: var(--navColour) !important;
@@ -216,9 +210,8 @@ Logo at top of page
 }
 
 
-/*
-------------PACKAGES SECTION---------
-*/
+/*============= PACKAGES PAGES ===========*/
+
 
 
 /*--Comparison table--*/
@@ -262,11 +255,16 @@ Logo at top of page
 	font-size: 0.5rem;
 }
 
-/*carousel*/
 
 
 
-/* ----- Background COlOURS -------*/
+/*============= BACKGROUND COLOURS ===========*/
+
+
+.offWhiteBackground{
+	background-color: #EAEAEE;
+}
+
 
 .econBackground{
 	background-color: #52b845;
@@ -292,7 +290,8 @@ Logo at top of page
 	background-color: var(--relaunchColour)!important;
 }
 
-/* ----- TEXT COlOURS -------*/
+/*============= TEXT COLOURS ===========*/
+
 
 .econCol{
 	color: #52b845;
@@ -322,7 +321,8 @@ Logo at top of page
 	color: var(--redwoodGreyLight);
 }
 
-/* ----- HOVER COlOURS -------*/
+/*============= HOVER COLOURS ===========*/
+
 
 .econHover:hover{
 	background-color: #419737 !important;
@@ -342,9 +342,9 @@ Logo at top of page
 }
 
 
+/*============= BORDER COLOURS ===========*/
 
 
-/* ----- BORDER COlOURS -------*/
 .econBorderTop{
 	border-top: 3px solid #52B845;
 	border-top: 3px solid var(--economyColour);
@@ -368,6 +368,10 @@ Logo at top of page
 .defaultBorderTop{
 	border-top: 3px solid #898989;
 }
+
+/*============= CARDS ===========*/
+
+
 .coreCard{
 	background-color: rgba(0,0,0,0) !important;
 	border: 0!important;
@@ -376,42 +380,6 @@ Logo at top of page
 
 #relaunchCard{
 	max-width: 800px;
-}
-
-#relaunchRocket{
-	max-width: 450px;
-}
-
-.packageShadow{
-	/*box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.23);*/
-	box-shadow: rgba(46, 50, 51, 0.2) 0 10px 20px 0;
-	-webkit-transition-duration: 0.5s;
-	transition-duration:0.5s ;
-}
-
-.packageShadow:hover{
-	box-shadow: rgba(46, 50, 51, 0.4) 0 20px 35px 0;
-}
-
-
-.packageLink{
-	background-color: #ececec;
-	padding: 5px;
-	border-top: 2px solid #c6c6c6;
-	border-bottom: 2px solid #c6c6c6;
-}
-
-.packageLinkSides{
-	border-left: 2px solid #c6c6c6;
-	border-right: 2px solid #c6c6c6;
-	border-top: 0;
-	border-bottom: 0;
-
-}
-
-.packageLink:hover{
-	text-decoration: none !important;
-	color: white;
 }
 
 .featureDivider{
@@ -434,7 +402,25 @@ Logo at top of page
 
 
 
+/*============= IMAGE ID===========*/
 
+#relaunchRocket{
+	max-width: 450px;
+}
+
+
+/*============= SHADOWS===========*/
+
+.packageShadow{
+	/*box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.23);*/
+	box-shadow: rgba(46, 50, 51, 0.2) 0 10px 20px 0;
+	-webkit-transition-duration: 0.5s;
+	transition-duration:0.5s ;
+}
+
+.packageShadow:hover{
+	box-shadow: rgba(46, 50, 51, 0.4) 0 20px 35px 0;
+}
 
 
 
