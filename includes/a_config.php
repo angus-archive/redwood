@@ -71,6 +71,11 @@ switch ($dirName) {
 		$CURRENT_PAGE = "Invalid-Page";
 		$PAGE_TITLE = "Page not found";
 		break;
+	case "/forbidden403.php";
+		$NAV_PAGE = "NONE";
+		$CURRENT_PAGE = "Forbidden-Page";
+		$PAGE_TITLE = "Forbidden";
+		break;
 	default:
         $NAV_PAGE = "Index";
         $CURRENT_PAGE = $NAV_PAGE;
