@@ -23,7 +23,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- Container Fluid -->
+				<!-- First Picture Section -->
 				<div class="container-fluid">
 					<!--Summary -->
 					<div class="row">
@@ -75,33 +75,43 @@
 						</div>
 					</div>
 				</div>
-				<!-- Other featured -->
+				<!-- Features -->
 				<div class="container-fluid" style="background-color: #E5E4E6">
 					<div class="container pSpacer-y-40">
 						<div class="row">
 							<div class="col-4">
-								<div class="card">
-									<div class="card-header text-center">
-										Uk Based
+								<div class="card text-center coreCard">
+									<div class="card-body">
+										<img class="featureIcon mb-2" src="/resources/images/icons/location_blue.svg" alt="Active marketing icon">
+										<h3 class="mt-sm-2">Based in the UK</h3>
+										<p class="p-1"> Reason why being based in the UK is good</p>
 									</div>
 								</div>
 							</div>
 							<div class="col-4">
-								<div class="card">
-									<div class="card-header text-center">
-										Dunno
+								<div class="card text-center coreCard">
+									<div class="card-body">
+										<img class="featureIcon mb-2" src="/resources/images/icons/support_green.svg" alt="Active marketing icon">
+										<h3 class="mt-sm-2">24/7 Support</h3>
+										<p class="p-1">Our support team is on hand 24/7 to answer any questions you have</p>
 									</div>
 								</div>
 							</div>
 							<div class="col-4">
-								<div class="card">
-									<div class="card-header text-center">
-										Something
+								<div class="card text-center coreCard">
+									<div class="card-body">
+										<img class="featureIcon mb-2" src="/resources/images/icons/awards_red.svg" alt="Active marketing icon">
+										<h3 class="mt-sm-2">Top Rated</h3>
+										<p class="p-1"> Times are changing; stop passively marketing and allow us to help you actively market your business </p>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+				</div>
+				<!-- Quotes -->
+				<div class="container-fluid bg-dark pSpacer-y-40">
+					<?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/quotes.php";include_once($path); ?>
 				</div>
 			</div>
 			<!-- Footer -->

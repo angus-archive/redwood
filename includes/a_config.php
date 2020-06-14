@@ -16,7 +16,8 @@ switch ($dirName) {
         $CURRENT_PAGE = $NAV_PAGE;
         $PAGE_TITLE = "Welcome to Redwood";
 	break;
-    case "/contact.php":
+
+	case "/contact.php":
         $NAV_PAGE = "Contact";
         $CURRENT_PAGE = $NAV_PAGE;
         $PAGE_TITLE = "Contact";
@@ -52,18 +53,25 @@ switch ($dirName) {
                 $PAGE_TITLE = "Packages";
         }
         break;
-    case "/email_sent.php":
-        $NAV_PAGE = "Contact";
-        $CURRENT_PAGE = $NAV_PAGE;
-        $PAGE_TITLE = "Message Sent";
-        break;
+
+	case "/email_sent.php":
+		$NAV_PAGE = "Contact";
+		$CURRENT_PAGE = $NAV_PAGE;
+		$PAGE_TITLE = "Message Sent";
+		break;
 
 	case "/privacy-policy.php":
-		$NAV_PAGE = "Our-Story";
-		$CURRENT_PAGE = $NAV_PAGE;
+		$NAV_PAGE = "NONE";
+		$CURRENT_PAGE = "Privacy-Policy";
 		$PAGE_TITLE = "Privacy Policy";
 		break;
-    default:
+
+	case "/invalid404.php";
+		$NAV_PAGE = "NONE";
+		$CURRENT_PAGE = "Invalid-Page";
+		$PAGE_TITLE = "Page not found";
+		break;
+	default:
         $NAV_PAGE = "Index";
         $CURRENT_PAGE = $NAV_PAGE;
         $PAGE_TITLE = "Welcome to Redwood";

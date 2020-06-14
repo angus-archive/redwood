@@ -17,6 +17,13 @@
 		<!-- Form Data-->
 		<?php
 
+		//----Imports-----
+		use PHPMailer\PHPMailer\PHPMailer;
+		use PHPMailer\PHPMailer\Exception;
+		//Require PHPMailer auto loader
+		require $_SERVER['DOCUMENT_ROOT'].'PHPMailer/vendor/autoload.php';
+
+
 		//Form validation function (removes any SQL injections etc)
 		function wash_data($data) {
 			$data = trim($data);
@@ -49,9 +56,6 @@
 			return $html_message;
 
 		}
-
-		//Require PHPMailer auto loader
-		require '/PHPMailer/vendor/PHPMailerAutoload.php';
 
 		//Send our email
 		function smtpmailer($to, $from, $from_name, $subject, $body){
@@ -115,9 +119,7 @@
 			$error=smtpmailer($to,$from, $name ,$subj, $msg);
 			echo "<h4 class='text-center py-2'>".$error."</h4>";
 		}
-
-
-
+		
 		?>
 
 	</div>
