@@ -88,7 +88,7 @@
 									<div class="card-body">
 										<img class="featureIcon mb-2" src="/resources/images/icons/location_blue.svg" alt="Active marketing icon">
 										<h3 class="mt-sm-2">Based in the UK</h3>
-										<p class="p-1"> Reason why being based in the UK is good</p>
+										<p class="p-1">We're operating from the Midlands</p>
 									</div>
 								</div>
 							</div>
@@ -104,9 +104,9 @@
 							<div class="col-lg-4">
 								<div class="card text-center coreCard">
 									<div class="card-body">
-										<img class="featureIcon mb-2" src="/resources/images/icons/awards_red.svg" alt="Active marketing icon">
-										<h3 class="mt-sm-2">Top Rated</h3>
-										<p class="p-1"> Times are changing; stop passively marketing and allow us to help you actively market your business </p>
+										<img class="featureIcon mb-2" src="/resources/images/icons/good_value.svg" alt="Active marketing icon">
+										<h3 class="mt-sm-2">Excellent Value</h3>
+										<p class="p-1">Our prices are very competitive and work to your budget</p>
 									</div>
 								</div>
 							</div>
@@ -116,10 +116,7 @@
 						<a href="/packages" class="btn btn-primary" style="border: 0 !important;">Browse our packages</a>
 					</div>
 				</div>
-				<!-- Quotes -->
-				<div class="container-fluid bg-dark pSpacer-y-40">
-					<?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/quotes.php";include_once($path); ?>
-				</div>
+
 			</div>
 			<!-- Footer -->
 			<?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/footer.php";include_once($path); ?>

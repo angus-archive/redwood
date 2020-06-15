@@ -59,7 +59,7 @@
 								<h4 class="my-0 font-weight-normal">Redwood</h4>
 							</div>
 							<div class="card-body">
-								<p class="card-text">Our Economy Package features is perfect for people looking to get started on social media</p>
+								<p class="card-text">Our middle-way package, for businesses looking to build up and utilise a social media presence </p>
 
 							</div>
 
@@ -68,7 +68,6 @@
 								<li class="list-group-item">Fortnightly meetings</li>
 								<li class="list-group-item">Social Media management</li>
 								<li class="list-group-item">Build online presence</li>
-								<li class="list-group-item">Photography session</li>
 							</ul>
 
 							<div class="card-footer">
@@ -84,7 +83,7 @@
 								<h4 class="my-0 font-weight-normal">Deluxe</h4>
 							</div>
 							<div class="card-body">
-								<p class="card-text">Our Economy Package features is perfect for people looking to get started on social media</p>
+								<p class="card-text">Our package with the most to offer, for businesses looking to seriously utilise social media</p>
 
 							</div>
 
@@ -93,7 +92,7 @@
 								<li class="list-group-item">Weekly meetings</li>
 								<li class="list-group-item">Opportunity reach analysis</li>
 								<li class="list-group-item">Monthly business review</li>
-
+								<li class="list-group-item">Photography session</li>
 							</ul>
 
 							<div class="card-footer">

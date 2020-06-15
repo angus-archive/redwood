@@ -25,10 +25,6 @@
 				</div>
 			</li>
 			<li class="nav-item">
-				<!--OUR STORY-->
-				<a class="nav-link text-nowrap <?php if($NAV_PAGE == "Our-Story"){echo "currentNavItem";}?>" href="/our-story.php">Our Story</a>
-			</li>
-			<li class="nav-item">
 				<!--CONTACT-->
 				<a class="nav-link text-nowrap <?php if($NAV_PAGE == "Contact"){echo "currentNavItem";}?>" href="/contact.php" >Contact</a>
 			</li>

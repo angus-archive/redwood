@@ -17,7 +17,7 @@
 				<div class="row align-items-center">
 					<div class="col-lg-12">
 						<h1 class="display-4 mt-5 mb-2 deluxeCol font-weight-bold">Deluxe Package</h1>
-						<p class="lead mb-5">This is a brief description of the deluxe package, who it is for etc</p>
+						<p class="lead mb-5">Our package with the most to offer, for businesses looking to seriously utilise social media</p>
 					</div>
 				</div>
 			</div>
