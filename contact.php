@@ -18,11 +18,13 @@
 				<div class="row align-items-center">
 					<div class="col-lg-12">
 						<h1 class="display-4 mt-5 mb-2 font-weight-bold">Contact Us</h1>
-						<p class="lead mb-5">Feel free to contact us with any questions you have or if you would like to purchase one of our packages or services.</p>
+						<p class="lead mb-4">Feel free to contact us with any questions you have or if you would like to purchase one of our packages or services.</p>
 					</div>
 				</div>
 			</div>
+			<?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/social_media.php";include_once($path); ?>
 		</div>
+
 		<!-- Spacer -->
 		<div class="pSpacer-y-20"></div>
 		<!-- Container -->

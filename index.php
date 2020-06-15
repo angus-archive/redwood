@@ -24,7 +24,7 @@
 					</div>
 				</div>
 				<div class="container-fluid p-3">
-					<h5 class="text-center mb-4 my-auto">What we offer</h5>
+					<h2 class="text-center mb-4 my-auto">What we offer</h2>
 				</div>
 				<!-- First Picture Section -->
 				<div class="container-fluid">
@@ -35,19 +35,19 @@
 						<div class="col-lg-3 align-self-center homeLeftPane">
 							<div class="card coreCard mb-4">
 								<div class="card-body">
-									<h4 style="color: #77B813"> Market Analysis </h4>
+									<h3 style="color: #77B813"> Market Analysis </h3>
 									<p>An in-depth report analysing your market segmentation, the key opportunities you can't afford to miss out on and how to get ahead of the competition</p>
 								</div>
 							</div>
 							<div class="card coreCard mb-4">
 								<div class="card-body">
-									<h4 style="color: #19B082"> Relaunch Events </h4>
+									<h3 style="color: #19B082"> Relaunch Events </h3>
 									<p> We will organise an online special event to inform customers about your reopening</p>
 								</div>
 							</div>
 							<div class="card coreCard mb-4">
 								<div class="card-body">
-									<h4 style="color: #963AE4"> Financial Advice </h4>
+									<h3 style="color: #963AE4"> Financial Advice </h3>
 									<p>We will analyse your business and recommend ways to improve your finances</p>
 								</div>
 							</div>
@@ -60,19 +60,19 @@
 						<div class="col-lg-3 align-self-center homeRightPane">
 							<div class="card coreCard mb-4">
 								<div class="card-body">
-									<h4 style="color: #D5396B"> Social Media Marketing </h4>
+									<h3 style="color: #D5396B"> Social Media Marketing </h3>
 									<p>We will help you utilise social media platforms to help grow your business</p>
 								</div>
 							</div>
 							<div class="card coreCard mb-4">
 								<div class="card-body">
-									<h4 style="color: #EBA800"> Creative Content Ideas </h4>
+									<h3 style="color: #EBA800"> Creative Content Ideas </h3>
 									<p>Our team will recommend ideas to effectively promote your content</p>
 								</div>
 							</div>
 							<div class="card coreCard mb-4">
 								<div class="card-body">
-									<h4 style="color: #00AFF6"> Graphic Design </h4>
+									<h3 style="color: #00AFF6"> Graphic Design </h3>
 									<p>We offer modern design services to help you stand out from the competition</p>
 								</div>
 							</div>

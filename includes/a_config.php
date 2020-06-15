@@ -14,7 +14,7 @@ switch ($dirName) {
     case "/index.php":
         $NAV_PAGE = "Index";
         $CURRENT_PAGE = $NAV_PAGE;
-        $PAGE_TITLE = "Redwood, social media marketing, design and consultancy";
+        $PAGE_TITLE = "Redwood Marketing";
 	break;
 
 	case "/contact.php":
