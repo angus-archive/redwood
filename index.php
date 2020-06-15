@@ -112,7 +112,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="mx-auto text-center pb-lg-5">
+					<div class="mx-auto text-center pb-5">
 						<a href="/packages" class="btn btn-primary" style="border: 0 !important;">Browse our packages</a>
 					</div>
 				</div>
