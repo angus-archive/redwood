@@ -59,7 +59,7 @@
 								<h4 class="my-0 font-weight-normal">Redwood</h4>
 							</div>
 							<div class="card-body">
-								<p class="card-text">Our middle-way package, for businesses looking to build up and utilise a social media presence </p>
+								<p class="card-text">Our standard package, for businesses looking to build up and utilise a social media presence </p>
 
 							</div>
 
@@ -121,7 +121,7 @@
 								<h4 class="my-0 font-weight-normal">Relaunch</h4>
 							</div>
 							<div class="card-body">
-								<p class="card-text">Here at Redwood we understand the devastating affects Coronavirus has had on businesses, that's why we're introducing our Relaunch package to help you come out lockdown stronger than ever</p>
+								<p class="card-text">Here at Redwood we understand the devastating affects Coronavirus has had on businesses, that's why we're introducing our Relaunch package to help you come out of lockdown stronger than ever</p>
 							</div>
 
 							<ul class="list-group list-group-flush">

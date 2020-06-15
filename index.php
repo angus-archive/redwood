@@ -36,7 +36,7 @@
 							<div class="card coreCard mb-4">
 								<div class="card-body">
 									<h4 style="color: #77B813"> Market Analysis </h4>
-									<p>An in-depth report report analysing your market segmentation, the key opportunities you can't afford to miss out on and how to get ahead of the competition</p>
+									<p>An in-depth report analysing your market segmentation, the key opportunities you can't afford to miss out on and how to get ahead of the competition</p>
 								</div>
 							</div>
 							<div class="card coreCard mb-4">

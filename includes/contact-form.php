@@ -8,10 +8,10 @@
                 <label for="given-name">First Name</label>
                 <input type="text" class="form-control" id="given-name" name="first-name" placeholder="First name" required>
             </div>
-            <!--Second name -->
+            <!--Surname-->
             <div class="col-md-6 mb-3">
-                <label for="family-name">Second Name</label>
-                <input type="text" class="form-control" id="family-name" name="second-name" placeholder="Second name" required>
+                <label for="family-name">Surname</label>
+                <input type="text" class="form-control" id="family-name" name="second-name" placeholder="Surname" required>
             </div>
 
         </div>
@@ -24,12 +24,12 @@
             </div>
             <!--Email -->
             <div class="col-md-6 mb-3">
-                <label for="userEmail">Email</label>
+                <label for="userEmail">Contact Email</label>
                 <div class="input-group">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="inputGroupPrepend3">@</span>
                     </div>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Contact Email" required>
                 </div>
             </div>
         </div>

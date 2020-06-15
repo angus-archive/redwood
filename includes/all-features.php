@@ -132,7 +132,7 @@ function photography() { global $border_col ?>
 			<img class="featureIcon mb-2" src="/resources/images/icons/photography.svg" alt="Photography icon">
 			<h3 class="mt-sm-2">Photography Sessions</h3>
 			<div class="featureDivider <?php echo $border_col ?>"></div>
-			<p class="p-1">Showcase your products or services with professional pictures</p>
+			<p class="p-1">Showcase your products or services with our high quality pictures</p>
 		</div>
 	</div>
 <?php }
