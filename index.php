@@ -42,13 +42,13 @@
 							<div class="card coreCard mb-4">
 								<div class="card-body">
 									<h4 style="color: #19B082"> Relaunch Events </h4>
-									<p>This is a small description of one of the services we offer here at redoow</p>
+									<p> We will organise an online special event to inform customers about your reopening</p>
 								</div>
 							</div>
 							<div class="card coreCard mb-4">
 								<div class="card-body">
 									<h4 style="color: #963AE4"> Financial Advice </h4>
-									<p>This is a small description of one of the services we offer here at redoow</p>
+									<p>We will analyse your business and recommend ways to improve your finances</p>
 								</div>
 							</div>
 						</div>
@@ -61,19 +61,19 @@
 							<div class="card coreCard mb-4">
 								<div class="card-body">
 									<h4 style="color: #D5396B"> Social Media Marketing </h4>
-									<p>This is a small description of one of the services we offer here at redoow</p>
+									<p>We will help you utilise social media platforms to help grow your business</p>
 								</div>
 							</div>
 							<div class="card coreCard mb-4">
 								<div class="card-body">
 									<h4 style="color: #EBA800"> Creative Content Ideas </h4>
-									<p>This is a small description of one of the services we offer here at redoow</p>
+									<p>Our team will recommend ideas to effectively promote your content</p>
 								</div>
 							</div>
 							<div class="card coreCard mb-4">
 								<div class="card-body">
 									<h4 style="color: #00AFF6"> Graphic Design </h4>
-									<p>This is a small description of one of the services we offer here at redoow</p>
+									<p>We offer modern design services to help you stand out from the competition</p>
 								</div>
 							</div>
 						</div>

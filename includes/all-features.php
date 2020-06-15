@@ -50,7 +50,7 @@ function calendar() { global $border_col ?>
 			<img class="featureIcon mb-2" src="/resources/images/icons/calendar.svg" alt="Calendar icon">
 			<h3 class="mt-sm-2">Calendar</h3>
 			<div class="featureDivider <?php echo $border_col ?>"></div>
-			<p class="p-1"> This is a brief description of the feature</p>
+			<p class="p-1">Calendar document outlining key dates your business can't afford to miss out on.</p>
 		</div>
 	</div>
 <?php }
@@ -63,7 +63,7 @@ function social_advice() { global $border_col ?>
 			<img class="featureIcon mb-2" src="/resources/images/icons/advice.svg" alt="Advice icon">
 			<h3 class="mt-sm-2">Advice</h3>
 			<div class="featureDivider <?php echo $border_col ?>"></div>
-			<p class="p-1"> This is a brief description of the feature</p>
+			<p class="p-1">We offer in depth, tailored advice for your individual needs</p>
 		</div>
 	</div>
 <?php }
@@ -76,7 +76,7 @@ function creative_ideas() { global $border_col ?>
 			<img class="featureIcon mb-2" src="/resources/images/icons/ideas.svg" alt="Creative ideas icon">
 			<h3 class="mt-sm-2">Creative Ideas</h3>
 			<div class="featureDivider <?php echo $border_col ?>"></div>
-			<p class="p-1"> This is a brief description of the feature</p>
+			<p class="p-1">Our team will come up with unique social media content ideas</p>
 		</div>
 	</div>
 <?php }
@@ -96,7 +96,7 @@ function account_management() { global $border_col ?>
 	</div>
 <?php }
 
-//Build online precence
+//Build online presence
 function build_online_presence() { global $border_col ?>
 	<!--Build online presence Feature -->
 	<div class="card text-center coreCard">
@@ -104,7 +104,7 @@ function build_online_presence() { global $border_col ?>
 			<img class="featureIcon" src="/resources/images/icons/online.svg" alt="Online presence icon">
 			<h3 class="mt-sm-2">Build online presence</h3>
 			<div class="featureDivider <?php echo $border_col ?>"></div>
-			<p class="p-1"> This is a brief description of the feature</p>
+			<p class="p-1">We will help develop your brands status and reputation in the online world</p>
 		</div>
 	</div>
 <?php }
@@ -132,7 +132,7 @@ function photography() { global $border_col ?>
 			<img class="featureIcon mb-2" src="/resources/images/icons/photography.svg" alt="Photography icon">
 			<h3 class="mt-sm-2">Photography Sessions</h3>
 			<div class="featureDivider <?php echo $border_col ?>"></div>
-			<p class="p-1"> This is a brief description of the feature</p>
+			<p class="p-1">Showcase your products or services with professional pictures</p>
 		</div>
 	</div>
 <?php }
@@ -145,7 +145,7 @@ function microsoft_masterclass() { global $border_col ?>
 			<img class="featureIcon mb-2" src="/resources/images/icons/microsoft.svg" alt="Microsoft Masterclass icon">
 			<h3 class="mt-sm-2">Microsoft Masterclass</h3>
 			<div class="featureDivider <?php echo $border_col ?>"></div>
-			<p class="p-1"> This is a brief description of the feature</p>
+			<p class="p-1">Learn how to use Microsoft Office effectively</p>
 		</div>
 	</div>
 <?php }
@@ -161,7 +161,7 @@ function online_reopening() { global $border_col ?>
 			<img class="featureIcon mb-2" src="/resources/images/icons/relaunch_event.svg" alt="Relaunch Event Rocket icon">
 			<h3 class="mt-sm-2">Online Reopening event</h3>
 			<div class="featureDivider <?php echo $border_col ?>"></div>
-			<p class="p-1"> This is a brief description of the feature</p>
+			<p class="p-1"> We will organise an online special event to inform customers about your reopening</p>
 		</div>
 	</div>
 <?php }
@@ -174,7 +174,7 @@ function advert_creation() { global $border_col ?>
 			<img class="featureIcon mb-2" src="/resources/images/icons/advert_creation.svg" alt="Advert creation icon">
 			<h3 class="mt-sm-2">Multiple Advert Creation</h3>
 			<div class="featureDivider <?php echo $border_col ?>"></div>
-			<p class="p-1"> This is a brief description of the feature</p>
+			<p class="p-1"> We will create digital adverts to promote your business</p>
 		</div>
 	</div>
 <?php }

@@ -18,7 +18,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-12">
                         <h1 class="display-4 mt-5 mb-2 relaunchCol font-weight-bold">Relaunch Package</h1>
-                        <p class="lead mb-5">This is a brief description of the relaunch package, who it is for etc</p>
+                        <p class="lead mb-5">Help your business come out lockdown stronger than ever</p>
                     </div>
                 </div>
             </div>
@@ -39,9 +39,6 @@
 				<div class="col-lg-4 mb-5">
 				    <?php active_marketing(); ?>
 				</div>
-				<div class="col-lg-4 mb-5">
-				    <?php personalised_report(); ?>
-				</div>
 
 			</div>
 		</div>
@@ -52,6 +49,10 @@
 		</div>
 		<div class="pSpacer-y-40"></div>
     </div>
+	<!-- Find-out-more -->
+	<?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/find-out-more.php";include_once($path); ?>
+	<!-- Optional Extras -->
+	<?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/optional-extras.php";include_once($path); ?>
     <!-- Footer -->
     <?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/footer.php";include_once($path); ?>
     <!-- Footer - Tags -->

@@ -10,7 +10,7 @@
 					<img class="optionalIcon mb-2" src="/resources/images/icons/microsoft.svg" alt="Microsoft Masterclass icon">
 					<h3 class="mt-sm-2">Microsoft Masterclass</h3>
 					<div class="featureDivider defaultBorderTop"></div>
-					<p class="p-1">Learn how to use Microsoft Office</p>
+					<p class="p-1">Learn how to use Microsoft Office effectively</p>
 				</div>
 				<div class="card-footer deluxeBackground text-white p-1">
 					<p class="m-auto small">Free with Deluxe Package</p>
