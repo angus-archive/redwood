@@ -17,7 +17,7 @@
 					<div class="container">
 						<div class="row align-items-center">
 							<div class="col-lg-12">
-								<h1 class="display-4 mt-5 mb-2 font-weight-bold">Welcome to Redwood</h1>
+								<h1 class="display-4 mt-5 mb-2 font-weight-bold">Redwood Marketing</h1>
 								<p class="lead mb-5">We are a business management and marketing company dedicated to helping you grow your business.</p>
 							</div>
 						</div>
@@ -54,7 +54,7 @@
 						</div>
 						<!--Middle-->
 						<div class="col-lg-6 align-self-center">
-							<img class="d-block m-auto" src="/resources/images/homepage.svg">
+							<img class="d-block m-auto" src="/resources/images/homepage.svg" alt="Redwood Marketing Services">
 						</div>
 						<!--Right Side-->
 						<div class="col-lg-3 align-self-center homeRightPane">
@@ -86,7 +86,7 @@
 							<div class="col-lg-4">
 								<div class="card text-center coreCard">
 									<div class="card-body">
-										<img class="featureIcon mb-2" src="/resources/images/icons/location_blue.svg" alt="Active marketing icon">
+										<img class="featureIcon mb-2" src="/resources/images/icons/location_blue.svg" alt="Uk based">
 										<h3 class="mt-sm-2">Based in the UK</h3>
 										<p class="p-1">We're operating from the Midlands</p>
 									</div>
@@ -95,7 +95,7 @@
 							<div class="col-lg-4">
 								<div class="card text-center coreCard">
 									<div class="card-body">
-										<img class="featureIcon mb-2" src="/resources/images/icons/support_green.svg" alt="Active marketing icon">
+										<img class="featureIcon mb-2" src="/resources/images/icons/support_green.svg" alt="24 hour support">
 										<h3 class="mt-sm-2">24/7 Support</h3>
 										<p class="p-1">Our support team is on hand 24/7 to answer any questions you have</p>
 									</div>
@@ -104,7 +104,7 @@
 							<div class="col-lg-4">
 								<div class="card text-center coreCard">
 									<div class="card-body">
-										<img class="featureIcon mb-2" src="/resources/images/icons/good_value.svg" alt="Active marketing icon">
+										<img class="featureIcon mb-2" src="/resources/images/icons/good_value.svg" alt="Good value">
 										<h3 class="mt-sm-2">Excellent Value</h3>
 										<p class="p-1">Our prices are very competitive and work to your budget</p>
 									</div>
