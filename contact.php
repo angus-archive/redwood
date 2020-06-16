@@ -22,7 +22,6 @@
 					</div>
 				</div>
 			</div>
-			<?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/social_media.php";include_once($path); ?>
 		</div>
 
 		<!-- Spacer -->

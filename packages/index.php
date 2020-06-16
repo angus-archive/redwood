@@ -65,7 +65,7 @@
 
 							<ul class="list-group list-group-flush">
 								<li class="list-group-item redwoodCol font-weight-bold">What's included?</li>
-								<li class="list-group-item">Fortnightly meetings</li>
+								<li class="list-group-item">Flexible meetings</li>
 								<li class="list-group-item">Social Media management</li>
 								<li class="list-group-item">Build online presence</li>
 							</ul>
@@ -89,7 +89,6 @@
 
 							<ul class="list-group list-group-flush">
 								<li class="list-group-item deluxeCol font-weight-bold">What's included?</li>
-								<li class="list-group-item">Weekly meetings</li>
 								<li class="list-group-item">Opportunity reach analysis</li>
 								<li class="list-group-item">Monthly business review</li>
 								<li class="list-group-item">Photography session</li>
