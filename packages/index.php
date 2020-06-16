@@ -41,7 +41,7 @@
 
 							<ul class="list-group list-group-flush">
 								<li class="list-group-item econCol font-weight-bold">What's included?</li>
-								<li class="list-group-item">Monthly Meetings</li>
+								<li class="list-group-item">1 Meeting per month</li>
 								<li class="list-group-item">Social Media Advice</li>
 								<li class="list-group-item">Creative content ideas</li>
 							</ul>
@@ -65,7 +65,7 @@
 
 							<ul class="list-group list-group-flush">
 								<li class="list-group-item redwoodCol font-weight-bold">What's included?</li>
-								<li class="list-group-item">Flexible meetings</li>
+								<li class="list-group-item">2 Meetings per month</li>
 								<li class="list-group-item">Social Media management</li>
 								<li class="list-group-item">Build online presence</li>
 							</ul>
@@ -154,10 +154,10 @@
 						</thead>
 						<tbody>
 						<tr>
-							<th scope="row"> Meetings</th>
-							<td> Monthly</td>
-							<td> Fortnightly</td>
-							<td> Weekly</td>
+							<th scope="row">Meetings</th>
+							<td> 1 every month</td>
+							<td> 2 every month</td>
+							<td> 4 Every month</td>
 						</tr>
 						<tr>
 							<th scope="row">Social Media Advice</th>

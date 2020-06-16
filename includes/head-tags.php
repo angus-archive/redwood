@@ -8,6 +8,6 @@
 <link rel="shortcut icon" type="image/png" href="/resources/coreImages/favicon-48.png"/>
 <link rel="apple-touch-icon" href="/resources/coreImages/apple-touch-icon.png">
 <!-- Bootstrap core CSS -->
-<link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="/resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <!-- Custom CSS-->
 <link href="/resources/styles/stylesheet.css" rel="stylesheet">
