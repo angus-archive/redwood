@@ -172,12 +172,6 @@
 							<td><span class="bullet deluxeCol">•</span></td>
 						</tr>
 						<tr>
-							<th scope="row">Creative content ideas</th>
-							<td><span class="bullet econCol">•</span></td>
-							<td><span class="bullet redwoodCol">•</span></td>
-							<td><span class="bullet deluxeCol">•</span></td>
-						</tr>
-						<tr>
 							<th scope="row">Social Media Management</th>
 							<td></td>
 							<td><span class="bullet redwoodCol">•</span></td>
