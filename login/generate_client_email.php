@@ -5,6 +5,12 @@ if (!isset($_SESSION['loggedin'])) {
 	header('Location: /login');
 	exit;
 }
+
+if ($_SERVER["REQUEST_METHOD"] != "POST") {
+	header('Location: /login/send_email_client.php');
+	exit;
+}
+
 ?>
 
 <?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/a_config.php";include_once($path); ?>
@@ -29,10 +35,8 @@ if (!isset($_SESSION['loggedin'])) {
 		</div>
 
 		<!-- Email preview -->
-		<div class="mx-auto text-center" style="width: 600px;">
-			<iframe class="w-100" style="height: 700px;">
-
-			</iframe>
+		<div class="mx-auto text-center" style="width: 600px;height: 700px; border: 1px solid black;">
+			
 		</div>
 
 		<!-- Spacer-->
