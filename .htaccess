@@ -4,4 +4,8 @@ ErrorDocument 403 /forbidden403.php
 
 
 RedirectMatch 404 /\.git
+Redirect 301 /includes /invalid404.php
 
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
