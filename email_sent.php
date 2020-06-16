@@ -1,4 +1,9 @@
 
+<?php
+if ($_SERVER["REQUEST_METHOD"] != "POST") {
+	header("location: /contact.php");
+}
+?>
 <?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/a_config.php";include_once($path); ?>
 <!DOCTYPE html>
 <html lang="en">
