@@ -1,5 +1,4 @@
 <?php
-// We need to use sessions, so you should always start sessions using the below code.
 session_start();
 // If the user is not logged in redirect to the login page...
 if (!isset($_SESSION['loggedin'])) {
@@ -30,7 +29,7 @@ if (!isset($_SESSION['loggedin'])) {
 		</div>
 
 		<div style="max-width: 75%;" class="mx-auto p-3">
-			<form method="post" action="/login/authenticate.php">
+			<form method="post" action="/login/generate_client_email.php">
 				<!--Row 1 -->
 				<div class="form-group">
 					<label for="redEmail">Select Redwood Email</label>
@@ -40,7 +39,9 @@ if (!isset($_SESSION['loggedin'])) {
 						<option>no-reply@redwood.business</option>
 					</select>
 				</div>
+
 				<div class="pSpacer-y-10"></div>
+				<h3 class="pb-3 text-center"> Core Details</h3>
 				<!--Row 2-->
 				<div class="form-row">
 					<!--To -->
@@ -57,16 +58,33 @@ if (!isset($_SESSION['loggedin'])) {
 				</div>
 				<!--Row 3-->
 				<div class="form-row">
-					<!--Password -->
+					<!--Subject -->
 					<div class="col-md-12 mb-3">
-						<label for="password">Password</label>
-						<input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+						<label for="subject">Subject</label>
+						<input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
 					</div>
-
 				</div>
+				<!--Message -->
+				<div class="form-group">
+					<label for="message">Message</label>
+					<textarea class="form-control" id="message" name="message" rows="15" style="resize:none"  placeholder="Email message..." required maxlength="5000"></textarea>
+				</div>
+
+				<div class="pSpacer-y-10"></div>
+				<h3 class="pb-3 text-center"> Extra Details</h3>
+
+				<!--Row 5-->
+				<div class="form-row">
+					<!--Heading -->
+					<div class="col-md-12 mb-3">
+						<label for="heading">Message Heading</label>
+						<input type="text" class="form-control" id="heading" name="subject" placeholder="Hi John,">
+					</div>
+				</div>
+
 				<div class="text-center">
 					<!--Submit -->
-					<button class="btn btn-primary my-2" type="submit">Submit</button>
+					<button class="btn btn-primary my-2" type="submit">Generate Preview</button>
 				</div>
 			</form>
 		</div>
