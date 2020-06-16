@@ -119,7 +119,7 @@ function reach_analysis_reports() { global $border_col ?>
 			<img class="featureIcon mb-2" src="/resources/images/icons/reach_analysis.svg" alt="Reach Analysis report">
 			<h3 class="mt-sm-2">Reach Analysis Report</h3>
 			<div class="featureDivider <?php echo $border_col ?>"></div>
-			<p class="p-1"> This is a brief description of the feature</p>
+			<p class="p-1">We conduct an extensive report into the effectiveness of your social media platform</p>
 		</div>
 	</div>
 <?php }
