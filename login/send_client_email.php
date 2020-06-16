@@ -29,9 +29,19 @@ if (!isset($_SESSION['loggedin'])) {
 			<h2 class="mb-4"> Send a client email</h2>
 		</div>
 
-		<div class="container">
+		<div style="max-width: 75%;" class="mx-auto p-3">
 			<form method="post" action="/login/authenticate.php">
-				<!--Row 1-->
+				<!--Row 1 -->
+				<div class="form-group">
+					<label for="redEmail">Select Redwood Email</label>
+					<select class="form-control" id="redEmail">
+						<option>support@redwood.business</option>
+						<option>sales@redwood.business</option>
+						<option>no-reply@redwood.business</option>
+					</select>
+				</div>
+				<div class="pSpacer-y-10"></div>
+				<!--Row 2-->
 				<div class="form-row">
 					<!--To -->
 					<div class="col-md-12 mb-3">
@@ -45,7 +55,7 @@ if (!isset($_SESSION['loggedin'])) {
 					</div>
 
 				</div>
-				<!--Row 2-->
+				<!--Row 3-->
 				<div class="form-row">
 					<!--Password -->
 					<div class="col-md-12 mb-3">
