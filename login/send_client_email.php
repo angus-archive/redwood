@@ -5,6 +5,12 @@ if (!isset($_SESSION['loggedin'])) {
 	header('Location: /login');
 	exit;
 }
+
+if ($_SERVER["REQUEST_METHOD"] != "POST") {
+	header('Location: /login/create_client_email.php');
+	exit;
+}
+
 ?>
 
 <?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/a_config.php";include_once($path); ?>
@@ -25,69 +31,89 @@ if (!isset($_SESSION['loggedin'])) {
 		<div class="mSpacer-y-40"></div>
 
 		<div class="container text-center">
-			<h2 class="mb-4"> Send a client email</h2>
+			<h2 class="mb-4"> Client Email sent</h2>
 		</div>
 
-		<div style="max-width: 75%;" class="mx-auto p-3">
-			<form method="post" action="/login/generate_client_email.php">
-				<!--Row 1 -->
-				<div class="form-group">
-					<label for="redEmail">Select Redwood Email</label>
-					<select class="form-control" id="redEmail">
-						<option>support@redwood.business</option>
-						<option>sales@redwood.business</option>
-						<option>no-reply@redwood.business</option>
-					</select>
-				</div>
 
-				<div class="pSpacer-y-10"></div>
-				<h3 class="pb-3 text-center"> Core Details</h3>
-				<!--Row 2-->
-				<div class="form-row">
-					<!--To -->
-					<div class="col-md-12 mb-3">
-						<label for="clientEmail">Client Email</label>
-						<div class="input-group">
-							<div class="input-group-prepend">
-								<span class="input-group-text" id="inputGroupPrepend3">@</span>
-							</div>
-							<input type="email" class="form-control" id="clientEmail" name="client-email" placeholder="Client Email" required>
-						</div>
-					</div>
+		<?php
 
-				</div>
-				<!--Row 3-->
-				<div class="form-row">
-					<!--Subject -->
-					<div class="col-md-12 mb-3">
-						<label for="subject">Subject</label>
-						<input type="text" class="form-control" id="subject" name="message-subject" placeholder="Subject" required>
-					</div>
-				</div>
-				<!--Message -->
-				<div class="form-group">
-					<label for="message">Message</label>
-					<textarea class="form-control" id="message" name="message-content" rows="15" style="resize:none"  placeholder="Email message..." required maxlength="5000"></textarea>
-				</div>
+		//----Imports-----
+		//use PHPMailer\PHPMailer\PHPMailer;
+		//use PHPMailer\PHPMailer\Exception;
+		//Require PHPMailer auto loader
+		//require $_SERVER['DOCUMENT_ROOT'].'PHPMailer/vendor/autoload.php';
 
-				<div class="pSpacer-y-10"></div>
-				<h3 class="pb-3 text-center"> Extra Details</h3>
 
-				<!--Row 5-->
-				<div class="form-row">
-					<!--Heading -->
-					<div class="col-md-12 mb-3">
-						<label for="heading">Message Heading</label>
-						<input type="text" class="form-control" id="heading" name="message-heading" placeholder="Hi John,">
-					</div>
-				</div>
+		//Function to send email
+		function smtpmailer($redAccount,$to, $from, $from_name, $subject, $body){
+			$mail = new PHPMailer();
+			$mail->IsSMTP();
+			$mail->SMTPAuth = true;
 
-				<div class="text-center">
-					<!--Submit -->
-					<button class="btn btn-primary my-2" type="submit">Generate Preview</button>
-				</div>
-			</form>
-		</div>
+			$mail->SMTPSecure = 'ssl';
+			$mail->Host = 'imap.stackmail.com';
+			$mail->Port = 465;
+
+			//Depending which email was selected
+			switch($redAccount){
+				case "support@redwood.business":
+					$mail->Username = 'support@redwood.business';
+					$mail->From="support@redwood.business";
+					$mail->Password = 'support_password';
+					break;
+				case "sales@redwood.business":
+					$mail->Username = 'sales@redwood.business';
+					$mail->From="sales@redwood.business";
+					$mail->Password = 'Sales_Password';
+					break;
+				default:
+					$mail->Username = 'web-client@redwood.business';
+					$mail->From="web-client@redwood.business";
+					$mail->Password = 'Co4f25353';
+					break;
+			}
+
+
+
+			$mail->IsHTML(true);
+			$mail->FromName=$from_name;
+			$mail->Sender=$from;
+			$mail->AddReplyTo($from, $from_name);
+			$mail->Subject = $subject;
+			$mail->Body = $body;
+			$mail->AddAddress($to);
+			if(!$mail->Send())
+			{
+				$error ="Error, a problem occurred sending your email";
+				return $error;
+			}
+			else
+			{
+				$error = "Your Email was sent successfully";
+				return $error;
+			}
+		}
+
+		//Form validation function (removes any SQL injections etc)
+		function wash_data($data) {
+			$data = trim($data);
+			$data = stripslashes($data);
+			$data = htmlspecialchars($data);
+			return $data;
+		}
+
+		//Wash data
+		$sender_email=wash_data($_POST["redEmail"]);
+		$client_email=wash_data($_POST["client-email"]);
+
+		$subject=wash_data($_POST["message-subject"]);
+		$message_body=wash_data($_POST["message-content"]);
+		$message_heading=wash_data($_POST["message-heading"]);
+
+		echo $sender_email;
+
+		?>
+
 
 		<!-- Spacer-->
 		<div class="pSpacer-y-40"></div>

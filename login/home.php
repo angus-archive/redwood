@@ -27,7 +27,7 @@ if (!isset($_SESSION['loggedin'])) {
 
 		<div class="container text-center">
 			<h2 class="mb-4"> Welcome, <?php echo $_SESSION["name"] ?></h2>
-			<a href="/login/send_client_email.php" class="btn btn-primary" style="border: 0 !important;">Send an email</a>
+			<a href="/login/create_client_email.php" class="btn btn-primary" style="border: 0 !important;">Send an email</a>
 		</div>
 
 		<!-- Spacer-->

@@ -7,40 +7,22 @@ if (!isset($_SESSION['loggedin'])) {
 }
 
 if ($_SERVER["REQUEST_METHOD"] != "POST") {
-	header('Location: /login/send_client_email.php');
+	header('Location: /login/create_client_email.php');
 	exit;
 }
 
 ?>
+<!-- Load Email Preview -->
+<?php
 
-<?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/a_config.php";include_once($path); ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<!-- Head tags -->
-	<?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/head-tags.php";include_once($path); ?>
-</head>
+//Gather info
+$message_heading=$_POST['message-heading'];
+$message_body=$_POST['message-content'];
 
-<body>
-<div id="page-content">
-	<div id="content-wrap">
-		<!-- Header-->
-		<?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/login/includes/login_header.php";include_once($path); ?>
 
-		<!-- Spacer-->
-		<div class="mSpacer-y-40"></div>
 
-		<div class="container text-center">
-			<h2 class="mb-4">Email Preview</h2>
-		</div>
-
-		<!-- Write Email -->
-		<?php
-		//All contents
-		$allContent="";
-
-		//Add top contents
-		$top="<!DOCTYPE html>
+//Addcontents
+$html_content="<!DOCTYPE html>
 <html lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:o=\"urn:schemas-microsoft- com:office:office\">
 <head>
 <meta charset=\"utf-8\">
@@ -50,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] != "POST") {
 <meta name=\"format-detection\" content=\"telephone=no,address=no,email=no,date=no,url=no\">
 <meta name=\"color-scheme\" content=\"light\">
 <meta name=\"supported-color-schemes\" content=\"light\">
-<title>Free Marketing</title>
+<title>Redwood Solutions</title>
 
 <style>
 :root {
@@ -87,21 +69,6 @@ margin: 0 auto !important;
 }
 img {
 -ms-interpolation-mode:bicubic;
-}
-#launchButton{
-background-color: #BA3B5A; 
-border: none;
-color: white;
-padding: 16px 32px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 16px;
-margin: 4px 2px;
-transition-duration: 0.4s;
-cursor: pointer;
-border-radius: 9px;
-	
 }
 
 a {
@@ -187,33 +154,15 @@ Free Marketing and Business Advice
 </td>
 </tr>
 <tr>
-</tr>";
-		//Add top contents
-		$allContent.=$top;
-
-		//Get data to add to email from form
-		$message_heading=$_POST["message-heading"];
-		$message_content=$_POST["message-content"];
-
-		//Add this data to the email body
-		$header_start="<td style=\"background-color: #ffffff; -webkit-box-shadow: 1px 4px 11px 0px rgba(0, 0, 0, 0.15); -moz-box-shadow: 1px 4px 11px 0px rgba(0, 0, 0, 0.15); box-shadow: 1px 4px 11px 0px rgba(0, 0, 0, 0.15);\">
+</tr><td style=\"background-color: #ffffff; -webkit-box-shadow: 1px 4px 11px 0px rgba(0, 0, 0, 0.15); -moz-box-shadow: 1px 4px 11px 0px rgba(0, 0, 0, 0.15); box-shadow: 1px 4px 11px 0px rgba(0, 0, 0, 0.15);\">
 <table role=\"presentation\" cellspacing=\"0\" cellpadding=\"0\" border=\"0\" width=\"100%\">
 <tr>
 <td style=\"padding: 25px; margin: 10px 0 15px; font-size: 25px; line-height: 30px; color: #333333; font-weight: normal;\">
-<h1 style=\"margin: 0 0 20px 0; font-family: sans-serif; font-size: 25px; line-height: 30px; color: #333333; font-weight: normal;\">$message_heading</h1>";
-
-		$content_start="<p style=\"margin: 0 0 15px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;line-height:24px;text-align:left;color:#637381;\">$message_content</p>
-
+<h1 style=\"margin: 0 0 20px 0; font-family: sans-serif; font-size: 25px; line-height: 30px; color: #333333; font-weight: normal;\">$message_heading</h1>
+<p style=\"margin: 0 0 15px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;line-height:24px;text-align:left;color:#637381;\">$message_body</p>
 </td>
 </tr>
-<tr>";
-
-		//Add the new content
-		$allContent.=$header_start;
-		$allContent.=$content_start;
-
-		//Add end contents
-		$bottom = "<tr>
+<tr><tr>
 <td style=\"padding: 0 20px 20px;\">
 	<hr style=\"width: 45%; margin: 0 auto 0 auto;\">
 <table align=\"center\" role=\"presentation\" cellspacing=\"0\" cellpadding=\"0\" border=\"0\" style=\"margin: auto;\">
@@ -221,8 +170,7 @@ Free Marketing and Business Advice
 <tr>
 <td style=\"padding: 25px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;\">
 <p style=\"margin: 0 0 15px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;line-height:24px;text-align:left;color:#637381;\">Many thanks</p>
-<p style=\"margin: 0 0 15px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;line-height:24px;text-align:left;color:#637381;\">The Redwood Team</p>
-<a id=\"launchButton\" href=\"https://redwood.business\" target=\"_blank\">Our website</a>
+<p style=\"margin: 0 0 15px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;line-height:24px;text-align:left;color:#637381;\">The <span style='color: #BA3B5A'>Redwood</span> Team</p>
 </td>
 </tr>
 </table>
@@ -243,27 +191,7 @@ align=\"center\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"present
 </center>
 </body>
 </html>";
-		//Write bottom contents
-		$allContent.=$bottom;
 
-		?>
-		<!-- Email preview -->
-		<div class="mx-auto text-center" style="width: 600px;height: 700px; border: 1px solid black;">
-			<textarea class="w-100">
-				<?php echo $allContent;?>
-			</textarea>
-		</div>
-
-		<!-- Spacer-->
-		<div class="pSpacer-y-40"></div>
-
-	</div>
-	<!-- Footer -->
-	<?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/footer.php";include_once($path); ?>
-	<!-- Footer - Tags -->
-	<?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/footer-tags.php";include_once($path); ?>
-</div>
-</body>
-
-</html>
+echo $html_content;
+?>
 
