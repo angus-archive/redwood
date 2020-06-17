@@ -5,6 +5,7 @@
 	<head>
 		<!-- Head tags -->
 		<?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/head-tags.php";include_once($path); ?>
+		<link rel="canonical" href="https://redwood.business/"/>
 	</head>
 
 	<body>
