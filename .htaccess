@@ -5,4 +5,5 @@ ErrorDocument 403 /forbidden403.php
 
 RedirectMatch 404 /\.git
 Redirect 301 /includes /invalid404.php
+Redirect 301 /PHPMailer /invalid404.php
 
