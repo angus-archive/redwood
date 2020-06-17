@@ -51,7 +51,7 @@ if (!isset($_SESSION['loggedin'])) {
 							<div class="input-group-prepend">
 								<span class="input-group-text" id="inputGroupPrepend3">@</span>
 							</div>
-							<input type="email" class="form-control" id="clientEmail" name="clientEmail" placeholder="Client Email" required>
+							<input type="email" class="form-control" id="clientEmail" name="client-email" placeholder="Client Email" required>
 						</div>
 					</div>
 
@@ -61,13 +61,13 @@ if (!isset($_SESSION['loggedin'])) {
 					<!--Subject -->
 					<div class="col-md-12 mb-3">
 						<label for="subject">Subject</label>
-						<input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+						<input type="text" class="form-control" id="subject" name="message-subject" placeholder="Subject" required>
 					</div>
 				</div>
 				<!--Message -->
 				<div class="form-group">
 					<label for="message">Message</label>
-					<textarea class="form-control" id="message" name="message" rows="15" style="resize:none"  placeholder="Email message..." required maxlength="5000"></textarea>
+					<textarea class="form-control" id="message" name="message-content" rows="15" style="resize:none"  placeholder="Email message..." required maxlength="5000"></textarea>
 				</div>
 
 				<div class="pSpacer-y-10"></div>
@@ -78,7 +78,7 @@ if (!isset($_SESSION['loggedin'])) {
 					<!--Heading -->
 					<div class="col-md-12 mb-3">
 						<label for="heading">Message Heading</label>
-						<input type="text" class="form-control" id="heading" name="subject" placeholder="Hi John,">
+						<input type="text" class="form-control" id="heading" name="message-heading" placeholder="Hi John,">
 					</div>
 				</div>
 
