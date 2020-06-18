@@ -66,7 +66,7 @@ if (!isset($_SESSION['loggedin'])) {
 				<!--Message -->
 				<div class="form-group">
 					<label for="message">Message</label>
-					<textarea class="form-control" id="message" name="message-content" rows="15" style="resize:none"  placeholder="Email message..." required maxlength="5000"></textarea>
+					<textarea class="form-control" id="message" name="message-content" rows="15" style="resize:none;white-space: pre-wrap; !important;"  placeholder="Email message..." required maxlength="5000"></textarea>
 				</div>
 
 				<div class="pSpacer-y-10"></div>
