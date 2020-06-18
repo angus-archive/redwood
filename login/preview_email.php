@@ -1,11 +1,5 @@
+<?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/login/includes/auth_redirect.php";include_once($path); ?>
 <?php
-session_start();
-// If the user is not logged in redirect to the login page...
-if (!isset($_SESSION['loggedin'])) {
-	header('Location: /login');
-	exit;
-}
-
 if ($_SERVER["REQUEST_METHOD"] != "POST") {
 	header('Location: /login/create_client_email.php');
 	exit;
