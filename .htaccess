@@ -1,3 +1,7 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^redwood.business [NC]
+RewriteRule ^(.*)$ https://www.redwood.business/$1 [L,R=301]
+
 
 ErrorDocument 404 /invalid404.php
 ErrorDocument 403 /forbidden403.php
