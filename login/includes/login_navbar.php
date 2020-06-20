@@ -6,10 +6,10 @@
 
 	<div class="collapse navbar-collapse" id="redwoodLoginNav">
 		<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-			<li class="nav-item active">
+			<li class="nav-item <?php if($NAV_PAGE == "Home"){echo "active";}?>">
 				<a class="nav-link" href="/login/home.php">Home <span class="sr-only">(current)</span></a>
 			</li>
-			<li class="nav-item dropdown">
+			<li class="nav-item dropdown <?php if($NAV_PAGE == "Services"){echo "active";}?>">
 				<!--Packages Page-->
 				<a class="nav-link dropdown-toggle" href="/packages" id="packagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					Services
@@ -19,7 +19,7 @@
 					<a class="dropdown-item text-white" href="#">Send Invoice</a>
 				</div>
 			</li>
-			<li class="nav-item">
+			<li class="nav-item <?php if($NAV_PAGE == "Info"){echo "active";}?>">
 				<a class="nav-link" href="/login/info.php">Info</a>
 			</li>
 			<li class="nav-item">

@@ -7,7 +7,7 @@ if (isset($_SESSION['loggedin'])) {
 	exit;
 }
 ?>
-<?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/a_config.php";include_once($path); ?>
+<?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/login/includes/l_config.php";include_once($path); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
