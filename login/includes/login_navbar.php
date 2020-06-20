@@ -20,6 +20,9 @@
 				</div>
 			</li>
 			<li class="nav-item">
+				<a class="nav-link" href="/login/info.php">Info</a>
+			</li>
+			<li class="nav-item">
 				<a class="nav-link disabled" href="#">Profile</a>
 			</li>
 		</ul>
