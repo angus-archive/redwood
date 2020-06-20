@@ -24,8 +24,14 @@
 					</div>
 					<div class="col-lg-9">
 						<h2 class="mb-4"> Welcome, <?php echo $_SESSION["name"] ?></h2>
-						<h3 style="font-size: 1rem">Employee ID: <?php echo $_SESSION['id']?></h3>
-						<h3 style="font-size: 1rem">Job Title: <?php echo $_SESSION['Job-Title']?></h3>
+						<dl class="row">
+							<dt class="col-sm-3">Employee ID</dt>
+							<dd class="col-sm-9"><?php echo $_SESSION['id']?></dd>
+
+							<dt class="col-sm-3">Job Title</dt>
+							<dd class="col-sm-9"><?php echo $_SESSION['Job-Title']?></dd>
+
+						</dl>
 					</div>
 
 				</div>
