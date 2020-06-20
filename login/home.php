@@ -13,14 +13,35 @@
 		<!-- Header-->
 		<?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/login/includes/login_header.php";include_once($path); ?>
 
-		<!-- Spacer-->
-		<div class="mSpacer-y-40"></div>
+		<!-- Profile Header-->
+		<div id="profileHeader" class="container-fluid py-4 mb-5" style="background-color: #E8E7E8">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3">
+						<div id="profilePicContainer">
+							<img src="/resources/images/icons/profile.svg" alt="Profile Icon">
+						</div>
+					</div>
+					<div class="col-lg-9">
+						<h2 class="mb-4"> Welcome, <?php echo $_SESSION["name"] ?></h2>
+						<h3 style="font-size: 1rem">Employee ID: <?php echo $_SESSION['id']?></h3>
+						<h3 style="font-size: 1rem">Job Title: <?php echo $_SESSION['Job-Title']?></h3>
+					</div>
 
-		<div class="container text-center">
-			<h2 class="mb-4"> Welcome, <?php echo $_SESSION["name"] ?></h2>
-			<a href="/login/create_client_email.php" class="btn btn-primary" style="border: 0 !important;">Send an email</a>
-			<a href="/login/create_client_email.php" class="btn disabled btn-primary " style="border: 0 !important;">Send an invoice</a>
+				</div>
+			</div>
+
 		</div>
+
+
+		<div class="container text-center" style="max-width: 1000px">
+			<h3 class="mb-4"> Quick Links...</h3>
+			<div class="list-group">
+				<a href="/login/create_client_email.php" class="list-group-item list-group-item-action bg-info text-light">Send Client Email</a>
+				<a href="#" class="list-group-item list-group-item-action bg-info text-light"">Send Client Invoice</a>
+			</div>
+		</div>
+
 
 		<!-- Spacer-->
 		<div class="pSpacer-y-40"></div>

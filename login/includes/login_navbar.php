@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="loginNav">
 	<a class="navbar-brand" href="/login/home.php"><img src="/resources/coreImages/LogoEmploy.svg" alt="Redwood logo" style="width: 200px; height: 40px"></a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#redwoodLoginNav" aria-controls="redwoodLoginNav" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
@@ -9,11 +9,18 @@
 			<li class="nav-item active">
 				<a class="nav-link" href="/login/home.php">Home <span class="sr-only">(current)</span></a>
 			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="/login/create_client_email.php">Send Email</a>
+			<li class="nav-item dropdown">
+				<!--Packages Page-->
+				<a class="nav-link dropdown-toggle" href="/packages" id="packagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Services
+				</a>
+				<div class="dropdown-menu" aria-labelledby="packagesDropdown">
+					<a class="dropdown-item text-white" href="/login/create_client_email.php">Send Client Email</a>
+					<a class="dropdown-item text-white" href="#">Send Invoice</a>
+				</div>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link disabled" href="#">Send Invoice</a>
+				<a class="nav-link disabled" href="#">Profile</a>
 			</li>
 		</ul>
 		<form class="form-inline my-2 my-lg-0">
