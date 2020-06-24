@@ -29,7 +29,7 @@
 				<!-- Packages -->
 				<div class="row">
 					<!-- Economy -->
-					<div class="col-lg-4 mb-5">
+					<div class="col-lg-4 col-md-6 mb-5">
 						<div class="card h-100 packageShadow">
 							<div class="card-header blueSteelBackground text-light">
 								<h4 class="my-0 font-weight-normal">Economy</h4>
@@ -53,7 +53,7 @@
 						</div>
 					</div>
 					<!-- Redwood -->
-					<div class="col-lg-4 mb-5">
+					<div class="col-lg-4 col-md-6 mb-5">
 						<div class="card h-100 packageShadow">
 							<div class="card-header blueSteelBackground text-light">
 								<h4 class="my-0 font-weight-normal">Redwood</h4>
@@ -77,7 +77,7 @@
 						</div>
 					</div>
 					<!-- Deluxe -->
-					<div class="col-lg-4 mb-5">
+					<div class="col-lg-4 col-md-12 mb-5">
 						<div class="card h-100 packageShadow">
 							<div class="card-header blueSteelBackground text-light">
 								<h4 class="my-0 font-weight-normal">Deluxe</h4>
