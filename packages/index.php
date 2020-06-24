@@ -143,7 +143,7 @@
 			<div class="container-fluid">
 				<div id="tableContainer" class="mx-auto">
 					<h1 class="display-5 mb-5 text-center">Compare our packages</h1>
-					<table class="table table-bordered" id="compareTable">
+					<table class="table table-bordered mx-auto" id="compareTable">
 						<thead class="thead-dark">
 						<tr>
 							<th></th>
