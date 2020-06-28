@@ -47,7 +47,7 @@
 							</ul>
 
 							<div class="card-footer">
-								<a href="/packages/economy.php" class="btn btn-primary econBackground econHover" style="border: 0 !important;">Find Out More!</a>
+								<a href="/packages/economy" class="btn btn-primary econBackground econHover" style="border: 0 !important;">Find Out More!</a>
 							</div>
 
 						</div>
@@ -71,7 +71,7 @@
 							</ul>
 
 							<div class="card-footer">
-								<a href="/packages/redwood.php" class="btn btn-primary redwoodBackground redwoodHover" style="border: 0 !important;">Find Out More!</a>
+								<a href="/packages/redwood" class="btn btn-primary redwoodBackground redwoodHover" style="border: 0 !important;">Find Out More!</a>
 							</div>
 
 						</div>
@@ -95,7 +95,7 @@
 							</ul>
 
 							<div class="card-footer">
-								<a href="/packages/deluxe.php" class="btn btn-primary deluxeBackground deluxeHover" style="border: 0 !important;">Find Out More!</a>
+								<a href="/packages/deluxe" class="btn btn-primary deluxeBackground deluxeHover" style="border: 0 !important;">Find Out More!</a>
 							</div>
 
 						</div>
@@ -131,7 +131,7 @@
 							</ul>
 
 							<div class="card-footer">
-								<a href="/packages/relaunch.php" class="btn btn-primary relaunchBackground relaunchHover" style="border: 0 !important;">Find Out More!</a>
+								<a href="/packages/relaunch" class="btn btn-primary relaunchBackground relaunchHover" style="border: 0 !important;">Find Out More!</a>
 							</div>
 						</div>
 					</div>
