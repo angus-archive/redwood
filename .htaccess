@@ -17,8 +17,8 @@ RewriteRule ^(.*)$ $1.php
 # Return 403 if original request is .php
 RewriteCond %{THE_REQUEST} "^[^ ]* .*?\.php[? ].*$"
 RewriteCond %{ENV:REDIRECT_STATUS} ^$
-#RewriteRule ^(.+)\.php - [F,L]
-RewriteRule ^(.+)$ $1.php [L,QSA]
+RewriteRule ^(.+)\.php - [F,L]
+#RewriteRule ^(.+)$ $1.php [L,QSA]
 
 
 
