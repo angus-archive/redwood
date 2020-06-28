@@ -9,18 +9,23 @@ if ($dirName == "/"){
     $dirName = $_SERVER["PHP_SELF"];
 }
 
+
 switch ($dirName) {
     
     case "/index.php":
         $NAV_PAGE = "Index";
         $CURRENT_PAGE = $NAV_PAGE;
         $PAGE_TITLE = "Redwood Marketing";
+		$PAGE_DESCRIPTION="Tamworth based online business marketing, design and consultancy services, we offer high quality business services at a very competitive price";
+		
 	break;
 
 	case "/contact.php":
         $NAV_PAGE = "Contact";
         $CURRENT_PAGE = $NAV_PAGE;
         $PAGE_TITLE = "Contact";
+		$PAGE_DESCRIPTION="Contact the Redwood Team using our online form, we will get back in touch with you as quickly as possible";
+		
         break;
     case "/our-story.php":
         $NAV_PAGE = "Our-Story";
@@ -29,6 +34,7 @@ switch ($dirName) {
         break;
     case "/packages":
         $NAV_PAGE = "Packages";
+		$PAGE_DESCRIPTION="Browse our range of high quality packages, we have a package to suit every type of business, or mix and match package features to create a truly unique experience";
         //Check which subpage we're on
         switch ($baseName) {
             case "economy.php":
@@ -64,6 +70,7 @@ switch ($dirName) {
 		$NAV_PAGE = "NONE";
 		$CURRENT_PAGE = "Privacy-Policy";
 		$PAGE_TITLE = "Privacy Policy";
+		$PAGE_DESCRIPTION="Here at Redwood we take the security of your data very seriously, please read our privacy policy to see how your data is processed";
 		break;
 
 	case "/invalid404.php";
@@ -80,6 +87,8 @@ switch ($dirName) {
         $NAV_PAGE = "Index";
         $CURRENT_PAGE = $NAV_PAGE;
         $PAGE_TITLE = "Welcome to Redwood";
+		$PAGE_DESCRIPTION="Tamworth based online business marketing, design and consultancy services, we offer high quality business services at a very competitive price";
+		
 }
 
 //Setup Base URL
