@@ -7,7 +7,7 @@
 <!--Favicons-->
 <link rel="shortcut icon" type="image/png" href="/resources/coreImages/favicon-48.png"/>
 <link rel="apple-touch-icon" href="/resources/coreImages/apple-touch-icon.png">
-<!-- Bootstrap core CSS -->
-<link href="/resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap CDN (CSS) -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <!-- Custom CSS-->
 <link href="/resources/styles/stylesheet.css" rel="stylesheet">
