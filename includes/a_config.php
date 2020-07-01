@@ -17,11 +17,18 @@ $can_header="https://";
 $withoutExt = preg_replace('/\\.[^.\\s]{3,4}$/', '', $full); //Remove PHP extension
 $PAGE_CANONICAL=$can_header.$_SERVER['SERVER_NAME'].$withoutExt;
 
+//Setup Cache Header
+header('Cache-Control: public, max-age=604800, immutable');
+
+
+//Switch case for all pages on the Site
+//Setup global variables depending on page request
 switch ($dirName) {
 
     case "/index.php":
         loadIndex();
         break;
+
 	case "/contact.php":
         $NAV_PAGE = "Contact";
         $CURRENT_PAGE = $NAV_PAGE;
