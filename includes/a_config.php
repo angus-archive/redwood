@@ -18,15 +18,10 @@ $withoutExt = preg_replace('/\\.[^.\\s]{3,4}$/', '', $full); //Remove PHP extens
 $PAGE_CANONICAL=$can_header.$_SERVER['SERVER_NAME'].$withoutExt;
 
 switch ($dirName) {
-    
-    case "/index.php":
-        $NAV_PAGE = "Index";
-        $CURRENT_PAGE = $NAV_PAGE;
-        $PAGE_TITLE = "Redwood Marketing";
-		$PAGE_DESCRIPTION="Tamworth based online business marketing, design and consultancy services, we offer high quality business services at a very competitive price";
-		
-	break;
 
+    case "/index.php":
+        loadIndex();
+        break;
 	case "/contact.php":
         $NAV_PAGE = "Contact";
         $CURRENT_PAGE = $NAV_PAGE;
@@ -94,11 +89,28 @@ switch ($dirName) {
         $PAGE_DESCRIPTION="This page is not available to view";
 		break;
 	default:
-        $NAV_PAGE = "Index";
-        $CURRENT_PAGE = $NAV_PAGE;
-        $PAGE_TITLE = "Welcome to Redwood - Redwood Marketing";
-		$PAGE_DESCRIPTION="Tamworth based online business marketing, design and consultancy services, we offer high quality business services at a very competitive price";
+        loadIndex();
+        break;
 		
+}
+
+//Will setup site variables for Homepage and Default case
+function loadIndex(){
+    //Define Globals
+    global $NAV_PAGE;
+    global $CURRENT_PAGE;
+    global $PAGE_TITLE;
+    global $PAGE_DESCRIPTION;
+    global $PAGE_CANONICAL;
+
+    //Update globals
+    $NAV_PAGE = "Index";
+    $CURRENT_PAGE = $NAV_PAGE;
+    $PAGE_TITLE = "Redwood Marketing";
+    $PAGE_DESCRIPTION="Tamworth based online business marketing, design and consultancy services, we offer high quality business services at a very competitive price";
+
+    //Special Canonical
+    $PAGE_CANONICAL="https://".$_SERVER['SERVER_NAME']; 
 }
 
 //Setup Base URL
