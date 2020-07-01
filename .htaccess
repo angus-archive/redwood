@@ -1,6 +1,6 @@
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^redwood.business [NC]
-RewriteRule ^(.*)$ https://www.redwood.business/$1 [L,R=301]
+RewriteRule ^(.*)$ https://redwood.business/$1 [L,R=301]
 
 
 #Setup Status code pages
