@@ -5,6 +5,8 @@
 <meta name="keywords" content="Business, Management, Marketing, Tamworth, Social Media, Design, Redwood marketing, Redwood business management, Redwood Tamworth">
 <meta name="geo.placename" content="Tamworth">
 <meta name="author" content="Angus Goody">
+<!--Canonical-->
+<link rel="canonical" href="<?php echo $PAGE_CANONICAL ?>"/>
 <!--Favicons-->
 <link rel="shortcut icon" type="image/png" href="/resources/coreImages/favicon-48.png"/>
 <link rel="apple-touch-icon" href="/resources/coreImages/apple-touch-icon.png">

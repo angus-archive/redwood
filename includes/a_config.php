@@ -12,6 +12,11 @@ if ($dirName == "/"){
 //Defaults
 $PAGE_DESCRIPTION = "No Description";
 
+//Calculate Canonical
+$can_header="https://";
+$withoutExt = preg_replace('/\\.[^.\\s]{3,4}$/', '', $full); //Remove PHP extension
+$PAGE_CANONICAL=$can_header.$_SERVER['SERVER_NAME'].$withoutExt;
+
 switch ($dirName) {
     
     case "/index.php":
