@@ -9,6 +9,8 @@ if ($dirName == "/"){
     $dirName = $_SERVER["PHP_SELF"];
 }
 
+//Defaults
+$PAGE_DESCRIPTION = "No Description";
 
 switch ($dirName) {
     
@@ -31,6 +33,7 @@ switch ($dirName) {
         $NAV_PAGE = "Our-Story";
         $CURRENT_PAGE = $NAV_PAGE;
         $PAGE_TITLE = "Our Story";
+        $PAGE_DESCRIPTION="The story of Redwood";
         break;
     case "/packages":
         $NAV_PAGE = "Packages - Redwood Marketing";
@@ -77,11 +80,13 @@ switch ($dirName) {
 		$NAV_PAGE = "NONE";
 		$CURRENT_PAGE = "Invalid-Page";
 		$PAGE_TITLE = "Page not found";
+        $PAGE_DESCRIPTION="The page you are looking for does not exist";
 		break;
 	case "/forbidden403.php";
 		$NAV_PAGE = "NONE";
 		$CURRENT_PAGE = "Forbidden-Page";
 		$PAGE_TITLE = "Forbidden";
+        $PAGE_DESCRIPTION="This page is not available to view";
 		break;
 	default:
         $NAV_PAGE = "Index";
