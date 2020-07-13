@@ -19,6 +19,7 @@ $PAGE_CANONICAL=$can_header.$_SERVER['SERVER_NAME'].$withoutExt;
 
 //Setup Cache Header
 header('Cache-Control: public, max-age=604800, immutable');
+header('Cache-Control: max-age=31536000');
 
 
 //Switch case for all pages on the Site
@@ -89,6 +90,14 @@ switch ($dirName) {
 		$PAGE_TITLE = "Page not found";
         $PAGE_DESCRIPTION="The page you are looking for does not exist";
 		break;
+
+    case "/about.php":
+        $NAV_PAGE = "About";
+        $CURRENT_PAGE = "About-Page";
+        $PAGE_TITLE = "About - Redwood";
+        $PAGE_DESCRIPTION="Read the history of our company";
+        break;
+
 	case "/forbidden403.php";
 		$NAV_PAGE = "NONE";
 		$CURRENT_PAGE = "Forbidden-Page";
