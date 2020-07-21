@@ -30,13 +30,13 @@
 	    <?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/all-features.php";include_once($path); ?>
 		<div class="container pt-sm-4">
 			<div class="row">
-				<div class="col-lg-4 mb-5">
+				<div class="col-lg-4 col-sm-6 mb-5">
 				    <?php online_reopening(); ?>
 				</div>
-				<div class="col-lg-4 mb-5">
+				<div class="col-lg-4 col-sm-6 mb-5">
 				    <?php advert_creation(); ?>
 				</div>
-				<div class="col-lg-4 mb-5">
+				<div class="col-lg-4 col-sm-6 mb-5">
 				    <?php active_marketing(); ?>
 				</div>
 

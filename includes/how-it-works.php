@@ -23,8 +23,8 @@
 <div class="container-fluid">
 	<h3 class="mb-2 text-center py-sm-3 text-dark">How it works</h3>
 	<div class="container">
-		<div class="row">
-			<div class="col-lg-4 mb-5">
+		<div class="row how_it_works">
+			<div class="col-md-4 col-sm-6 mb-5">
 				<div class="card text-center packageShadow <?php echo $class_col?> text-white" style="border-radius: 10%">
 					<div class="card-body">
 						<h1 class="mb-2 display-1">1</h1>
@@ -33,7 +33,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-4 mb-5">
+			<div class="col-md-4 col-sm-6 mb-5">
 				<div class="card text-center packageShadow <?php echo $class_col?> text-white" style="border-radius: 10%">
 					<div class="card-body">
 						<h1 class="mb-2 display-1">2</h1>
@@ -42,7 +42,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-4 mb-5">
+			<div class="col-md-4 col-sm-12 mb-5">
 				<div class="card text-center packageShadow <?php echo $class_col?> text-white" style="border-radius: 10%">
 					<div class="card-body">
 						<h1 class="mb-2 display-1">3</h1>

@@ -30,16 +30,16 @@
 	    <?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/all-features.php";include_once($path); ?>
 		<div class="container pt-sm-4">
 			<div class="row">
-				<div class="col-lg-4 gridBottomSpacing">
+				<div class="col-lg-4 col-sm-6 gridBottomSpacing">
 					<?php social_advice(); ?>
 				</div>
-				<div class="col-lg-4 gridBottomSpacing">
+				<div class="col-lg-4 col-sm-6 gridBottomSpacing">
 					<?php creative_ideas(); ?>
 				</div>
-				<div class="col-lg-4 gridBottomSpacing">
+				<div class="col-lg-4 col-sm-6 gridBottomSpacing">
 					<?php meetings(); ?>
 				</div>
-				<div class="col-lg-4 gridBottomSpacing">
+				<div class="col-lg-4 col-sm-6 gridBottomSpacing">
 					<?php calendar(); ?>
 				</div>
 			</div>

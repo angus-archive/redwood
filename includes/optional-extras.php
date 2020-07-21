@@ -4,7 +4,7 @@
 <!-- Container -->
 <div class="container pt-sm-4">
     <div class="row">
-		<div class="col-lg-3 mb-5">
+		<div class="col-lg-3 col-sm-6 mb-5">
 			<div class="card text-center packageShadow">
 				<div class="card-body">
 					<img class="optionalIcon mb-2" src="/resources/images/icons/microsoft.svg" alt="Microsoft Masterclass icon">
@@ -17,7 +17,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-lg-3 mb-5">
+		<div class="col-lg-3 col-sm-6 mb-5">
 			<div class="card text-center packageShadow">
 				<div class="card-body">
 					<img class="optionalIcon mb-2" src="/resources/images/icons/logo_design.svg" alt="Logo Design icon">
@@ -27,7 +27,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-lg-3 mb-5">
+		<div class="col-lg-3 col-sm-6 mb-5">
 			<div class="card text-center packageShadow">
 				<div class="card-body">
 					<img class="optionalIcon mb-2" src="/resources/images/icons/photography.svg" alt="Photography sessions icon">
@@ -40,7 +40,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-lg-3 mb-5">
+		<div class="col-lg-3 col-sm-6 mb-5">
 			<div class="card text-center packageShadow">
 				<div class="card-body">
 					<img class="optionalIcon mb-2" src="/resources/images/icons/finance_advice.svg" alt="Financial advice icon">
@@ -50,7 +50,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-lg-4 mb-5">
+		<div class="col-lg-4 col-sm-6 mb-5">
 			<div class="card text-center packageShadow">
 				<div class="card-body">
 					<img class="optionalIcon mb-2" src="/resources/images/icons/branding.svg" alt="Branding icon">
@@ -60,7 +60,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-lg-4 mb-5">
+		<div class="col-lg-4 col-sm-6 mb-5">
 			<div class="card text-center packageShadow">
 				<div class="card-body">
 					<img class="optionalIcon mb-2" src="/resources/images/icons/reach_analysis.svg" alt="Oppourtunity reach analysis icon">
@@ -73,7 +73,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-lg-4 mb-5">
+		<div class="col-lg-4 col-sm-6 mb-5">
 			<div class="card text-center packageShadow">
 				<div class="card-body">
 					<img class="optionalIcon mb-2" src="/resources/images/icons/leads_investigation.svg" alt="Leads investigation icon">

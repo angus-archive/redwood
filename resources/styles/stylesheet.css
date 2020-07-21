@@ -222,7 +222,13 @@ Logo at top of page
 
 /*============= PACKAGES PAGES ===========*/
 
+.how_it_works h4{
+	font-size: 3vw;
+}
 
+.how_it_works h6{
+	font-size: 2vw;
+}
 
 /*--Comparison table--*/
 
@@ -426,6 +432,9 @@ Logo at top of page
 	cursor: pointer;
 }
 
+#summary p{
+	font-size: 2vw;
+}
 
 
 
@@ -492,6 +501,18 @@ Logo at top of page
 	#compareTable tbody td{
 		font-size: 0.6rem;
 	}
+
+	.how_it_works h4{
+		font-size: 1.5rem;
+	}
+
+	.how_it_works h6{
+		font-size: 0.9rem;
+	}
+
+	#summary p{
+		font-size: 1.5vw;
+	}
 }
 
 /*
@@ -534,6 +555,11 @@ LAPTOPS / DESKTOPS ( BS-LARGE)
 	#compareTable tbody td{
 		font-size: 0.9rem;
 	}
+
+	#summary p{
+		font-size: 1vw;
+	}
+
 }
 
 /*
@@ -546,6 +572,10 @@ LAPTOPS / DESKTOPS ( BS-LARGE)
 	.navbar-nav > li{
 		padding-left:50px;
 		padding-right:50px;
+	}
+
+	#summary p{
+		font-size: 1rem;
 	}
 
 
