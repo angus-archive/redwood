@@ -172,8 +172,10 @@ Logo at top of page
 }
 
 #profilePicContainer img{
-	width: 150px;
-	height: auto;
+	width: auto;
+	min-width: 150px;
+	height: 150px;
+	object-fit: cover;
 }
 
 /*============= NAVIGATION ===========*/

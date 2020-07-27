@@ -19,11 +19,11 @@
 				<div class="row">
 					<div class="col-lg-3">
 						<div id="profilePicContainer">
-							<img src="/resources/images/icons/profile.svg" alt="Profile Icon">
+							<img src="/resources/images/profiles/<?=$_SESSION['img']?>" alt="Profile Icon">
 						</div>
 					</div>
 					<div class="col-lg-9 mt-4 mt-lg-0">
-						<h2 class="mb-4"> Welcome, <?php echo $_SESSION["name"] ?></h2>
+						<h2 class="mb-4"> Welcome, <?php echo ucwords($_SESSION["name"]) ?></h2>
 						<dl class="row">
 							<dt class="col-md-3 col-6">Employee ID</dt>
 							<dd class="col-md-9 col-6"><?php echo $_SESSION['id']?></dd>
