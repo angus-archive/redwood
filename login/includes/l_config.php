@@ -14,25 +14,25 @@ switch ($baseName) {
 	case "home.php":
 		$NAV_PAGE = "Home";
 		$CURRENT_PAGE = $NAV_PAGE;
-		$PAGE_TITLE = "Redwood Team Home";
+		$PAGE_TITLE = "Home | Redwood Portal";
 		break;
 
-	case "create_client_email.php":
-		$NAV_PAGE = "Services";
-		$CURRENT_PAGE = "Create-Client-Email";
-		$PAGE_TITLE = "Send Client Email";
+	case "profile.php":
+		$NAV_PAGE = "Profile";
+		$CURRENT_PAGE = $NAV_PAGE;
+		$PAGE_TITLE = "Profile | Redwood Portal";
 		break;
 
 	case "info.php":
 		$NAV_PAGE = "Info";
 		$CURRENT_PAGE = $NAV_PAGE;
-		$PAGE_TITLE = "Redwood Info";
+		$PAGE_TITLE = "Info | Redwood Portal";
 		break;
 
 	default:
 		$NAV_PAGE = "Index";
 		$CURRENT_PAGE = $NAV_PAGE;
-		$PAGE_TITLE = "Redwood Team Login";
+		$PAGE_TITLE = "Login | Redwood Portal";
 		break;
 }
 ?>

@@ -13,8 +13,8 @@
 				<li class="nav-item <?php if($NAV_PAGE == "Info"){echo "active";}?>">
 					<a class="nav-link" href="/login/info.php">Info</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link disabled" href="#">Profile</a>
+				<li class="nav-item <?php if($NAV_PAGE == "Profile"){echo "active";}?>">
+					<a class="nav-link" href="/login/profile.php">Profile</a>
 				</li>
 			</ul>
 			<form class="form-inline my-2 my-lg-0">
