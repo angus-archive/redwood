@@ -8,6 +8,7 @@ $baseName = basename($full);
 if ($dirName == "/"){
 	$dirName = $_SERVER["PHP_SELF"];
 }
+
 //Calculate Canonical
 $can_header="https://";
 if ($baseName != "index.php"){
@@ -16,6 +17,12 @@ if ($baseName != "index.php"){
 	$withoutExt = preg_replace('/\\.[^.\\s]{3,4}$/', '', $dirName);
 }
 $PAGE_CANONICAL=$can_header.$_SERVER['SERVER_NAME'].$withoutExt;
+
+//Defaults (Overwritten)
+$PAGE_DESCRIPTION = "No Description";
+$NAV_PAGE = "Home";
+$CURRENT_PAGE = $NAV_PAGE;
+$PAGE_TITLE = "Home | Redwood Portal";
 
 
 switch ($baseName) {
