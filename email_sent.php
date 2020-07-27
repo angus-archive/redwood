@@ -24,9 +24,11 @@ if ($_SERVER["REQUEST_METHOD"] != "POST") {
 
 		//----Imports-----
 		use PHPMailer\PHPMailer\PHPMailer;
+		use PHPMailer\PHPMailer\SMTP;
 		use PHPMailer\PHPMailer\Exception;
-		//Require PHPMailer auto loader
-		require $_SERVER['DOCUMENT_ROOT'].'PHPMailer/vendor/autoload.php';
+
+		// Load Composer's autoloader
+		require 'vendor/autoload.php';
 
 
 		//Form validation function (removes any SQL injections etc)
@@ -115,7 +117,7 @@ if ($_SERVER["REQUEST_METHOD"] != "POST") {
 			$html_data=create_html($first_name,$second_name,$email,$company_name,$message);
 
 			//Send
-			$to   = 'support@redwood.business';
+			$to   = 'angus.goody@outlook.com';
 			$from = 'web-client@redwood.business';
 			$name = 'Redwood Online Form';
 			$subj = 'New potential client';

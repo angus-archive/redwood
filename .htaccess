@@ -28,7 +28,7 @@ RewriteRule ^ %{REQUEST_URI}.php [L]
 
 RedirectMatch 404 /\.git
 Redirect 301 /includes /invalid404
-Redirect 301 /PHPMailer /invalid404
+Redirect 301 /vendor /invalid404
 
 
 
