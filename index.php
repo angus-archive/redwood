@@ -1,11 +1,9 @@
-
 <?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/a_config.php";include_once($path); ?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<!-- Head tags -->
 		<?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/head-tags.php";include_once($path); ?>
-		<link rel="canonical" href="https://redwood.business/"/>
 	</head>
 
 	<body>
@@ -31,50 +29,54 @@
 				<div class="container-fluid">
 
 					<!--Summary -->
-					<div class="row">
+					<div class="row" id="summary">
 						<!--Left side-->
-						<div class="col-lg-3 align-self-center homeLeftPane">
-							<div class="card coreCard mb-4">
-								<div class="card-body">
-									<h3 style="color: #77B813"> Market Analysis </h3>
-									<p>An in-depth report analysing your market segmentation, the key opportunities you can't afford to miss out on and how to get ahead of the competition</p>
+						<div class="col-lg-3 col-sm-12 align-self-center homeLeftPane">
+							<div class="row">
+								<div class="card col-lg-12 col-sm-6 col-md-4 coreCard mb-4">
+									<div class="card-body">
+										<h3 style="color: #77B813"> Market Analysis </h3>
+										<p>An in-depth report analysing your market segmentation, the key opportunities you can't afford to miss out on and how to get ahead of the competition</p>
+									</div>
 								</div>
-							</div>
-							<div class="card coreCard mb-4">
-								<div class="card-body">
-									<h3 style="color: #19B082"> Relaunch Events </h3>
-									<p> We will organise an online special event to inform customers about your reopening</p>
+								<div class="card col-lg-12 col-sm-6 col-md-4 coreCard mb-4">
+									<div class="card-body">
+										<h3 style="color: #19B082"> Relaunch Events </h3>
+										<p> We will organise an online special event to inform customers about your reopening</p>
+									</div>
 								</div>
-							</div>
-							<div class="card coreCard mb-4">
-								<div class="card-body">
-									<h3 style="color: #963AE4"> Financial Advice </h3>
-									<p>We will analyse your business and recommend ways to improve your finances</p>
+								<div class="card col-lg-12 col-sm-12 col-md-4 coreCard mb-4">
+									<div class="card-body">
+										<h3 style="color: #963AE4"> Financial Advice </h3>
+										<p>We will analyse your business and recommend ways to improve your finances</p>
+									</div>
 								</div>
 							</div>
 						</div>
 						<!--Middle-->
-						<div class="col-lg-6 align-self-center">
+						<div class="col-lg-6 col-sm-12 align-self-center">
 							<img class="d-block m-auto" src="/resources/images/homepage.svg" alt="Redwood Marketing Services">
 						</div>
 						<!--Right Side-->
-						<div class="col-lg-3 align-self-center homeRightPane">
-							<div class="card coreCard mb-4">
-								<div class="card-body">
-									<h3 style="color: #D5396B"> Social Media Marketing </h3>
-									<p>We will help you utilise social media platforms to help grow your business</p>
+						<div class="col-lg-3 col-sm-12 align-self-center homeRightPane">
+							<div class="row">
+								<div class="card col-lg-12 col-sm-6 col-md-4 coreCard mb-4">
+									<div class="card-body">
+										<h3 style="color: #D5396B"> Social Media Marketing </h3>
+										<p>We will help you utilise social media platforms to help grow your business</p>
+									</div>
 								</div>
-							</div>
-							<div class="card coreCard mb-4">
-								<div class="card-body">
-									<h3 style="color: #EBA800"> Creative Content Ideas </h3>
-									<p>Our team will recommend ideas to effectively promote your content</p>
+								<div class="card col-lg-12 col-sm-6 col-md-4 coreCard mb-4">
+									<div class="card-body">
+										<h3 style="color: #EBA800"> Creative Content Ideas </h3>
+										<p>Our team will recommend ideas to effectively promote your content</p>
+									</div>
 								</div>
-							</div>
-							<div class="card coreCard mb-4">
-								<div class="card-body">
-									<h3 style="color: #00AFF6"> Graphic Design </h3>
-									<p>We offer modern design services to help you stand out from the competition</p>
+								<div class="card col-lg-12 col-sm-12 col-md-4 coreCard mb-4">
+									<div class="card-body">
+										<h3 style="color: #00AFF6"> Graphic Design </h3>
+										<p>We offer modern design services to help you stand out from the competition</p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -84,7 +86,7 @@
 				<div class="container-fluid offWhiteBackground">
 					<div class="container pSpacer-y-40">
 						<div class="row">
-							<div class="col-lg-4">
+							<div class="col-md-4 col-sm-6">
 								<div class="card text-center coreCard">
 									<div class="card-body">
 										<img class="featureIcon mb-2" src="/resources/images/icons/location_blue.svg" alt="Uk based">
@@ -93,7 +95,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-lg-4">
+							<div class="col-md-4 col-sm-6">
 								<div class="card text-center coreCard">
 									<div class="card-body">
 										<img class="featureIcon mb-2" src="/resources/images/icons/support_green.svg" alt="24 hour support">
@@ -102,7 +104,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-lg-4">
+							<div class="col-md-4 col-12">
 								<div class="card text-center coreCard">
 									<div class="card-body">
 										<img class="featureIcon mb-2" src="/resources/images/icons/good_value.svg" alt="Good value">

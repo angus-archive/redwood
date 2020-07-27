@@ -1,9 +1,33 @@
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 
+
+#Setup Status code pages
 ErrorDocument 404 /invalid404.php
 ErrorDocument 403 /forbidden403.php
 
 
+#Remove the .php extension
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php
+
+# Return 403 if original request is .php
+RewriteCond %{THE_REQUEST} "^[^ ]* .*?\.php[? ].*$"
+RewriteCond %{ENV:REDIRECT_STATUS} ^$
+RewriteRule ^(.+)\.php - [F,L]
+#RewriteRule ^(.+)$ $1.php [L,QSA]
+
+
+
+
 RedirectMatch 404 /\.git
-Redirect 301 /includes /invalid404.php
-Redirect 301 /PHPMailer /invalid404.php
+Redirect 301 /includes /invalid404
+Redirect 301 /PHPMailer /invalid404
+
+
+
 

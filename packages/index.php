@@ -29,7 +29,7 @@
 				<!-- Packages -->
 				<div class="row">
 					<!-- Economy -->
-					<div class="col-lg-4 mb-5">
+					<div class="col-lg-4 col-md-6 mb-5">
 						<div class="card h-100 packageShadow">
 							<div class="card-header blueSteelBackground text-light">
 								<h4 class="my-0 font-weight-normal">Economy</h4>
@@ -47,13 +47,13 @@
 							</ul>
 
 							<div class="card-footer">
-								<a href="/packages/economy.php" class="btn btn-primary econBackground econHover" style="border: 0 !important;">Find Out More!</a>
+								<a href="/packages/economy" class="btn btn-primary econBackground econHover" style="border: 0 !important;">Find Out More!</a>
 							</div>
 
 						</div>
 					</div>
 					<!-- Redwood -->
-					<div class="col-lg-4 mb-5">
+					<div class="col-lg-4 col-md-6 mb-5">
 						<div class="card h-100 packageShadow">
 							<div class="card-header blueSteelBackground text-light">
 								<h4 class="my-0 font-weight-normal">Redwood</h4>
@@ -71,13 +71,13 @@
 							</ul>
 
 							<div class="card-footer">
-								<a href="/packages/redwood.php" class="btn btn-primary redwoodBackground redwoodHover" style="border: 0 !important;">Find Out More!</a>
+								<a href="/packages/redwood" class="btn btn-primary redwoodBackground redwoodHover" style="border: 0 !important;">Find Out More!</a>
 							</div>
 
 						</div>
 					</div>
 					<!-- Deluxe -->
-					<div class="col-lg-4 mb-5">
+					<div class="col-lg-4 col-md-12 mb-5">
 						<div class="card h-100 packageShadow">
 							<div class="card-header blueSteelBackground text-light">
 								<h4 class="my-0 font-weight-normal">Deluxe</h4>
@@ -95,7 +95,7 @@
 							</ul>
 
 							<div class="card-footer">
-								<a href="/packages/deluxe.php" class="btn btn-primary deluxeBackground deluxeHover" style="border: 0 !important;">Find Out More!</a>
+								<a href="/packages/deluxe" class="btn btn-primary deluxeBackground deluxeHover" style="border: 0 !important;">Find Out More!</a>
 							</div>
 
 						</div>
@@ -131,7 +131,7 @@
 							</ul>
 
 							<div class="card-footer">
-								<a href="/packages/relaunch.php" class="btn btn-primary relaunchBackground relaunchHover" style="border: 0 !important;">Find Out More!</a>
+								<a href="/packages/relaunch" class="btn btn-primary relaunchBackground relaunchHover" style="border: 0 !important;">Find Out More!</a>
 							</div>
 						</div>
 					</div>
@@ -143,7 +143,7 @@
 			<div class="container-fluid">
 				<div id="tableContainer" class="mx-auto">
 					<h1 class="display-5 mb-5 text-center">Compare our packages</h1>
-					<table class="table table-bordered" id="compareTable">
+					<table class="table table-bordered mx-auto" id="compareTable">
 						<thead class="thead-dark">
 						<tr>
 							<th></th>

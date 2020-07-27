@@ -1,6 +1,6 @@
 
 <div class="container">
-    <form method="post" action="/email_sent.php">
+    <form method="post" action="/email_sent">
         <!--Row 1-->
         <div class="form-row">
             <!--First name -->
@@ -40,7 +40,7 @@
         </div>
 		<div class="text-center">
 		<!--Privacy Policy-->
-			<p class="small py-1">Your data will be processed in accordance with our <a href="/privacy-policy.php" target="_blank"> Privacy Policy </a></p>
+			<p class="small py-1">Your data will be processed in accordance with our <a href="/privacy-policy" target="_blank"> Privacy Policy </a></p>
 			<!--Submit -->
 			<button class="btn btn-primary my-2" type="submit">Submit</button>
 		</div>
