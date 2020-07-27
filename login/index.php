@@ -12,6 +12,10 @@ $valid_details=true;
 if (isset($_GET["details"])){
 	$valid_details=$_GET["details"];
 }
+$database_connection=true;
+if (isset($_GET["connection"])){
+	$database_connection=$_GET["connection"];
+}
 
 ?>
 <?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/login/includes/l_config.php";include_once($path); ?>
@@ -38,33 +42,36 @@ if (isset($_GET["details"])){
 			  Incorrect Details
 			</div>
 			<?php endif; ?>
-			<div class="pSpacer-y-10"></div>
-			<div style="max-width: 50%; background-color: white;box-shadow: 0px 0px 20px -11px rgba(0,0,0,0.75); border-radius: 8px" class="mx-auto p-3">
-				<form method="post" action="/login/functions/authenticate">
-					<!--Row 1-->
-					<div class="form-row">
-						<!--Username -->
-						<div class="col-md-12 mb-3">
-							<label for="username">Username</label>
-							<input type="text" class="form-control" id="username" name="username" placeholder="Username" required>
-						</div>
-
-					</div>
-					<!--Row 2-->
-					<div class="form-row">
-						<!--Password -->
-						<div class="col-md-12 mb-3">
-							<label for="password">Password</label>
-							<input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
-						</div>
-
-					</div>
-					<div class="text-center">
-						<!--Submit -->
-						<button class="btn btn-primary my-2" type="submit">Submit</button>
-					</div>
-				</form>
+			<?php if ($database_connection === "failed"): ?>
+			<div class="alert alert-warning" role="alert">
+			  Could not connect to database, try again later
 			</div>
+			<?php endif; ?>
+			<div class="pSpacer-y-10"></div>
+			<form method="post" action="/login/functions/authenticate" class="border p-4">
+				<!--Row 1-->
+				<div class="form-row">
+					<!--Username -->
+					<div class="col-md-12 mb-3">
+						<label for="username">Username</label>
+						<input type="text" class="form-control" id="username" name="username" placeholder="Username" required>
+					</div>
+
+				</div>
+				<!--Row 2-->
+				<div class="form-row">
+					<!--Password -->
+					<div class="col-md-12 mb-3">
+						<label for="password">Password</label>
+						<input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+					</div>
+
+				</div>
+				<div class="text-center">
+					<!--Submit -->
+					<button class="btn btn-primary my-2" type="submit">Submit</button>
+				</div>
+			</form>
 		</div>
 		<!-- Spacer-->
 		<div class="pSpacer-y-40"></div>
