@@ -8,6 +8,15 @@ $baseName = basename($full);
 if ($dirName == "/"){
 	$dirName = $_SERVER["PHP_SELF"];
 }
+//Calculate Canonical
+$can_header="https://";
+if ($baseName != "index.php"){
+	$withoutExt = preg_replace('/\\.[^.\\s]{3,4}$/', '', $full); //Remove PHP extension
+}else{
+	$withoutExt = preg_replace('/\\.[^.\\s]{3,4}$/', '', $dirName);
+}
+$PAGE_CANONICAL=$can_header.$_SERVER['SERVER_NAME'].$withoutExt;
+
 
 switch ($baseName) {
 

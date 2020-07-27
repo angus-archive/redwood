@@ -14,7 +14,11 @@ $PAGE_DESCRIPTION = "No Description";
 
 //Calculate Canonical
 $can_header="https://";
-$withoutExt = preg_replace('/\\.[^.\\s]{3,4}$/', '', $full); //Remove PHP extension
+if ($baseName != "index.php"){
+    $withoutExt = preg_replace('/\\.[^.\\s]{3,4}$/', '', $full); //Remove PHP extension
+}else{
+    $withoutExt = preg_replace('/\\.[^.\\s]{3,4}$/', '', $dirName);
+}
 $PAGE_CANONICAL=$can_header.$_SERVER['SERVER_NAME'].$withoutExt;
 
 //Setup Cache Header
