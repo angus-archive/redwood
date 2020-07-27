@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light" id="loginNav">
-	<a class="navbar-brand" href="/login/home.php"><img src="/resources/coreImages/LogoEmploy.svg" alt="Redwood logo" style="width: 200px; height: 40px"></a>
+	<a class="navbar-brand" href="/login/home.php"><img class="w-75" src="/resources/coreImages/LogoEmploy.svg" alt="Redwood logo"></a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#redwoodLoginNav" aria-controls="redwoodLoginNav" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	</button>

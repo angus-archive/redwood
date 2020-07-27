@@ -6,6 +6,13 @@ if (isset($_SESSION['loggedin'])) {
 	header('Location: /login/home.php');
 	exit;
 }
+
+$valid_details=true;
+//Check for get parameters
+if (isset($_GET["details"])){
+	$valid_details=$_GET["details"];
+}
+
 ?>
 <?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/login/includes/l_config.php";include_once($path); ?>
 <!DOCTYPE html>
@@ -26,9 +33,14 @@ if (isset($_SESSION['loggedin'])) {
 
 		<div class="container">
 			<h2 class="text-center mb-4">Employee Login</h2>
+			<?php if ($valid_details === "false"): ?>
+			<div class="alert alert-danger" role="alert">
+			  Incorrect Details
+			</div>
+			<?php endif; ?>
 			<div class="pSpacer-y-10"></div>
 			<div style="max-width: 50%; background-color: white;box-shadow: 0px 0px 20px -11px rgba(0,0,0,0.75); border-radius: 8px" class="mx-auto p-3">
-				<form method="post" action="/login/authenticate.php">
+				<form method="post" action="/login/functions/authenticate">
 					<!--Row 1-->
 					<div class="form-row">
 						<!--Username -->
