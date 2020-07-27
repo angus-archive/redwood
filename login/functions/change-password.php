@@ -33,4 +33,6 @@ if (isset($_POST['old_password'],$_POST['new_password'],$_POST['new_password_con
     header("location: /login/profile?error=match");
   }
   
+}else{
+  header("location: /login");
 }

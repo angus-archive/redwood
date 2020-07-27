@@ -55,7 +55,7 @@ if(isset($_GET["changed"])){
 					<!--Old Password -->
 					<div class="col-md-12 mb-3">
 						<label for="old_password">Old Password</label>
-						<input type="password" class="form-control" id="old_password" name="old_password" placeholder="Old" required>
+						<input type="password" class="form-control" id="old_password" name="old_password"required>
 					</div>
 
 				</div>
@@ -64,12 +64,12 @@ if(isset($_GET["changed"])){
 					<!--New Password -->
 					<div class="col-md-12 mb-3">
 						<label for="new_password">New Password</label>
-						<input type="password" class="form-control" id="new_password" name="new_password" placeholder="New Password" required>
+						<input type="password" class="form-control" id="new_password" name="new_password" required>
 					</div>
 					<!--New Password Confirm -->
 					<div class="col-md-12 mb-3">
 						<label for="new_password_confirm">Confirm</label>
-						<input type="password" class="form-control" id="new_password_confirm" name="new_password_confirm" placeholder="Confirm" required>
+						<input type="password" class="form-control" id="new_password_confirm" name="new_password_confirm" required>
 					</div>
 
 				</div>

@@ -1,11 +1,11 @@
 <?php
 //Import Secret keys
-include_once dirname($_SERVER["DOCUMENT_ROOT"])."/private_data/secret_keys.php";
+require dirname($_SERVER["DOCUMENT_ROOT"])."/private_data/secret_keys.php";
 //Will connect to the MySQL Database
 function pdo_connect_mysql() {
   // Connection Details
-  $DATABASE_HOST = 'localhost';
-  $DATABASE_USER = 'root';
+  $DATABASE_HOST = get_redwood_db_host();
+  $DATABASE_USER = get_redwood_db_username();
   $DATABASE_PASS = get_redwood_db_password();
   $DATABASE_NAME = 'redwood';
   try {
