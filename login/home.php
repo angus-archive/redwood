@@ -25,12 +25,11 @@
 					<div class="col-lg-9">
 						<h2 class="mb-4"> Welcome, <?php echo $_SESSION["name"] ?></h2>
 						<dl class="row">
-							<dt class="col-3">Employee ID</dt>
-							<dd class="col-9"><?php echo $_SESSION['id']?></dd>
+							<dt class="col-md-3 col-6">Employee ID</dt>
+							<dd class="col-md-9 col-6"><?php echo $_SESSION['id']?></dd>
 
-							<dt class="col-3">Job Title</dt>
-							<dd class="col-9"><?php echo $_SESSION['Job-Title']?></dd>
-
+							<dt class="col-md-3 col-6">Job Title</dt>
+							<dd class="col-md-9 col-6"><?php echo $_SESSION['Job-Title']?></dd>
 						</dl>
 					</div>
 
@@ -38,16 +37,6 @@
 			</div>
 
 		</div>
-
-
-		<div class="container text-center" style="max-width: 1000px">
-			<h3 class="mb-4"> Quick Links...</h3>
-			<div class="list-group">
-				<a href="/login/create_client_email.php" class="list-group-item list-group-item-action bg-info text-light">Send Client Email</a>
-				<a href="#" class="list-group-item list-group-item-action bg-info text-light"">Send Client Invoice</a>
-			</div>
-		</div>
-
 
 		<!-- Spacer-->
 		<div class="pSpacer-y-40"></div>

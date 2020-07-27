@@ -5,8 +5,8 @@ RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 
 
 #Setup Status code pages
-ErrorDocument 404 /invalid404.php
-ErrorDocument 403 /forbidden403.php
+ErrorDocument 404 /core/invalid404.php
+ErrorDocument 403 /core/forbidden403.php
 
 
 Options +FollowSymLinks -MultiViews

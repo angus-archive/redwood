@@ -9,10 +9,10 @@ $valid_user=true;
 // Now we check if the data from the login form was submitted, isset() will check if the data exists.
 if ( !isset($_POST['username'], $_POST['password']) ) {
 	// Could not get the data that should have been sent.
-	exit('Please fill both the username and password fields!');
+	header('Location: /login');
 }
 // Prepare our SQL, preparing the SQL statement will prevent SQL injection.
-if ($stmt = $pdo->prepare('SELECT id, password FROM accounts WHERE username = :username')) {
+if ($stmt = $pdo->prepare('SELECT id, password,job_title FROM accounts WHERE username = :username')) {
 	// Bind parameters (s = string, i = int, b = blob, etc), in our case the username is a string so we use "s"
 	$stmt->bindParam(':username', $_POST['username'], PDO::PARAM_STR);
 	$stmt->execute();
@@ -22,6 +22,7 @@ if ($stmt = $pdo->prepare('SELECT id, password FROM accounts WHERE username = :u
 		if (sizeof($results) > 0) {
 			$id=$results["id"];
 			$password=$results["password"];
+			$job_title=$results["job_title"];
 			// Account exists, now we verify the password.
 			// Note: remember to use password_hash in your registration file to store the hashed passwords.
 			if (password_verify($_POST['password'], $password)) {
@@ -32,7 +33,7 @@ if ($stmt = $pdo->prepare('SELECT id, password FROM accounts WHERE username = :u
 				$_SESSION['name'] = $_POST['username'];
 				$_SESSION['id'] = $id;
 				//Get the extra details
-				//$_SESSION['Job-Title'] = $JobTitle;
+				$_SESSION['Job-Title'] = $job_title;
 				//Redirect user to home page
 				header('Location: /login/home');
 			} else {
