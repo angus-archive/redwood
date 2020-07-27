@@ -24,6 +24,7 @@ if ($stmt = $pdo->prepare('SELECT * FROM accounts WHERE username = :username')) 
 			$password=$results["password"];
 			$job_title=$results["job_title"];
 			$img=$results["img"];
+			$user_type=$results["privilege"];
 			// Account exists, now we verify the password.
 			// Note: remember to use password_hash in your registration file to store the hashed passwords.
 			if (password_verify($_POST['password'], $password)) {
@@ -36,6 +37,7 @@ if ($stmt = $pdo->prepare('SELECT * FROM accounts WHERE username = :username')) 
 				$_SESSION['img'] = $img;
 				//Get the extra details
 				$_SESSION['Job-Title'] = $job_title;
+				$_SESSION['user_type'] = $user_type;
 				//Redirect user to home page
 				header('Location: /login/home');
 			} else {

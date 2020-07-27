@@ -1,6 +1,10 @@
 <?php
 //Start a PHP session
-session_start();
+
+if (!isset($_SESSION)){
+  session_start();
+}
+
 
 //Import secret keys
 $secret_file=dirname($_SERVER["DOCUMENT_ROOT"])."/private_data/secret_keys.php";
