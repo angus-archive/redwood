@@ -18,8 +18,8 @@ $withoutExt = preg_replace('/\\.[^.\\s]{3,4}$/', '', $full); //Remove PHP extens
 $PAGE_CANONICAL=$can_header.$_SERVER['SERVER_NAME'].$withoutExt;
 
 //Setup Cache Header
-header('Cache-Control: public, max-age=604800, immutable');
-header('Cache-Control: max-age=31536000');
+//header('Cache-Control: public, max-age=604800, immutable');
+//header('Cache-Control: max-age=31536000');
 
 
 //Switch case for all pages on the Site
