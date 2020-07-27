@@ -42,6 +42,11 @@ Overrides for Bootstrap
 
 }
 
+*{
+	margin: 0;
+	padding: 0;
+}
+
 /*-----START---------*/
 
 html{
@@ -161,7 +166,7 @@ Logo at top of page
 	width: 150px;
 	height: 150px;
 	overflow: hidden;
-	border-radius: 50%;
+	border-radius: 12%;
 	display: inline-block;
 
 }

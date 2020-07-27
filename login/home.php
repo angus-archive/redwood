@@ -22,7 +22,7 @@
 							<img src="/resources/images/icons/profile.svg" alt="Profile Icon">
 						</div>
 					</div>
-					<div class="col-lg-9">
+					<div class="col-lg-9 mt-4 mt-lg-0">
 						<h2 class="mb-4"> Welcome, <?php echo $_SESSION["name"] ?></h2>
 						<dl class="row">
 							<dt class="col-md-3 col-6">Employee ID</dt>
