@@ -81,7 +81,7 @@ if(isset($_GET["sent"])){
 						<!-- Task Name -->
 						<div class="form-group">
 						    <label for="taskName">Task Name</label>
-						    <input name="task_name" type="email" class="form-control" id="taskName" required>
+						    <input name="task_name" type="text" class="form-control" id="taskName" required>
 						</div>
 						<!-- Task Urgency -->
 					  <div class="form-group">
