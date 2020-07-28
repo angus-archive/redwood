@@ -12,13 +12,21 @@ if($_SESSION["user_type"] === "boss"){
 	$employee_names = $stmt->fetchAll();
 }
 
-if($_SESSION["user_type"] === "user" && isset($_SESSION["id"])){
-	//Get the tasks
-	$stmt = $pdo->prepare('SELECT * FROM all_tasks INNER JOIN tasks ON all_tasks.task_id=tasks.task_id WHERE user_id = ?');
-	$stmt->execute(array($_SESSION["id"]));
-	$all_tasks = $stmt->fetchAll();
-}
+//Get all tasks
+$stmt = $pdo->prepare('SELECT * FROM all_tasks INNER JOIN tasks ON all_tasks.task_id=tasks.task_id WHERE user_id = ?');
+$stmt->execute(array($_SESSION["id"]));
+$all_tasks = $stmt->fetchAll();
 
+//Organise into completed and incomplete tasks
+$completed_tasks=array();
+$incomplete_tasks=array();
+foreach ($all_tasks as $task) {
+	if ($task["status"] === "1"){
+		array_push($completed_tasks, $task);
+	}else{
+		array_push($incomplete_tasks, $task);
+	}
+}
 
 
 //Get request for Bossman
@@ -141,15 +149,15 @@ if(isset($_GET["sent"])){
 				</nav>
 				<!-- Tabs Content -->
 				<div class="tab-content py-4" id="nav-tabContent">
-					<!-- All tasks -->
+					<!-- All Incomplete tasks -->
 				  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
 				  	<div class="row">
-				  		<?php if(sizeof($all_tasks) < 1): ?>
+				  		<?php if(sizeof($incomplete_tasks) < 1): ?>
 				  		<div class="col-12 mt-4 text-center">
 				  			<h4> No tasks available </h4>
 				  		</div>
 				  		<?php endif; ?>
-				  		<?php foreach($all_tasks as $task): ?>
+				  		<?php foreach($incomplete_tasks as $task): ?>
 				  		<!--Task-->
 				  		<div class="col-xl-4 col-lg-6 mt-4">
 				  			<div class="card">
@@ -172,7 +180,32 @@ if(isset($_GET["sent"])){
 				  </div>
 				  <!-- Completed tasks -->
 				  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-				  	<h5> Completed </h5>
+				  	<div class="row">
+				  		<?php if(sizeof($completed_tasks) < 1): ?>
+				  		<div class="col-12 mt-4 text-center">
+				  			<h4> No tasks available </h4>
+				  		</div>
+				  		<?php endif; ?>
+				  		<?php foreach($completed_tasks as $task): ?>
+				  		<!--Task-->
+				  		<div class="col-xl-4 col-lg-6 mt-4">
+				  			<div class="card">
+				  				<h5 class="card-header"><?=$task["task_name"]?></h5>
+				  			  <div class="card-body">
+				  			    <p class="card-text"><?=$task["task_description"]?></p>
+				  			  </div>
+				  			  <ul class="list-group list-group-flush">
+				  			    <li class="list-group-item d-flex justify-content-between align-items-center"><span>Urgency:</span><span class="badge badge-danger"><?=$task["task_urgency"]?></span></li>
+				  			    <li class="list-group-item d-flex justify-content-between align-items-center"><span>Date added:</span><span><?=$task["date_created"]?></span></li>
+				  			    <li class="list-group-item d-flex justify-content-between align-items-center"><span>Status:</span><span class="badge badge-secondary"><?=$task["status"]?></span></li>
+				  			  </ul>
+				  			  <div class="card-body text-center">
+				  			    <a href="#" class="btn btn-success btn-sm">Mark as complete</a>
+				  			  </div>
+				  			</div>
+				  		</div>
+				  		<?php endforeach; ?>
+				  	</div>
 				  </div>
 				</div>
 			</div>
