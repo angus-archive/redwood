@@ -173,6 +173,9 @@ if(isset($_GET["sent"])){
 							    </tr>
 							  </thead>
 							  <tbody>
+							  	<?php if(sizeof($all_tasks_ever) < 1): ?>
+							  		<td colspan="4">You have not set any tasks</td>
+							  	<?php endif; ?>
 							  	<?php foreach($all_tasks_ever as $task): ?>
 							    <tr>
 							      <th scope="row"><?=$task["task_name"]?></th>
