@@ -205,7 +205,11 @@ if(isset($_GET["sent"])){
 				  			    <li class="list-group-item d-flex justify-content-between align-items-center"><span>Status:</span><span class="badge badge-secondary"><?=$task["status"]?></span></li>
 				  			  </ul>
 				  			  <div class="card-body text-center">
-				  			  	<button class="btn btn-danger btn-sm completeButton" disabled>Mark as incomplete</button>
+				  			  	<form id="markIncom-<?=$task["task_id"]?>" action="/login/functions/helpers/mark-as-incomplete" method="post">
+				  			  		<input type="hidden" name="task_id" value="<?=$task["task_id"]?>">
+				  			  		<input type="hidden" name="user_id" value="<?=$_SESSION["id"]?>">
+				  			  	</form>
+				  			  	<button class="btn btn-danger btn-sm incompleteButton" formid=<?=$task["task_id"]?>>Mark as incomplete</button>
 				  			  </div>
 				  			</div>
 				  		</div>
@@ -228,7 +232,7 @@ if(isset($_GET["sent"])){
 		//On Document Load
 		$(document).ready(function(){
 
-			//When the "mark as complete button is clicked"
+			//When the "mark as complete" button is clicked
 			$(".completeButton").click(function(){
 
 				thisButton=$(this);
@@ -244,18 +248,44 @@ if(isset($_GET["sent"])){
 				var formData = $(form).serializeArray();
 				//Submit post form
 				$.post(url, formData).done(function (data) {
-					if (data === "FALSE"){
+					if (data === "TRUE"){
+						//Remove Loading from button
+						thisButton.html('Marked As Complete');
+					}else{
 						//A problem took place 
 						thisButton.prop("disabled", false);
 						thisButton.html('Mark As Complete');
-					}else{
-						//Remove Loading from button
-						thisButton.html('Marked As Complete');
 					}
-					console.log(data);
 				});
-
 			});
+
+			//When the "mark as incomplete" button is clicked
+			$(".incompleteButton").click(function(){
+
+				thisButton=$(this);
+
+				//Disable button and show loading icon
+				thisButton.prop("disabled", true);
+				thisButton.html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span><span>&nbsp Loading</span>');
+				//Get FormID
+				formID=$("#markIncom-"+$(this).attr("formid"));
+				//Gather data
+				var form=$(formID);
+				var url = form.attr("action");
+				var formData = $(form).serializeArray();
+				//Submit post form
+				$.post(url, formData).done(function (data) {
+					if (data === "TRUE"){
+						//Remove Loading from button
+						thisButton.html('Marked As Incomplete');
+					}else{
+						//A problem took place 
+						thisButton.prop("disabled", false);
+						thisButton.html('Mark As Incomplete');
+					}
+				});
+			});
+
 		});
 	</script>
 </div>
