@@ -97,7 +97,7 @@ if(isset($_GET["sent"])){
 			<div class="border p-4 bg-white">
 				<!-- Tabs Menu -->
 				<nav>
-				  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+				  <div class="nav nav-pills d-flex flex-column flex-md-row" id="nav-tab" role="tablist">
 				  	<?php if($_SESSION["user_type"] == "boss"):?>
 				  	<a class="nav-item nav-link active" id="nav-create-tab" data-toggle="tab" href="#nav-create" role="tab" aria-controls="nav-create" aria-selected="true">Create Task</a>
 				  	<a class="nav-item nav-link" id="nav-dash-tab" data-toggle="tab" href="#nav-dash" role="tab" aria-controls="nav-dash" aria-selected="true">Dashboard</a>
@@ -163,7 +163,7 @@ if(isset($_GET["sent"])){
 						</div>
 						<!-- Table -->
 						<div class="table-responsive-sm">
-							<table class="table">
+							<table class="table table-striped">
 							  <thead class="thead-dark">
 							    <tr>
 							      <th scope="col">Task Name</th>
