@@ -6,7 +6,14 @@
 //Connect to database
 require $_SERVER['DOCUMENT_ROOT']."/login/functions/connect-to-database.php";
 
-if($_SESSION["user_type"] === "boss"){
+
+//Check user permission
+$bossPriv="false";
+if ($_SESSION["user_type"] == "boss" || $_SESSION["user_type"] == "admin"){
+	$bossPriv="true";
+}
+
+if($bossPriv === "true"){
 	//Get users
 	$stmt = $pdo->prepare('SELECT username from accounts');
 	$stmt->execute();
@@ -41,6 +48,8 @@ $sent="false";
 if(isset($_GET["sent"])){
 	$sent=$_GET["sent"];
 }
+
+
 
 ?>
 <!DOCTYPE html>
@@ -98,17 +107,17 @@ if(isset($_GET["sent"])){
 				<!-- Tabs Menu -->
 				<nav>
 				  <div class="nav nav-pills d-flex flex-column flex-md-row" id="nav-tab" role="tablist">
-				  	<?php if($_SESSION["user_type"] == "boss"):?>
+				  	<?php if($bossPriv === "true"):?>
 				  	<a class="nav-item nav-link active" id="nav-create-tab" data-toggle="tab" href="#nav-create" role="tab" aria-controls="nav-create" aria-selected="true">Create Task</a>
 				  	<a class="nav-item nav-link" id="nav-dash-tab" data-toggle="tab" href="#nav-dash" role="tab" aria-controls="nav-dash" aria-selected="true">Dashboard</a>
 				  	<?php endif; ?>
-				    <a class="nav-item nav-link <?php if($_SESSION['user_type'] != 'boss'){echo "active";}?>" id="nav-all-tab" data-toggle="tab" href="#nav-all" role="tab" aria-controls="nav-all" aria-selected="true">Tasks</a>
+				    <a class="nav-item nav-link <?php if($bossPriv !== "true"){echo "active";}?>" id="nav-all-tab" data-toggle="tab" href="#nav-all" role="tab" aria-controls="nav-all" aria-selected="true">Tasks</a>
 				    <a class="nav-item nav-link" id="nav-complete-tab" data-toggle="tab" href="#nav-complete" role="tab" aria-controls="nav-complete" aria-selected="false">Completed Tasks</a>
 				  </div>
 				</nav>
 				<!-- Tabs Content -->
 				<div class="tab-content py-4" id="nav-tabContent">
-					<?php if($_SESSION["user_type"] == "boss"):?>
+					<?php if($bossPriv === "true"):?>
 					<!-- Bossman create task -->
 					<div class="tab-pane fade show active" id="nav-create" role="tabpanel" aria-labelledby="nav-create-tab">
 						<div class="text-center m-3">
@@ -194,7 +203,7 @@ if(isset($_GET["sent"])){
 					</div>
 					<?php endif; ?>
 					<!-- All Incomplete tasks -->
-				  <div class="tab-pane fade show <?php if($_SESSION['user_type'] != 'boss'){echo "active";}?>" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
+				  <div class="tab-pane fade show <?php if($bossPriv !== "true"){echo "active";}?>" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
 				  	<div class="text-center m-3">
 				  		<p> Any tasks that bossman has set you will appear here </p>
 				  	</div>
