@@ -79,78 +79,79 @@ if(isset($_GET["sent"])){
 				</div>
 			</div>
 		</div>
-		<?php if($_SESSION["user_type"] == "boss"):?>
-		<!--Boss man section -->
-		<div class="container">
-			<div class="text-center">
-				<h4> Assign tasks </h4>
-				<p> As Bossman you can assign tasks to other team members here </p>
-			</div>
-			<?php if ($sent === "true"):?>
-			<div class="alert alert-success" role="alert">
-			  Task Sent
-			</div>
-			<?php endif; ?>
-			<!-- Task form -->
-			<form action="/login/functions/send-tasks" method="post">
-
-				<!-- Task Name -->
-				<div class="form-group">
-				    <label for="taskName">Task Name</label>
-				    <input name="task_name" type="text" class="form-control" id="taskName" required>
-				</div>
-				<!-- Task Urgency -->
-			  <div class="form-group">
-			    <label for="urgency">Urgency</label>
-			    <select name="task_urgency" class="form-control" id="urgency">
-			      <option>Urgent</option>
-			      <option>Quite Important</option>
-			      <option>No Rush</option>
-			    </select>
-			  </div>
-			 	
-			 	<!-- Task Description -->
-			  <div class="form-group">
-			    <label for="task_description">Task Description</label>
-			    <textarea name="task_description" class="form-control" id="task_description" rows="3" required></textarea>
-			  </div>
-
-		  	<!-- Employee Select -->
-		    <div class="form-group">
-		      <label for="employee_select">Select Employee</label>
-		      <select name="task_employee" class="form-control" id="employee_select">
-		      	<?php foreach ($employee_names as $e): ?>
-		      		<option><?=$e["username"]?></option>
-		      	<? endforeach; ?>
-		      </select>
-		    </div>
-			  
-			  <!--Submit -->
-			  <button type="submit" class="btn btn-primary">Send</button>
-			</form>
-		</div>
-		<?php elseif($_SESSION["user_type"] == "user"): ?>
-		<!--User section -->
+		<!--Tabs section -->
 		<div class="container">
 			<!--Top Text -->
 			<div class="text-center">
 				<h4> Your Tasks </h4>
 				<p> Any tasks that bossman has set you will appear here </p>
 			</div>
-
 			<!-- Tabs Container -->
 			<div class="border p-4 bg-white">
 				<!-- Tabs Menu -->
 				<nav>
 				  <div class="nav nav-tabs" id="nav-tab" role="tablist">
-				    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Tasks</a>
-				    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Completed Tasks</a>
+				  	<?php if($_SESSION["user_type"] == "boss"):?>
+				  	<a class="nav-item nav-link active" id="nav-create-tab" data-toggle="tab" href="#nav-create" role="tab" aria-controls="nav-create" aria-selected="true">Create Task</a>
+				  	<?php endif; ?>
+				    <a class="nav-item nav-link <?php if($_SESSION['user_type'] != 'boss'){echo "active";}?>" id="nav-all-tab" data-toggle="tab" href="#nav-all" role="tab" aria-controls="nav-all" aria-selected="true">Tasks</a>
+				    <a class="nav-item nav-link" id="nav-complete-tab" data-toggle="tab" href="#nav-complete" role="tab" aria-controls="nav-complete" aria-selected="false">Completed Tasks</a>
 				  </div>
 				</nav>
 				<!-- Tabs Content -->
 				<div class="tab-content py-4" id="nav-tabContent">
+					<?php if($_SESSION["user_type"] == "boss"):?>
+					<!-- Bossman create task -->
+					<div class="tab-pane fade show active" id="nav-create" role="tabpanel" aria-labelledby="nav-create-tab">
+						<div class="text-center m-3">
+							<p> As Bossman you can assign tasks to other team members here </p>
+						</div>
+						<?php if ($sent === "true"):?>
+						<div class="alert alert-success" role="alert">
+						  Task Sent
+						</div>
+						<?php endif; ?>
+						<!-- Task form -->
+						<form action="/login/functions/send-tasks" method="post">
+
+							<!-- Task Name -->
+							<div class="form-group">
+							    <label for="taskName">Task Name</label>
+							    <input name="task_name" type="text" class="form-control" id="taskName" required>
+							</div>
+							<!-- Task Urgency -->
+						  <div class="form-group">
+						    <label for="urgency">Urgency</label>
+						    <select name="task_urgency" class="form-control" id="urgency">
+						      <option>Urgent</option>
+						      <option>Quite Important</option>
+						      <option>No Rush</option>
+						    </select>
+						  </div>
+						 	
+						 	<!-- Task Description -->
+						  <div class="form-group">
+						    <label for="task_description">Task Description</label>
+						    <textarea name="task_description" class="form-control" id="task_description" rows="3" required></textarea>
+						  </div>
+
+					  	<!-- Employee Select -->
+					    <div class="form-group">
+					      <label for="employee_select">Select Employee</label>
+					      <select name="task_employee" class="form-control" id="employee_select">
+					      	<?php foreach ($employee_names as $e): ?>
+					      		<option><?=$e["username"]?></option>
+					      	<? endforeach; ?>
+					      </select>
+					    </div>
+						  
+						  <!--Submit -->
+						  <button type="submit" class="btn btn-primary">Send</button>
+						</form>
+					</div>
+					<?php endif; ?>
 					<!-- All Incomplete tasks -->
-				  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+				  <div class="tab-pane fade show <?php if($_SESSION['user_type'] != 'boss'){echo "active";}?>" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
 				  	<div class="row">
 				  		<?php if(sizeof($incomplete_tasks) < 1): ?>
 				  		<div class="col-12 mt-4 text-center">
@@ -179,7 +180,7 @@ if(isset($_GET["sent"])){
 				  	</div>
 				  </div>
 				  <!-- Completed tasks -->
-				  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+				  <div class="tab-pane fade" id="nav-complete" role="tabpanel" aria-labelledby="nav-complete-tab">
 				  	<div class="row">
 				  		<?php if(sizeof($completed_tasks) < 1): ?>
 				  		<div class="col-12 mt-4 text-center">
@@ -200,7 +201,7 @@ if(isset($_GET["sent"])){
 				  			    <li class="list-group-item d-flex justify-content-between align-items-center"><span>Status:</span><span class="badge badge-secondary"><?=$task["status"]?></span></li>
 				  			  </ul>
 				  			  <div class="card-body text-center">
-				  			    <a href="#" class="btn btn-success btn-sm">Mark as complete</a>
+				  			    <a href="#" class="btn btn-danger btn-sm">Mark as Incomplete</a>
 				  			  </div>
 				  			</div>
 				  		</div>
@@ -209,10 +210,6 @@ if(isset($_GET["sent"])){
 				  </div>
 				</div>
 			</div>
-
-		
-
-		<?php endif; ?>
 		<!-- Spacer-->
 		<div class="pSpacer-y-40"></div>
 
