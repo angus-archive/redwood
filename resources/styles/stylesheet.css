@@ -186,9 +186,6 @@ Logo at top of page
 	box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.1);
 }
 
-
-
-
 .currentNavItem{
 	color: #BB3C5B;
 	color: var(--redwoodRed) !important;
@@ -370,6 +367,18 @@ Logo at top of page
 
 .redwoodLightGreyCol{
 	color: var(--redwoodGreyLight);
+}
+
+.urgentCol{
+	color: #E95F6E;
+}
+
+.noRushCol{
+	color: #A9ABB4;
+}
+
+.quiteImportantCol{
+	color: #DC9B44;
 }
 
 /*============= HOVER COLOURS ===========*/
