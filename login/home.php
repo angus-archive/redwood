@@ -12,6 +12,16 @@ if($_SESSION["user_type"] === "boss"){
 	$employee_names = $stmt->fetchAll();
 }
 
+if($_SESSION["user_type"] === "user" && isset($_SESSION["id"])){
+	//Get the tasks
+	$stmt = $pdo->prepare('SELECT * FROM all_tasks INNER JOIN tasks ON all_tasks.task_id=tasks.task_id WHERE user_id = ?');
+	$stmt->execute(array($_SESSION["id"]));
+	$all_tasks = $stmt->fetchAll();
+}
+
+
+
+//Get request for Bossman
 $sent="false";
 if(isset($_GET["sent"])){
 	$sent=$_GET["sent"];
@@ -134,23 +144,30 @@ if(isset($_GET["sent"])){
 					<!-- All tasks -->
 				  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
 				  	<div class="row">
-				  		<!--Example -->
-				  		<div class="col-lg-4">
+				  		<?php if(sizeof($all_tasks) < 1): ?>
+				  		<div class="col-12 mt-4 text-center">
+				  			<h4> No tasks available </h4>
+				  		</div>
+				  		<?php endif; ?>
+				  		<?php foreach($all_tasks as $task): ?>
+				  		<!--Task-->
+				  		<div class="col-xl-4 col-lg-6 mt-4">
 				  			<div class="card">
+				  				<h5 class="card-header"><?=$task["task_name"]?></h5>
 				  			  <div class="card-body">
-				  			    <h5 class="card-title">Task Title</h5>
-				  			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				  			    <p class="card-text"><?=$task["task_description"]?></p>
 				  			  </div>
 				  			  <ul class="list-group list-group-flush">
-				  			    <li class="list-group-item d-flex justify-content-between align-items-center"><span>Urgency:</span><span class="badge badge-danger">Urgent</span></li>
-				  			    <li class="list-group-item d-flex justify-content-between align-items-center"><span>Date added:</span><span>25/06/2020</span></li>
-				  			    <li class="list-group-item d-flex justify-content-between align-items-center"><span>Status:</span><span>Incomplete</span></li>
+				  			    <li class="list-group-item d-flex justify-content-between align-items-center"><span>Urgency:</span><span class="badge badge-danger"><?=$task["task_urgency"]?></span></li>
+				  			    <li class="list-group-item d-flex justify-content-between align-items-center"><span>Date added:</span><span><?=$task["date_created"]?></span></li>
+				  			    <li class="list-group-item d-flex justify-content-between align-items-center"><span>Status:</span><span class="badge badge-secondary"><?=$task["status"]?></span></li>
 				  			  </ul>
 				  			  <div class="card-body text-center">
-				  			    <a href="#" class="card-link">Mark as complete</a>
+				  			    <a href="#" class="btn btn-success btn-sm">Mark as complete</a>
 				  			  </div>
 				  			</div>
 				  		</div>
+				  		<?php endforeach; ?>
 				  	</div>
 				  </div>
 				  <!-- Completed tasks -->
