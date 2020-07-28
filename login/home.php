@@ -7,12 +7,19 @@
 require $_SERVER['DOCUMENT_ROOT']."/login/functions/connect-to-database.php";
 
 if($_SESSION["user_type"] === "boss"){
+	//Get users
 	$stmt = $pdo->prepare('SELECT username from accounts');
 	$stmt->execute();
 	$employee_names = $stmt->fetchAll();
+
+	//Get all tasks for all users for dashboard
+	$stmt = $pdo->prepare('SELECT * FROM all_tasks INNER JOIN tasks ON all_tasks.task_id=tasks.task_id INNER JOIN accounts ON all_tasks.user_id=accounts.id');
+	$stmt->execute();
+	$all_tasks_ever = $stmt->fetchAll();
+
 }
 
-//Get all tasks
+//Get all tasks for user
 $stmt = $pdo->prepare('SELECT * FROM all_tasks INNER JOIN tasks ON all_tasks.task_id=tasks.task_id WHERE user_id = ?');
 $stmt->execute(array($_SESSION["id"]));
 $all_tasks = $stmt->fetchAll();
@@ -93,6 +100,7 @@ if(isset($_GET["sent"])){
 				  <div class="nav nav-tabs" id="nav-tab" role="tablist">
 				  	<?php if($_SESSION["user_type"] == "boss"):?>
 				  	<a class="nav-item nav-link active" id="nav-create-tab" data-toggle="tab" href="#nav-create" role="tab" aria-controls="nav-create" aria-selected="true">Create Task</a>
+				  	<a class="nav-item nav-link" id="nav-dash-tab" data-toggle="tab" href="#nav-dash" role="tab" aria-controls="nav-dash" aria-selected="true">Dashboard</a>
 				  	<?php endif; ?>
 				    <a class="nav-item nav-link <?php if($_SESSION['user_type'] != 'boss'){echo "active";}?>" id="nav-all-tab" data-toggle="tab" href="#nav-all" role="tab" aria-controls="nav-all" aria-selected="true">Tasks</a>
 				    <a class="nav-item nav-link" id="nav-complete-tab" data-toggle="tab" href="#nav-complete" role="tab" aria-controls="nav-complete" aria-selected="false">Completed Tasks</a>
@@ -149,6 +157,38 @@ if(isset($_GET["sent"])){
 						  <button type="submit" class="btn btn-primary">Send</button>
 						</form>
 					</div>
+					<div class="tab-pane fade show" id="nav-dash" role="tabpanel" aria-labelledby="nav-dash-tab">
+						<div class="text-center m-3">
+							<p> Here you can view the progress of your team</p>
+						</div>
+						<!-- Table -->
+						<div class="table-responsive-sm">
+							<table class="table">
+							  <thead class="thead-dark">
+							    <tr>
+							      <th scope="col">Task Name</th>
+							      <th scope="col">Employee</th>
+							      <th scope="col">Urgency</th>
+							      <th scope="col">Status</th>
+							    </tr>
+							  </thead>
+							  <tbody>
+							  	<?php foreach($all_tasks_ever as $task): ?>
+							    <tr>
+							      <th scope="row"><?=$task["task_name"]?></th>
+							      <td><?=$task["username"]?></td>
+							      <td><?=$task["task_urgency"]?></td>
+							      <?php if($task["status"] == "1"):?>
+							      	<td><span class="badge badge-success">Completed</span></td>
+							    	<?php else: ?>
+							    		<td><span class="badge badge-danger">Incomplete</span></td>
+							    	<? endif; ?>
+							    </tr>
+							  	<? endforeach; ?>
+							  </tbody>
+							</table>
+						</div>
+					</div>
 					<?php endif; ?>
 					<!-- All Incomplete tasks -->
 				  <div class="tab-pane fade show <?php if($_SESSION['user_type'] != 'boss'){echo "active";}?>" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
@@ -167,9 +207,16 @@ if(isset($_GET["sent"])){
 				  			    <p class="card-text"><?=$task["task_description"]?></p>
 				  			  </div>
 				  			  <ul class="list-group list-group-flush">
-				  			    <li class="list-group-item d-flex justify-content-between align-items-center"><span>Urgency:</span><span class="badge badge-danger"><?=$task["task_urgency"]?></span></li>
+				  			    <li class="list-group-item d-flex justify-content-between align-items-center"><span>Urgency:</span><span><b><?=$task["task_urgency"]?></b></span></li>
 				  			    <li class="list-group-item d-flex justify-content-between align-items-center"><span>Date added:</span><span><?=$task["date_created"]?></span></li>
-				  			    <li class="list-group-item d-flex justify-content-between align-items-center"><span>Status:</span><span class="badge badge-secondary"><?=$task["status"]?></span></li>
+				  			    <li class="list-group-item d-flex justify-content-between align-items-center">
+				  			    	<span>Status:</span>
+			  			    	  <?php if($task["status"] == "1"):?>
+			  			    	  	<td><span class="badge badge-success">Completed</span></td>
+			  			    		<?php else: ?>
+			  			    			<td><span class="badge badge-danger">Incomplete</span></td>
+			  			    		<? endif; ?>
+				  			    </li>
 				  			  </ul>
 				  			  <div class="card-body text-center">
 				  			  	<form id="mark-<?=$task["task_id"]?>" action="/login/functions/helpers/mark-as-complete" method="post">
@@ -200,9 +247,16 @@ if(isset($_GET["sent"])){
 				  			    <p class="card-text"><?=$task["task_description"]?></p>
 				  			  </div>
 				  			  <ul class="list-group list-group-flush">
-				  			    <li class="list-group-item d-flex justify-content-between align-items-center"><span>Urgency:</span><span class="badge badge-danger"><?=$task["task_urgency"]?></span></li>
+				  			    <li class="list-group-item d-flex justify-content-between align-items-center"><span>Urgency:</span><span><b><?=$task["task_urgency"]?></b></span></li>
 				  			    <li class="list-group-item d-flex justify-content-between align-items-center"><span>Date added:</span><span><?=$task["date_created"]?></span></li>
-				  			    <li class="list-group-item d-flex justify-content-between align-items-center"><span>Status:</span><span class="badge badge-secondary"><?=$task["status"]?></span></li>
+				  			    <li class="list-group-item d-flex justify-content-between align-items-center">
+				  			    	<span>Status:</span>
+			  			    	  <?php if($task["status"] == "1"):?>
+			  			    	  	<td><span class="badge badge-success">Completed</span></td>
+			  			    		<?php else: ?>
+			  			    			<td><span class="badge badge-danger">Incomplete</span></td>
+			  			    		<? endif; ?>
+				  			    </li>
 				  			  </ul>
 				  			  <div class="card-body text-center">
 				  			  	<form id="markIncom-<?=$task["task_id"]?>" action="/login/functions/helpers/mark-as-incomplete" method="post">
