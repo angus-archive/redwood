@@ -90,8 +90,8 @@ if(isset($_GET["sent"])){
 		<div class="container">
 			<!--Top Text -->
 			<div class="text-center">
-				<h4> Your Tasks </h4>
-				<p> Any tasks that bossman has set you will appear here </p>
+				<h4> Your Services </h4>
+				<p> Your services will appear under here </p>
 			</div>
 			<!-- Tabs Container -->
 			<div class="border p-4 bg-white">
@@ -192,6 +192,9 @@ if(isset($_GET["sent"])){
 					<?php endif; ?>
 					<!-- All Incomplete tasks -->
 				  <div class="tab-pane fade show <?php if($_SESSION['user_type'] != 'boss'){echo "active";}?>" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
+				  	<div class="text-center m-3">
+				  		<p> Any tasks that bossman has set you will appear here </p>
+				  	</div>
 				  	<div class="row">
 				  		<?php if(sizeof($incomplete_tasks) < 1): ?>
 				  		<div class="col-12 mt-4 text-center">
@@ -232,6 +235,9 @@ if(isset($_GET["sent"])){
 				  </div>
 				  <!-- Completed tasks -->
 				  <div class="tab-pane fade" id="nav-complete" role="tabpanel" aria-labelledby="nav-complete-tab">
+				  	<div class="text-center m-3">
+				  		<p> The tasks you have completed</p>
+				  	</div>
 				  	<div class="row">
 				  		<?php if(sizeof($completed_tasks) < 1): ?>
 				  		<div class="col-12 mt-4 text-center">
