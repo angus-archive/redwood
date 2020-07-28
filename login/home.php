@@ -172,7 +172,11 @@ if(isset($_GET["sent"])){
 				  			    <li class="list-group-item d-flex justify-content-between align-items-center"><span>Status:</span><span class="badge badge-secondary"><?=$task["status"]?></span></li>
 				  			  </ul>
 				  			  <div class="card-body text-center">
-				  			    <a href="#" class="btn btn-success btn-sm">Mark as complete</a>
+				  			  	<form id="mark-<?=$task["task_id"]?>" action="/login/functions/helpers/mark-as-complete" method="post">
+				  			  		<input type="hidden" name="task_id" value="<?=$task["task_id"]?>">
+				  			  		<input type="hidden" name="user_id" value="<?=$_SESSION["id"]?>">
+				  			  	</form>
+				  			  	<button class="btn btn-success btn-sm completeButton" formid=<?=$task["task_id"]?>>Mark as complete</button>
 				  			  </div>
 				  			</div>
 				  		</div>
@@ -201,7 +205,7 @@ if(isset($_GET["sent"])){
 				  			    <li class="list-group-item d-flex justify-content-between align-items-center"><span>Status:</span><span class="badge badge-secondary"><?=$task["status"]?></span></li>
 				  			  </ul>
 				  			  <div class="card-body text-center">
-				  			    <a href="#" class="btn btn-danger btn-sm">Mark as Incomplete</a>
+				  			  	<button class="btn btn-danger btn-sm completeButton" disabled>Mark as incomplete</button>
 				  			  </div>
 				  			</div>
 				  		</div>
@@ -218,7 +222,42 @@ if(isset($_GET["sent"])){
 	<?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/footer.php";include_once($path); ?>
 	<!-- Footer - Tags -->
 	<?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/footer-tags.php";include_once($path); ?>
+	<!--Custom Scripts -->
+	<script type="text/javascript">
 
+		//On Document Load
+		$(document).ready(function(){
+
+			//When the "mark as complete button is clicked"
+			$(".completeButton").click(function(){
+
+				thisButton=$(this);
+
+				//Disable button and show loading icon
+				thisButton.prop("disabled", true);
+				thisButton.html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span><span>&nbsp Loading</span>');
+				//Get FormID
+				formID=$("#mark-"+$(this).attr("formid"));
+				//Gather data
+				var form=$(formID);
+				var url = form.attr("action");
+				var formData = $(form).serializeArray();
+				//Submit post form
+				$.post(url, formData).done(function (data) {
+					if (data === "FALSE"){
+						//A problem took place 
+						thisButton.prop("disabled", false);
+						thisButton.html('Mark As Complete');
+					}else{
+						//Remove Loading from button
+						thisButton.html('Marked As Complete');
+					}
+					console.log(data);
+				});
+
+			});
+		});
+	</script>
 </div>
 </body>
 
