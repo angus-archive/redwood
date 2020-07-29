@@ -99,13 +99,14 @@ function generate_potential_client_email($name,$second,$email,$company_name,$mes
  * @param $name: Clients second name
  */
 
-function generate_task_email($user_name,$task_name,$task_description){
+function generate_task_email($user_name,$task_name,$urgency,$task_description){
   //Get contents of the template file
   $template = file_get_contents(dirname($_SERVER["DOCUMENT_ROOT"])."/private_data/new-task.html");
   //Gather variables
   $variables = array();
   $variables['user_name'] = $user_name;
   $variables['task_name'] = $task_name;
+  $variables['urgency'] = $urgency;
   $variables['task_description'] = $task_description;
   //Insert
   foreach($variables as $key => $value)

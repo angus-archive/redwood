@@ -40,7 +40,7 @@ if (isset($_POST['task_name'],$_POST['task_urgency'],$_POST['task_description'],
   $stmt->execute(array($user_id,$task_id,0));
 
   //Send Email confirmation
-  $html_data=generate_task_email(ucfirst($user_name),$task_name,$task_description);
+  $html_data=generate_task_email(ucfirst($user_name),$task_name,$task_urgency,$task_description);
 
   //Send
   $to   = $user_email;
