@@ -46,7 +46,7 @@ if (isset($_POST['task_name'],$_POST['task_urgency'],$_POST['task_description'],
   $to   = $user_email;
   $from = 'web-client@redwood.business';
   $name = 'Redwood Portal';
-  $subj = 'New Task Assigned';
+  $subj = 'You have a new task to complete';
   $msg = $html_data;
 
   //Send email and get confirmation
