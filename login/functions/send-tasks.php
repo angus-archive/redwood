@@ -43,7 +43,7 @@ if (isset($_POST['task_name'],$_POST['task_urgency'],$_POST['task_description'],
   $to   = $_SESSION["email"];
   $from = 'web-client@redwood.business';
   $name = 'Redwood Portal';
-  $subj = 'New Task';
+  $subj = 'New Task Assigned';
   $msg = $html_data;
 
   //Send email and get confirmation
