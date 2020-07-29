@@ -4,7 +4,7 @@
  * File containing functions for sending redwood emails
 */
 
-echo "<p>$_SERVER['DOCUMENT_ROOT']</p>";
+echo "<p>".$_SERVER['DOCUMENT_ROOT']."</p>";
 
 //----Imports-----
 use PHPMailer\PHPMailer\PHPMailer;
