@@ -84,7 +84,7 @@ if(isset($_GET["sent"])){
 								<dt class="col-md-3 col-6">Job Title</dt>
 								<dd class="col-md-9 col-6">
 									<?php echo $_SESSION['Job-Title']?>
-									<?php if($_SESSION["user_type"] != "user"):?>
+									<?php if($bossPriv === "true"):?>
 									&nbsp<span class="badge badge-info"><?=$_SESSION["user_type"]?></span>
 									<?php endif; ?>
 								</dd>
