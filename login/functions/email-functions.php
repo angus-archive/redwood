@@ -1,6 +1,7 @@
 <?php
 /*
- * Email Functions for login
+ * Angus Goody 29/07/2020
+ * File containing functions for sending redwood emails
 */
 
 //----Imports-----
@@ -53,6 +54,16 @@ function smtpmailer($to, $from, $from_name, $subject, $body){
   }
 }
 
+
+//Form validation function (removes any SQL injections etc)
+function wash_data($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+
+
 /*
  * Will generate an email when someone fills out our online form
  * @param $name: Clients first name
@@ -78,5 +89,5 @@ function generate_potential_client_email($name,$second,$email,$company_name,$mes
       $template = str_replace('{{ '.$key.' }}', $value, $template);
   }
 
-  echo $template;
+  return $template;
 }

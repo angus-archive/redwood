@@ -1,8 +1,10 @@
 
 <?php
-if ($_SERVER["REQUEST_METHOD"] != "POST") {
+//If there is not a post request redirect
+if (!isset($_POST["first-name"],$_POST["second-name"],$_POST["email"])) {
 	header("location: /contact.php");
 }
+
 ?>
 <?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/a_config.php";include_once($path); ?>
 <!DOCTYPE html>
@@ -22,91 +24,11 @@ if ($_SERVER["REQUEST_METHOD"] != "POST") {
 		<!-- Form Data-->
 		<?php
 
-		//----Imports-----
-		use PHPMailer\PHPMailer\PHPMailer;
-		use PHPMailer\PHPMailer\SMTP;
-		use PHPMailer\PHPMailer\Exception;
-
-		// Load Composer's autoloader
-		require 'vendor/autoload.php';
-
-
-		//Form validation function (removes any SQL injections etc)
-		function wash_data($data) {
-			$data = trim($data);
-			$data = stripslashes($data);
-			$data = htmlspecialchars($data);
-			return $data;
-		}
-
-		//Turn user data into a nice message
-		function create_html($fname,$sname,$em,$comp,$mssg){
-			//Setup document
-			$html_message="<!DOCTYPE html> <html><head><title>Customer Message</title><style>";
-			//Add table styles
-			$html_message.="table {font-family: arial, sans-serif;border-collapse: collapse;width: 100%;table-layout: fixed;}";
-			$html_message.="td, th {border: 1px solid #dddddd;text-align: left;padding: 8px;}";
-			$html_message.="</style></head><body>";
-			//Add content before table
-			$html_message.="<h2 style='text-align: center'>New Enquiry</h2>";
-			//Add table & headers
-			$html_message.= "<table><tr><th>First Name</th><th>Second Name</th><th>Email</th><th>Company name</th><th>Message</th></tr>";
-			//Add data
-			$html_message.="<tr><td>$fname</td><td>$sname</td><td>$em</td><td>$comp</td><td>$mssg</td></tr>";
-			//End Table
-			$html_message.="</table>";
-			//Add content after table
-			$html_message.="<p style='margin-top: 50px'> Someone has filled out our online form with the above details, ensure you follow the rules below when replying...</p>";
-			$html_message.="<ul><li>Use either the support@redwood.business or sales@redwood.business email to reply depending on the nature of the message</li><li>Spell check your reply</li></ul>";
-			//End Document
-			$html_message.="</body></html>";
-			return $html_message;
-
-		}
-
-		//Send our email
-		function smtpmailer($to, $from, $from_name, $subject, $body){
-			$mail = new PHPMailer();
-			$mail->IsSMTP();
-			$mail->SMTPAuth = true;
-
-			$mail->SMTPSecure = 'ssl';
-			$mail->Host = 'imap.stackmail.com';
-			$mail->Port = 465;
-			$mail->Username = 'web-client@redwood.business';
-			$mail->Password = 'Co4f25353';
-
-
-			$mail->IsHTML(true);
-			$mail->From="web-client@redwood.business";
-			$mail->FromName=$from_name;
-			$mail->Sender=$from;
-			$mail->AddReplyTo($from, $from_name);
-			$mail->Subject = $subject;
-			$mail->Body = $body;
-			$mail->AddAddress($to);
-			if(!$mail->Send())
-			{
-				$error ="Error, a problem occurred sending your email";
-				return $error;
-			}
-			else
-			{
-				$error = "Your Email was sent successfully";
-				return $error;
-			}
-		}
-
-
+		//Import Email functions
+		require $_SERVER['DOCUMENT_ROOT']."/login/functions/email-functions.php";
 
 		//Validation
 		if ($_SERVER["REQUEST_METHOD"] == "POST") {
-			//Setup some variables to use
-			$first_name="";
-			$second_name="";
-			$email="";
-			$company_name="";
-			$message="";
 			//Wash data
 			$first_name=wash_data($_POST["first-name"]);
 			$second_name=wash_data($_POST["second-name"]);
@@ -114,9 +36,10 @@ if ($_SERVER["REQUEST_METHOD"] != "POST") {
 			$company_name=wash_data($_POST["company-name"]);
 			$message=wash_data($_POST["message"]);
 			//Parse the user data
-			$html_data=create_html($first_name,$second_name,$email,$company_name,$message);
+			$html_data=generate_potential_client_email($first_name,$second_name,$email,$company_name,$message);
 
 			//Send
+			//$to   = 'support@redwood.business';
 			$to   = 'angus.goody@outlook.com';
 			$from = 'web-client@redwood.business';
 			$name = 'Redwood Online Form';
