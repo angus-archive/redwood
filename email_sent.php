@@ -1,12 +1,39 @@
-
+<?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/a_config.php";include_once($path); ?>
 <?php
+
+//Import Email functions
+require $_SERVER['DOCUMENT_ROOT']."/login/functions/email-functions.php";
+
 //If there is not a post request redirect
-if (!isset($_POST["first-name"],$_POST["second-name"],$_POST["email"])) {
+if (!isset($_POST["first-name"],$_POST["second-name"],$_POST["email"],$_POST["company-name"],$_POST["message"])) {
 	header("location: /contact.php");
+
+}
+else{
+	//Wash data
+	$first_name=wash_data($_POST["first-name"]);
+	$second_name=wash_data($_POST["second-name"]);
+	$email=wash_data($_POST["email"]);
+	$company_name=wash_data($_POST["company-name"]);
+	$message=wash_data($_POST["message"]);
+	//Parse the user data
+	$html_data=generate_potential_client_email($first_name,$second_name,$email,$company_name,$message);
+
+	//Send
+	//$to   = 'support@redwood.business';
+	$to   = 'angus.goody@outlook.com';
+	$from = 'web-client@redwood.business';
+	$name = 'Redwood Online Form';
+	$subj = 'New potential client';
+	$msg = $html_data;
+
+	//Send email and get confirmation
+	$email_sent=smtpmailer($to,$from, $name ,$subj, $msg);
 }
 
+
+
 ?>
-<?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/a_config.php";include_once($path); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,38 +47,13 @@ if (!isset($_POST["first-name"],$_POST["second-name"],$_POST["email"])) {
 		<!-- Header-->
 		<?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/header-content.php";include_once($path); ?>
 		<div class="pSpacer-y-20"></div>
-		<h2 class="text-center">Thank you</h2>
-		<!-- Form Data-->
-		<?php
-
-		//Import Email functions
-		require $_SERVER['DOCUMENT_ROOT']."/login/functions/email-functions.php";
-
-		//Validation
-		if ($_SERVER["REQUEST_METHOD"] == "POST") {
-			//Wash data
-			$first_name=wash_data($_POST["first-name"]);
-			$second_name=wash_data($_POST["second-name"]);
-			$email=wash_data($_POST["email"]);
-			$company_name=wash_data($_POST["company-name"]);
-			$message=wash_data($_POST["message"]);
-			//Parse the user data
-			$html_data=generate_potential_client_email($first_name,$second_name,$email,$company_name,$message);
-
-			//Send
-			//$to   = 'support@redwood.business';
-			$to   = 'angus.goody@outlook.com';
-			$from = 'web-client@redwood.business';
-			$name = 'Redwood Online Form';
-			$subj = 'New potential client';
-			$msg = $html_data;
-
-			$error=smtpmailer($to,$from, $name ,$subj, $msg);
-			echo "<h4 class='text-center py-2'>".$error."</h4>";
-		}
-
-		?>
-
+		<?php if($email_sent == "true"):?>
+			<h2 class="text-center">Thank you</h2>
+			<h4 class='text-center py-2'>Your email was sent succesfully</h4>
+		<?php else: ?>
+			<h2 class="text-center">Error</h2>
+			<h4 class='text-center py-2'>A problem occurred sending your email</h4>
+		<?php endif; ?>
 	</div>
 	<!-- Footer -->
 	<?php $path = $_SERVER['DOCUMENT_ROOT'];$path .= "/includes/footer.php";include_once($path); ?>

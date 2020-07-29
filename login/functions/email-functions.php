@@ -43,14 +43,14 @@ function smtpmailer($to, $from, $from_name, $subject, $body){
   $mail->Body = $body;
   $mail->AddAddress($to);
   if(!$mail->Send())
-  {
-    $error ="Error, a problem occurred sending your email";
-    return $error;
+  { 
+    //Problem
+    return "false";
   }
   else
-  {
-    $error = "Your Email was sent successfully";
-    return $error;
+  { 
+    //Email was sent
+    return "true";
   }
 }
 
