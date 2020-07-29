@@ -6,7 +6,6 @@
 //Connect to database
 require $_SERVER['DOCUMENT_ROOT']."/login/functions/connect-to-database.php";
 
-
 //Check user permission
 $bossPriv="false";
 if ($_SESSION["user_type"] == "boss" || $_SESSION["user_type"] == "admin"){
@@ -47,6 +46,11 @@ foreach ($all_tasks as $task) {
 $sent="false";
 if(isset($_GET["sent"])){
 	$sent=$_GET["sent"];
+}
+
+$email_sent="true";
+if(isset($_GET["email_sent"])){
+	$email_sent=$_GET["email_sent"];
 }
 
 
@@ -126,6 +130,11 @@ if(isset($_GET["sent"])){
 						<?php if ($sent === "true"):?>
 						<div class="alert alert-success" role="alert">
 						  Task Sent
+						</div>
+						<?php endif; ?>
+						<?php if ($email_sent === "false"):?>
+						<div class="alert alert-warning" role="alert">
+						  Task created, email sending error
 						</div>
 						<?php endif; ?>
 						<!-- Task form -->

@@ -13,7 +13,7 @@ use PHPMailer\PHPMailer\Exception;
 require $_SERVER['DOCUMENT_ROOT']."/vendor/autoload.php";
 
 //Import secret keys (for email password)
-require(dirname($_SERVER["DOCUMENT_ROOT"])."/private_data/secret_keys.php");
+require_once(dirname($_SERVER["DOCUMENT_ROOT"])."/private_data/secret_keys.php");
 
 /*
  * Send an email using our web server

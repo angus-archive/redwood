@@ -9,7 +9,7 @@ if (!isset($_SESSION)){
 //Import secret keys
 $secret_file=dirname($_SERVER["DOCUMENT_ROOT"])."/private_data/secret_keys.php";
 if (file_exists($secret_file)) {
-    require $secret_file;
+    require_once $secret_file;
     $DATABASE_HOST = get_redwood_db_host();
     $DATABASE_USER = get_redwood_db_username();
     $DATABASE_PASS = get_redwood_db_password();

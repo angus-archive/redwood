@@ -6,6 +6,10 @@
 //Connect to database
 require $_SERVER['DOCUMENT_ROOT']."/login/functions/connect-to-database.php";
 
+//Import email functions
+require $_SERVER['DOCUMENT_ROOT']."/login/functions/email-functions.php";
+
+
 //Check details are valid
 if (isset($_POST['task_name'],$_POST['task_urgency'],$_POST['task_description'],$_POST['task_employee'])){
 
@@ -32,7 +36,27 @@ if (isset($_POST['task_name'],$_POST['task_urgency'],$_POST['task_description'],
   $stmt = $pdo->prepare('INSERT INTO all_tasks (user_id,task_id,status) VALUES (?,?,?);');
   $stmt->execute(array($user_id,$task_id,0));
 
-  //Redirect
-  header('location: /login/home?sent=true');
+  //Send Email confirmation
+  $html_data=generate_task_email($_SESSION["name"],$task_name,$task_description);
+
+  //Send
+  $to   = $_SESSION["email"];
+  $from = 'web-client@redwood.business';
+  $name = 'Redwood Portal';
+  $subj = 'New Task';
+  $msg = $html_data;
+
+  //Send email and get confirmation
+  $email_sent=smtpmailer($to,$from, $name ,$subj, $msg);
+
+  //Check the email was sent
+  if ($email_sent === "true"){
+   //Redirect
+   header('location: /login/home?sent=true'); 
+  }else{
+    header('location: /login/home?email_sent=false'); 
+  }
+
+  
 
 }
