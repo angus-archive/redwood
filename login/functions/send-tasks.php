@@ -41,8 +41,7 @@ if (isset($_POST['task_name'],$_POST['task_urgency'],$_POST['task_description'],
 
   //Send Email confirmation
   $html_data=generate_task_email(ucfirst($user_name),$task_name,$task_urgency,$task_description);
-
-  //Send
+  //Gather email data
   $to   = $user_email;
   $from = 'web-client@redwood.business';
   $name = 'Redwood Portal';

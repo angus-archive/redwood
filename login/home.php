@@ -181,7 +181,7 @@ if(isset($_GET["email_sent"])){
 						</div>
 						<!-- Table -->
 						<div class="table-responsive-sm">
-							<table class="table table-striped">
+							<table class="table table-striped" style="font-size: 0.8rem;">
 							  <thead class="thead-dark">
 							    <tr>
 							      <th scope="col">Task Name</th>
