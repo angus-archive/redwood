@@ -20,8 +20,7 @@ else{
 	$html_data=generate_potential_client_email($first_name,$second_name,$email,$company_name,$message);
 
 	//Send
-	//$to   = 'support@redwood.business';
-	$to   = 'angus.goody@outlook.com';
+	$to   = 'support@redwood.business';
 	$from = 'web-client@redwood.business';
 	$name = 'Redwood Online Form';
 	$subj = 'New potential client';

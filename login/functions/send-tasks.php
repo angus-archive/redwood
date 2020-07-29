@@ -27,20 +27,23 @@ if (isset($_POST['task_name'],$_POST['task_urgency'],$_POST['task_description'],
   //Get the Task ID
   $task_id = $pdo->lastInsertId();
 
-  //Get Employee ID
-  $stmt = $pdo->prepare('SELECT id FROM accounts WHERE username = ?');
+  //Get the employee information for the task
+  $stmt = $pdo->prepare('SELECT username,id,email FROM accounts WHERE username = ?');
   $stmt->execute(array($task_employee));
-  $user_id=$stmt->fetch()["id"];
+  $account_results=$stmt->fetch();
+  $user_id=$account_results["id"];
+  $user_name=$account_results["username"];
+  $user_email=$account_results["email"];
 
   //Add to the ALL tasks database
   $stmt = $pdo->prepare('INSERT INTO all_tasks (user_id,task_id,status) VALUES (?,?,?);');
   $stmt->execute(array($user_id,$task_id,0));
 
   //Send Email confirmation
-  $html_data=generate_task_email($_SESSION["name"],$task_name,$task_description);
+  $html_data=generate_task_email(ucfirst($user_name),$task_name,$task_description);
 
   //Send
-  $to   = $_SESSION["email"];
+  $to   = $user_email;
   $from = 'web-client@redwood.business';
   $name = 'Redwood Portal';
   $subj = 'New Task Assigned';
