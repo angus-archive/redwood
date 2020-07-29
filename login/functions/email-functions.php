@@ -3,20 +3,14 @@
  * Angus Goody 29/07/2020
  * File containing functions for sending redwood emails
 */
-
-echo "<p>".$_SERVER['DOCUMENT_ROOT']."</p>";
-
+///home/sites/11b/3/3a5747fdcb/public_html/
 //----Imports-----
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 //Load Composer's autoloader
-try{
- require $_SERVER['DOCUMENT_ROOT']."/vendor/autoload.php"; 
-}catch (Exception $e){
-  require $_SERVER['DOCUMENT_ROOT']."vendor/autoload.php"; 
-}
+require $_SERVER['DOCUMENT_ROOT']."/vendor/autoload.php";
 
 //Import secret keys (for email password)
 require(dirname($_SERVER["DOCUMENT_ROOT"])."/private_data/secret_keys.php");
