@@ -331,7 +331,7 @@ if(isset($_GET["email_sent"])){
 				$.post(url, formData).done(function (data) {
 					if (data === "TRUE"){
 						//Remove Loading from button
-						thisButton.html('Marked As Complete');
+						thisButton.html('COMPLETED');
 					}else{
 						//A problem took place 
 						thisButton.prop("disabled", false);
@@ -358,7 +358,7 @@ if(isset($_GET["email_sent"])){
 				$.post(url, formData).done(function (data) {
 					if (data === "TRUE"){
 						//Remove Loading from button
-						thisButton.html('Marked As Incomplete');
+						thisButton.html('INCOMPLETE');
 					}else{
 						//A problem took place 
 						thisButton.prop("disabled", false);
