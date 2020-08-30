@@ -17,7 +17,7 @@
 				<div class="row align-items-center">
 					<div class="col-lg-12">
 						<h1 class="display-4 mt-5 mb-2 redwoodCol font-weight-bold">Redwood Package</h1>
-						<p class="lead mb-5">Our standard package, for businesses looking to build up and utilise a social media presence su</p>
+						<p class="lead mb-5">Our standard package, for businesses looking to build up and utilise a social media presence</p>
 					</div>
 				</div>
 			</div>
