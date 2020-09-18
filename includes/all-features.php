@@ -35,8 +35,8 @@ function meetings() { global $border_col ?>
     <div class="card text-center coreCard">
         <div class="card-body">
 			<img class="featureIcon mb-2" src="/resources/images/icons/meetings.svg" alt="Meetings">
-            <h3 class="mt-sm-2">Meetings</h3>
-			<div class="featureDivider <?php echo $border_col ?>"></div>
+            <h3 class="mt-sm-2">Progress Updates</h3>
+			<div class="featureDivider <?php echo $border_col ?> "></div>
             <p class="p-1">If you wish, we can conduct meetings in person to discuss any problems we can help you with.</p>
         </div>
     </div>

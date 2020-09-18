@@ -53,17 +53,13 @@
 				<div class="col-lg-4 col-sm-6 gridBottomSpacing">
 					<?php photography(); ?>
 				</div>
-				<div class="col-lg-4 col-sm-6 gridBottomSpacing">
-					<?php microsoft_masterclass(); ?>
-				</div>
-
 			</div>
 		</div>
 		<!-- Package Details -->
 		<div class="container p-sm-4">
 			<hr class="w-25 mx-auto" style="height:1px;border-width:0;background-color: #9FA0A1;">
 			<h3 class=" pb-3 text-center">About the package</h3>
-			<p id="packageDescription" class="text-center mx-auto" style="max-width: 75%;">Our Deluxe Package is by far our most exciting package, offering the greatest variety of services; everything your business needs to build a prominent social media presence and expansive reach. From photography sessions to help you showcase your products/service, to a monthly opportunity reach report, this package will help you every step of the way to successfully social media marketing!</p>
+			<p id="packageDescription" class="mx-auto justify-text" style="max-width: 85%;">Our Deluxe Package is by far our most exciting package, offering the greatest variety of services; everything your business needs to build a prominent social media presence and expansive reach. From photography sessions to help you showcase your products/service, to a monthly opportunity reach report, this package will help you every step of the way to successfully social media marketing!</p>
 
 		</div>
 		<div class="pSpacer-y-40"></div>

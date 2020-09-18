@@ -82,6 +82,11 @@ footer{
 
 /*============= SPACERS===========*/
 
+.justify-text{
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 .mSpacer-y-80{
 	margin-top: 80px !important;
 	margin-bottom: 80px !important;
@@ -250,11 +255,11 @@ Logo at top of page
 /*============= PACKAGES PAGES ===========*/
 
 .how_it_works h4{
-	font-size: 3vw;
+	font-size: 1.5rem;
 }
 
 .how_it_works h6{
-	font-size: 2vw;
+	font-size: 0.9rem;
 }
 
 /*--Comparison table--*/
@@ -472,7 +477,7 @@ Logo at top of page
 }
 
 #summary p{
-	font-size: 2vw;
+	font-size: 0.9rem;
 }
 
 
@@ -541,17 +546,7 @@ Logo at top of page
 		font-size: 0.6rem;
 	}
 
-	.how_it_works h4{
-		font-size: 1.5rem;
-	}
-
-	.how_it_works h6{
-		font-size: 0.9rem;
-	}
-
-	#summary p{
-		font-size: 1.5vw;
-	}
+	
 }
 
 /*
@@ -595,9 +590,6 @@ LAPTOPS / DESKTOPS ( BS-LARGE)
 		font-size: 0.9rem;
 	}
 
-	#summary p{
-		font-size: 1vw;
-	}
 
 }
 
