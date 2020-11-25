@@ -5,4 +5,8 @@ Angus Goody
 Main Javascript File
 */
 
+$(document).ready(function(){
+    $(".req").hide();
+});
+
 

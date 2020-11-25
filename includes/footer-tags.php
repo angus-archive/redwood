@@ -23,5 +23,10 @@
 
 </script>
 
+<!--Custom Main script -->
+<script src="/resources/scripts/main.js"></script>
+
+
+
 
 

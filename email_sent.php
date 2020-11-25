@@ -10,24 +10,33 @@ if (!isset($_POST["first-name"],$_POST["second-name"],$_POST["email"],$_POST["co
 
 }
 else{
-	//Wash data
-	$first_name=wash_data($_POST["first-name"]);
-	$second_name=wash_data($_POST["second-name"]);
-	$email=wash_data($_POST["email"]);
-	$company_name=wash_data($_POST["company-name"]);
-	$message=wash_data($_POST["message"]);
-	//Parse the user data
-	$html_data=generate_potential_client_email($first_name,$second_name,$email,$company_name,$message);
+	//Check for spambots
+	$is_bot=0;
+	if(isset($_POST['website']) && ($_POST['website'] != '')){
+	    $is_bot=1;
+	}else{
 
-	//Send
-	$to   = 'support@redwood.business';
-	$from = 'web-client@redwood.business';
-	$name = 'Redwood Online Form';
-	$subj = 'New potential client';
-	$msg = $html_data;
 
-	//Send email and get confirmation
-	$email_sent=smtpmailer($to,$from, $name ,$subj, $msg);
+		//Wash data
+		$first_name=wash_data($_POST["first-name"]);
+		$second_name=wash_data($_POST["second-name"]);
+		$email=wash_data($_POST["email"]);
+		$company_name=wash_data($_POST["company-name"]);
+		$message=wash_data($_POST["message"]);
+		//Parse the user data
+		$html_data=generate_potential_client_email($first_name,$second_name,$email,$company_name,$message);
+
+		//Send
+		$to   = 'support@redwood.business';
+		$from = 'web-client@redwood.business';
+		$name = 'Redwood Online Form';
+		$subj = 'New potential client';
+		$msg = $html_data;
+
+		//Send email and get confirmation
+		$email_sent=smtpmailer($to,$from, $name ,$subj, $msg);
+	}
+
 }
 
 
@@ -49,6 +58,9 @@ else{
 		<?php if($email_sent == "true"):?>
 			<h2 class="text-center">Thank you</h2>
 			<h4 class='text-center py-2'>Your email was sent succesfully</h4>
+		<?php elseif($is_bot == 1): ?>
+			<h2 class="text-center">Spam</h2>
+			<h4 class='text-center py-2'>Anti spam detection prevented this email from being sent</h4>
 		<?php else: ?>
 			<h2 class="text-center">Error</h2>
 			<h4 class='text-center py-2'>A problem occurred sending your email</h4>
